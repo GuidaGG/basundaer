@@ -1,0 +1,237 @@
+@import "./webfonts.less";
+@import "./colors.less";
+@import "common";
+@import "text-defaults";
+
+
+#workshopContent {
+ 
+  .workshop {
+
+    //.headerImage {
+    //  background: url("/static/img/workshop_header.png") no-repeat center ;
+    //  background-size: cover;
+    //  width: 100%;
+    //  height: 33vh;
+    //  display: none;
+    //}
+
+    .workshopContent {
+      .dynamicContent{
+       
+        @media @media-small {
+          width: calc(100%);
+        }
+      }
+      .image-container:nth-child(2) {
+        padding-top: 10vh;
+        @media @media-small {
+          padding-top: 0
+        }
+
+      }
+
+      .text-zone:nth-child(1) {
+        width: 75%;
+        padding-left: 25%;
+        @media @media-small {
+          width: 100%;
+          padding-left: 0%;
+        }
+      }
+
+      .image-zone{
+      
+          margin: 0;
+          width: 50%;
+          float: left;
+        
+        @media @media-small {
+          width: 100%;
+          clear: both;
+        }
+        
+      }
+      .image-container{
+        @media @media-small {
+          width: 100%;
+          clear: both;
+        }
+      }
+      .text-zone:nth-child(5){
+        padding-top: 8vh;
+      }
+
+      .text-zone:nth-child(7){
+        clear: both;
+      }
+      .text-zone:last-of-type{
+        clear: both;
+      }
+
+      
+
+      //&:extend(.pageContent);
+      //padding-top: 0;
+      //@media @media-small {
+      //  margin-right: @overlay-overlap-small;
+      //}
+      //@media @media-large {
+      //  margin-right: @overlay-overlap-large;
+      //}
+      //@media @media-l-medium, @media-p-medium {
+      //  margin-right: @overlay-overlap-medium;
+      //}
+      //
+
+    }
+  }
+
+  & > .content {
+    @import "closeButtonAndSectionTitle";
+
+    overflow-y: auto;
+    height: 100%;
+    background: @whiteish;
+  }
+
+  .overlay {
+    background: @flieder;
+  }
+
+  .overlayPageContent {
+    .workshopOverlay {
+       .content {
+
+        @media @media-small {
+          margin-top: 2 * @padding-small;
+        }
+        @media @media-large {
+          margin-top: 2 * @padding-large;
+        }
+        @media @media-l-medium, @media-p-medium {
+          margin-top: 2 * @padding-medium;
+        }
+
+        .workshopSections {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+     
+          @media @media-large {
+            flex-direction: row;
+            margin: 0 -@padding-large;
+          }
+          @media @media-l-medium {
+            flex-direction: row;
+            margin: 0 -@padding-medium;
+          }
+          @media @media-p-medium {
+            flex-direction: column;
+            margin: 0 -@padding-medium;
+          }
+          @media @media-small {
+            flex-direction: column;
+            margin: 0 -@padding-small;
+          }
+
+          .workshopSection {
+            
+    
+            @media @media-large {
+              padding: 0 @padding-large;
+              width: 30%;
+              margin-bottom: 2 * @padding-large;
+            }
+            @media @media-l-medium, @media-p-medium {
+              padding: 0 @padding-medium;
+              width: 30%;
+              margin-bottom: 2 * @padding-medium ;
+            }
+           
+            @media @media-p-medium, @media-small {
+              margin-bottom: @padding-small * 4;
+              width:100%;
+            }
+
+            @media @media-small {
+              padding: 0 @padding-small;
+              width: 100%;
+            }
+
+            img{
+              max-width: 100%
+            };
+
+            .workshopTitle {
+              font-size: 1.6em;
+              line-height: 1.4em;
+              font-family: apercu-medium ,sans-serif;
+              @media @media-p-medium, @media-small {
+                letter-spacing: 0;
+                font-size: 13pt;
+                line-height: 16pt;
+              }
+            }
+
+            .workshopCategory, .workshopDescription {
+              font-family: apercu-light ,sans-serif;
+              @media @media-p-medium, @media-small {
+                letter-spacing: 0;
+                font-size: 13pt;
+                line-height: 16pt;
+              }
+              .medium{
+                font-family: apercu-medium ,sans-serif;
+              }
+
+            }
+            img{
+              padding: 10px 0
+            };
+        
+          }
+        }
+
+        //.wsPaddingBottom {
+        //  @media @media-large {
+        //    margin-bottom: @padding-large * 2;
+        //  }
+        //  @media @media-l-medium, @media-p-medium {
+        //    margin-bottom: @padding-medium * 2;
+        //  }
+        //  @media @media-small {
+        //    margin-bottom: @padding-small * 2;
+        //  }
+        //}
+        //
+        //.headSection {
+        //  &:extend(.wsPaddingBottom);
+        //}
+        //
+        //.workshopCategories {
+        //  display: flex;
+        //  justify-content: space-between;
+        //
+        //  .workshopCategory {
+        //    &:extend(.wsPaddingBottom);
+        //
+        //    @media @media-small {
+        //      display: none;
+        //    }
+        //  }
+        //}
+        //
+        //.contact {
+        //  margin-top: 30px;
+        //  text-decoration: underline;
+        //}
+        //
+        //.footSection {
+        //  &:extend(.wsPaddingBottom);
+        //}
+      }
+
+    }
+  }
+}

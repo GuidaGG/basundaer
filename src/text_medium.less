@@ -1,0 +1,70 @@
+@import "text-defaults";
+
+@letter-spacing: 1px;
+
+.footerText {
+  font-family: @ffh0;
+  font-size: 6vh !important;
+  line-height: 9vh !important;
+}
+
+.heading0 {
+  letter-spacing: 0;
+  font-family: @ffh0;
+  font-size: 30pt !important;
+  line-height: 45pt;
+}
+
+.heading1, p.intro, p.intro a {
+  letter-spacing: 0;
+  font-family: @ffh1;
+  font-size: 20pt;
+  line-height: 25pt;
+}
+
+.heading2 {
+  letter-spacing: 0;
+  font-family: @ffh2;
+  font-size: 14pt;
+  line-height: 18pt;
+}
+
+.paragraph, .paragraph a {
+  letter-spacing: 0.5px;
+  font-family: @ffp;
+  font-size: 14pt;
+  line-height: 18pt;
+}
+
+.caption, .main-caption, .image-number   {
+  letter-spacing: 0.2px;
+  font-family: @ffp;
+  font-size: 12pt;
+  line-height: 14pt;
+}
+
+
+
+.paragraph.quote, .paragraph.quote a {
+  letter-spacing: 0.5px;
+  font-family: @ffp;
+  font-size: 18pt;
+  line-height: 22pt;
+
+}
+
+.paragraph.quote a, p.intro a{
+  &:hover {
+    font-family: @font-light;
+    letter-spacing: 0.9px;
+  }
+}
+a {
+  &:extend(.paragraph);
+
+  &:hover {
+    font-family: @font-light;
+    letter-spacing: 0.9px;
+  }
+}
+

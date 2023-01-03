@@ -1,0 +1,27 @@
+{
+  "gallery": {
+    "imagePath": "/static/img/Bas_Aer_Kundenlogos",
+    "images": [
+      "BA_Website_client_UHB20.png",
+      "BA_Website_client_PDS.png",
+      "BA_Website_client_KAE.png",
+      "BA_Website_client_STGB.png",
+      "BA_Website_client_SHB.png",
+      "BA_Website_client_COM.png",
+      "BA_Website_client_NUM.png",
+      "BA_Website_client_BPP.png",
+      "BA_Website_client_FHB-SK.png",
+      "BA_Website_client_K2.png",
+      "BA_Website_client_STE.png",
+      "BA_Website_client_KLZ.png",
+      "BA_Website_client_ZVC.png",
+      "BA_Website_client_ULU.png",
+      "BA_Website_client_KOC.png",
+      "BA_Website_client_ZPI.png",
+      "BA_Website_client_MBB.png",
+      "BA_Website_client_VRW.png",
+      "BA_Website_client_CIN.png",
+      "BA_Website_client_UVE.png"
+    ]
+  }
+}

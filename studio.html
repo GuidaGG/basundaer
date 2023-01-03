@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Studio</title>
+    <script type="text/javascript" src="./static/js/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+<div class="content">
+    <link href="static/css/studio.css" rel="stylesheet">
+    <link href="./static/css/overlay.css" rel="stylesheet">
+    <script type="text/javascript">
+    </script>
+    <script type="module">
+        import studioPageReady from "./static/js/studio.js"
+        $('body').ready(function () {
+            studioPageReady()
+        })
+    </script>
+
+    <div class="sectionTitle">Studio</div>
+    <div class="close hasOverlay"></div>
+
+    <div class="studio">
+        <div class="headerImage"></div>
+        <div class="studioContent pageContent">
+            <h1 class="heading heading1">Wir sind Bas&Aer.</h1>
+
+            <h2 class="subHeading heading2 hheading">Integriertes Designstudio aus Bremen und Berlin</h2>
+
+            <div class="description paragraph">
+                <p>
+                   Bei Bas&Aer bringen wir Botschaften in eine verständliche Form und Identitäten auf den Punkt. Wir lassen Ideen lebendig und erfahrbar werden. Zweidimensional, dreidimensional, analog, digital – Wir finden die passenden Formate und Medien für jedes Vorhaben:
+                </p>
+
+                <div class="serviceDescriptions paragraph">
+                    <div class="serviceDescription">
+                        <div class="header">Konzept & Design</div>
+                        <div>
+                            <ul>
+                                <li>Corporate Design & Communication</li>
+                                <li>Logos (Wort– und Bildmarken)</li>
+                                <li>Webauftritte und Digitale Anwendungen</li>
+                                <li>Leit– und Orientierungssysteme</li>
+                                <li>Messeauftritte und Ausstellungen</li>
+                                <li>Werbung und Printmedien</li>
+                                <li>Kataloge und Publikationen</li>
+                                <li>Verpackungen und POS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="serviceDescription">
+                        <div class="header">Workshop & Coaching</div>
+                        <div>
+                            <ul>
+                                <li>Verschiedene Workshopformate zu</li>
+                                    <ul>
+                                        <li>Identität– und Profilschärfung</li>
+                                        <li>Storytelling und USP</li>
+                                        <li>Ziele und Visionen</li>
+                                        <li>Angebot und Dienstleistung</li>
+                                        <li>Wording und Namensfindung</li>
+                                    </ul>
+                                <li>Seminare und Einzelcoachings für Existenzgründer*innen zu Themen der Corporate
+                                    Identity
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="serviceDescription">
+                        <div class="header">Research & Lehre</div>
+                        <div>
+                            <ul>
+                                <li>Entwicklung und Durchführung von praktischen Forschungsprojekten</li>
+                                <li>Gestaltungsanalysen</li>
+                                <li>Ideen und Konzepte für neue Produktangebote und Services</li>
+                                <li>Lehraufträge und Seminare im Bereich</li>
+                                    <ul>
+                                        <li>Design Thinking</li>
+                                        <li>Grundlagen des Designs</li>
+                                        <li>Experimental Design</li>
+                                        <li>Corporate Design und Storytelling</li>
+                                    </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Transparente und direkte Kommunikation, kurze Entscheidungswege und ein gemeinsamer Anspruch sind für uns die Grundlage einer erfolgreichen Zusammenarbeit. Wir sind stolz auf das uns entgegengebrachte Vertrauen, den intensiven Dialog mit unseren Kund*innen und tolle Ergebnisse.
+                </p>
+
+                <p>
+                    Bas&Aer wurde im November 2017 von Katharina Brock, Astrid Hesse und Ben Jurca gegründet. Seitdem bieten wir unseren Kund*innen eine umfangreiche Betreuung in den Bereichen Unternehmensidentität und -kommunikation, Innovation und kreative Problemlösung an.
+                </p>
+                <p>
+                    Unsere Projektpartner*innen kommen aus verschiedenen Branchen mit unterschiedlichen Vorhaben und Herausforderungen zu uns. Zum Glück sind wir mit vielen talentierten Kolleg*innen gut vernetzt. So können wir auch problemlos umfangreiche und ungewöhnliche Projekte umsetzen. Wir freuen uns auf Ihre Anfrage: <a href="mailto:info@basundaer.de">info@basundaer.de</a>
+                </p>
+
+                <div class="customers paragraph">
+                    <div class="gallery"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="overlayContentContainer">
+            <div class="overlayScrollContainer">
+                <div class="overlayContent">
+                    <div id="studioOverlayContent"></div>
+                </div>
+            </div>
+        </div>
+        <div class="openHandle">
+            <div class="overlayTitle paragraph"></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

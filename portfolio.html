@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Studio</title>
+    <script type="text/javascript" src="./static/js/jquery-3.3.1.js"></script>
+    <link href="static/css/design.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="contentContainer">
+    <div class="overlayPageContent">
+        <script type="module">
+            import {designProjects, portfolioOverlay} from "/static/js/design.js"
+            import portfolioReady from "/static/js/portfolio.js"
+            $('body').ready(function(){ portfolioReady(portfolioOverlay, designProjects) })
+        </script>
+        <link href="/static/css/portfolio.css" rel="stylesheet">
+
+        <div class="portfolio">
+            <div class="content">
+                <div class="headSection heading1">
+                    Vielfältige Themen, komplexe Fragen und eine enge Zusammenarbeit. Jedes Projekt ist eine spannende
+                    Herausforderung, der wir uns mit Neugier, Leidenschaft und Hingabe widmen. So entstehen
+                    anspruchsvolle, ästhetische und sinnstiftende Designlösungen.
+                </div>
+                <div class="gallery">
+                    <div class="categories">
+                        <a class="projectCategory" data-category="Gesamt">Gesamt</a>
+                    </div>
+                    <div class="thumbnails">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

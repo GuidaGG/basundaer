@@ -1,0 +1,356 @@
+@import "./webfonts";
+@import "./colors";
+@import "common";
+
+@padding: 20px;
+@padding-left: @padding;
+@padding-top: @padding;
+@padding-right: @padding;
+@padding-bottom: 60px;
+@margin: 0%;
+
+#researchContent {
+ // position: fixed;
+
+  #secondTitle{
+   
+    display: block;
+    font-family: 'apercu-light';
+    font-weight: lighter;
+
+  } 
+  /*
+  .color0 {
+    background: @flieder !important;
+  }
+
+  .color1 {
+    background: @rot !important;
+  }
+
+  .color2 {
+    background: @gelb !important;
+  }*/
+  .overlay {
+    background: @flieder;
+  } 
+  .content {
+    width: 100%;
+    height: calc(100vh);
+    background: @whiteish;
+    position: relative;
+    overflow-y: hidden;
+
+
+    @media @media-small {
+      left: 0;
+      bottom: 0;
+      top: @margin;
+      right: @margin;
+      //padding: @padding-large * 2;
+    }
+    @media @media-l-medium {
+      left: @margin;
+      bottom: 0;
+      top: @margin;
+      right: 0;
+      //padding: @padding-medium * 4;
+    }
+    @media @media-p-medium {
+      left: 0;
+      bottom: 0;
+      top: @margin;
+      right: @margin;
+      //padding: @padding-medium * 2;
+    }
+    @media @media-large {
+      left: @margin;
+      bottom: 0;
+      top: @margin;
+      right: 0;
+      //padding: @padding-large * 4;
+    }
+
+    #footerText {
+      height: 100%;
+      color: black;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      @media @media-small {
+        .heading0 {
+          font-size: 14pt !important;
+          line-height: 22pt;
+        }
+      }
+      @media @media-large {
+        //margin: 0 4*@padding-large;
+      }
+      @media @media-l-medium, @media-p-medium {
+        //margin: 0 4*@padding-medium;
+      }
+
+      & p {
+        @media @media-small {
+          margin-bottom: 2 * @padding-small;
+          .heading0 {
+            font-size: 14pt !important;
+            line-height: 22pt;
+          }
+        }
+        @media @media-large {
+          margin-bottom: 2 *@padding-large;
+        }
+        @media @media-l-medium, @media-p-medium {
+          margin-bottom: 2 * @padding-medium;
+        }
+      }
+
+      & a {
+        @media @media-small {
+          .heading0 {
+            //font-size: 13pt !important;
+          }
+        }
+        @media @media-large {
+          //margin-bottom: 2 *@padding-large;
+        }
+        @media @media-l-medium, @media-p-medium {
+          //margin-bottom: 2 * @padding-medium;
+        }
+      }
+
+    }
+
+    @import "closeButtonAndSectionTitle";
+
+    .sectionTitle {
+      max-width: calc( 100% - 80px);
+      font-family: "apercu-medium", sans-serif;
+      position: fixed;
+      font-size: 20pt;
+      display: block;
+      
+    }
+    
+    #firstTitle, #secondTitle{
+      display: inline-block;
+      line-height: inherit;
+      @media @media-small{
+        display: block;
+      }
+
+
+    }
+    #firstTitle{
+      cursor: pointer;
+    }
+    #secondTitle{
+      line-height: 40px
+    }
+
+    .back{
+      height: 100vh;
+      width: 10%;
+      background-color: transparent;
+      z-index: 2;
+      position: fixed;
+      top: 0;
+      cursor: url(/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png) 46 16, auto;
+    } 
+     
+
+  
+    .navigation{
+      display: none;
+      position: fixed;
+      top: 85px;
+      left: 0;
+      z-index: 2;
+      padding: @padding-small;
+      width: calc(100% - 60px);
+      vertical-align: middle;
+
+      @media @media-small {
+        display: block;
+      }
+      #previousR, #nextR{
+        display: inline-block;
+      }
+
+      .previousR, .nextR, .arrow{
+        font-size: 0.6em;
+        font-weight: lighter;
+        text-transform: uppercase;
+        text-decoration: underline;
+        cursor: pointer;
+        display: inline-block;
+        float: left;
+        vertical-align: middle;
+        
+       }
+ 
+       #nextR, .nextR, .arrow-right{
+        float: right;
+        text-align: right;
+          
+         
+       }
+
+       .arrow{
+         text-decoration: none;
+         height: 10pt;
+         width: 13pt;
+         margin-top: 1px;
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position-y: center;
+       }
+       .arrow-right{
+        margin-left: 10px;
+        background-image: url(/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png);
+       }
+
+       .arrow-left{
+        margin-right: 10px;
+        background-image: url(/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png);
+       }
+  
+
+    }
+    
+
+    .close {
+      right: @margin;
+      top: @margin;
+      background: url("/static/img/icons_bua/BuA_Icon_x_fett.svg") no-repeat center;
+
+      @media @media-small {
+        right: calc(@margin + @padding-small);
+      }
+      @media @media-large {
+        right: @padding-medium;
+      }
+      @media @media-l-medium {
+        right: @padding-medium;
+      }
+      @media @media-p-medium {
+        right: calc(@margin + @padding-small);
+      }
+
+      &:hover {
+        background: url("/static/img/icons_bua/BuA_Icon_x.svg") no-repeat center;
+      }
+    }
+    .researchs{
+      
+      width: 100%;
+     // flex-wrap: nowrap;
+    
+      overflow-x: hidden;
+
+      white-space: nowrap;
+
+      @media @media-small, @media-p-medium {
+        
+        overflow-x: hidden;
+        right: calc(@margin + @padding-small);
+      }
+    }
+
+    
+    .nextResearch{
+    cursor: url(/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png) 46 16, auto;
+    }
+
+    
+    .projectContainer::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .projectContainer{
+    
+      scroll-snap-align: start;
+      width: 80%;
+      white-space: normal;
+     // flex: 0 0 auto;
+      display: inline-block;
+      overflow-y: scroll;
+      scrollbar-width: none;
+
+      @media @media-large {
+
+      }
+      @media @media-l-medium, @media-p-medium {
+
+      }
+      @media @media-small {
+        width: 100%;
+        padding-top: 130px
+      }
+
+      .dynamicContent{
+
+        width: 80vw;
+        height: 87vh;
+
+        .zone:last-of-type{
+          padding-bottom: 100px;
+       
+        }
+    
+        @media @media-small {
+          width: 100%;
+       
+
+          .zone:last-of-type{
+            padding-bottom: 200px;
+         
+          }
+        }
+      
+      
+     
+      }
+
+
+
+      &:last-of-type {
+        padding-right: 20%;
+
+      }
+
+    }
+
+    
+
+    .activeResearch{
+      .dynamicContent{
+      
+      }
+    }
+
+  }
+
+  .researchTitleContainer{
+    margin-bottom: @padding ;
+    @media @media-small{
+      .heading1{
+        font-size: 1.2em ;
+        line-height: 1.4;
+      }
+    }
+    &:hover{
+      div{
+        font-family: "apercu-light", sans-serif;
+      }
+     
+    }
+  }
+  
+  .first .back{
+    
+    display: none
+  }
+}

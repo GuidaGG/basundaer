@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research</title>
+    <script type="text/javascript" src="./static/js/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+<div class="contentContainer">
+    <div class="overlayPageContent">
+        <script type="module">
+            import {researchProjects, researchOverlay} from "/static/js/research.js"
+            import ResearchIndexReady from "/static/js/researchIndex.js"
+            $('body').ready(function(){ ResearchIndexReady(researchOverlay, researchProjects) })
+        </script>
+   
+
+        <div class="research-index">
+            <div class="content-index">
+         
+                <div class="list">
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

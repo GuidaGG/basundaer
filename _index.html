@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="Integriertes Design in der Bremer Neustadt." />
+    <meta name="keywords" content="Designstudio, Design, Integriertes Design, Gestaltung, Bremen, Workshop, Design thinking, Katharina Brock, Ben Jurca, Astrid Hesse">
+    <title>Bas&Aer</title>
+    <script type="text/javascript" src="./static/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="./ba.js"></script>
+    <link href="static/css/ba.css" rel="stylesheet">
+<!--    <link href="./static/css/design.css" rel="stylesheet">-->
+    <script type="text/javascript">
+        console.log("body ready")
+        $('body').ready(function(){ ready()})
+        //window.scrollTo(0, 1000)
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed');
+        });
+    </script>
+</head>
+<body>
+    <div class="gridContainer">
+        <div class="baLogo" id="baLogo">
+            <div class="ba">
+                <img src="static/img/B&A_Logo_RGB.png" alt="Bas & Aer">
+            </div>
+        </div>
+        <div class="section studio" id="studio">Studio</div>
+        <div class="section workshop" id="workshop">Workshop</div>
+        <div class="section research" id="research"></div>
+        <div class="section design" id="design">Design</div>
+        <div class="section kontakt" id="kontakt">Kontakt</div>
+        <div class="section datenschutz" id="datenschutz">Datenschutz</div>
+        <div class="section footer" id="footer"> </div>
+        <div class="section impressum" id="impressum">Impressum</div>
+    </div>
+    <div id="studioContent" class="fullSection" style="display: none;">
+
+    </div>
+    <div id="workshopContent" class="fullSection" style="display: none;">
+
+    </div>
+    <div id="researchContent" class="fullSection" style="display: none;">
+
+    </div>
+    <div id="designContent" class="fullSection" style="display: none;">
+
+    </div>
+    <div id="kontaktContent" class="fullSection" style="display: none;">
+
+    </div>
+    <div id="datenschutzContent" class="fullSection" style="display: none;">
+
+    </div>
+    <div id="impressumContent" class="fullSection" style="display: none;">
+
+    </div>
+    <div id="footerContent" class="fullSection" style="display: none;">
+
+    </div>
+
+</body>
+</html>

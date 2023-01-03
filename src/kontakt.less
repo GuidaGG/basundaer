@@ -1,0 +1,24 @@
+@import "./webfonts";
+@import "./colors";
+@import "common";
+
+#kontaktContent {
+  .overlay {
+    background: rgb(172, 53, 50);
+  }
+
+  .content {
+    @import "closeButtonAndSectionTitle";
+
+    overflow-y: auto;
+    height: 100%;
+    background: @whiteish;
+  }
+
+  .kontakt {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+}

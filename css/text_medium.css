@@ -1,0 +1,46 @@
+p {
+  margin-top: 0;
+}
+.large-defaults {
+  letter-spacing: 1px;
+}
+.medium-defaults {
+  letter-spacing: 1px;
+}
+.small-defaults {
+  letter-spacing: 1.4px;
+}
+.footerText {
+  font-family: "apercu-medium", sans-serif;
+  font-size: 6vh !important;
+  line-height: 9vh !important;
+}
+.heading0 {
+  letter-spacing: 0;
+  font-family: "apercu-medium", sans-serif;
+  font-size: 30pt !important;
+  line-height: 45pt;
+}
+.heading1 {
+  letter-spacing: 0;
+  font-family: "apercu-medium", sans-serif;
+  font-size: 20pt;
+  line-height: 25pt;
+}
+.heading2 {
+  letter-spacing: 0;
+  font-family: "apercu-light", sans-serif;
+  font-size: 14pt;
+  line-height: 18pt;
+}
+.paragraph,
+a {
+  letter-spacing: 0.5px;
+  font-family: "apercu-medium", sans-serif;
+  font-size: 14pt;
+  line-height: 18pt;
+}
+a:hover {
+  font-family: "apercu-light", sans-serif;
+  letter-spacing: 0.9px;
+}

@@ -1,0 +1,370 @@
+@font-face {
+  font-family: 'shine-pro-bold';
+  src: url('../fonts/shine-pro-bold-webfont.woff2') format('woff2'), url('../fonts/shine-pro-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'shine-pro-reg';
+  src: url('../fonts/shine-pro-reg-webfont.woff2') format('woff2'), url('../fonts/shine-pro-reg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'apercu-regular';
+  src: url('../fonts/Apercu/apercu-regular-desktop-web/apercu-regular.eot');
+  src: url('../fonts/Apercu/apercu-regular-desktop-web/apercu-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Apercu/apercu-regular-desktop-web/apercu-regular.woff2') format('woff2'), url('../fonts/Apercu/apercu-regular-desktop-web/apercu-regular.woff') format('woff'), url('../fonts/Apercu/apercu-regular-desktop-web/apercu-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'apercu-medium';
+  src: url('../fonts/Apercu/apercu-medium-desktop-web/apercu-medium.eot');
+  src: url('../fonts/Apercu/apercu-medium-desktop-web/apercu-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Apercu/apercu-medium-desktop-web/apercu-medium.woff2') format('woff2'), url('../fonts/Apercu/apercu-medium-desktop-web/apercu-medium.woff') format('woff'), url('../fonts/Apercu/apercu-medium-desktop-web/apercu-medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'apercu-light';
+  src: url('../fonts/Apercu/apercu-light-desktop-web/apercu-light.eot');
+  src: url('../fonts/Apercu/apercu-light-desktop-web/apercu-light.eot?#iefix') format('embedded-opentype'), url('../fonts/Apercu/apercu-light-desktop-web/apercu-light.woff2') format('woff2'), url('../fonts/Apercu/apercu-light-desktop-web/apercu-light.woff') format('woff'), url('../fonts/Apercu/apercu-light-desktop-web/apercu-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'apercu-italic';
+  src: url('../fonts/Apercu/apercu-italic-desktop-web/apercu-italic.eot');
+  src: url('../fonts/Apercu/apercu-italic-desktop-web/apercu-italic.eot?#iefix') format('embedded-opentype'), url('../fonts/Apercu/apercu-italic-desktop-web/apercu-italic.woff2') format('woff2'), url('../fonts/Apercu/apercu-italic-desktop-web/apercu-italic.woff') format('woff'), url('../fonts/Apercu/apercu-italic-desktop-web/apercu-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  p {
+    margin-top: 0;
+  }
+  .large-defaults {
+    letter-spacing: 1px;
+  }
+  .medium-defaults {
+    letter-spacing: 1px;
+  }
+  .small-defaults {
+    letter-spacing: 1.4px;
+  }
+  .footerText {
+    font-family: "apercu-medium", sans-serif;
+    font-size: 6vh !important;
+    line-height: 9vh !important;
+  }
+  .heading0 {
+    letter-spacing: 0;
+    font-family: "apercu-medium", sans-serif;
+    font-size: 30pt !important;
+    line-height: 45pt;
+  }
+  .heading1 {
+    letter-spacing: 0;
+    font-family: "apercu-medium", sans-serif;
+    font-size: 20pt;
+    line-height: 25pt;
+  }
+  .heading2,
+  .hheading {
+    letter-spacing: 0;
+    font-family: "apercu-light", sans-serif;
+    font-size: 14pt;
+    line-height: 18pt;
+  }
+  .paragraph,
+  a {
+    letter-spacing: 0.5px;
+    font-family: "apercu-medium", sans-serif;
+    font-size: 14pt;
+    line-height: 18pt;
+  }
+  a:hover,
+  .overlayPageContent .portfolio .content .gallery .categories .projectCategory.active {
+    font-family: "apercu-light", sans-serif;
+    letter-spacing: 0.9px;
+  }
+  .hheading {
+    margin-top: 5.66666667px;
+    margin-bottom: 34px;
+  }
+  p {
+    margin: 0 0 17px 0;
+  }
+}
+@media (max-width: 600px) {
+  .footerText {
+    font-family: "apercu-medium", sans-serif;
+    font-size: 6vh !important;
+    line-height: 8vh !important;
+  }
+  .heading0 {
+    letter-spacing: 0;
+    font-family: "apercu-medium", sans-serif;
+    font-size: 20pt !important;
+    line-height: 30pt;
+  }
+  .heading1 {
+    letter-spacing: 0;
+    font-family: "apercu-medium", sans-serif;
+    font-size: 13pt;
+    line-height: 16pt;
+  }
+  .heading2,
+  .hheading {
+    letter-spacing: 0;
+    font-family: "apercu-light", sans-serif;
+    font-size: 13pt;
+    line-height: 16pt;
+  }
+  .paragraph,
+  a {
+    letter-spacing: 0.5px;
+    font-family: "apercu-medium", sans-serif;
+    font-size: 13pt;
+    line-height: 16pt;
+  }
+  a:hover,
+  .overlayPageContent .portfolio .content .gallery .categories .projectCategory.active {
+    font-family: "apercu-light", sans-serif;
+    letter-spacing: 0.9px;
+  }
+  .hheading {
+    margin-top: 3.33333333px;
+    margin-bottom: 20px;
+  }
+  p {
+    margin: 0 0 10px 0;
+  }
+}
+@media (min-width: 1201px) {
+  .footerText {
+    font-family: "apercu-medium", sans-serif;
+    font-size: 7.5vh !important;
+    line-height: 11vh !important;
+  }
+  .heading0 {
+    letter-spacing: 0;
+    font-family: "apercu-medium", sans-serif;
+    font-size: 32pt !important;
+    line-height: 50pt;
+  }
+  .heading1 {
+    letter-spacing: 0;
+    font-family: "apercu-medium", sans-serif;
+    font-size: 22pt;
+    line-height: 27pt;
+  }
+  .heading2,
+  .hheading {
+    letter-spacing: 0;
+    font-family: "apercu-light", sans-serif;
+    font-size: 16pt;
+    line-height: 20pt;
+  }
+  .paragraph,
+  a {
+    letter-spacing: 0.5px;
+    font-family: "apercu-medium", sans-serif;
+    font-size: 16pt;
+    line-height: 20pt;
+  }
+  a:hover,
+  .overlayPageContent .portfolio .content .gallery .categories .projectCategory.active {
+    font-family: "apercu-light", sans-serif;
+    letter-spacing: 0.9px;
+  }
+  .hheading {
+    margin-top: 6.66666667px;
+    margin-bottom: 40px;
+  }
+  p {
+    margin: 0 0 20px 0;
+  }
+}
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (min-width: 1201px) {
+  li:not(last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  li:not(last-child) {
+    margin-bottom: 17px;
+  }
+}
+@media (max-width: 600px) {
+  li:not(last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1201px) {
+  .pageContent {
+    padding: 20px;
+    margin-right: 60px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  .pageContent {
+    padding: 17px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .pageContent {
+    padding: 10px;
+    margin-right: 45px;
+  }
+}
+@media (min-width: 1201px) {
+  .content-margin-top {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  .content-margin-top {
+    margin-top: 102px;
+  }
+}
+@media (max-width: 600px) {
+  .content-margin-top {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .overlayPageContent .portfolio .content .gallery {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1201px) {
+  .overlayPageContent .portfolio .content .gallery {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  .overlayPageContent .portfolio .content .gallery {
+    margin-top: 34px;
+  }
+}
+.overlayPageContent .portfolio .content .gallery .categories {
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  font-family: 'apercu-medium', sans-serif;
+  font-size: 16pt;
+}
+@media (max-width: 600px) {
+  .overlayPageContent .portfolio .content .gallery .categories {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+.overlayPageContent .portfolio .content .gallery .categories .projectCategory {
+  color: black;
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .overlayPageContent .portfolio .content .gallery .categories .projectCategory {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1201px) {
+  .overlayPageContent .portfolio .content .gallery .categories .projectCategory {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  .overlayPageContent .portfolio .content .gallery .categories .projectCategory {
+    margin-right: 34px;
+  }
+}
+.overlayPageContent .portfolio .content .gallery .thumbnails {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  transition: all 200ms;
+}
+@media (max-width: 600px) {
+  .overlayPageContent .portfolio .content .gallery .thumbnails {
+    display: none;
+  }
+}
+@media (min-width: 1201px) {
+  .overlayPageContent .portfolio .content .gallery .thumbnails {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  .overlayPageContent .portfolio .content .gallery .thumbnails {
+    margin-top: 34px;
+  }
+}
+.overlayPageContent .portfolio .content .gallery .thumbnails .thumbnail {
+  display: flex;
+  flex: 0 0 auto;
+  margin: 5px;
+  background: tomato;
+  transition: width 200ms ease-out;
+  text-decoration: none;
+}
+@media (min-width: 1201px) {
+  .overlayPageContent .portfolio .content .gallery .thumbnails .thumbnail {
+    width: 300px;
+    height: 200px;
+    background-size: 300px auto !important;
+  }
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape) {
+  .overlayPageContent .portfolio .content .gallery .thumbnails .thumbnail {
+    width: 260px;
+    height: 173.33333333px;
+    background-size: 260px auto !important;
+  }
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  .overlayPageContent .portfolio .content .gallery .thumbnails .thumbnail {
+    width: 240px;
+    height: 160px;
+    background-size: 240px auto !important;
+  }
+}
+.overlayPageContent .portfolio .content .gallery .thumbnails .thumbnail.hidden {
+  width: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.overlayPageContent .portfolio .content .gallery .thumbnails .thumbnail:hover {
+  background: transparent !important;
+}
+.overlayPageContent .portfolio .content .gallery .thumbnails .thumbnail .thumbnailProjectTitleContainer {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  text-align: center;
+}
+.overlayPageContent .portfolio .content .gallery .thumbnails .thumbnail .thumbnailProjectTitleContainer.hidden {
+  width: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: none;
+}
+.overlayPageContent .portfolio .content .gallery .thumbnails .thumbnail .thumbnailProjectTitleContainer .thumbnailProjectTitle {
+  margin: auto;
+  text-decoration: none;
+  color: black;
+}
+.overlayPageContent .portfolio .content .gallery .thumbnails .thumbnail .thumbnailProjectTitleContainer:hover {
+  opacity: 1 !important;
+}

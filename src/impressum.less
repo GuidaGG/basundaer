@@ -1,0 +1,68 @@
+@import "./webfonts";
+@import "./colors";
+@import "common";
+
+
+#impressumContent {
+  .overlay {
+    background: rgb(172, 53, 50);
+  }
+
+  .content {
+    @import "closeButtonAndSectionTitle";
+
+    overflow-y: auto;
+    height: 100%;
+    background: @whiteish;
+  }
+
+  .impressum {
+    margin-right: 20%;
+
+    li {
+      &:extend(.paragraph);
+    }
+
+    .heading1 {
+      margin-top: 40px;
+    }
+
+    .paragraph:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    .logos {
+      display: flex;
+      position: relative;
+      left: 0;
+      width: 100%;
+
+      @media @media-large {
+        height: 80px;
+
+        img {
+          object-fit: scale-down;
+          height: 100%;
+        }
+      }
+      @media @media-l-medium, @media-p-medium {
+        height: 50px;
+
+        img {
+          object-fit: scale-down;
+          height: 100%;
+        }
+      }
+      @media @media-small {
+        flex-direction: column;
+
+        img {
+          object-fit: scale-down;
+          width: 80%;
+          margin-bottom: 20px;
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Studio</title>
+    <script type="text/javascript" src="./static/js/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+<div class="content">
+    <script type="module">
+        import designPageReady from "./static/js/design.js"
+        $('body').ready(function () {
+            designPageReady()
+        })
+    </script>
+    <link href="./static/css/design.css" rel="stylesheet">
+    <link href="./static/css/overlay.css" rel="stylesheet">
+
+    <div class="sectionTitle">
+        <div class="clickableSectionTitle">Design</div>
+        <div class="projectFilter"></div>
+    </div>
+    <div class="close hasOverlay"></div>
+
+    <div class="projects content-margin-top">
+        <!-- content filled by design.js -->
+    </div>
+
+    <div id="something" style="display: none">### Something ###</div>
+
+    <div class="overlay">
+        <div class="overlayContentContainer">
+            <div class="overlayScrollContainer">
+                <div class="overlayContent">
+                    <div id="portfolioContent"></div>
+                </div>
+            </div>
+        </div>
+        <div class="openHandle">
+            <div class="overlayTitle paragraph"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

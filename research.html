@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research</title>
+    <script type="text/javascript" src="./static/js/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+<div class="content">
+
+    <script type="module">
+        import researchPageReady from "./static/js/research.js"
+        $('body').ready(function () {
+            researchPageReady()
+        })
+    </script>
+    <link href="/static/css/research.css" rel="stylesheet">
+    <link href="/static/css/overlay.css" rel="stylesheet">
+
+    <div class="sectionTitle">
+        <div id="firstTitle">Research</div>
+        <div id="secondTitle"></div>
+    </div>
+    <div class="navigation">
+        <div id="previousR">
+            <div class="arrow arrow-left"></div>
+            <div id="previousR" class="previousR caption">
+                previous
+            </div>
+        </div>
+        <div id="nextR">
+            <div class="arrow arrow-right"></div>
+            <div id="nextR" class="nextR caption">
+                next
+            </div>
+        </div>
+    </div>
+
+    <div class="close hasOverlay"></div>
+
+    <div class="back"></div>
+    <div class="researchs content noscrollbar">
+
+        <!-- content filled by research.js -->
+
+    </div>
+    <!-- <div class='navigation'>
+        <div class='nextResearch'></div>
+    </div>   -->
+    <div id="something" style="display: none">### Something ###</div>
+
+    <div class="overlay">
+        <div class="overlayContentContainer">
+            <div class="overlayScrollContainer">
+                <div class="overlayContent">
+                    <div id="researchSideContent"></div>
+                </div>
+            </div>
+        </div>
+        <div class="openHandle">
+            <div class="overlayTitle paragraph"></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Studio</title>
+    <script type="text/javascript" src="./static/js/jquery-3.3.1.js"></script>
+    <link href="static/css/workshop.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="contentContainer">
+    <div class="overlayPageContent">
+       
+        <script type="module">
+            import {workshopProjects, workshopOverlay} from "/static/js/workshop.js"
+            import workshopIndexReady from "/static/js/workshopIndex.js"
+            $('body').ready(function(){ workshopIndexReady(workshopOverlay, workshopProjects) })
+        </script>
+        <link href="/static/css/workshop.css" rel="stylesheet">
+
+        <div class="workshopOverlay">
+              <div class="headSection heading1">
+                   Wie kann so ein workshop bei Bas&Aer konkret aussehen?
+                </div>
+            <div class="content">
+                <div class="workshopSections">
+                          
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

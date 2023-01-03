@@ -1,0 +1,101 @@
+@import "common";
+
+/**
+ * Styles for the close buttons and section titles for all sections
+ */
+
+> .sectionTitle {
+  &:extend(.heading0);
+  line-height: inherit !important;
+  font-family: "apercu-medium", sans-serif;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+
+  @media @media-large {
+    left: @padding-large;
+    top: @padding-large;
+  }
+  @media @media-l-medium, @media-p-medium {
+    left: @padding-medium;
+    top: @padding-medium;
+  }
+  @media @media-small {
+    left: @padding-small;
+    top: @padding-small;
+  }
+
+  .clickableSectionTitle {
+    &.islink {
+      cursor: pointer;
+      &:hover {
+        &:extend(a:hover);
+      }
+    }
+  }
+
+  .projectFilter {
+    font-family: apercu-light, sans-serif;
+  }
+}
+
+.close {
+  position: fixed;
+  top: 0;
+  background: url("../img/icons_bua/BuA_Icon_x_fett.svg") no-repeat center;
+  z-index: 10;
+
+  @media @media-large {
+    @size: 36px;
+    -webkit-background-size: @size @size;
+    background-size: @size @size;
+    padding: @size / 2.0;
+    margin-top: @padding-large;
+    right: @padding-large;
+    &.hasOverlay {
+      right: @overlay-overlap-large + @padding-large;
+    }
+
+    &:hover {
+       background: url("../img/icons_bua/BuA_Icon_x.svg") no-repeat center;
+      -webkit-background-size: @size @size;
+      background-size: @size @size;
+    }
+  }
+
+  @media @media-l-medium, @media-p-medium {
+    @size: 32px;
+    -webkit-background-size: @size @size;
+    background-size: @size @size;
+    padding: @size / 2.0;
+    margin-top: @padding-medium;
+    right: @padding-medium;
+    &.hasOverlay {
+      right: @overlay-overlap-medium + @padding-medium;
+    }
+
+    &:hover {
+       background: url("../img/icons_bua/BuA_Icon_x.svg") no-repeat center;
+      -webkit-background-size: @size @size;
+      background-size: @size @size;
+    }
+  }
+
+  @media @media-small {
+    @size: 25px;
+    -webkit-background-size: @size @size;
+    background-size: @size @size;
+    padding: @size / 2.0;
+    margin-top: @padding-small;
+    right: @padding-small;
+    &.hasOverlay {
+      right: @overlay-overlap-small + @padding-small * 2;
+    }
+
+    &:hover {
+       background: url("../img/icons_bua/BuA_Icon_x.svg") no-repeat center;
+      -webkit-background-size: @size @size;
+      background-size: @size @size;
+    }
+  }
+}

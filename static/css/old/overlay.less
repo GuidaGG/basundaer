@@ -1,0 +1,191 @@
+@import "common";
+
+.overlay {
+  z-index: 11;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  transform: translateX(100%) translate3d(0, 0, 0);
+  height: 100%;
+  border-left: 1px solid black;
+  transition: left 500ms;
+  @media @media-small {
+    left: -@overlay-overlap-small;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.75) 0 0 11px 4px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.75) 0 0 11px 4px;
+    box-shadow: rgba(0, 0, 0, 0.75) 0 0 11px 4px;
+  }
+  @media @media-large, @media-l-medium, @media-p-medium {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.75) 0 0 22px 5px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.75) 0 0 22px 5px;
+    box-shadow: rgba(0, 0, 0, 0.75) 0 0 22px 5px;
+  }
+  @media @media-large {
+    left: -@overlay-overlap-large;
+  }
+  @media @media-l-medium, @media-p-medium {
+    left: -@overlay-overlap-medium;
+  }
+
+
+  .openHandle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 50;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    .overlayTitle {
+      transform: rotateZ(90deg) translateY(4px);
+      flex-grow: 0;
+      @media @media-small {
+        width: @overlay-overlap-small;
+        height: @overlay-overlap-small;
+      }
+      @media @media-large {
+        width: @overlay-overlap-large;
+        height: @overlay-overlap-large;
+      }
+      @media @media-l-medium, @media-p-medium {
+        width: @overlay-overlap-medium;
+        height: @overlay-overlap-medium;
+      }
+      align-self: center;
+      justify-self: center;
+      align-content: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+      //opacity: 0.5;
+      //
+      //&:hover {
+      //  opacity: 1;
+      //}
+    }
+
+    //background: url("../../static/img/icons/BuA_Icons_web_16pt_Greif_trans.svg") no-repeat left center;
+    @media @media-small {
+      background-size: 25px;
+      width: @overlay-overlap-small;
+    }
+    @media @media-l-medium, @media-p-medium {
+      background-size: 44px;
+      width: @overlay-overlap-medium;
+    }
+    @media @media-large {
+      background-size: 50px;
+      width: @overlay-overlap-large;
+    }
+
+    &:hover {
+      //background: url("../../static/img/icons/BuA_Icons_web_16pt_Greifer.svg") no-repeat left center;
+      @media @media-small {
+        background-size: 25px;
+      }
+      @media @media-l-medium, @media-p-medium {
+        background-size: 44px;
+      }
+      @media @media-large {
+        background-size: 50px;
+      }
+    }
+
+    &.open {
+      @media @media-small {
+        background-size: 25px;
+      }
+      @media @media-l-medium, @media-p-medium {
+        background-size: 44px;
+      }
+      @media @media-large {
+        background-size: 50px;
+      }
+    }
+  }
+
+  .overlayContentContainer {
+    position: absolute;
+    z-index: 40;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    //overflow-y: scroll;
+    height: 100%;
+
+    .overlayScrollContainer {
+
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      position: absolute;
+
+      .overlayContent {
+        height: 100%;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        position: absolute;
+        @media @media-small {
+          margin: 0 @overlay-overlap-small;
+          width: calc(100% - 2 * @overlay-overlap-small);
+          & > :first-child {margin-top: @overlay-overlap-small;}
+        }
+        @media @media-large {
+          margin: 0 @overlay-overlap-large;
+          width: calc(100% - 2 * @overlay-overlap-large);
+          & > :first-child {margin-top: @overlay-overlap-large;}
+        }
+        @media @media-l-medium, @media-p-medium {
+          margin: 0 @overlay-overlap-medium;
+          width: calc(100% - 2 * @overlay-overlap-medium);
+          & > :first-child {margin-top: @overlay-overlap-medium;}
+        }
+      }
+    }
+
+
+  }
+
+  .overlayBaLogo {
+    position: fixed;
+    @aspect: 5.25;
+    background: url("/static/img/icons_bua/B&A_Logo_RGB.png") no-repeat center;
+    background-size: contain;
+    z-index: 50;
+    @media @media-large {
+      @height: 18px;
+      height: @height;
+      @width: @height * @aspect;
+      width: @width;
+      left: calc(90% - @width - @padding-large - 10px);
+      top: calc(100% - @height - @padding-large);
+    }
+    @media @media-l-medium, @media-p-medium {
+      @height: 15px;
+      height: @height;
+      @width: @height * @aspect;
+      width: @width;
+      left: calc(90% - @width - @padding-medium);
+      top: calc(100% - @height - @padding-medium);
+    }
+
+    @media @media-small {
+      @aspect: 2.73;
+      @height: 15px;
+      height: @height;
+      @width: @height * @aspect;
+      width: @width;
+
+      left: calc(90% - @width - @padding-small);
+      top: calc(100% - @height - @padding-small);
+      background: url("/static/img/icons_bua/B&A_Logo_short_RGB.png") no-repeat center;
+      background-size: contain;
+    }
+  }
+
+}

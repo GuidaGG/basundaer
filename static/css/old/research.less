@@ -1,0 +1,145 @@
+@import "./webfonts";
+@import "./colors";
+@import "common";
+
+@padding: 20px;
+@padding-left: @padding;
+@padding-top: @padding;
+@padding-right: @padding;
+
+@margin: 16%;
+
+#researchContent {
+  position: fixed;
+
+  .color0 {
+    background: @flieder !important;
+  }
+
+  .color1 {
+    background: @rot !important;
+  }
+
+  .color2 {
+    background: @gelb !important;
+  }
+
+  .content {
+    background: rgb(40, 40, 40);
+    position: absolute;
+    @media @media-small {
+      left: 0;
+      bottom: 0;
+      top: @margin;
+      right: @margin;
+      padding: @padding-large * 2;
+    }
+    @media @media-l-medium {
+      left: @margin;
+      bottom: 0;
+      top: @margin;
+      right: 0;
+      padding: @padding-medium * 4;
+    }
+    @media @media-p-medium {
+      left: 0;
+      bottom: 0;
+      top: @margin;
+      right: @margin;
+      padding: @padding-medium * 2;
+    }
+    @media @media-large {
+      left: @margin;
+      bottom: 0;
+      top: @margin;
+      right: 0;
+      padding: @padding-large * 4;
+    }
+
+    #footerText {
+      height: 100%;
+      color: black;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      @media @media-small {
+        .heading0 {
+          font-size: 14pt !important;
+          line-height: 22pt;
+        }
+      }
+      @media @media-large {
+        //margin: 0 4*@padding-large;
+      }
+      @media @media-l-medium, @media-p-medium {
+        //margin: 0 4*@padding-medium;
+      }
+
+      & p {
+        @media @media-small {
+          margin-bottom: 2 * @padding-small;
+          .heading0 {
+            font-size: 14pt !important;
+            line-height: 22pt;
+          }
+        }
+        @media @media-large {
+          margin-bottom: 2 *@padding-large;
+        }
+        @media @media-l-medium, @media-p-medium {
+          margin-bottom: 2 * @padding-medium;
+        }
+      }
+
+      & a {
+        @media @media-small {
+          .heading0 {
+            //font-size: 13pt !important;
+          }
+        }
+        @media @media-large {
+          //margin-bottom: 2 *@padding-large;
+        }
+        @media @media-l-medium, @media-p-medium {
+          //margin-bottom: 2 * @padding-medium;
+        }
+      }
+
+    }
+
+    @import "closeButtonAndSectionTitle";
+
+    .sectionTitle {
+      font-family: "shine-pro-bold", sans-serif;
+      position: fixed;
+      left: @padding-left;
+      top: @padding-top;
+      font-weight: bolder;
+      font-size: 20pt;
+    }
+
+    .close {
+      right: @margin;
+      top: @margin;
+      background: url("../img/icons_bua/BuA_Icon_x_fett.svg") no-repeat center;
+
+      @media @media-small {
+        right: calc(@margin + @padding-small);
+      }
+      @media @media-large {
+        right: @padding-medium;
+      }
+      @media @media-l-medium {
+        right: @padding-medium;
+      }
+      @media @media-p-medium {
+        right: calc(@margin + @padding-small);
+      }
+
+      &:hover {
+        background: url("../img/icons_bua/BuA_Icon_x.svg") no-repeat center;
+      }
+    }
+  }
+}

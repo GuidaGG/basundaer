@@ -1,0 +1,29 @@
+{
+  "workshops": [
+    {
+      "heading": "Mit Kreativität zu nachhaltigen Informationswegen.",
+      "category": "Workshop Kommunikation",
+      "description": "Im Rahmen eines maßgeschneiderten Workshops erfassen wir schnell und spielerisch die internen Informations– und Kommunikationswege in Ihrem Arbeitsumfeld. \nGemeinsam entwickeln wir mittels Kreativmethoden und Tools aus dem Design Thinking ein geeignetes – für Sie funktionierendes – System im Umgang mit Informationen, Medien und Technik. \nBearbeitungstiefe der Inhalte sowie Methodik im Workshop passen wir den Bedürfnissen und Anforderung unserer Projektpartner*Innen an. Hierzu vereinbaren wir gerne einen Termin für ein unverbindliches Erstgespräch und persönliches Kennenlernen mit Ihnen."
+    },
+    {
+      "heading": "Zwischen Bauch und Scheitel Attribute und Assoziationen",
+      "category": "Workshop Identität",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec. Auctor elit sed vulputate mi sit amet mauris commodo quis. \nTellus orci ac auctor augue. Viverra accumsan in nisl nisi scelerisque. Donec et odio pellentesque diam volutpat commodo sed egestas. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. \nQuis enim lobortis scelerisque fermentum dui faucibus in ornare. A diam sollicitudin tempor id eu. Sed arcu non odio euismod lacinia at. Orci a scelerisque purus semper eget duis at tellus at. Vulputate ut pharetra sit amet aliquam id. "
+    }
+  ],
+  "gallery": {
+    "path": "workshops",
+    "images": [
+      "BA_Workshop_144_01.jpg",
+      "BA_Workshop_144_02.jpg",
+      "BA_Workshop_144_03.jpg",
+      "BA_Workshop_144_04.jpg",
+      "BA_Workshop_144_05.jpg",
+      "BA_Workshop_144_06.jpg"
+    ]
+  },
+  "intro": "Mit Tools und Methoden aus dem Design unterstützen wir dabei, gewohnte Denkrichtungen zu verlassen und neue Perspektiven einzunehmen. In unseren maßgeschneiderten Workshops entwickeln wir gemeinsam neue Ideen und innovative Konzepte.",
+  "outro": "Wählen Sie zwischen den verschiedenen Workshops oder fragen Sie nach individuell auf Sie abgestimmte Formate. Wir sind schon gespannt!",
+  "footer": "info@basundaer.de\n+49 (0) 421 70 90 54 79",
+  "overlay": [ "paragraph1","paragraph2", "paragraph3"]
+}

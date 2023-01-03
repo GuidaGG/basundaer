@@ -1,0 +1,46 @@
+@import "text-defaults";
+
+@letter-spacing: 1px;
+
+.footerText {
+  font-family: @ffh0;
+  font-size: 6vh !important;
+  line-height: 9vh !important;
+}
+
+.heading0 {
+  letter-spacing: 0;
+  font-family: @ffh0;
+  font-size: 30pt !important;
+  line-height: 45pt;
+}
+
+.heading1 {
+  letter-spacing: 0;
+  font-family: @ffh1;
+  font-size: 20pt;
+  line-height: 25pt;
+}
+
+.heading2 {
+  letter-spacing: 0;
+  font-family: @ffh2;
+  font-size: 14pt;
+  line-height: 18pt;
+}
+
+.paragraph {
+  letter-spacing: 0.5px;
+  font-family: @ffp;
+  font-size: 14pt;
+  line-height: 18pt;
+}
+
+a {
+  &:extend(.paragraph);
+
+  &:hover {
+    font-family: @font-light;
+    letter-spacing: 0.9px;
+  }
+}

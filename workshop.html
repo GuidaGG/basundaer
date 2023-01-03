@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop</title>
+    <script type="text/javascript" src="./static/js/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+<div class="content">
+
+    <script type="module">
+        import workshopPageReady from "/static/js/workshop.js"
+        $("body").ready(function () {
+            workshopPageReady()
+        })
+    </script>
+    <link href="/static/css/workshop.css" rel="stylesheet">
+    <link href="/static/css/overlay.css" rel="stylesheet">
+
+    <div class="sectionTitle">Workshop</div>
+    <div class="close hasOverlay"></div>
+
+    <div class="workshop content-margin-top">
+        <div class="workshopContent">
+            <!-- content filled by workshop.js -->
+        </div>
+    </div>
+
+  <!--  <div class="overlay">
+        <div class="overlayContentContainer">
+            <div class="overlayScrollContainer">
+                <div class="overlayContent">
+                    <div id="workshopSideContent"></div>
+                </div>
+            </div>
+        </div>
+        <div class="openHandle">
+            <div class="overlayTitle paragraph"></div>
+        </div>
+    </div> -->
+</div>
+
+</body>
+</html>
