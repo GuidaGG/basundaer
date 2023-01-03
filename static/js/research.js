@@ -54,11 +54,7 @@ class ResearchProject {
      
     }
 
- 
-
-    
     nextResearch(e){
-  
         let $container = $(".researchs");
         let sections = $('.projectContainer')
         sections.removeClass('activeResearch nextResearch')
@@ -322,9 +318,7 @@ class ResearchProject {
 
 export default function researchPageReady() {
     console.log("research page ready!")
-    
-   
-    //TODO: project data from projects.json is loaded in portfolio as well. Consider consolidating/sharing project data
+
     let counter = 0;
     $.getJSON("/data/research.json", function (researchData) {
         researchData.forEach(p => {
@@ -336,10 +330,8 @@ export default function researchPageReady() {
                 let previousR = $(".previousR");
                 previousR.html("")
                 $("#previousR").hide()
-           
-           
-          
             }
+
             if(counter == 1){
                 researchProjects[counter].active = "nextResearch";
                  
@@ -348,8 +340,9 @@ export default function researchPageReady() {
                    
             }
             researchProject.appendTo($(".researchs"))
+
             counter++;
-             window.setTimeout(function () {
+            window.setTimeout(function () {
     
             $("#"+researchProject.projectId).on("click", researchProject.nextResearch.bind(this))
            
@@ -360,24 +353,17 @@ export default function researchPageReady() {
                 researchNavigation[0],
                 $(".researchs"),
                 function () {
-             
                     researchProject.touch("next")
-                }, function () {
-                    
+                }, function () { 
                     researchProject.touch("prev")
                 },
                 200,
                 function () {
-          
-                    }.bind(this))
-                         
-
-
+                
+                }.bind(this))
+                   
             }, 1000)
-            
-          
-          
-          
+               
         })
      
         
