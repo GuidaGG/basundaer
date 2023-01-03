@@ -8,9 +8,9 @@ let overlayLoaded = false
 
 import getMediaMatch, * as utils from "/static/js/utils.js"
 
-function isRElementInViewport(el) {
+function isElementInViewport(el) {
     let rect = el.getBoundingClientRect();
-    return (rect.left <= window.innerWidth)
+    return (rect.left <= window.innerWidth && rect.right > 0)
    
 }
 
@@ -35,6 +35,8 @@ class ResearchProject {
         this.dynamic = content.dynamic
         this.isGalleryRendered = false
         this.galleries = []
+        this.videos = []
+        this.isVideoPlaying = false
     }
 
     /**
@@ -201,11 +203,10 @@ class ResearchProject {
         });
         
     }
+
     _renderGallery(data){
 
         let result = ''
-        let gallerypath = this.galleryPath;
-        let increase = 1;
         result += `<div class="${data.height} gallery-zone zone">`;
   
        /* data.gallery.forEach(function(image, index) {
@@ -231,12 +232,20 @@ class ResearchProject {
 
     
     triggerDownloadImagesIfResearchIsVisible() {
-        if (isRElementInViewport($(`#${this.projectId}`)[0])) {
-            if (!this.isGalleryRendered) {
-                
-                this._downloadImages()
-                
+        let container = $(`#${this.projectId}`)[0]
+        if (isElementInViewport(container)) {
+            if (!this.isGalleryRendered) { 
+                this._downloadImages() 
             }
+            container.querySelectorAll("video").forEach(function(video){
+                video.play()
+            })
+        }
+        else{
+
+            container.querySelectorAll("video").forEach(function(video){
+                video.pause()
+            })
         }
     }
 
@@ -256,7 +265,7 @@ class ResearchProject {
         let gallerypath = this.galleryPath;
 
         result += `<div class="video-zone zone">`;
-        result += `<video width="1280" controls autoplay muted><source src="${gallerypath }/${encodeURIComponent(data.videoURL)}"  type="video/mp4"></video>`;
+        result += `<video width="1280" loop><source src="${gallerypath }/${encodeURIComponent(data.videoURL)}"  type="video/mp4"></video>`;
         result += `</div>`;
         return result
     }
@@ -284,6 +293,8 @@ class ResearchProject {
                    
                 break;
                 case "video":
+                    this.videos.push(zone)
+
                     result += this._renderVideo(zone)
                
                 break;
