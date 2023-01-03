@@ -1,12 +1,9 @@
-import {normalizeID} from "/static/js/utils.js"
-import getMediaMatch, * as utils from "/static/js/utils.js"
+
 
 let _projects = []
-let _activeFilter = null
 let _originalProjects = null
 let _portfolioOverlay = null
 
-const NO_FILTER_STRING = "Gesamt";
 
 function beginResearch(e){
     let sections = $('.projectContainer')
@@ -68,18 +65,10 @@ function previousResearch(e){
    
 }
 
-function nextResearch(e){
+function nextResearch(){
 
     let nextActive = $(".activeResearch").next();
-    let $container = $(".researchs")
-    
- /*   if(nextActive.next().length==0){
-     
-        $container.parent().addClass("last")
-    }
-    else{
-        $container.parent().removeClass("last")
-    } */
+
     let sections = $('.projectContainer')
     sections.removeClass('activeResearch nextResearch')
 
@@ -123,9 +112,6 @@ function nextResearch(e){
 
 function scrollToProject(projectId, projectname) {
 
-    let project = _originalProjects.find(p => {
-        return p.projectId === projectId
-    })
     let $container = $(".researchs")
     let sections = $('.projectContainer')
     sections.removeClass('activeResearch nextResearch')
