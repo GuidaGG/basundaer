@@ -9,7 +9,6 @@ const browsersync = require('browser-sync').create();
 function lessTask(){
 	return src('src/*.less', { sourcemaps: true })
 		.pipe(less())
-		.pipe(postcss([cssnano()]))
 		.pipe(dest('static/css', { sourcemaps: '.' }));
   }
 
