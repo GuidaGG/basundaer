@@ -1,4 +1,5 @@
 
+import  * as utils from "/static/js/utils.js"
 
 let _projects = []
 let _originalProjects = null
@@ -226,7 +227,7 @@ function showThumbnails($thumbnails) {
  * @param designProjects - The projects of the design page, used to trigger scrolling to a specific project.
  */
 export default function ResearchIndexReady(portfolioOverlay, designProjects) {
-    console.log("portfolio ready")
+    console.log("research index ready")
 
     // todo: consolidate DesignProject and Project classes and just use the original designProjects data here.
     //  loading the projects.json here would then be obsolete.
@@ -234,9 +235,8 @@ export default function ResearchIndexReady(portfolioOverlay, designProjects) {
     _portfolioOverlay = portfolioOverlay
 
     $.getJSON("/data/research.json", function (projectData) {
-        let categories = new Set()
-
         projectData.forEach(p => {
+
             let project = new Index(p)
             _projects.push(project)
             project.renderTitle($(".list"))

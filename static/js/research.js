@@ -181,7 +181,6 @@ class ResearchProject {
         this.isGalleryRendered = true
         let gallerypath = this.galleryPath;
         let increase = 1;
-        console.log
         let galleryContainers = $(`#${this.projectId} .gallery-zone`);
         
         this.galleries.forEach(function(data, index) {
@@ -204,25 +203,19 @@ class ResearchProject {
         
     }
 
+    _removeImageBackground(){
+  
+        $("img").on('load', function(e) {
+            $(this).css('background', 'transparent')
+         })
+         
+    }
+
     _renderGallery(data){
 
         let result = ''
-        result += `<div class="${data.height} gallery-zone zone">`;
-  
-       /* data.gallery.forEach(function(image, index) {
-            result += `<div class="${data.classes[index]} image-container">`;
-            if(data.captions[index]){
-               
-                result += `<div class="image-number">${increase}</div>`;
-                increase++
-            }
-            
-            result += `<img src="${gallerypath }/${encodeURIComponent(image)}">
-            </div>`;
-           
-        })
-        result +=  this._renderCaptions(data)*/
-        result += `</div>`;
+        result += `<div class="${data.height} gallery-zone zone"></div>`;
+
         return result
     }
 
@@ -236,6 +229,7 @@ class ResearchProject {
         if (isElementInViewport(container)) {
             if (!this.isGalleryRendered) { 
                 this._downloadImages() 
+                this._removeImageBackground()
             }
             container.querySelectorAll("video").forEach(function(video){
                 video.play()
