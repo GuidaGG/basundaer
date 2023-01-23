@@ -687,7 +687,7 @@ p {
 }
 #workshopContent .overlay,
 #workshopContent img {
-  background: #9699c7;
+  background: #FDE600;
 }
 @media (max-width: 600px) {
   #workshopContent .overlayPageContent .workshopOverlay .content {
