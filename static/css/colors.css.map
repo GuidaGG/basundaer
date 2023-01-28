@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sources":["colors.less"],"names":[],"mappings":"AAQA;EACE,mBAAA;;AAGF;EACE,mBAAA;;AAGF;EACE,mBAAA","sourcesContent":["\r\n@whiteish: #f8f8f8;\r\n\r\n@flieder: #9699c7;\r\n@rot: #dc7e74;\r\n@gelb: #FDE600;\r\n@grau: #dcdcdc;\r\n\r\n.bg-flieder {\r\n  background: @flieder;\r\n}\r\n\r\n.bg-rot {\r\n  background: @rot;\r\n}\r\n\r\n.bg-gelb {\r\n  background: @gelb;\r\n}"],"file":"colors.css"}
+=======
+{"version":3,"sources":["colors.less","colors.css"],"names":[],"mappings":"AAQA,YACE,kBCPF,CDUA,QACE,kBCRF,CDWA,SACE,kBCTF","file":"colors.css","sourcesContent":["\n@whiteish: #f8f8f8;\n\n@flieder: #9699c7;\n@rot: #dc7e74;\n@gelb: #FDE600;\n@grau: #dcdcdc;\n\n.bg-flieder {\n  background: @flieder;\n}\n\n.bg-rot {\n  background: @rot;\n}\n\n.bg-gelb {\n  background: @gelb;\n}",".bg-flieder {\n  background: #9699c7;\n}\n.bg-rot {\n  background: #dc7e74;\n}\n.bg-gelb {\n  background: #FDE600;\n}\n"]}
+>>>>>>> 920e76a9 (fix: start and stop video on research only when it is visible)

@@ -8,9 +8,10 @@ let overlayLoaded = false
 
 import getMediaMatch, * as utils from "/static/js/utils.js"
 
-function isElementInViewport(el) {
+function isElementInViewport(el, left, right) {
     let rect = el.getBoundingClientRect();
-    return (rect.left <= window.innerWidth && rect.right > 0)
+    console.log(rect.left, el)
+    return (rect.left <= left && rect.right > right)
    
 }
 
@@ -49,9 +50,9 @@ class ResearchProject {
         $element.append(this.renderedContent)
   
         window.setTimeout(function () {
-            this.triggerDownloadImagesIfResearchIsVisible()
-            $(window).on('DOMContentLoaded load resize scroll', this.triggerDownloadImagesIfResearchIsVisible.bind(this))
-            $("#researchContent .content").on("scroll", this.triggerDownloadImagesIfResearchIsVisible.bind(this))
+            this._triggerDownloadImagesAndVideoIfResearchIsVisible()
+            $(window).on('DOMContentLoaded load resize scroll', this._triggerDownloadImagesAndVideoIfResearchIsVisible.bind(this))
+            $("#researchContent .content").on("scroll", this._triggerDownloadImagesAndVideoIfResearchIsVisible.bind(this))
         }.bind(this), 200)
      
     }
@@ -224,22 +225,28 @@ class ResearchProject {
     }
 
     
-    triggerDownloadImagesIfResearchIsVisible() {
+    _triggerDownloadImagesAndVideoIfResearchIsVisible() {
         let container = $(`#${this.projectId}`)[0]
-        if (isElementInViewport(container)) {
+        if (isElementInViewport(container, window.innerWidth, 0)) {
             if (!this.isGalleryRendered) { 
                 this._downloadImages() 
-                this._removeImageBackground()
+                
             }
-            container.querySelectorAll("video").forEach(function(video){
-                video.play()
-            })
+            
+         
         }
-        else{
+        if(isElementInViewport(container, 0, 0)){
 
             container.querySelectorAll("video").forEach(function(video){
-                video.pause()
+                video.play()
+    
             })
+        }else{
+            container.querySelectorAll("video").forEach(function(video){
+                video.pause()
+               
+            })
+            
         }
     }
 
