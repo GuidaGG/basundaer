@@ -142,7 +142,7 @@ class WorkshopContent {
     render() {
         return `
             <div class="">
-                <div class="heading1 pageContent">${this.renderIntro()}</div>
+                <h2 class="heading1 pageContent">${this.renderIntro()}</h2
                 <div class="dynamicContent">
                 ${this._renderContent()}
                </div>  
@@ -164,8 +164,7 @@ class Workshops {
     render() {
         return `
             <div class="">
-                <div class="heading1 pageContent">${this.renderIntro()}</div>
-              
+                <h2 class="heading1 pageContent">${this.renderIntro()}</h2>
             </div>
         `
     }

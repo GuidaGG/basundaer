@@ -344,7 +344,7 @@ class DesignProject {
                 data-categories="${this.categories.join(',')}">
                 <div class="text">
                     <div class="header">
-                        <div class="title paragraph">${this.title}</div>
+                        <h2 class="title paragraph">${this.title}</h2>
                         <div class="headings">
                             <div class="headingSection">
                                 <div class="headingTitle heading2">Kategorie:</div>
