@@ -2,12 +2,13 @@ import Overlay from "/static/js/overlay.js"
 
 function renderCustomerGallery(gallery) {
     let result = ""
-    gallery.images.forEach(image => {
+    gallery.images.forEach((image) => {
+        console.log(image)
         result += `
             <div class="imageContainer">
                 <div class="image" 
-                    style="background: url('${gallery.imagePath}/${image}') no-repeat center; 
-                    background-size: contain">
+                    style="background: url('${gallery.imagePath}/${image.src}') no-repeat center; 
+                    background-size: contain" alt="${image.alt}" >
                 </div>
             </div>`
     })

@@ -561,7 +561,7 @@ a {
   width: 100%;
 }
 #designContent .overlay,
-#designContent img {
+#designContent .imageContainer {
   background-color: #dcdcdc;
 }
 #designContent > .content {

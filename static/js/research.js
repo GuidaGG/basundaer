@@ -194,7 +194,7 @@ class ResearchProject {
                     result += `<div class="image-number">${increase}</div>`;
                     increase++
                 }
-                result += `<img src="${gallerypath }/${encodeURIComponent(image)}">
+                result += `<img src="${gallerypath }/${encodeURIComponent(image.src)}" alt="${image.alt}">
                 </div>`;
            
             });
@@ -230,12 +230,12 @@ class ResearchProject {
         if (isElementInViewport(container, window.innerWidth, 0)) {
             if (!this.isGalleryRendered) { 
                 this._downloadImages() 
-                
+                this._removeImageBackground()
             }
             
          
         }
-        if(isElementInViewport(container, 0, 0)){
+        if(isElementInViewport(container, 100, 0)){
 
             container.querySelectorAll("video").forEach(function(video){
                 video.play()
@@ -256,7 +256,7 @@ class ResearchProject {
         let gallerypath = this.galleryPath;
  
         result += `<div class="image-zone zone">`;
-        result += `<img src="${gallerypath }/${encodeURIComponent(data.imageURL)}">`;
+        result += `<img src="${gallerypath }/${encodeURIComponent(data.image.src)}" alt="${data.image.alt}">`;
         result += `</div>`;
         return result
     }

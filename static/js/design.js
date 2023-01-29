@@ -172,7 +172,7 @@ class DesignProject {
         this.isGalleryRendered = true
         this.gallery.forEach(image => {
             let img = new Image();
-            let source = this._getSrcForGalleryImage(image)
+            let source = this._getSrcForGalleryImage(image.src)
 
             img.onload = function (event) {
                 let loadedImage = event.target
@@ -196,6 +196,7 @@ class DesignProject {
                 }
             }.bind(this)
             img.src = source
+            img.alt = image.alt
         })
     }
 
@@ -271,9 +272,10 @@ class DesignProject {
         let galleryMultiplier = 10;
 
         for (let i = 0; i < galleryMultiplier; ++i) {
-            this.gallery.forEach(path => {
-                let src = `${this.galleryPath}/${encodeURIComponent(path)}`
+            this.gallery.forEach(image => {
+                let src = `${this.galleryPath}/${encodeURIComponent(image.src)}`
                 let img = this.downloadedImages[src]
+                console.log(img)
                 let clone = img.cloneNode(true);
                 $imageContainer.append(clone)
                 offset += $(clone).outerWidth(true)

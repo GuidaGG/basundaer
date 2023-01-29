@@ -62,7 +62,7 @@ class WorkshopContent {
                 increase++
             }
             
-            result += `<img src="${gallerypath }/${encodeURIComponent(image)}">
+            result += `<img src="${gallerypath }/${encodeURIComponent(image.src)}" alt="${image.alt}">
             </div>`;
            
         })
@@ -76,7 +76,7 @@ class WorkshopContent {
         let gallerypath = this.galleryPath;
 
         result += `<div class="image-zone zone">`;
-        result += `<img src="${gallerypath }/${encodeURIComponent(data.imageURL)}">`;
+        result += `<img src="${gallerypath }/${encodeURIComponent(data.image.src)}" alt="${data.image.alt}>`;
         result += `</div>`;
         return result
     }
