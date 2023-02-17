@@ -36,11 +36,13 @@
 
       &:extend(.pageContent);
 
-      > .heading {
+      .leistungen, .co-working, .kundinnen {
+        .heading {
+          margin-bottom: @padding-small;
+        }
+
       }
 
-      > .subHeading {
-      }
 
       > .description {
         @media @media-large, @media-l-medium {
@@ -166,8 +168,9 @@
 
     }
 
-    .leistungen {
+    .leistungen, .co-working {
       margin-top: 60px;
+
     }
 
     .studio-gallery {
