@@ -499,6 +499,9 @@ a {
     min-width: 100%;
   }
 }
+.image-zone {
+  box-sizing: border-box;
+}
 .image-zone img {
   width: 100%;
   height: auto;
