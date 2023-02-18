@@ -92,7 +92,9 @@ class Section {
             "right": rect.right,
             "bottom": rect.bottom
         })
+       this._stopAllVideos()
         this.$border.find(".initialSectionTitle").removeClass("openSectionTitle")
+        
         openSection = null
     }
 
@@ -272,6 +274,13 @@ class Section {
             right: window.innerWidth - pos.left - $section.outerWidth(),
             bottom: window.innerHeight - pos.top - $section.outerHeight(),
             left: pos.left
+        }
+    }
+    _stopAllVideos() {
+       const videos = document.getElementsByTagName('video');
+        for (const video of videos) {
+            video.pause();
+            video.currentTime = 0;
         }
     }
 }

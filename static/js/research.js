@@ -10,7 +10,7 @@ import getMediaMatch, * as utils from "/static/js/utils.js"
 
 function isElementInViewport(el, left, right) {
     let rect = el.getBoundingClientRect();
-    console.log(rect.left, el)
+ 
     return (rect.left <= left && rect.right > right)
    
 }
@@ -235,18 +235,20 @@ class ResearchProject {
             
          
         }
-        if(isElementInViewport(container, 100, 0)){
+        if (getMediaMatch() !== utils.SMALL) {
+            if(isElementInViewport(container, 100, 0)){
 
-            container.querySelectorAll("video").forEach(function(video){
-                video.play()
-    
-            })
-        }else{
-            container.querySelectorAll("video").forEach(function(video){
-                video.pause()
-               
-            })
-            
+                container.querySelectorAll("video").forEach(function(video){
+                    video.play()
+        
+                })
+            }else{
+                container.querySelectorAll("video").forEach(function(video){
+                    video.pause()
+                
+                })
+                
+            }
         }
     }
 
@@ -265,8 +267,8 @@ class ResearchProject {
         let result = ''
         let gallerypath = this.galleryPath;
 
-        result += `<div class="video-zone zone">`;
-        result += `<video width="1280" loop><source src="${gallerypath }/${encodeURIComponent(data.videoURL)}"  type="video/mp4"></video>`;
+        result += `<div class="video-zone zone" >`;
+        result += `<video width="1280" loop controls><source src="${gallerypath }/${encodeURIComponent(data.videoURL)}"  type="video/mp4">Your browser does not support the video tag.</video>`;
         result += `</div>`;
         return result
     }
@@ -359,23 +361,20 @@ export default function researchPageReady() {
             $("#"+researchProject.projectId).on("click", researchProject.nextResearch.bind(this))
            
             let researchNavigation =  $("#"+researchProject.projectId)
-                
-            new TouchDragHandlerSimplified(
-              
-                researchNavigation[0],
-                $(".researchs"),
-                function () {
-                    researchProject.touch("next")
-                }, function () { 
-                    researchProject.touch("prev")
-                },
-                200,
-                function () {
-                
-                }.bind(this))
-                   
+            if (getMediaMatch() !== utils.SMALL) {
+                new TouchDragHandlerSimplified(
+                    researchNavigation[0],
+                    $(".researchs"),
+                    function () {
+                        researchProject.touch("next")
+                    }, function () {
+                        researchProject.touch("prev")
+                    },
+                    200,
+                    function () {
+                    }.bind(this))
+                }       
             }, 1000)
-               
         })
      
         
