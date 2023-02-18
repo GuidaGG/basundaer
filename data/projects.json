@@ -1,5 +1,86 @@
 [
+
   {
+  "title": "Spielend Stadt Gestalten",
+  "categories": ["Kampagne","Web"],
+  "customer": "SpielLandschaftStadt e.V.",
+  "year": 2021,
+  "thumbnail": "SLS_Kampagne_55.jpg",
+  "galleryFolder": "SLS",
+  "gallery": [
+    {
+      "src" : "SLS_Kampagne_1.gif",
+      "alt" : "alt"
+    },
+    {
+      "src" :  "SLS_Kampagne_2.jpg",
+      "alt" : "alt"
+    },
+    {
+      "src" :"SLS_Kampagne_3.jpg",
+      "alt" : "alt"
+    },
+    {
+      "src" :"SLS_Kampagne_5.jpg",
+      "alt" : "alt"
+    },
+    {
+      "src" :"SLS_Kampagne_7.jpg",
+      "alt" : "alt"
+    },
+    {
+      "src" :"SLS_Kampagne_6.jpg",
+      "alt" : "alt"
+    },
+    {
+      "src" :"SLS_Kampagne_4.png",
+      "alt" : "alt"
+    },
+    {
+      "src" :"SLS_Kampagne_8.jpg",
+      "alt" : "alt"
+    },
+    {
+      "src" :"SLS_Kampagne_9.jpg",
+      "alt" : "alt"
+    }
+
+  ],
+  "description": "Der Verein SpielLandschaftStadt setzt sich für die Schaffung und den Erhalt einer kinder- und familienfreundlichen Stadt ein. Mit einem Förderfonds zur Entwicklung von Aufenthalts- und Spielräumen werden Kinder und Jugendliche in Bremen ermutigt, ihre Bedürfnisse und Ideen mit einzubringen.\n<more>In enger Zusammenarbeit mit dem Verein entwickelten wir eine zielgruppenorientierte Kampagne samt kindgerechtem Wording und sympathischem Design für eine Reihe von Werbemedien wie Flyer, Poster und Social Media Beiträgen."
+},
+
+    {
+  "title": "Nele Hendrikje Sandner",
+  "categories": ["Web"],
+  "customer": "Nele Hendrikje Sandner",
+  "year": 2022,
+  "thumbnail": "Nele_Web_browser_4.jpg",
+  "galleryFolder": "Nele",
+  "gallery": [
+    {
+      "src" : "Nele_Web_mobile_2.jpg",
+      "alt" : "alt"
+    },
+    {
+      "src" : "Nele_Web_mobile_3.jpg",
+      "alt" : "alt"
+    },
+    {
+      "src" : "Nele_Web_browser_2.jpg",
+      "alt" : "alt"
+    },
+    {
+      "src" : "Nele_Web_browser_4.jpg",
+      "alt" : "alt"
+    },
+    {
+      "src" : "Nele_Web_browser_5.jpg",
+      "alt" : "alt"
+    }
+  ],
+  "description": "Wir durften die Arbeit der Leipziger Künstlerin Nele Hendrikje Sandner auf einer neuen Webseite in Szene setzen. Zarte und scharfe Formen, pastellige und kräftige Farben fügen sich in vielen sich überlagernden Schichten und Strukturen zu zeichnerischen Collagen zusammen\n<more>Die entstehende räumliche Tiefe in Neles Werken haben wir durch sich überlagernde Ebenen in eine Webseitenstruktur überführt, in der auch die Arbeiten miteinander interargieren."
+},
+{
     "title": "TAD - Liber Memorialis",
     "categories": ["Editorial"],
     "customer": "Université du Luxembourg",
@@ -21,7 +102,7 @@
       },
       {
         "src" : "BuA_TAD_LM_web_32.webp",
-        "alt" : "alt" 
+        "alt" : "alt"
       },
       {
         "src" : "BuA_TAD_LM_web_24.webp",
@@ -59,7 +140,7 @@
         "src" : "BuA_TAD_LM_web_34.webp",
         "alt" : "alt"
       },
-      {    
+      {
         "src" : "BuA_TAD_LM_web_27.webp",
         "alt" : "alt"
       },
@@ -70,7 +151,7 @@
     ],
     "description": "Über 12 Jahre hat sich die Konferenzreihe  »Transatlantic Dialogue« intensiv mit kultureller Diplomatie, transkontinentalem Dialog und freiheitlicher Bildung auseinandergesetzt; es war Zeit für einen Rückblick auf die Geschichte und Reichweite der Konferenz. \n<more>Für diese Rückschau haben wir uns auf den gestalterischen Ausgangspunkt zurück besonnen: Der Dialog wird in diesem Buch neu interpretiert und entwickelt sich analog zur inhaltlichen Entwicklung der Konferenz zu einem komplexen, vielstimmigen Geflecht aus Meinungen und Forschungsperspektiven."
   },
-    
+
 {
     "title": "Was bleibt",
     "categories": ["Kampagne"],
@@ -99,7 +180,7 @@
         "src" : "STGB_Wasbleibt_Kampagne_1000px-5.webp",
         "alt" : "alt"
       },
-      {    
+      {
         "src" : "STGB_Was bleibt flyer-1000px_7.webp",
         "alt" : "alt"
       },
@@ -110,7 +191,7 @@
     ],
     "description": "Mit der Ausstellung „Was bleibt” zeigt die Städtische Galerie Bremen (STGB) Einblicke in die Kunstsammlung der Hansestadt Bremen. Neben einer Auswahl von Werken der Nachkriegszeit bis heute werden erstmals die neuen Ankäufe Bremens im Rahmen der Corona Soforthilfen gezeigt. \n<more>Durch unsere rein typografische Lösung unterstreichen wir in der Werbekampagne die zeitliche Dimension der Ausstellung, die sich den Besucher*innen in mehrfacher Hinsicht zeigt. Für die STGB gestalten wir Einladungskarte, Plakate, Banner und Anzeigenkampagne."
   },
-    
+
      {
     "title": "Contradiction Studies",
     "categories": ["Branding", "Web"],
@@ -156,7 +237,7 @@
     ],
     "description": "Widerspruchsforschung ist der Schwerpunkt des Graduiertenkollegs »Contradiction Studies«. Ab 2022 sind insbesondere Graduierte der Geistes-, Sozial- und Rechtswissenschaften eingeladen, Widerspruch und Praktiken des Widersprechens im engen Austausch untereinander zu untersuchen. \n<more>Als Grundlage der Gestaltung dient die vermeintlich einfachste Form des Widerspruchs, der Gegensatz. Im Dialog zeichnen sich Facetten der Widersprüchlichkeit ab. Der flirrenden Farbgebung wirken ein aufgeräumtes Schriftbild und eine nutzerfreundliche Interaktionsebene entgegen und machen so eine komplexe Thematik selbst für ein fachfremdes Publikum nahbar und reizvoll."
   },
-    
+
     {
     "title": "Natur und Mohr",
     "categories": ["Branding"],
@@ -212,7 +293,7 @@
     ],
     "description": "Judith und Dennis Mohr setzen auf die Qualitäten des traditionellen Obstbaus. Ihre Streuobstwiesen beheimaten nicht nur verschiedene alte Baumsorten, sondern auch eine Vielzahl von Vogel- und Insektenarten; gemeinsam mit den Mohrs sorgen diese für den Erhalt der immer seltener werdenden Kulturlandschaften. \n<more>Aus der herbstlichen Ernte werden leckere Säfte und feine Spirituosen gewonnen. Bas&Aer verpasst dem wachsenden Sortiment ein schmackhaftes Äußeres. Das klare Design zeigt was drin steckt: Pure Frucht und ganz viel Herzblut."
   },
-    
+
     {
     "title": "PAN",
     "categories": [
@@ -280,14 +361,14 @@
     ],
     "description": "pan productions steht für atmosphärisch dichte, poetische Theaterstücke. Sie werden in einem kooperativen Prozess durch Künstler*innen aus den Bereichen Regie, Spiel, Tanz, Choreographie, Videokunst, Raumkunst, Lichtkunst, bildender Kunst und Sprache entwickelt. \n<more>Für die Gestaltung standen der neckische Flötengott Pan und das klassische Gegensatzpaar von Drama und Komödie Pate. In dieser Doppelfunktion spannen die Wortmarke und ihr Gegenüber (als „Synonym“) einen leeren Theaterraum auf, der bespielt werden will."
   },
-    
+
     {
     "title": "Museum für Fotokopie",
     "categories": [
       "Branding", "Web"
     ],
     "customer": "Makroscope e.V.",
-    "year": 2020,    
+    "year": 2020,
     "link": "https://www.museum-fotokopie.de/",
     "linkText": "Museum für Fotokopie",
     "thumbnail": "MFF_Web_Browser_96_2.webp",
@@ -332,7 +413,7 @@
     ],
     "description": "Das Museum für Fotokopie in Mülheim an der Ruhr hat mit ca. 30.000 Objekten bestehend aus Copy Art, Kopiergeräten und dokumentarischem Material die weltweit größte Sammlung ihrer Art. Eine umfangreiche Digitalisierung ermöglicht nun eine langfristige Archivierung und Zugänglichkeit der Objekte. \n<more>In Zusammenarbeit mit Margarida Ribeiro entwickelt Bas&Aer das Corporate Design und eine Webseite, die als Onlinearchiv Zugang zu der umfangreichen Sammlung bietet. Dabei zelebriert sie in ihrer Benutzung das Erlebnis des Kopierens: Wie auf einem Kopiergerät lassen sich die Archiv-Dokumente und Seiten beliebig anordnen, sortieren und sogar kopieren."
   },
-    
+
     {
     "title": "Diakoniewerk Simeon",
     "categories": [
@@ -343,7 +424,7 @@
     "thumbnail": "DWS_LS_72ppi_1.webp",
     "galleryFolder": "Diakoniewerk",
     "gallery": [
-      { 
+      {
         "src" : "DWS_LS_72ppi_1.webp",
         "alt" : "alt"
       },
@@ -398,7 +479,7 @@
     ],
     "description": "Das Diakoniewerk Simeon ist eine soziale, gemeinnützige Organisation an fast 90 Standorten in Berlin und Brandenburg. In Kooperation mit dem Designer und Fotografen Jakob Weber entwickelten wir für das Haus in der Sonnenallee in Berlin ein modulares Leitsystem. \n<more>Die Beschilderung besticht durch ein cleveres Schienensystem, das je Nutzungsszenario individuell eingesetzt werden kann. Zum Beispiel als Infoboard, als Garderobe, als Tafel für schnelle Notizen, als Lichtleiste. Die Kombination aus Linien und Flächen gewährleistet eine schnelle Orientierung und eine harmonische Integration in die bestehende Gebäudestruktur."
   },
-    
+
   {
     "title": "PostHeimat",
     "categories": [
@@ -454,7 +535,7 @@
     ],
     "description": "PostHeimat ist ein Zusammenschluss unterschiedlicher Theaterprojekte, die sich mit den Themen Migration, Flucht, Identität, Mehrsprachigkeit und Machtstrukturen auseinandersetzen. Gemeinsam verfolgen sie das Ziel, strukturelle Hierarchien im Theater zu hinterfragen, sowie Diskriminierung und Rassismus abzubauen.\n<more>Klarheit, deutliche Statements und keine Labels sind die Grundlage unserer Gestaltung. Und mittendrin bietet sie Raum für Individualität, künstlerischen Ausdruck und ein wachsendes Netzwerk, das hoffentlich unsere Gesellschaft ein bisschen besser macht."
   },
-    
+
   {
     "title": "Die historische deutsch-jüdische Presse als Schnittstelle",
     "categories": [
@@ -504,7 +585,7 @@
     ],
     "description": "Vom 24.–27. November 2019 tagten 42 Redner*innen im Haus der Wissenschaft in Bremen. Es ging um die Vielfalt und zeitgenössische Bedeutung der deutsch–jüdischen Presse von der Aufklärung bis zum Nationalsozialismus. \n<more>Drei Konferenztage auf drei DIN A4 Blätter – Wir entwickelten einen Programmflyer, der durch ausgewählte Papiere in Grautönen, ein charakteristisches Typeface und eine clevere Faltung besticht. Ein blauer Infozettel setzt den entscheidenden Akzent. Mit dem gleichen Maß an durchdachter Einfachheit gestalteten wir die Broschüre für die Abstracts."
   },
-    
+
     {
     "title": "MoinSonne",
     "categories": [
@@ -574,7 +655,7 @@
     ],
     "description": "MoinSonne – Mach Watt draus! Vom kleinen Balkonkraftwerk über komplette Photovoltaikanlagen bis hin zum smarten Energiemanagement. Die autarke Energieversorgung aus regenerativer Energie ist die Vision und Mission von AOT Elektrotechnik. \n<more>Wir überführten Leidenschaft und Know How der Elektrotechniker in ein farbenfrohes, freundliches Branding mit plakativen Mustern und einem bodenständigen Wording, das die Norddeutschen sicherlich zum Handeln inspiriert."
   },
-    
+
   {
     "title": "TraMiS",
     "categories": [
@@ -619,7 +700,7 @@
     ],
     "description": "Neu zugewanderte Schüler*innen werden in die Schule aufgenommen, andere verlassen die Schule wieder oder verbringen einen Teil ihrer Schulzeit im Ausland. Im Forschungsprojekt TraMiS geht es um das Thema „Transnationale Mobilität in Schulen“. \n<more>Wie lässt sich ein solch komplexes Thema gestalterisch abstrahieren? Für die Konzeption und Gestaltung von Logo und Webseite ging es uns um Lebenslinien, Grenzüberschreitung und die Verbindung von wissenschaftlicher Arbeit und nicht geradliniger Biografien."
   },
-    
+
   {
     "title": "Vorweg",
     "categories": [
@@ -649,7 +730,7 @@
     ],
     "description": "VORWEG unterstützt und berät mittelständische Unternehmen in betriebswirtschaftlichen Belangen und bietet außerdem Schulungen zum Datenschutz an. Zwei Themen, die auf den ersten Blick dröge um die Ecke kommen und förmlich nach Frische und Leichtigkeit rufen. \n<more>Für uns eine spannende Aufgabe, der wir mit einem knackigen Farbkonzept, klarer Typografie und einem Set an Grafikelementen geantwortet haben. Alles zum selber bauen, mit einer Word–Vorlage für Geschäftsdokumente und einem Styleguide, der die grundlegenden Gestaltungsregeln erklärt und veranschaulicht. "
   },
-    
+
   {
     "title": "Kirchenjubiläum „Zum Verklärten Christus“",
     "categories": [
@@ -715,7 +796,7 @@
     ],
     "description": "Die Gemeinde einer Kleinstadt in Ostwestfalen feiert 50-jähriges Jubiläum. Bas&Aer feiert mit. Gemeinsam mit dem Kunden entwickelten wir eine Festschrift, die die Geschichte der Kirche und schließlich auch die Entwicklung der Stadtsiedlung bis zum heutigen Tag erzählt. \n<more>Für das Gestaltungskonzept durften wir in die historischen Baupläne der Kirche schauen. So wie der Grundriss den Faltenwurf eines Mantels darstellt, umwickelt nun unser Umschlag vollständig das Buch. Wie in der Kirche geben Ausschnitte der roten und blauen Fenster im Inneren den Rhythmus an."
   },
-    
+
   {
     "title": "Heilig Rock Wallfahrt",
     "categories": [
@@ -731,8 +812,8 @@
         "alt" : "alt"
       },
       {
-        "src" : "BA_HeiligRock_Orientierung_72ppi_6.webp", 
-        "alt" : "alt"     
+        "src" : "BA_HeiligRock_Orientierung_72ppi_6.webp",
+        "alt" : "alt"
       },
       {
         "src" : "BA_HeiligRock_Orientierung_72ppi_7.webp",
@@ -743,16 +824,16 @@
         "alt" : "alt"
       },
       {
-        "src" : "BA_HeiligRock_Orientierung_72ppi_2.webp", 
-        "alt" : "alt"     
+        "src" : "BA_HeiligRock_Orientierung_72ppi_2.webp",
+        "alt" : "alt"
       },
       {
         "src" : "BA_HeiligRock_Orientierung_72ppi_3.webp",
         "alt" : "alt"
       },
       {
-        "src" : "BA_HeiligRock_Orientierung_72ppi_4.webp", 
-        "alt" : "alt"    
+        "src" : "BA_HeiligRock_Orientierung_72ppi_4.webp",
+        "alt" : "alt"
       },
       {
         "src" : "BA_HeiligRock_Orientierung_72ppi_8.webp",
@@ -761,7 +842,7 @@
     ],
     "description": "Anlässlich der Heilig–Rock–Wallfahrt 2012, erwartete die Stadt Trier etwa 500.000 Besucher*innen. In einem Wettbewerb rief die Stadt zu Beiträgen für ein Orientierungssystem auf, welches den Anforderungen der Menschenmenge standhält und nicht Gefahr läuft in der Stadtbeschilderung unterzugehen. \n<more>Kernidee des hier gezeigten Beitrages war, die Formsprache des Heilig Rock Logos aufzugreifen und den Leitspruch „Und führe zusammen, was getrennt ist” in den Fokus zu rücken. Entstanden ist ein modulares System aus trapezförmigen Einzelteilen des Rocks, die als großformatige Banner in der Stadt angebracht sind."
   },
-    
+
   {
     "title": "Komodo Coffee",
     "categories": [
@@ -791,7 +872,7 @@
     ],
     "description": "Direkt gehandelter Kaffee aus Indonesien, in Bremen schonend geröstet und vertrieben. Hinter ›Dolok Marapi‹, ›Orang Gunong‹, ›Harangan Udan‹ und ›Tao Touran‹ verbergen sich echte Charakterköpfe mit eigener Geschichte.\n<more>Das Zusammenspiel der beiden farbenfrohen Verpackungsaufkleber verweist auf die enge Kooperation mit den Kaffeebauern. Denn bei Komodo Coffee steht der direkte Handel an erster Stelle – und gleich danach kommt natürlich der Genuss von erstklassigen Kaffees und Espressos!"
   },
-    
+
   {
     "title": "Transatlantic Dialogue",
     "categories": [
@@ -849,7 +930,7 @@
     ],
     "description": "Im Konferenzband »Transatlantic Dialogue« wird auf über 150 Seiten kulturelle Diplomatie aus unterschiedlichen Perspektiven beleuchtet. Wir haben eine Dokumentation entwickelt, die zum Fortführen, Weiterdenken und Diskutieren einlädt.\n<more>Hinter dem spielerisch anmutenden Umgang mit Farbe steckt ein Ordnungsprinzip, das die Beiträge der Konferenz thematisch und zeitlich strukturiert. Dabei stehen sich jeweils zwei Farben im Dialog gegenüber. In den Bildern mischen sich diese und geben ihnen so eine eigenständige Farbgebung."
   },
-    
+
   {
     "title": "Bremen und seine Presse im Ersten Weltkrieg",
     "categories": [
@@ -887,7 +968,7 @@
     ],
     "description": "Die Ausstellung in der Bremischen Bürgerschaft zeigt die wirtschaftliche, gesellschaftliche und politische Situation in Bremen in der Zeit des Ersten Weltkriegs – und reflektiert, wie darüber berichtet wurde.\n<more>Querlesen erwünscht! – Mittels visueller und grafischer Verweise werden verschiedene Perspektiven miteinander in Verbindung gesetzt. Ein roter Faden leitet den Betrachter durch die 15 Schwerpunktthemen und verknüpft Inhalte, Bilder und Texte gestalterisch und sinnstiftend."
   },
-    
+
   {
     "title": "Bas&Aer",
     "categories": [
@@ -933,7 +1014,7 @@
     ],
     "description": "Dass es nicht leicht werden würde, wussten wir gleich. Die eigene visuelle Identität zu entwickeln war eine echte Herausforderung. Die Anforderungen hoch, der eigene Anspruch höher. Wir wollten uns natürlich alle Drei als Gestalter*innen wiederfinden. \n<more>Unser gemeinsamer Nenner heißt „Räume aufmachen, betreten, erschließen und verändern.“ Die Idee haben wir in ein dynamisches Linienraster übersetzt, das scheinbar immer in Bewegung ist: Neben Struktur und Klarheit bietet es auch Platz für Überraschung und Spiel, was bei der Entwicklung unserer Webseite besonders viel Spaß gemacht hat."
   },
-    
+
   {
     "title": "In Teilen vor Ort",
     "categories": [
@@ -983,7 +1064,7 @@
     ],
     "description": "Die Künstlerin Amina Brotz arbeitet vornehmlich ortsbezogen und prozesshaft. Sie thematisiert stets ihren eigenen Lebens– und Arbeitszusammenhang, indem sie Möbel, persönliche Gegenstände und Arbeitsmaterialien in einen neuen Kontext überführt.\n<more>Das prozesshafte Arbeiten haben wir in das Konzept für ihren Ausstellungskatalog ›in Teilen vor Ort‹ überführt: Wir zeigen den nackten Buchblock. Der ist was er ist, ein Gebrauchsgegenstand – nicht mehr und nicht weniger. Und weil die Projekte bei Amina stets ineinandergreifen, gibt es beim Katalog auch kein Cover – weder vorne noch hinten."
   },
-    
+
   {
     "title": "Terroir Moselle",
     "categories": [
@@ -1017,7 +1098,7 @@
     ],
     "description": "In grenzüberschreitender Zusammenarbeit wollen die französischen, luxemburgischen und deutschen Moselwinzer mit diesem Projekt Image und Bekanntheit ihrer Weine fördern.\n<more>Wir entwickelten dazu ein vermeintlich naheliegendes Gestaltungskonzept: Wir zeichnen den Verlauf der Mosel nach. Je Weinhang und ansässigen Winzern vergeben wir die individuelle Teilstrecke des Flusses und erstellen so ein einzigartiges und dennoch verbindendes Qualitätssiegel als Bildmarke."
   },
-    
+
   {
     "title": "FLUX 1.0",
     "categories": [

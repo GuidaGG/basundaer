@@ -1,2 +1,13 @@
-p{margin-top:0}.large-defaults,.medium-defaults{letter-spacing:1px}.small-defaults{letter-spacing:1.4px}
+p {
+  margin-top: 0;
+}
+.large-defaults {
+  letter-spacing: 1px;
+}
+.medium-defaults {
+  letter-spacing: 1px;
+}
+.small-defaults {
+  letter-spacing: 1.4px;
+}
 /*# sourceMappingURL=text-defaults.css.map */
