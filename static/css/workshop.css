@@ -59,6 +59,8 @@
     font-family: "apercu-medium", sans-serif;
     font-size: 30pt !important;
     line-height: 45pt;
+    margin: 0;
+    font-weight: normal;
   }
   .heading1,
   p.intro,
@@ -67,6 +69,7 @@
     font-family: "apercu-medium", sans-serif;
     font-size: 20pt;
     line-height: 25pt;
+    font-weight: normal;
   }
   .heading2,
   .hheading {
@@ -74,6 +77,7 @@
     font-family: "apercu-light", sans-serif;
     font-size: 14pt;
     line-height: 18pt;
+    font-weight: lighter;
   }
   .paragraph,
   .paragraph a,
@@ -82,6 +86,7 @@
     font-family: "apercu-medium", sans-serif;
     font-size: 14pt;
     line-height: 18pt;
+    font-weight: normal;
   }
   .caption,
   .main-caption,
@@ -111,6 +116,7 @@
   .hheading {
     margin-top: 5.66666667px;
     margin-bottom: 34px;
+    color: red;
   }
   p {
     margin: 0 0 17px 0;
@@ -128,6 +134,8 @@
     font-family: "apercu-medium", sans-serif;
     font-size: 20pt !important;
     line-height: 30pt;
+    margin: 0;
+    font-weight: normal;
   }
   .heading1,
   p.intro,
@@ -136,6 +144,7 @@
     font-family: "apercu-medium", sans-serif;
     font-size: 13pt;
     line-height: 16pt;
+    font-weight: normal;
   }
   .heading2,
   .hheading {
@@ -143,6 +152,7 @@
     font-family: "apercu-light", sans-serif;
     font-size: 13pt;
     line-height: 16pt;
+    font-weight: lighter;
   }
   .paragraph,
   .paragraph a,
@@ -151,6 +161,7 @@
     font-family: "apercu-medium", sans-serif;
     font-size: 13pt;
     line-height: 16pt;
+    font-weight: normal;
   }
   .caption,
   .main-caption,
@@ -197,6 +208,8 @@
     font-family: "apercu-medium", sans-serif;
     font-size: 32pt !important;
     line-height: 50pt;
+    font-weight: normal;
+    margin: 0;
   }
   .heading1,
   p.intro,
@@ -207,6 +220,8 @@
     font-family: "apercu-medium", sans-serif;
     font-size: 22pt;
     line-height: 27pt;
+    font-weight: normal;
+    margin: 0;
   }
   .heading2,
   .hheading {
@@ -214,6 +229,8 @@
     font-family: "apercu-light", sans-serif;
     font-size: 16pt;
     line-height: 20pt;
+    margin: 0;
+    font-weight: lighter;
   }
   .paragraph,
   .paragraph a,
@@ -222,6 +239,7 @@
     font-family: "apercu-medium", sans-serif;
     font-size: 16pt;
     line-height: 20pt;
+    font-weight: normal;
   }
   .caption,
   .main-caption,
@@ -248,6 +266,12 @@
   p {
     margin: 0 0 20px 0;
   }
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
 }
 a {
   color: black;
@@ -518,6 +542,9 @@ a {
     min-width: 100%;
   }
 }
+.image-zone {
+  box-sizing: border-box;
+}
 .image-zone img {
   width: 100%;
   height: auto;
@@ -687,7 +714,7 @@ p {
 }
 #workshopContent .overlay,
 #workshopContent img {
-  background: #9699c7;
+  background: #FDE600;
 }
 @media (max-width: 600px) {
   #workshopContent .overlayPageContent .workshopOverlay .content {

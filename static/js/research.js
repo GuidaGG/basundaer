@@ -8,9 +8,10 @@ let overlayLoaded = false
 
 import getMediaMatch, * as utils from "/static/js/utils.js"
 
-function isRElementInViewport(el) {
+function isElementInViewport(el, left, right) {
     let rect = el.getBoundingClientRect();
-    return (rect.left <= window.innerWidth)
+ 
+    return (rect.left <= left && rect.right > right)
    
 }
 
@@ -35,6 +36,8 @@ class ResearchProject {
         this.dynamic = content.dynamic
         this.isGalleryRendered = false
         this.galleries = []
+        this.videos = []
+        this.isVideoPlaying = false
     }
 
     /**
@@ -47,9 +50,9 @@ class ResearchProject {
         $element.append(this.renderedContent)
   
         window.setTimeout(function () {
-            this.triggerDownloadImagesIfResearchIsVisible()
-            $(window).on('DOMContentLoaded load resize scroll', this.triggerDownloadImagesIfResearchIsVisible.bind(this))
-            $("#researchContent .content").on("scroll", this.triggerDownloadImagesIfResearchIsVisible.bind(this))
+            this._triggerDownloadImagesAndVideoIfResearchIsVisible()
+            $(window).on('DOMContentLoaded load resize scroll', this._triggerDownloadImagesAndVideoIfResearchIsVisible.bind(this))
+            $("#researchContent .content").on("scroll", this._triggerDownloadImagesAndVideoIfResearchIsVisible.bind(this))
         }.bind(this), 200)
      
     }
@@ -179,7 +182,6 @@ class ResearchProject {
         this.isGalleryRendered = true
         let gallerypath = this.galleryPath;
         let increase = 1;
-        console.log
         let galleryContainers = $(`#${this.projectId} .gallery-zone`);
         
         this.galleries.forEach(function(data, index) {
@@ -192,7 +194,7 @@ class ResearchProject {
                     result += `<div class="image-number">${increase}</div>`;
                     increase++
                 }
-                result += `<img src="${gallerypath }/${encodeURIComponent(image)}">
+                result += `<img src="${gallerypath }/${encodeURIComponent(image.src)}" alt="${image.alt}">
                 </div>`;
            
             });
@@ -201,27 +203,20 @@ class ResearchProject {
         });
         
     }
+
+    _removeImageBackground(){
+  
+        $("img").on('load', function(e) {
+            $(this).css('background', 'transparent')
+         })
+         
+    }
+
     _renderGallery(data){
 
         let result = ''
-        let gallerypath = this.galleryPath;
-        let increase = 1;
-        result += `<div class="${data.height} gallery-zone zone">`;
-  
-       /* data.gallery.forEach(function(image, index) {
-            result += `<div class="${data.classes[index]} image-container">`;
-            if(data.captions[index]){
-               
-                result += `<div class="image-number">${increase}</div>`;
-                increase++
-            }
-            
-            result += `<img src="${gallerypath }/${encodeURIComponent(image)}">
-            </div>`;
-           
-        })
-        result +=  this._renderCaptions(data)*/
-        result += `</div>`;
+        result += `<div class="${data.height} gallery-zone zone"></div>`;
+
         return result
     }
 
@@ -230,11 +225,28 @@ class ResearchProject {
     }
 
     
-    triggerDownloadImagesIfResearchIsVisible() {
-        if (isRElementInViewport($(`#${this.projectId}`)[0])) {
-            if (!this.isGalleryRendered) {
+    _triggerDownloadImagesAndVideoIfResearchIsVisible() {
+        let container = $(`#${this.projectId}`)[0]
+        if (isElementInViewport(container, window.innerWidth, 0)) {
+            if (!this.isGalleryRendered) { 
+                this._downloadImages() 
+                this._removeImageBackground()
+            }
+            
+         
+        }
+        if (getMediaMatch() !== utils.SMALL) {
+            if(isElementInViewport(container, 100, 0)){
+
+                container.querySelectorAll("video").forEach(function(video){
+                    video.play()
+        
+                })
+            }else{
+                container.querySelectorAll("video").forEach(function(video){
+                    video.pause()
                 
-                this._downloadImages()
+                })
                 
             }
         }
@@ -246,7 +258,7 @@ class ResearchProject {
         let gallerypath = this.galleryPath;
  
         result += `<div class="image-zone zone">`;
-        result += `<img src="${gallerypath }/${encodeURIComponent(data.imageURL)}">`;
+        result += `<img src="${gallerypath }/${encodeURIComponent(data.image.src)}" alt="${data.image.alt}">`;
         result += `</div>`;
         return result
     }
@@ -255,8 +267,8 @@ class ResearchProject {
         let result = ''
         let gallerypath = this.galleryPath;
 
-        result += `<div class="video-zone zone">`;
-        result += `<video width="1280" controls autoplay muted><source src="${gallerypath }/${encodeURIComponent(data.videoURL)}"  type="video/mp4"></video>`;
+        result += `<div class="video-zone zone" >`;
+        result += `<video width="1280" loop controls><source src="${gallerypath }/${encodeURIComponent(data.videoURL)}"  type="video/mp4">Your browser does not support the video tag.</video>`;
         result += `</div>`;
         return result
     }
@@ -284,6 +296,8 @@ class ResearchProject {
                    
                 break;
                 case "video":
+                    this.videos.push(zone)
+
                     result += this._renderVideo(zone)
                
                 break;
@@ -347,23 +361,20 @@ export default function researchPageReady() {
             $("#"+researchProject.projectId).on("click", researchProject.nextResearch.bind(this))
            
             let researchNavigation =  $("#"+researchProject.projectId)
-                
-            new TouchDragHandlerSimplified(
-              
-                researchNavigation[0],
-                $(".researchs"),
-                function () {
-                    researchProject.touch("next")
-                }, function () { 
-                    researchProject.touch("prev")
-                },
-                200,
-                function () {
-                
-                }.bind(this))
-                   
+            if (getMediaMatch() !== utils.SMALL) {
+                new TouchDragHandlerSimplified(
+                    researchNavigation[0],
+                    $(".researchs"),
+                    function () {
+                        researchProject.touch("next")
+                    }, function () {
+                        researchProject.touch("prev")
+                    },
+                    200,
+                    function () {
+                    }.bind(this))
+                }       
             }, 1000)
-               
         })
      
         

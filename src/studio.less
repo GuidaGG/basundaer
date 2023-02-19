@@ -3,7 +3,7 @@
 @import "common";
 
 #studioContent {
-  .overla, img {
+  .overlay, img {
     background: @rot;
   }
 
@@ -36,11 +36,13 @@
 
       &:extend(.pageContent);
 
-      > .heading {
+      .leistungen, .co-working, .kundinnen {
+        .heading {
+          margin-bottom: @padding-small;
+        }
+
       }
 
-      > .subHeading {
-      }
 
       > .description {
         @media @media-large, @media-l-medium {
@@ -164,6 +166,15 @@
         }
       }
 
+    }
+
+    .leistungen, .co-working {
+      margin-top: 60px;
+
+    }
+
+    .studio-gallery {
+      gap: 10px
     }
   }
 

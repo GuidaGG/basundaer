@@ -20,6 +20,8 @@ p {
   font-family: "apercu-medium", sans-serif;
   font-size: 30pt !important;
   line-height: 45pt;
+  margin: 0;
+  font-weight: normal;
 }
 .heading1,
 p.intro,
@@ -28,12 +30,14 @@ p.intro a {
   font-family: "apercu-medium", sans-serif;
   font-size: 20pt;
   line-height: 25pt;
+  font-weight: normal;
 }
 .heading2 {
   letter-spacing: 0;
   font-family: "apercu-light", sans-serif;
   font-size: 14pt;
   line-height: 18pt;
+  font-weight: lighter;
 }
 .paragraph,
 .paragraph a,
@@ -42,6 +46,7 @@ a {
   font-family: "apercu-medium", sans-serif;
   font-size: 14pt;
   line-height: 18pt;
+  font-weight: normal;
 }
 .caption,
 .main-caption,

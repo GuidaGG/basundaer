@@ -23,7 +23,11 @@
             [
             {
            "type": "image",
-            "imageURL": "rennbahn_web_15_crop.webp"
+            "image": 
+                {
+                "src" : "rennbahn_web_15_crop.webp",
+                "alt" : "alt"
+                }
             },
             {
             "type": "video",
@@ -40,11 +44,26 @@
             "height": "half",
             "gallerycaption": "Einweihung des Flatterwegs, Fotos: Ricardo Nunes",
             "gallery": [
-            "rennbahn_web_52.webp",
-            "rennbahn_web_36.webp",
-            "rennbahn_web_55_cropped.webp",
-            "rennbahn_web_62.webp",
-            "rennbahn_web_39.webp"
+                {
+                    "src" : "rennbahn_web_52.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "rennbahn_web_36.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "rennbahn_web_55_cropped.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "rennbahn_web_62.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "rennbahn_web_39.webp",
+                    "alt" : "alt"
+                }
             ],
             "classes": [
             "half",
@@ -72,12 +91,30 @@
             "type": "gallery",
             "height": "half",
             "gallery": [
-            "Rennbahn_WS_3.webp",
-            "Rennbahn_WS_1.webp",
-            "Rennbahn_WS_2.webp",
-            "Rennbahn_Aufbau_2_quer.webp",
-            "Rennbahn_Aufbau_1.webp",
-            "Rennbahn_Aufbau_3.webp"
+                {
+                    "src" : "Rennbahn_WS_3.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "Rennbahn_WS_1.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "Rennbahn_WS_2.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "Rennbahn_Aufbau_2_quer.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "Rennbahn_Aufbau_1.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "Rennbahn_Aufbau_3.webp",
+                    "alt" : "alt"
+                }
             ],
             "classes": [
             "quarter",
@@ -107,8 +144,14 @@
             "type": "gallery",
             "height": "half",
             "gallery": [
-            "Rennbahn_AT_13.webp",
-            "Rennbahn_AT_1.webp"
+                {
+                    "src" : "Rennbahn_AT_13.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "Rennbahn_AT_1.webp",
+                    "alt" : "alt"
+                }
             ],
             "classes": [
             "quarter",
@@ -136,7 +179,10 @@
            "type": "image",
             "caption": ["Foto: Marek Lappe"           
             ],     
-            "imageURL": "Rennbahn_Drohne_Lappe.webp"
+            "image": {
+                "src" : "Rennbahn_Drohne_Lappe.webp",
+                "alt" : "alt"
+                }
             },
              
             {
@@ -150,7 +196,10 @@
             "height": "full",
             "gallerycaption": "Leitungsteam, Foto: Ricardo Nunes",
             "gallery": [
-            "rennbahn_web_78.webp"
+                {
+                    "src" :  "rennbahn_web_78.webp",
+                    "alt" : "alt"
+                }
             ],
             "classes": [
                 "half"
@@ -165,12 +214,30 @@
             "height": "full",
             "gallerycaption": "Gefördert wurde das Projekt im Rahmen der Initiative „Galop de Porc“.",
             "gallery": [
-            "Logos-Bremen.svg",
-            "Logos-Gewoba.svg",
-            "Logos-SMH.svg",
-            "Logos-Quartier.svg",
-            "Logos-GdP.svg",
-            "Logos-ZZZ.svg"
+                {
+                    "src" : "Logos-Bremen.svg",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "Logos-Gewoba.svg",
+                    "alt" : "alt"
+                },
+                {
+                    "src" :  "Logos-SMH.svg",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "Logos-Quartier.svg",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "Logos-GdP.svg",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "Logos-ZZZ.svg",
+                    "alt" : "alt"
+                }
             ],
             "classes": [
             "quarter",
@@ -209,8 +276,16 @@
             "text": "PROJEKTWOCHE IM ALLGÄU\n\nAusgehend von diesen Fragen haben wir gemeinsam mit Vanessa Müller (<a href='https://atelierbrieftau.be/'>Atelier Brieftaube</a>, Ottobeuren)‚ Land in Sicht‘ initiiert. Das Projekt möchte einen individuellen Austausch zwischen jungen Kreativen und ländlichen Gemeinden fördern. Die gemeinsame Vision ist es, innerhalb ländlicher Strukturen, neue Arbeits- und Lebensräume für Kreative zu entdecken und zu erschließen. Sowohl auf Seiten Kulturschaffender, als auch auf Seiten ruraler Gesellschaften soll ein stärkeres Verständnis für die gegenseitigen Bedürfnisse gewonnen werden."
             },
             {
+            "type": "video",
+                "videoURL": "processvideo.mp4"
+            },
+            {
             "type": "image",
-            "imageURL": "LandinSicht_150ppi_19-38.webp"
+            "image": 
+                {
+                "src" : "LandinSicht_150ppi_19-38.webp",
+                "alt" : "alt"
+                }
             },
             {
             "type": "text",
@@ -222,17 +297,38 @@
             "height": "half",
             "gallerycaption": "Eindrücke aus der Projektwoche, Fotos: Jakob Weber, Sara Förster, Luisa Recker",
             "gallery": [
-            "LandinSicht_120ppi_19-2.webp",
-            "LandinSicht_120ppi_19-3.webp",
-            "LandinSicht_120ppi_19-4.webp",
-            "LandinSicht_120ppi_19-5.webp",
-            "LandinSicht_120ppi_19-6.webp",
-            "LandinSicht_120ppi_19-8.webp",
-            "LandinSicht_120ppi_19-9.webp",
-            "LandinSicht_120ppi_19-7.webp"
-
-
-
+                {
+                    "src" : "LandinSicht_120ppi_19-2.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_120ppi_19-3.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_120ppi_19-4.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_120ppi_19-5.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" :  "LandinSicht_120ppi_19-6.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_120ppi_19-8.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_120ppi_19-9.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_120ppi_19-7.webp",
+                    "alt" : "alt"
+                }
             ],
             "classes": [
             "half",
@@ -266,15 +362,42 @@
             "height": "half",
             "gallerycaption": "Eindrücke der Abschlussausstellung, Fotos: Jakob Weber",
             "gallery": [
-            "LandinSicht_120ppi_19-10.webp",
-            "LandinSicht_120ppi_19-11.webp",
-            "LandinSicht_120ppi_19-12.webp",
-            "LandinSicht_120ppi_19-13.webp",
-            "LandinSicht_120ppi_19-14.webp",
-            "LandinSicht_120ppi_19-15.webp",
-            "LandinSicht_150ppi_19-39.webp",
-            "LandinSicht_120ppi_19-19.webp",
-            "LandinSicht_120ppi_19-20.webp"
+                {
+                    "src" : "LandinSicht_120ppi_19-10.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_120ppi_19-11.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_120ppi_19-12.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_120ppi_19-13.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_120ppi_19-14.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_120ppi_19-15.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_150ppi_19-39.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_120ppi_19-19.webp",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "LandinSicht_120ppi_19-20.webp",
+                    "alt" : "alt"
+                }
             ],
             "classes": [
             "third",
@@ -311,7 +434,9 @@
             "type": "gallery",
             "height": "full",
             "gallery": [
-            "Logo_LIS_kl.svg"
+                {   "src" : "Logo_LIS_kl.svg",
+                    "alt" : "alt"
+                }
 
             ],
             "classes": [
@@ -341,10 +466,19 @@
             "gallerycaption": "Förderpartner von Land in Sicht.",
 
             "gallery": [
-            "Logo_UFH_sw1.svg",
-            "Logo_Leader_sw.svg",
-            "Logo_Ottobeuren_sw.svg"
+                {
+                    "src" : "Logo_UFH_sw1.svg",
+                    "alt" : "alt"
 
+                },
+                {
+                    "src" : "Logo_Leader_sw.svg",
+                    "alt" : "alt"
+                },
+                {
+                    "src" : "Logo_Ottobeuren_sw.svg",
+                    "alt" : "alt"
+                }
             ],
             "classes": [
             "quarter",

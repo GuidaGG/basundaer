@@ -102,9 +102,16 @@
         "type": "gallery",
         "height": "half",
         "gallerycaption": "",
-        "gallery": [
-          "BA_Workshop_144_01.webp",
-          "BA_Workshop_144_02.webp"
+        "gallery": 
+        [
+          {
+            "src" : "BA_Workshop_144_01.webp",
+            "alt" : "alt"
+          },
+          {
+            "src" :  "BA_Workshop_144_02.webp",
+            "alt" : "alt"
+          }
         ],
         "classes": [ 
           "half",
@@ -126,7 +133,10 @@
         },
         {
           "type": "image",
-          "imageURL": "BA_Workshop_144_06.webp"
+          "image":  {
+            "src" : "BA_Workshop_144_06.webp",
+            "alt" : "alt"
+          }
         },
         {
           "type": "text",

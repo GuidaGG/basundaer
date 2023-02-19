@@ -1,27 +1,88 @@
 {
   "gallery": {
     "imagePath": "/static/img/Bas_Aer_Kundenlogos",
-    "images": [
-      "BA_Website_client_UHB20.png",
-      "BA_Website_client_PDS.png",
-      "BA_Website_client_KAE.png",
-      "BA_Website_client_STGB.png",
-      "BA_Website_client_SHB.png",
-      "BA_Website_client_COM.png",
-      "BA_Website_client_NUM.png",
-      "BA_Website_client_BPP.png",
-      "BA_Website_client_FHB-SK.png",
-      "BA_Website_client_K2.png",
-      "BA_Website_client_STE.png",
-      "BA_Website_client_KLZ.png",
-      "BA_Website_client_ZVC.png",
-      "BA_Website_client_ULU.png",
-      "BA_Website_client_KOC.png",
-      "BA_Website_client_ZPI.png",
-      "BA_Website_client_MBB.png",
-      "BA_Website_client_VRW.png",
-      "BA_Website_client_CIN.png",
-      "BA_Website_client_UVE.png"
+    "images": [ 
+      {
+      "src": "BA_Website_client_UHB20.png",
+      "alt" : "alt"
+      },
+      {
+        "src": "BA_Website_client_PDS.png",
+        "alt" : "alt"
+      },
+      {
+        "src":  "BA_Website_client_KAE.png",
+        "alt" : "alt"
+      },
+      {
+        "src": "BA_Website_client_STGB.png",
+        "alt" : "alt"
+      },
+      {
+        "src": "BA_Website_client_SHB.png",
+        "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_COM.png",
+          "alt" : "alt"
+        },
+        {
+          "src":  "BA_Website_client_NUM.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_BPP.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_FHB-SK.png",
+          "alt" : "alt"
+        },
+        {
+          "src":  "BA_Website_client_K2.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_STE.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_KLZ.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_ZVC.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_ULU.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_KOC.png",
+          "alt" : "alt"
+        },
+        {
+          "src":  "BA_Website_client_ZPI.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_MBB.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_VRW.png",
+          "alt" : "alt"
+        },
+        {
+          "src":  "BA_Website_client_CIN.png",
+          "alt" : "alt"
+        },
+        {
+          "src":  "BA_Website_client_UVE.png",
+          "alt" : "alt"
+        }
     ]
+
   }
 }
