@@ -262,14 +262,14 @@ class DesignProject {
      * Todo: OR OR: Find a nice plugin which does that :)
      * @private
      */
-    _renderGallery() {
+    /*_renderGallery() {
         this.isGalleryRendered = true
 
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
         let offset = 0;
         let firstActiveImg = null
 
-        let galleryMultiplier = 10;
+        let galleryMultiplier = 1;
 
         for (let i = 0; i < galleryMultiplier; ++i) {
             this.gallery.forEach(image => {
@@ -291,7 +291,9 @@ class DesignProject {
         }, 100)
         $imageContainer.css("filter", "")
         this._updateDots()
-    }
+    }*/
+
+    
 
     _renderDotIndicator() {
         let $dotIndicator = this.imageContainer().siblings(".dotIndicator")
