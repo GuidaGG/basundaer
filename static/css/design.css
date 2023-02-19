@@ -574,7 +574,8 @@ a {
   width: 100%;
 }
 #designContent .overlay,
-#designContent .imageContainer {
+#designContent img,
+#designContent video {
   background-color: #dcdcdc;
 }
 #designContent > .content {
@@ -809,7 +810,8 @@ a {
     height: 33vh;
   }
 }
-#designContent > .content .projects .projectContainer .gallery .imageContainer img {
+#designContent > .content .projects .projectContainer .gallery .imageContainer img,
+#designContent > .content .projects .projectContainer .gallery .imageContainer video {
   height: 100%;
   width: auto;
   margin-right: 10px;
@@ -873,14 +875,11 @@ a {
 }
 #designContent > .content .projects .projectContainer .gallery .navigation {
   position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
   top: 0;
-  display: flex;
   z-index: 5;
 }
-#designContent > .content .projects .projectContainer .gallery .navigation .prevImg {
+#designContent > .content .projects .projectContainer .gallery .prevImg {
+  left: 0;
   width: 50%;
   height: 100%;
   background-repeat: no-repeat;
@@ -889,30 +888,32 @@ a {
   background-size: 20px;
 }
 @media (min-width: 1201px) {
-  #designContent > .content .projects .projectContainer .gallery .navigation .prevImg {
+  #designContent > .content .projects .projectContainer .gallery .prevImg {
     cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
   }
-  #designContent > .content .projects .projectContainer .gallery .navigation .prevImg:hover {
+  #designContent > .content .projects .projectContainer .gallery .prevImg:hover {
     cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
   }
 }
 @media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
-  #designContent > .content .projects .projectContainer .gallery .navigation .prevImg {
+  #designContent > .content .projects .projectContainer .gallery .prevImg {
     cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_links.png") 46 16, auto;
   }
-  #designContent > .content .projects .projectContainer .gallery .navigation .prevImg:hover {
+  #designContent > .content .projects .projectContainer .gallery .prevImg:hover {
     cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 46 16, auto;
   }
 }
 @media (max-width: 600px) {
-  #designContent > .content .projects .projectContainer .gallery .navigation .prevImg {
+  #designContent > .content .projects .projectContainer .gallery .prevImg {
     cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
+    width: 35%;
   }
-  #designContent > .content .projects .projectContainer .gallery .navigation .prevImg:hover {
+  #designContent > .content .projects .projectContainer .gallery .prevImg:hover {
     cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
   }
 }
-#designContent > .content .projects .projectContainer .gallery .navigation .nextImg {
+#designContent > .content .projects .projectContainer .gallery .nextImg {
+  right: 0;
   width: 50%;
   height: 100%;
   background-repeat: no-repeat;
@@ -921,26 +922,27 @@ a {
   background-size: 20px;
 }
 @media (min-width: 1201px) {
-  #designContent > .content .projects .projectContainer .gallery .navigation .nextImg {
+  #designContent > .content .projects .projectContainer .gallery .nextImg {
     cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
   }
-  #designContent > .content .projects .projectContainer .gallery .navigation .nextImg:hover {
+  #designContent > .content .projects .projectContainer .gallery .nextImg:hover {
     cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
   }
 }
 @media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
-  #designContent > .content .projects .projectContainer .gallery .navigation .nextImg {
+  #designContent > .content .projects .projectContainer .gallery .nextImg {
     cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_rechts.png") 46 16, auto;
   }
-  #designContent > .content .projects .projectContainer .gallery .navigation .nextImg:hover {
+  #designContent > .content .projects .projectContainer .gallery .nextImg:hover {
     cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 46 16, auto;
   }
 }
 @media (max-width: 600px) {
-  #designContent > .content .projects .projectContainer .gallery .navigation .nextImg {
+  #designContent > .content .projects .projectContainer .gallery .nextImg {
     cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
+    width: 45%;
   }
-  #designContent > .content .projects .projectContainer .gallery .navigation .nextImg:hover {
+  #designContent > .content .projects .projectContainer .gallery .nextImg:hover {
     cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
   }
 }

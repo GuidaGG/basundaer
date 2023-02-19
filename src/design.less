@@ -3,7 +3,7 @@
 @import "common";
 
 #designContent {
-  .overlay, .imageContainer {
+  .overlay, img, video {
     background-color: @grau;
    
   }
@@ -157,7 +157,7 @@
               height: 33vh;
             }
 
-            img {
+            img, video {
               height: 100%;
               width: auto;
               margin-right: 10px;
@@ -217,21 +217,18 @@
 
           .navigation {
             position: absolute;
-            left: 0;
-            bottom: 0;
-            right: 0;
             top: 0;
-            display: flex;
-            //display: none;
             z-index: 5;
-
+          }
             .prevImg {
+              left: 0;
               width: 50%;
               height: 100%;
               background-repeat: no-repeat;
               background-position: center center;
               -webkit-background-size: 20px;
               background-size: 20px;
+    
 
               @media @media-large {
                 cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
@@ -249,7 +246,7 @@
               }
               @media @media-small {
                 cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
-
+                width: 35%;
                 &:hover {
                   cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
                 }
@@ -257,12 +254,14 @@
             }
 
             .nextImg {
+              right: 0;
               width: 50%;
               height: 100%;
               background-repeat: no-repeat;
               background-position: center center;
               -webkit-background-size: 20px;
               background-size: 20px;
+   
               @media @media-large {
                 cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
 
@@ -279,13 +278,13 @@
               }
               @media @media-small {
                 cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
-
+                width: 45%;
                 &:hover {
                   cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
                 }
               }
             }
-          }
+          
         }
       }
     }
