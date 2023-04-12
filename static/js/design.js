@@ -174,7 +174,7 @@ class DesignProject {
             else{
                 if (getMediaMatch() !== utils.SMALL) {
                     this.imageContainer().find("video").each(function() {
-                        //this.play()
+                        this.play()
                     })
                 
                     }
@@ -207,14 +207,12 @@ class DesignProject {
             } else if (this.videos.includes(extension)) {
                     content = document.createElement('video');
                     content.controls = true;
-                    //content.autoplay = true;
+                    content.autoplay = true;
                     content.loop = true ;
                     content.onloadstart = function (event) {
                         this._contentLoad(event)
                     }.bind(this)
             }
-        
-            
             content.src = source
             content.alt = image.alt
         })
@@ -429,10 +427,11 @@ class DesignProject {
                 <div class="gallery">
                     <div class="imageContainer">
                     </div>                
- 
-                        <div class='prevImg navigation'></div>
-                        <div class='nextImg navigation'></div>
+                    <div class='navigation'>
+                        <div class='prevImg'></div>
+                        <div class='nextImg'></div>
                     <div class="dotIndicator">
+                    </div>      
                     </div>
                 </div>
             </div>
