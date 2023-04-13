@@ -573,7 +573,8 @@ a {
   font-weight: lighter;
 }
 #researchContent .overlay,
-#researchContent img {
+#researchContent img,
+#researchContent video {
   background: #9699c7;
 }
 #researchContent .content {

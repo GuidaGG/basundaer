@@ -574,6 +574,8 @@ a {
   width: 100%;
 }
 #designContent .overlay,
+#designContent img,
+#designContent video,
 #designContent .imageContainer {
   background-color: #dcdcdc;
 }
@@ -672,10 +674,6 @@ a {
     -webkit-background-size: 25px 25px;
     background-size: 25px 25px;
   }
-}
-#designContent > .content h1 {
-  margin: 0;
-  font-weight: normal;
 }
 #designContent > .content .projects {
   display: flex;
@@ -807,12 +805,60 @@ a {
 @media (max-width: 600px) {
   #designContent > .content .projects .projectContainer .gallery .imageContainer {
     height: 33vh;
+    width: 100%;
   }
 }
-#designContent > .content .projects .projectContainer .gallery .imageContainer img {
+#designContent > .content .projects .projectContainer .gallery .imageContainer img,
+#designContent > .content .projects .projectContainer .gallery .imageContainer video {
   height: 100%;
   width: auto;
   margin-right: 10px;
+}
+#designContent > .content .projects .projectContainer .gallery .videoContainer {
+  position: relative;
+  flex-shrink: 2;
+  height: 100%;
+}
+#designContent > .content .projects .projectContainer .gallery .videoControls {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  #designContent > .content .projects .projectContainer .gallery .videoControls {
+    width: 40px;
+    height: 40px;
+  }
+}
+#designContent > .content .projects .projectContainer .gallery .play {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 35px 0px 35px 70px;
+  border-color: transparent transparent transparent #fff;
+}
+@media (max-width: 600px) {
+  #designContent > .content .projects .projectContainer .gallery .play {
+    border-width: 20px 0px 20px 40px;
+  }
+}
+#designContent > .content .projects .projectContainer .gallery .pause {
+  box-sizing: border-box;
+  border-style: double;
+  border-width: 0px 0px 0px 70px;
+  border-color: transparent;
+}
+@media (max-width: 600px) {
+  #designContent > .content .projects .projectContainer .gallery .pause {
+    border-width: 0 0px 0 20px;
+  }
+}
+#designContent > .content .projects .projectContainer .gallery .pause:hover {
+  border-color: white;
 }
 #designContent > .content .projects .projectContainer .gallery .dotIndicator {
   position: absolute;
