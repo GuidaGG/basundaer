@@ -805,6 +805,8 @@ a {
 @media (max-width: 600px) {
   #designContent > .content .projects .projectContainer .gallery .imageContainer {
     height: 33vh;
+    width: 100%;
+    background-color: red;
   }
 }
 #designContent > .content .projects .projectContainer .gallery .imageContainer img,
@@ -812,6 +814,41 @@ a {
   height: 100%;
   width: auto;
   margin-right: 10px;
+}
+#designContent > .content .projects .projectContainer .gallery .videoContainer {
+  position: relative;
+  flex-shrink: 2;
+  height: 100%;
+}
+#designContent > .content .projects .projectContainer .gallery .videoControls {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  #designContent > .content .projects .projectContainer .gallery .videoControls {
+    width: 40px;
+    height: 40px;
+  }
+}
+#designContent > .content .projects .projectContainer .gallery .play {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 35px 0px 35px 70px;
+  border-color: transparent transparent transparent #fff;
+}
+@media (max-width: 600px) {
+  #designContent > .content .projects .projectContainer .gallery .play {
+    border-width: 20px 0px 20px 40px;
+  }
+}
+#designContent > .content .projects .projectContainer .gallery .pause {
+  background-color: transparent;
 }
 #designContent > .content .projects .projectContainer .gallery .dotIndicator {
   position: absolute;

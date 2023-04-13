@@ -199,22 +199,25 @@ class DesignProject {
 
             let content = null;
 
-            if (this.images.includes(extension)) {
+         if (this.images.includes(extension)) {
                     content = new Image();
                     content.onload = function (event) {
                         this._contentLoad(event)
                     }.bind(this)
+                 
             } else if (this.videos.includes(extension)) {
-                    content = document.createElement('video');
-                    content.controls = true;
-                    content.autoplay = true;
-                    content.loop = true ;
-                    content.onloadstart = function (event) {
+                content = document.createElement('video');
+                content.controls = false;
+                content.autoplay = true;
+                content.loop = true ;
+                content.onloadstart = function (event) {
                         this._contentLoad(event)
                     }.bind(this)
+                
             }
             content.src = source
-            content.alt = image.alt
+            content.alt = image.alt    
+           
         })
     }
 
@@ -222,12 +225,17 @@ class DesignProject {
         let loadedImage = event.target
         let key = new URL(loadedImage.src).pathname
         this.downloadedImages[key] = loadedImage
-        this._appendImagesInOrder()
+
+      
+        if (getMediaMatch() === utils.SMALL) {
+            this._appendImagesInOrder()
+        }
+
 
         if (Object.keys(this.downloadedImages).length === this.gallery.length) {
             this._renderDotIndicator()
             this._renderGallery()
-
+            this._videoControls()
             // this makes sure that the thumbnails for the portfolio overlay
             // are already loaded, so the first galleries are loaded faster.
             if (!overlayLoaded) {
@@ -256,7 +264,16 @@ class DesignProject {
                 }
             } else if (this.videos.includes(extension)) {
                 if (this.imageContainer().find(`video[src="${imageKey}"]`).length === 0) {
-                    this.imageContainer().append(downloadedImage)
+                    let container = document.createElement('div')
+                    container.classList.add("videoContainer")
+
+                    let controls = document.createElement('div')
+                    controls.classList.add("videoControls", "play")
+
+                    container.append(downloadedImage)
+                    container.append(controls)
+
+                    this.imageContainer().append(container)
                 }
             }
 
@@ -289,6 +306,33 @@ class DesignProject {
         }, 100)
     }
 
+    _videoControls() {
+        let videoControls = this.imageContainer().find(".videoControls")
+
+        Array.from(videoControls).forEach(control =>
+            control.addEventListener("click", function() {
+                let video = this.previousSibling
+                if (getMediaMatch() === !utils.SMALL) {
+                    if(video.paused || video.ended || video.currentTime === 0){
+                        
+                        video.play();
+                        this.classList.remove("play")
+                        this.classList.add("pause")
+                    }
+                    else{
+                        video.pause();
+                        this.classList.remove("pause")
+                        this.classList.add("play")
+                    }
+                }
+                else{
+                    video.play();
+                    this.classList.remove("pause")
+                    this.classList.add("play")
+                }
+            })
+        );
+    }
     /**
      * Updates the dot indicators to represent the currently active image.
      * @private
@@ -297,7 +341,7 @@ class DesignProject {
         
         let currentImage = this.imageContainer().find(".active")[0]
 
-        let $dotIndicator = this.imageContainer().siblings(".dotIndicator")
+        let $dotIndicator = this.imageContainer().siblings().children(".dotIndicator")
         $dotIndicator.find(".dot.active").removeClass("active")
         if(currentImage.src){
             $dotIndicator.find(`.dot[data-src="${currentImage.src}"]`).addClass("active")
@@ -322,8 +366,25 @@ class DesignProject {
                 let src = `${this.galleryPath}/${encodeURIComponent(path.src)}`
                 let img = this.downloadedImages[src]
                 let firstActiveImg = null;
+                const extension = img.src.split(".")[1]
 
-                $imageContainer.append(img)
+                if (this.images.includes(extension)) {
+                    $imageContainer.append(img)
+                } else if (this.videos.includes(extension)) {
+
+                    let container = document.createElement('div')
+                    container.classList.add("videoContainer")
+
+                    let controls = document.createElement('div')
+                    controls.classList.add("videoControls", "play")
+
+                    container.append(img)
+                    container.append(controls)
+
+                    $imageContainer.append(container)
+                }
+    
+             
                 if (index==0) {
 
                     firstActiveImg = img
@@ -339,15 +400,16 @@ class DesignProject {
         })
         window.setTimeout(function () {
             $imageContainer.css({transition: "left 200ms ease-in-out"})
+
         }, 100)
         $imageContainer.css("filter", "")
     }
 
-    
 
     _renderDotIndicator() {
-        let $dotIndicator = this.imageContainer().siblings(".dotIndicator")
+        let $dotIndicator = this.imageContainer().siblings().children(".dotIndicator")
         this.imageContainer().children().toArray().forEach(img => {
+          
             $dotIndicator.append(`<div class="dot" data-src="${img.src}"></div>`)
         })
     }

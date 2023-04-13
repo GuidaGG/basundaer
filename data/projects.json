@@ -61,6 +61,10 @@
       "src" : "Nele_Web_mobile_2.jpg",
       "alt" : "alt"
     },
+      {
+      "src" : "Nele_Web_browser_kl.mp4",
+      "alt" : "alt"
+    },
     {
       "src" : "Nele_Web_mobile_3.jpg",
       "alt" : "alt"
@@ -74,9 +78,10 @@
       "alt" : "alt"
     },
     {
-      "src" : "Nele_Web_browser_kl.mp4",
+      "src" : "Nele_Web_browser_test.mp4",
       "alt" : "alt"
     },
+
     {
       "src" : "Nele_Web_browser_5.jpg",
       "alt" : "alt"
@@ -220,10 +225,6 @@
       },
       {
         "src" :   "GRK_CS_Web_browser_1200px_4.webp",
-        "alt" : "alt"
-      },
-      {
-        "src" :   "GRK_CS_Logo_RGB.svg",
         "alt" : "alt"
       },
       {
