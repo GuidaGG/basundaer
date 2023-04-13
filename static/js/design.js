@@ -117,6 +117,7 @@ class DesignProject {
      * setting the css left attribute. Does nothing if there is no predecessor.
      */
     prevImg() {
+        alert("back")
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
         let $currentActive = $imageContainer.find(".active")
 
@@ -152,15 +153,20 @@ class DesignProject {
      * setting the css left attribute. Does nothing if there is no successor.
      */
     nextImg() {
+
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
         let $currentActive = $imageContainer.find(".active")
-
+        console.log($currentActive)
         if ($currentActive.next().length > 0) {
+           
             $currentActive.removeClass("active").next().addClass("active")
             let $nextActive = $currentActive.next()
             let prevImagesWidth = 0
             Array.from($currentActive.prevAll()).forEach(image => prevImagesWidth += $(image).outerWidth(true))
             $imageContainer.css({left: -$nextActive.position().left})
+        }
+        else{
+            alert("last")
         }
         this._updateDots()
     }
@@ -227,15 +233,16 @@ class DesignProject {
         this.downloadedImages[key] = loadedImage
 
       
-        if (getMediaMatch() === utils.SMALL) {
+        if (getMediaMatch() === utils.MEDIUM) {
             this._appendImagesInOrder()
         }
 
 
         if (Object.keys(this.downloadedImages).length === this.gallery.length) {
-            this._renderDotIndicator()
+           
             this._renderGallery()
             this._videoControls()
+            this._renderDotIndicator()
             // this makes sure that the thumbnails for the portfolio overlay
             // are already loaded, so the first galleries are loaded faster.
             if (!overlayLoaded) {
@@ -312,7 +319,7 @@ class DesignProject {
         Array.from(videoControls).forEach(control =>
             control.addEventListener("click", function() {
                 let video = this.previousSibling
-                if (getMediaMatch() === !utils.SMALL) {
+                if (getMediaMatch() != utils.SMALL) {
                     if(video.paused || video.ended || video.currentTime === 0){
                         
                         video.play();
@@ -340,7 +347,6 @@ class DesignProject {
     _updateDots() {
         
         let currentImage = this.imageContainer().find(".active")[0]
-
         let $dotIndicator = this.imageContainer().siblings().children(".dotIndicator")
         $dotIndicator.find(".dot.active").removeClass("active")
         if(currentImage.src){
@@ -376,7 +382,8 @@ class DesignProject {
                     container.classList.add("videoContainer")
 
                     let controls = document.createElement('div')
-                    controls.classList.add("videoControls", "play")
+                    let videoButton = getMediaMatch() === utils.SMALL ? "play" : "pause";
+                    controls.classList.add("videoControls", videoButton)
 
                     container.append(img)
                     container.append(controls)
@@ -408,8 +415,9 @@ class DesignProject {
 
     _renderDotIndicator() {
         let $dotIndicator = this.imageContainer().siblings().children(".dotIndicator")
+        console.log(this.imageContainer().children())
         this.imageContainer().children().toArray().forEach(img => {
-          
+            
             $dotIndicator.append(`<div class="dot" data-src="${img.src}"></div>`)
         })
     }
