@@ -117,7 +117,7 @@ class DesignProject {
      * setting the css left attribute. Does nothing if there is no predecessor.
      */
     prevImg() {
-        alert("back")
+       
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
         let $currentActive = $imageContainer.find(".active")
 
@@ -156,7 +156,7 @@ class DesignProject {
 
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
         let $currentActive = $imageContainer.find(".active")
-        console.log($currentActive)
+
         if ($currentActive.next().length > 0) {
            
             $currentActive.removeClass("active").next().addClass("active")
@@ -165,8 +165,10 @@ class DesignProject {
             Array.from($currentActive.prevAll()).forEach(image => prevImagesWidth += $(image).outerWidth(true))
             $imageContainer.css({left: -$nextActive.position().left})
         }
-        else{
-            alert("last")
+        else {
+            $imageContainer.css({left: "0px"})
+            $currentActive.removeClass("active")
+            $imageContainer.children().first().addClass("active")
         }
         this._updateDots()
     }
@@ -176,8 +178,10 @@ class DesignProject {
         if (isElementInViewport($(`#${this.projectId}`)[0])) {
             if (!this.isGalleryRendered) {
                 this._downloadImages()
+
             }
             else{
+                // make videos autoplay on viewport
                 if (getMediaMatch() !== utils.SMALL) {
                     this.imageContainer().find("video").each(function() {
                         this.play()
@@ -187,6 +191,7 @@ class DesignProject {
             }
         }
         else {
+             // pause videos when out of viewport
             this.imageContainer().find("video").each(function() {
                 this.pause()
             })
@@ -197,16 +202,18 @@ class DesignProject {
     _downloadImages() {
         this.isGalleryRendered = true
 
- 
-        this.gallery.forEach(image => {
+        let $imageContainer = $(`#${this.projectId} .imageContainer`)
+        this.gallery.forEach((image, index) => {
             const source = this._getSrcForGalleryImage(image)
             const url = image.src
             const extension = url.split(".")[1]
-
             let content = null;
-
+    
          if (this.images.includes(extension)) {
                     content = new Image();
+                    if (index==0) {
+                        content.classList.add("active")
+                    }
                     content.onload = function (event) {
                         this._contentLoad(event)
                     }.bind(this)
@@ -216,6 +223,9 @@ class DesignProject {
                 content.controls = false;
                 content.autoplay = true;
                 content.loop = true ;
+                if (index==0) {
+                    content.classList.add("active")
+                }
                 content.onloadstart = function (event) {
                         this._contentLoad(event)
                     }.bind(this)
@@ -225,26 +235,29 @@ class DesignProject {
             content.alt = image.alt    
            
         })
+
+        window.setTimeout(function () {
+            $imageContainer.css({transition: "left 200ms ease-in-out"})
+            $imageContainer.css({left: "0px"})
+        }, 100)
+        $imageContainer.css("filter", "")
     }
 
     _contentLoad(event) {
+        this.isGalleryRendered = true
+        let $imageContainer = $(`#${this.projectId} .imageContainer`)
         let loadedImage = event.target
         let key = new URL(loadedImage.src).pathname
         this.downloadedImages[key] = loadedImage
 
-      
-        if (getMediaMatch() === utils.MEDIUM) {
-            this._appendImagesInOrder()
-        }
-
-
+        this._appendImagesInOrder()
+        
         if (Object.keys(this.downloadedImages).length === this.gallery.length) {
            
-            this._renderGallery()
+           // this._renderGallery()
             this._videoControls()
             this._renderDotIndicator()
-            // this makes sure that the thumbnails for the portfolio overlay
-            // are already loaded, so the first galleries are loaded faster.
+
             if (!overlayLoaded) {
                 overlayLoaded = true
                 portfolioOverlay.loadOverlay("portfolio",
@@ -275,7 +288,13 @@ class DesignProject {
                     container.classList.add("videoContainer")
 
                     let controls = document.createElement('div')
-                    controls.classList.add("videoControls", "play")
+                    if(getMediaMatch() === utils.SMALL){
+                        controls.classList.add("videoControls", "play")
+                    }
+                    else{
+                        controls.classList.add("videoControls", "pause")
+                    }
+                    
 
                     container.append(downloadedImage)
                     container.append(controls)
@@ -363,7 +382,7 @@ class DesignProject {
      * @private
      */
 
-    _renderGallery() {
+   /* _renderGallery() {
         this.isGalleryRendered = true
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
 
@@ -410,12 +429,12 @@ class DesignProject {
 
         }, 100)
         $imageContainer.css("filter", "")
-    }
+    } */
 
 
     _renderDotIndicator() {
         let $dotIndicator = this.imageContainer().siblings().children(".dotIndicator")
-        console.log(this.imageContainer().children())
+   
         this.imageContainer().children().toArray().forEach(img => {
             
             $dotIndicator.append(`<div class="dot" data-src="${img.src}"></div>`)

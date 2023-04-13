@@ -151,7 +151,6 @@
             @media @media-small {
               height: 33vh;
               width: 100%;
-              background-color: red;
             }
 
             img, video {
@@ -193,7 +192,16 @@
             }
           }
           .pause{
-            background-color: transparent;
+            box-sizing: border-box;
+            border-style: double;
+            border-width: 0px 0px 0px 70px;
+            border-color: transparent;
+            @media @media-small {
+              border-width: 0 0px 0 20px;
+            }
+          }
+          .pause:hover {
+            border-color: white;
           }
 
 
