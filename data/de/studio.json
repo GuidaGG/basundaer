@@ -1,0 +1,137 @@
+{
+  "section_title": "Studio",
+  "subtitle_1": "wir sind Bas&Aer.",
+  "subtitle_2": "Integriertes Designstudio aus Bremen und Berlin",
+  "paragraph_1": "Bei Bas&Aer bringen wir Botschaften in eine verständliche Form und Identitäten auf den Punkt. Wir lassen Ideen lebendig und erfahrbar werden. Zweidimensional, dreidimensional, analog, digital – Wir finden die passenden Formate und Medien für jedes Vorhaben.",
+  "paragraph_2" : " Transparente und direkte Kommunikation, kurze Entscheidungswege und ein gemeinsamer Anspruch sind für uns die Grundlage einer erfolgreichen Zusammenarbeit. Wir sind stolz auf das uns entgegengebrachte Vertrauen, den intensiven Dialog mit unseren Kund:innen und tolle Ergebnisse.",
+  "services" : "Leistungen" ,
+  "services_description" : "Bas&Aer wurde im November 2017 von Katharina Brock, Astrid Hesse und Ben Jurca gegründet. Seitdem bieten wir unseren Kund:innen eine umfangreiche Betreuung in den Bereichen Unternehmensidentität und -kommunikation, Innovation und kreative Problemlösung an.",
+  "concept_design_title": "Konzept & Design",
+  "concept_design" : {
+    "1": "Corporate Design & Communication",
+    "2": "Logos (Wort– und Bildmarken)",
+    "3": "Webauftritte und Digitale Anwendungen",
+    "4": "Leit– und Orientierungssysteme",
+    "5": "Messeauftritte und Ausstellungen",
+    "6": "Werbung und Printmedien",
+    "7": "Kataloge und Publikationen",
+    "8": "Verpackungen und POS"
+  },
+  "workshops_coaching_title" : "Workshop & Coaching",
+  "workshops_coaching" :  {
+      "1": "Verschiedene Workshopformate zu",
+      "1_list" : {
+        "1" : "Identität– und Profilschärfun",
+        "2" : "Storytelling und USP",
+        "3" : "Ziele und Visionen",
+        "4" : "Angebot und Dienstleistung",
+        "5" : "Wording und Namensfindung"
+      },
+      "2": "Seminare und Einzelcoachings für Existenzgründer*innen zu Themen der Corporate Identity"
+  },
+  "research_teaching_title" : "Research & Lehre",
+  "research_teaching" : {
+  "1" : "Entwicklung und Durchführung von praktischen Forschungsprojekten",
+  "2" : "Gestaltungsanalysen",
+  "3" : "Ideen und Konzepte für neue Produktangebote und Services",
+  "4" : "Lehraufträge und Seminare im Bereich",
+  "4_list" : {
+      "1" : "Design Thinking",
+      "2" : "Grundlagen des Designs",
+      "3" : "Experimental Design",
+      "4" : "Corporate Design und Storytelling"
+    }
+  },
+  "co-working" : "Co-Working",
+  "co_working_description": "Bas&Aer wurde im November 2017 von Katharina Brock, Astrid Hesse und Ben Jurca gegründet. Seitdem bieten wir unseren Kund:innen eine umfangreiche Betreuung in den Bereichen Unternehmensidentität und -kommunikation, Innovation und kreative Problemlösung an.",
+  "co_working_bremen": "Unser Coworking in Bremen:",
+  "co_working_berlin" : "Unser Coworking in Berlin:",
+  "clients" : "Kund:innen",
+  "clients_description" : "Unsere Projektpartner:innen kommen aus verschiedenen Branchen mit unterschiedlichen Vorhaben und Herausforderungen zu uns. Zum Glück sind wir mit vielen talentierten Kolleg:innen gut vernetzt. So können wir auch problemlos umfangreiche und ungewöhnliche Projekte umsetzen. Wir freuen uns auf Ihre Anfrage: <a href='mailto:info@basundaer.de'>info@basundaer.de</a>",
+  "gallery": {
+    "imagePath": "/static/img/Bas_Aer_Kundenlogos",
+    "images": [ 
+      {
+      "src": "BA_Website_client_UHB20.png",
+      "alt" : "alt in german"
+      },
+      {
+        "src": "BA_Website_client_PDS.png",
+        "alt" : "alt"
+      },
+      {
+        "src":  "BA_Website_client_KAE.png",
+        "alt" : "alt"
+      },
+      {
+        "src": "BA_Website_client_STGB.png",
+        "alt" : "alt"
+      },
+      {
+        "src": "BA_Website_client_SHB.png",
+        "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_COM.png",
+          "alt" : "alt"
+        },
+        {
+          "src":  "BA_Website_client_NUM.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_BPP.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_FHB-SK.png",
+          "alt" : "alt"
+        },
+        {
+          "src":  "BA_Website_client_K2.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_STE.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_KLZ.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_ZVC.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_ULU.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_KOC.png",
+          "alt" : "alt"
+        },
+        {
+          "src":  "BA_Website_client_ZPI.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_MBB.png",
+          "alt" : "alt"
+        },
+        {
+          "src": "BA_Website_client_VRW.png",
+          "alt" : "alt"
+        },
+        {
+          "src":  "BA_Website_client_CIN.png",
+          "alt" : "alt"
+        },
+        {
+          "src":  "BA_Website_client_UVE.png",
+          "alt" : "alt"
+        }
+    ]
+
+  }
+}

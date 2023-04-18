@@ -14,110 +14,129 @@
     </script>
     <script type="module">
         import studioPageReady from "./static/js/studio.js"
-        $('body').ready(function () {
-            studioPageReady()
-        })
-    </script>
+        import Translator from "./static/js/translator.js";
+        let t =  new Translator("studio");
+       // await t.load();
+       async function loadContent(lang = null, overlay = true){
+        await t.load(lang)
+        studioPageReady(t.translations, overlay)
+     }
+        $('body').ready(function () { 
 
-    <div class="sectionTitle">Studio</div>
+            loadContent()
+
+           document.querySelector("form").addEventListener("click", function(evt) {
+                if (evt.target.tagName === "INPUT") {
+                    //t.load(evt.target.value);
+                    loadContent(evt.target.value, false)
+                    /*console.log(t.translations)
+                    studioPageReady(t.translations, false)*/
+                }
+             })
+        })
+       
+    </script>
+ 
+<div id="studio-translations">
+    <div data-i18n="section_title" class="sectionTitle">Studio</div>
     <div class="close hasOverlay"></div>
 
     <div class="studio">
         <div class="headerImage"></div>
         <div class="studioContent pageContent">
             <div class="description">
-                <h1 class="heading heading1">Wir sind Bas&Aer.</h1>
+                <h1 data-i18n="subtitle_1" class="heading heading1">Wir sind Bas&Aer.</h1>
 
-                <h2 class="subHeading heading2 hheading" style="margin-top: 0px">Integriertes Designstudio aus Bremen und Berlin</h2>
+                <h2 data-i18n="subtitle_2" class="subHeading heading2 hheading" style="margin-top: 0px">Integriertes Designstudio aus Bremen und Berlin</h2>
 
                 <div class="description paragraph">
-                    <p>
+                    <p data-i18n="paragraph_1">
                         Bei Bas&Aer bringen wir Botschaften in eine verständliche Form und Identitäten auf den Punkt. Wir lassen Ideen lebendig und erfahrbar werden. Zweidimensional, dreidimensional, analog, digital – Wir finden die passenden Formate und Medien für jedes Vorhaben.
                     </p>
-                    <p>
+                    <p data-i18n="paragraph_2">
                         Transparente und direkte Kommunikation, kurze Entscheidungswege und ein gemeinsamer Anspruch sind für uns die Grundlage einer erfolgreichen Zusammenarbeit. Wir sind stolz auf das uns entgegengebrachte Vertrauen, den intensiven Dialog mit unseren Kund:innen und tolle Ergebnisse.
                     </p>
                 </div>   
                 <div class="description paragraph leistungen">       
-                        <h2 class="heading heading1" style="margin-top: 0px">Leistungen</h2>
-                        <p>
+                        <h2 data-i18n="services" class="heading heading1" style="margin-top: 0px">Leistungen</h2>
+                        <p data-i18n="services_description" >
                             Bas&Aer wurde im November 2017 von Katharina Brock, Astrid Hesse und Ben Jurca gegründet. Seitdem bieten wir unseren Kund:innen eine umfangreiche Betreuung in den Bereichen Unternehmensidentität und -kommunikation, Innovation und kreative Problemlösung an.
                         </p>
                 </div>   
                 <div class="serviceDescriptions paragraph">
                     <div class="serviceDescription">
-                        <h3 class="header paragraph">Konzept & Design</h3>
+                        <h3 data-i18n="concept_design_title" class="header paragraph">Konzept & Design</h3>
                         <div>
                             <ul>
-                                <li>Corporate Design & Communication</li>
-                                <li>Logos (Wort– und Bildmarken)</li>
-                                <li>Webauftritte und Digitale Anwendungen</li>
-                                <li>Leit– und Orientierungssysteme</li>
-                                <li>Messeauftritte und Ausstellungen</li>
-                                <li>Werbung und Printmedien</li>
-                                <li>Kataloge und Publikationen</li>
-                                <li>Verpackungen und POS</li>
+                                <li data-i18n="concept_design.1">Corporate Design & Communication</li>
+                                <li data-i18n="concept_design.2">Logos (Wort– und Bildmarken)</li>
+                                <li data-i18n="concept_design.3">Webauftritte und Digitale Anwendungen</li>
+                                <li data-i18n="concept_design.4">Leit– und Orientierungssysteme</li>
+                                <li data-i18n="concept_design.5">Messeauftritte und Ausstellungen</li>
+                                <li data-i18n="concept_design.6">Werbung und Printmedien</li>
+                                <li data-i18n="concept_design.7">Kataloge und Publikationen</li>
+                                <li data-i18n="concept_design.8">Verpackungen und POS</li>
                             </ul>
                         </div>
                     </div>
                     <div class="serviceDescription">
-                        <h3 class="header paragraph">Workshop & Coaching</h3>
+                        <h3  data-i18n="workshops_coaching_title" class="header paragraph">Workshop & Coaching</h3>
                         <div>
                             <ul>
-                                <li>Verschiedene Workshopformate zu</li>
+                                <li data-i18n="workshops_coaching.1" >Verschiedene Workshopformate zu</li>
                                     <ul>
-                                        <li>Identität– und Profilschärfung</li>
-                                        <li>Storytelling und USP</li>
-                                        <li>Ziele und Visionen</li>
-                                        <li>Angebot und Dienstleistung</li>
-                                        <li>Wording und Namensfindung</li>
+                                        <li data-i18n="workshops_coaching.1_list.1" >Identität– und Profilschärfung</li>
+                                        <li data-i18n="workshops_coaching.1_list.2" >Storytelling und USP</li>
+                                        <li data-i18n="workshops_coaching.1_list.3" >Ziele und Visionen</li>
+                                        <li data-i18n="workshops_coaching.1_list.4" >Angebot und Dienstleistung</li>
+                                        <li data-i18n="workshops_coaching.1_list.5" >Wording und Namensfindung</li>
                                     </ul>
-                                <li>Seminare und Einzelcoachings für Existenzgründer*innen zu Themen der Corporate
+                                <li data-i18n="workshops_coaching.2">Seminare und Einzelcoachings für Existenzgründer*innen zu Themen der Corporate
                                     Identity
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="serviceDescription">
-                        <h3 class="header paragraph">Research & Lehre</h3>
+                        <h3 data-i18n="research_teaching_title" class="header paragraph">Research & Lehre</h3>
                         <div>
                             <ul>
-                                <li>Entwicklung und Durchführung von praktischen Forschungsprojekten</li>
-                                <li>Gestaltungsanalysen</li>
-                                <li>Ideen und Konzepte für neue Produktangebote und Services</li>
-                                <li>Lehraufträge und Seminare im Bereich</li>
+                                <li data-i18n="research_teaching.1">Entwicklung und Durchführung von praktischen Forschungsprojekten</li>
+                                <li data-i18n="research_teaching.2">Gestaltungsanalysen</li>
+                                <li data-i18n="research_teaching.3">Ideen und Konzepte für neue Produktangebote und Services</li>
+                                <li data-i18n="research_teaching.4">Lehraufträge und Seminare im Bereich</li>
                                     <ul>
-                                        <li>Design Thinking</li>
-                                        <li>Grundlagen des Designs</li>
-                                        <li>Experimental Design</li>
-                                        <li>Corporate Design und Storytelling</li>
+                                        <li data-i18n="research_teaching.4_list.1" >Design Thinking</li>
+                                        <li data-i18n="research_teaching.4_list.2">Grundlagen des Designs</li>
+                                        <li data-i18n="research_teaching.4_list.3">Experimental Design</li>
+                                        <li data-i18n="research_teaching.4_list.4">Corporate Design und Storytelling</li>
                                     </ul>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="description paragraph co-working">
-                    <h2 class="heading heading1">Co-Working</h2>
+                    <h2 data-i18n="co_working" class="heading heading1">Co-Working</h2>
                
-                    <p>
+                    <p data-i18n="co_working_description" >
                         Bas&Aer wurde im November 2017 von Katharina Brock, Astrid Hesse und Ben Jurca gegründet. Seitdem bieten wir unseren Kund:innen eine umfangreiche Betreuung in den Bereichen Unternehmensidentität und -kommunikation, Innovation und kreative Problemlösung an.
                     </p>
                 </div>
                 <div class="description half gallery-zone zone studio-gallery" style="padding: 0px"> <!--  -->
                     <div class="half">  <!---->
                     <img style="vertical-align: middle; width: 100%; margin-bottom: 5px" src="/static/img/studio/2OGohne-Logo-neu-2.jpg" alt="Casino Futur"> 
-                    <p class="paragraph">Unser Coworking in Bremen: <a href="https://www.casinofutur.de/" target="_blank">Casino Futur</a></p> 
+                    <p class="paragraph" data-i18n="co_working_bremen" >Unser Coworking in Bremen: <a href="https://www.casinofutur.de/" target="_blank" >Casino Futur</a></p> 
                     </div>                
                     <div class="half">
                     <img style="vertical-align: middle; width: 100%; margin-bottom: 5px" src="/static/img/studio/yoga+at+Lobe+Block-Christina+Metzler-2.jpg" alt="Lobeblock"> 
-                    <p class="paragraph">Unser Coworking in Berlin: <a href="https://lobe.berlin/de/" target="_blank">Lobestudio 1.2</a></p> 
+                    <p class="paragraph" data-i18n="co_working_berlin">Unser Coworking in Berlin: <a href="https://lobe.berlin/de/" target="_blank">Lobestudio 1.2</a></p> 
                     </div>
                     
                 </div>
                 
                 <div class="description paragraph kundinnen">
-                    <h2 class="heading heading1" style="margin: 60px 0 10px 0">Kund:innen</h2>
-                    <p>
+                    <h2 class="heading heading1" style="margin: 60px 0 10px 0" data-i18n="clients">Kund:innen</h2>
+                    <p data-i18n="clients_description">
                         Unsere Projektpartner:innen kommen aus verschiedenen Branchen mit unterschiedlichen Vorhaben und Herausforderungen zu uns. Zum Glück sind wir mit vielen talentierten Kolleg:innen gut vernetzt. So können wir auch problemlos umfangreiche und ungewöhnliche Projekte umsetzen. Wir freuen uns auf Ihre Anfrage: <a href="mailto:info@basundaer.de">info@basundaer.de</a>
                     </p> 
                 </div>   
@@ -127,7 +146,6 @@
             </div>
         </div>
     </div>
-
     <div class="overlay">
         <div class="overlayContentContainer">
             <div class="overlayScrollContainer">

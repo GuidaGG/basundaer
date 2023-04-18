@@ -36,9 +36,28 @@
     <script type="module">
         import ready from "./static/js/ba.js"
         $('body').ready(function(){ ready()})
+
+        import Translator from "./static/js/translator.js";
+        let t =  new Translator("index");
+        t.load();
+  
+
+       document.querySelector("form").addEventListener("click", function(evt) {
+        if (evt.target.tagName === "INPUT") {
+            document.documentElement.lang = evt.target.value;
+        }
+       });
     </script>
 </head>
 <body>
+    <form style="position:fixed; bottom: 0; right: 0; z-index:1000">
+        <fieldset>
+          <label>
+            <input type="radio" name="lang" value="en" checked /> English
+          </label>
+          <label> <input type="radio" name="lang" value="de" /> German </label>
+        </fieldset>
+      </form>
     <div class="gridContainer">
         <div class="baLogo" id="baLogo">
             <div class="ba">
@@ -59,31 +78,31 @@
         <div class="section impressum" id="impressum">Impressum</div>
     </div>
     <div id="studioContent" class="fullSection" style="display: none;" itemscope>
-        <h2 style="display: none;">Studio</h2>
+        <h2 data-i18n="studio" style="display: none;">Studio</h2>
                         <p style="display: none;">Bei Bas&Aer bringen wir Botschaften in eine verständliche Form und Identitäten auf den Punkt. Wir lassen Ideen lebendig und erfahrbar werden. Zweidimensional, dreidimensional, analog, digital – Wir finden die passenden Formate und Medien für jedes Vorhaben. Transparente und direkte Kommunikation, kurze Entscheidungswege und ein gemeinsamer Anspruch sind für uns die Grundlage einer erfolgreichen Zusammenarbeit. Wir sind stolz auf das uns entgegengebrachte Vertrauen, den intensiven Dialog mit unseren Kund*innen und tolle Ergebnisse.</p>
                         <p style="display: none;">Bas&Aer ist auf <a href="https://www.instagram.com/bas_und_aer/">Instagram</a></p>
     </div>
     <div id="workshopContent" class="fullSection" style="display: none;">
-        <h2 style="display: none;">Workshop</h2>
+        <h2 data-i18n="workshop" style="display: none;">Workshop</h2>
                         <p style="display: none;">In den <a href="https://basundaer.de/#/workshop">Workshops</a> von Bas&Aer kombinieren wir strategische und spielerische Methoden, um Ihr Unternehmen in den Bereichen Kommunikation, Identität und Innovation zu stärken und effizient nachhaltige Lösungen zu entwickeln.</p>
     </div>
     <div id="researchContent" class="fullSection" style="display: none;">
-        <h2 style="display: none;">Research</h2>
+        <h2 data-i18n="research" style="display: none;">Research</h2>
                         <p style="display: none;">Wir wollen unser gesellschaftliches Miteinander aus der Designpraxis heraus <a href="https://basundaer.de/#/research">neu denken</a>: Ein ergebnisoffener Prozess ermöglicht uns, bewährte Wege der Kommunikation und Interaktion infrage zu stellen und neue Formate, Gestaltungsrichtungen und Methoden zu entwickeln. Neben der gestalterischen Umsetzung, erarbeiten wir die Projektidee, übernehmen Planung und Strategie und führen partizipative Formate wie beispielsweise Workshops durch.</p>
     </div>
     <div id="designContent" class="fullSection" style="display: none;">
-        <h2 style="display: none;">Design</h2>
+        <h2 data-i18n="design" style="display: none;">Design</h2>
                         <p style="display: none;">Bas&Aer entwickelt <a href="https://basundaer.de/#/design">nachhaltige Gestaltung</a>: Corporate Design, Corporate Communication, Logos (Wort– und Bildmarken), Webauftritte und Digitale Anwendungen, Leit– und Orientierungssysteme, Messeauftritte und Ausstellungen, Werbung und Printmedien, Kataloge und Publikationen, Verpackungen und POS</p>
     </div>
     <div id="kontaktContent" class="fullSection" style="display: none;">
-        <h3 style="display: none;">Kontakt</h3>
+        <h3 data-i18n="contact" style="display: none;">Kontakt</h3>
                         <p style="display: none;">Treten Sie mit Bas&Aer in <a href="https://basundaer.de/#/kontakt">Kontakt</a>. Sie erreichen uns telefonisch, in unseren Studios in Bremen und Berlin oder rund um die Uhr per E-Mail.</p>
     </div>
-    <div id="datenschutzContent" class="fullSection" style="display: none;">
+    <div data-i18n="privacyPolicy" id="datenschutzContent" class="fullSection" style="display: none;">
         <h3 style="display: none;">Datenschutz</h3>
                         <p style="display: none;"><a href="https://basundaer.de/#/datenschutz">Datenschutzerklärung</a></p>
     </div>
-    <div id="impressumContent" class="fullSection" style="display: none;">
+    <div data-i18n="imprint" id="impressumContent" class="fullSection" style="display: none;">
         <h3 style="display: none;">Impressum</h3>
                         <p style="display: none;"><a href="https://basundaer.de/#/impressum">Impressum</a></p>
     </div>

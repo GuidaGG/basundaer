@@ -37,10 +37,10 @@ export default class Overlay {
      * @param {function} [contentLoadedCallback] - Called after the overlay page is loaded (if given).
      */
     loadOverlay(overlayPage, appendToId, mainContentId, overlayTitle, contentLoadedCallback) {
-
+        alert("loadoverlay")
         $.get(`/${overlayPage}.html`)
             .done(function (data) {
-                $(`#${appendToId}`).append($(data).find(".overlayPageContent"))
+                $(`#${appendToId}`).html($(data).find(".overlayPageContent"))
                 if (contentLoadedCallback) {
                     window.setTimeout(contentLoadedCallback, 300)
                 }
