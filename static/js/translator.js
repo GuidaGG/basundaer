@@ -1,7 +1,8 @@
 "use strict"
 class Translator {
-  constructor(location) {
+  constructor(location, file) {
     this._location = location
+    this._file = file ? file : location
     this._lang = this.getLanguage();
     this.translations;
     this._container = document.getElementById(`${location}-translations`);
@@ -20,14 +21,14 @@ class Translator {
     if (lang) {
       this._lang = lang;   
     }
-    await fetch(`./data/${this._lang}/${this._location}.json`)
+    await fetch(`./data/${this._lang}/${this._file}.json`)
         .then((res) => res.json())
         .then((translation) => {
             this.translations = translation
             this.translate(translation);
         })
         .catch(() => {
-            console.error(`./data/${this._lang}/${this._location}.json not found`);
+            console.error(`./data/${this._lang}/${this._file}.json not found`);
         });
 }
 returnTranslations(){
@@ -35,6 +36,7 @@ returnTranslations(){
 }
 translate(translation) {
     this._elements.forEach((element) => {
+      console.log(element, this._location)
         var keys = element.dataset.i18n.split(".");
         var text = keys.reduce((obj, i) => obj[i], translation);
 

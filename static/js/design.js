@@ -528,13 +528,14 @@ class DesignProject {
     }
 }
 
-export default function designPageReady() {
+export default function designPageReady(translations) {
     console.log("design page ready!")
 
     //TODO: project data from projects.json is loaded in portfolio as well. Consider consolidating/sharing project data
 
-    $.getJSON("/data/projects.json", function (projectData) {
-        projectData.forEach(p => {
+        $(".projects").html("")
+        translations.projects.forEach(p => {
+            
             let project = new DesignProject(p)
             designProjects.push(project)
             project.appendTo($(".projects"))
@@ -557,5 +558,5 @@ export default function designPageReady() {
             }, 100)
         })
 
-    })
+    
 }

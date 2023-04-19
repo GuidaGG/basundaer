@@ -1,0 +1,164 @@
+{
+  "workshops": [
+    {
+      "heading": "Frisch & Clever",
+      "category": "Einzelcoaching Start-Up",
+      "imageURL" : "BA_Workshop_144_02.webp",
+      "description": [
+        {
+          "light": "Fragen: ",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        },
+        {
+          "light": "Fragen: ",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        },
+        {
+          "light": "Fragen: ",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        },
+        {
+          "light": "",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        }
+      ]
+    },
+    {
+      "heading": "Identität & Story",
+      "category": "Workshop Unternehmensprofil",
+      "imageURL" : "BA_Workshop_144_02.webp",
+      "description":  [
+        {
+          "light": "Fragen: ",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        },
+        {
+          "light": "Fragen: ",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        },
+        {
+          "light": "Fragen: ",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        },
+        {
+          "light": "",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        }
+      ]
+    },
+    {
+      "heading": "Identität & Story",
+      "imageURL" : "BA_Workshop_144_02.jpg",
+      "category": "Workshop Unternehmensprofil",
+      "description":  [
+        {
+          "light": "Fragen: ",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        },
+        {
+          "light": "Fragen: ",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        },
+        {
+          "light": "Fragen: ",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        },
+        {
+          "light": "",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        }
+      ]
+    },
+    {
+      "heading": "Identität & Story",
+      "imageURL" : "BA_Workshop_144_02.jpg",
+      "category": "Workshop Unternehmensprofil",
+      "description":  [
+        {
+          "light": "Fragen: ",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        },
+        {
+          "light": "Fragen: ",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        },
+        {
+          "light": "Fragen: ",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        },
+        {
+          "light": "",
+          "bold" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus nec."
+        }
+      ]
+    }
+  ],
+
+  "intro": "In den Workshops von Bas&Aer kombinieren wir strategische und spielerische Methoden, um Ihr Unternehmen in den Bereichen Kommunikation, Identität und Innovation zu stärken und effizient nachhaltige Lösungen zu entwickeln",
+  "galleryFolder": "workshops",
+  "dynamic": 
+    [
+      {
+        "type": "gallery",
+        "height": "half",
+        "gallerycaption": "",
+        "gallery": 
+        [
+          {
+            "src" : "BA_Workshop_144_01.webp",
+            "alt" : "alt"
+          },
+          {
+            "src" :  "BA_Workshop_144_02.webp",
+            "alt" : "alt"
+          }
+        ],
+        "classes": [ 
+          "half",
+          "half"
+        ],
+        "captions": [
+        ]
+  
+      },
+      {
+        "type": "text",
+        "class" : "intro",
+        "text": "Ob es um die Positionierung Ihres Unternehmens, die Entwicklung eines innnovativen Serviceangebotes oder den Zugang zu Ihrer Zielgruppe geht – die Workshops von Bas&Aer bieten Raum, Zeit und das nötige Know-How, um bestehende Herausforderungen intensiv zu betrachten und gemeinsam eine Vision zu erarbeiten: So finden wir individuelle Stärken und authentische Geschichten, die im Gedächtnis bleiben und das Herz berühren."
+        },
+        {
+          "type": "text",
+          "class" : "intro",
+          "text": "Jeder Workshop stellt mit seinen Erkenntnissen die entscheidenden Weichen für die weitere Entwicklung: Mit einem tiefgreifenden Verständnis von Ausgangslage und Anforderungen, sowie einer klaren Perspektive auf konkrete Umsetzungsmöglichkeiten können alle Beteiligten besser involviert werden. Und das spart Zeit und Geld."
+        },
+        {
+          "type": "image",
+          "image":  {
+            "src" : "BA_Workshop_144_06.webp",
+            "alt" : "alt"
+          }
+        },
+        {
+          "type": "text",
+          "class" : "intro",
+          "text": "In unseren Workshops arbeiten wir auf Augenhöhe. Wir beziehen die Stärken, Perspektiven und Kenntnisse aller Personen am Tisch mit ein. Neben einer Bandbreite an Kreativmethoden setzen wir auf eine klare Moderation: empathisch und reflektiert, ideenreich und kritisch."
+        },
+
+        {
+          "type": "text",
+          "class" : "intro",
+          "text": "Unsere Herangehensweise ist eine Balance aus Intuition und Diskussion. Mit diesen grundlegenden Bestandteilen kreativer Arbeit lösen wir Denkblockaden, locken innovative Ideen hervor und erarbeiten präzise, konsequente Konzepte."
+        },
+        {
+          "type": "text",
+          "class" : "intro",
+          "text": "Klicken Sie für einen ersten Eindruck von unsere Workshop Formaten rechts auf den Seitenstreifen oder fragen Sie uns nach einem individuell auf Ihre Bedürfnissen und Anforderung zugeschnittenen Workshop:"
+        },
+        {
+          "type": "text",
+          "class" : "intro",
+          "text": "<a href='mailto:info@basundaer.de' target='_blank'>info@basundaer.de</a>"
+        }
+    ]
+
+}

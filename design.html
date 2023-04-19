@@ -7,27 +7,41 @@
 </head>
 <body>
 
-<div class="content">
+<div class="content" id="design-translations">
     <script type="module">
+        import Translator from "./static/js/translator.js";
         import designPageReady from "./static/js/design.js"
+
+        let t =  new Translator("design");
+        async function loadContent(lang = null, overlay = true){
+            await t.load(lang)
+            designPageReady(t.translations, overlay)
+         }  
+
+
         $('body').ready(function () {
-            designPageReady()
+            loadContent()
+
+            document.querySelector("form").addEventListener("click", function(evt) {
+                if (evt.target.tagName === "INPUT") {
+                    loadContent(evt.target.value, false)
+      
+                }
+             })
         })
     </script>
     <link href="./static/css/design.css" rel="stylesheet">
     <link href="./static/css/overlay.css" rel="stylesheet">
 
     <div class="sectionTitle">
-        <h1 class="clickableSectionTitle heading0">Design</h1>
+        <h1 data-i18n="section_title"  class="clickableSectionTitle heading0">Design</h1>
         <div class="projectFilter"></div>
     </div>
     <div class="close hasOverlay"></div>
 
-    <div class="projects content-margin-top">
+    <div   class="projects content-margin-top">
         <!-- content filled by design.js -->
     </div>
-
-    <div id="something" style="display: none">### Something ###</div>
 
     <div class="overlay">
         <div class="overlayContentContainer">
@@ -38,7 +52,7 @@
             </div>
         </div>
         <div class="openHandle">
-            <div class="overlayTitle paragraph"></div>
+            <div data-i18n="overlay_title" class="overlayTitle paragraph"></div>
         </div>
     </div>
 </div>

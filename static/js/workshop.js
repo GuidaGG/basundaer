@@ -1,6 +1,5 @@
 
 import Overlay from "/static/js/overlay.js"
-import TouchDragHandler from "/static/js/TouchDragHandler.js"
 export let workshopOverlay = new Overlay()
 export let workshopProjects = []
 let overlayLoaded = false
@@ -171,29 +170,29 @@ class Workshops {
 }
 
 
-export default function workshopPageReady() {
+export default function workshopPageReady(translations) {
     console.log("workshop page ready!")
    
-    $.getJSON("/data/workshops.json", function (workshopData) {
-        console.log(workshopData)
+    let workshopData = translations
+    if(workshopData) {
         let workshopContent = new WorkshopContent(workshopData)
         let workshops = workshopData.workshops
         workshops.forEach(p => {
             let workshopProject = new Workshops(p)
             workshopProjects.push(workshopProject)
         })    
-        $(".workshop .workshopContent").append(workshopContent.render())
+        $(".workshop .workshopContent").html(workshopContent.render())
         $(".workshop .workshopContent #workshopSideContent").append(workshopContent.renderoverlay())
         
    
-    })
+    }
     
-    if (!overlayLoaded) {
+    /*if (!overlayLoaded) {
         overlayLoaded = true
         workshopOverlay.loadOverlay("workshopOverlay",
             "workshopSideContent",
             "workshopContent",
             "THEMEN & FORMATE")
-    }
+    }*/
     
 }
