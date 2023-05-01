@@ -225,12 +225,14 @@ class Section {
         if (!this.$border) {
             let borderDiv = document.createElement("div")
             this.$border = $(borderDiv)
-            this.$border.append(`<div class="initialSectionTitle">${$(this.sourceSection).text()}</div>`)
+            this.$border.append(`<div data-i18n="${this.sectionId}" class="initialSectionTitle">${$(this.sourceSection).text()}</div>`)
+        }else{
+            this.$border[0].childNodes[0].innerHTML = $(this.sourceSection).text()
         }
 
         let rect = this._getSourceSectionRect()
         for (let side of Object.keys(rect)) {
-            console.log(rect[side])
+
             if (rect[side] > 1) {
                 console.log(`border-${side}`)
                 this.$border.addClass(`border-${side} fsBorder`)

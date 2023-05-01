@@ -11,19 +11,22 @@
     <script type="module">
         import Translator from "./static/js/translator.js";
         let t =  new Translator("contact");
-        await  t.load()
+
+        async function loadContent(lang = null, overlay = true){
+            await t.load(lang)
+        }
 
         $('body').ready(function () { 
-
+         loadContent();
         document.querySelector("form").addEventListener("click", function(evt) {
                 if (evt.target.tagName === "INPUT") {
-                    t.load(evt.target.value, false)
+                    loadContent(evt.target.value, false)
                 }
              })
         })
        
     </script>
-    <h1 data-i18n="section_title" class="sectionTitle heading0">Kontakt</h1>
+    <h1 data-i18n="section_title" class="sectionTitle heading0"></h1>
     <div class="close"></div>
 
     <div id="kontaktContent">

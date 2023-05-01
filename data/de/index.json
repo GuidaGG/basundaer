@@ -1,7 +1,12 @@
 {   
     "studio" : "Studio",
-    "design" : "Sesign",  
+    "design" : "Design",  
     "contact" : "Kontakt",
+    "kontakt" : "Kontakt",
     "workshop" : "Workshop",
-    "research" : "Forschung"
+    "research" : "Forschung",
+    "imprint" : "Impressum",
+    "impressum" : "Impressum",
+    "privacy-policy" : "Datenschutz",
+    "datenschutz" : "datenschutz"
 }

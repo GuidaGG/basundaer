@@ -226,24 +226,21 @@ function showThumbnails($thumbnails) {
  * @param portfolioOverlay - The overlay object containing the portfolio
  * @param designProjects - The projects of the design page, used to trigger scrolling to a specific project.
  */
-export default function ResearchIndexReady(portfolioOverlay, designProjects) {
+export default function ResearchIndexReady(translations, portfolioOverlay, designProjects) {
     console.log("research index ready")
-
     // todo: consolidate DesignProject and Project classes and just use the original designProjects data here.
     //  loading the projects.json here would then be obsolete.
     _originalProjects = designProjects
     _portfolioOverlay = portfolioOverlay
-
-    $.getJSON("/data/research.json", function (projectData) {
-        projectData.forEach(p => {
-
+    $(".list").html("");
+        translations.projects.forEach(p => {
+            console.log(translations)
             let project = new Index(p)
             _projects.push(project)
             project.renderTitle($(".list"))
         })
 
   
-    })
 
      //backbutton
        
