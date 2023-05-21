@@ -316,33 +316,59 @@ a {
   display: flex;
 }
 input.lang {
-  width: 26px;
+  width: 32px;
   -webkit-appearance: none;
   background: transparent;
   border: none;
   font-size: 14px;
+  color: black;
   font-weight: normal;
   cursor: pointer;
   text-transform: uppercase;
 }
 input.lang:disabled,
-input.lang:hover {
+input.lang:hover,
+input.lang:active {
   color: black;
   font-weight: bolder;
 }
 input.de {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   margin-right: -4px;
 }
 input.en {
-  margin-top: 20px;
+  margin-top: 25px;
   margin-left: -8px;
 }
 .divider {
-  height: 40px;
+  height: 50px;
   width: 2px;
   background-color: black;
   transform: rotate(45deg);
+}
+@media (max-width: 600px) {
+  .languageSwitcher {
+    right: 15px;
+    bottom: 5px;
+  }
+  input.lang {
+    font-size: 18px;
+    width: auto;
+  }
+  input.de {
+    margin-bottom: 30px;
+    margin-right: -18px;
+  }
+  input.en {
+    margin-top: 30px;
+    margin-left: -18px;
+  }
+  .divider {
+    height: 60px;
+    width: 2px;
+    background-color: black;
+    transform: rotate(45deg);
+  }
 }
 @media (min-width: 1201px) {
   .pageContent,
