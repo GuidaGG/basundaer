@@ -3,7 +3,7 @@ import Overlay from "/static/js/overlay.js"
 function renderCustomerGallery(gallery) {
     let result = ""
     gallery.images.forEach((image) => {
-        console.log(image)
+
         result += `
             <div class="imageContainer">
                 <div class="image" 
@@ -12,20 +12,23 @@ function renderCustomerGallery(gallery) {
                 </div>
             </div>`
     })
-    $(".customers .gallery").append(result)
+    $(".customers .gallery").html(result)
 }
 
-export default function studioPageReady() {
+export default function studioPageReady(translations, overlay = true) {
     console.log("studio ready!")
-
+    if(overlay) {
     let o = new Overlay()
     o.loadOverlay(
         "studioOverlay",
         "studioOverlayContent",
         "studioContent",
         "Team")
+    }
 
-    $.getJSON("/data/studio.json", function (studioData) {
+    renderCustomerGallery(translations.gallery)
+    /*Ü$.getJSON("/data/studio.json", function (studioData) {
         renderCustomerGallery(studioData.gallery)
-    })
+    })*/
 }
+

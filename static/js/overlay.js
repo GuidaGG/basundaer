@@ -37,10 +37,9 @@ export default class Overlay {
      * @param {function} [contentLoadedCallback] - Called after the overlay page is loaded (if given).
      */
     loadOverlay(overlayPage, appendToId, mainContentId, overlayTitle, contentLoadedCallback) {
-
         $.get(`/${overlayPage}.html`)
             .done(function (data) {
-                $(`#${appendToId}`).append($(data).find(".overlayPageContent"))
+                $(`#${appendToId}`).html($(data).find(".overlayPageContent"))
                 if (contentLoadedCallback) {
                     window.setTimeout(contentLoadedCallback, 300)
                 }
@@ -104,7 +103,7 @@ export default class Overlay {
         if (!this.$openHandle) {
             this.$openHandle = $mainContentElement.find(".openHandle")
             if (overlayTitle) {
-                this.$openHandle.children().first().text(overlayTitle.toUpperCase())
+                //this.$openHandle.children().first().text(overlayTitle.toUpperCase())
             }
         }
         if (!this.$overlay) {

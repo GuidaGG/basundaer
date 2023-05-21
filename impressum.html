@@ -2,18 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Studio</title>
+    <title>Impressum</title>
     <script type="text/javascript" src="./static/js/jquery-3.3.1.js"></script>
 </head>
 <body>
 
-<div class="content">
+<div id="impressum-translations" class="content">
     <link href="static/css/impressum.css" rel="stylesheet">
 
-    <script type="text/javascript">
-    </script>
+    <script type="module">
+        import Translator from "./static/js/translator.js";
+        let t =  new Translator("impressum");
+       // await t.load();
+       async function loadContent(lang = null, overlay = true){
+        await t.load(lang)
 
-    <h1 class="sectionTitle heading0">Impressum</h1>
+     }
+        $('body').ready(function () { 
+
+            loadContent()
+
+           document.querySelector("form").addEventListener("click", function(evt) {
+                if (evt.target.tagName === "INPUT") {
+                    //t.load(evt.target.value);
+                    loadContent(evt.target.value, false)
+                    /*console.log(t.translations)
+                    studioPageReady(t.translations, false)*/
+                }
+             })
+        })
+       
+    </script>
+    <h1 data-i18n="section_title" class="sectionTitle heading0">Impressum</h1>
     <div class="close"></div>
 
     <div id="impressumContent">
@@ -29,27 +49,27 @@
             </p>
 
 
-              <p class="paragraph">Astrid Hesse und Johannes Ben Jurca Design GbR<br>Vertretungsberechtige
+              <p data-i18n="paragraph_1" class="paragraph">Astrid Hesse und Johannes Ben Jurca Design GbR<br>Vertretungsberechtige
                 Geschäftsführer*innen: Astrid Hesse, Johannes Ben Jurca
             </p>
 
 
-            <p class="paragraph">Geschäftsform: Gesellschaft bürgerlichen Rechts<br>USt-IdNr. gemäß
+            <p data-i18n="paragraph_2" class="paragraph">Geschäftsform: Gesellschaft bürgerlichen Rechts<br>USt-IdNr. gemäß
                 §27a Umsatzsteuergesetz: DE 316 846 606
             </p>
 
 
-            <p class="paragraph">Verantwortlich für den Inhalt gemäß § 55 II RStV: Bas&amp;Aer
+            <p data-i18n="paragraph_3" class="paragraph">Verantwortlich für den Inhalt gemäß § 55 II RStV: Bas&amp;Aer
                 (Anschrift wie oben), vertreten durch Johannes Ben Jurca
             </p>
 
 
-            <p class="paragraph">Haftungshinweis: Trotz sorgfältiger inhaltlicher Prüfung übernehmen wir keine Haftung
+            <p data-i18n="paragraph_4" class="paragraph">Haftungshinweis: Trotz sorgfältiger inhaltlicher Prüfung übernehmen wir keine Haftung
                 für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren
                 Betreiber*innen verantwortlich.
             </p>
 
-            <p class="paragraph">
+            <p data-i18n="paragraph_5" class="paragraph">
                 Programmierung: smb://DatenTechnik und Guida Ribeiro<br>
                 Fotos von Bas&Aer: Sara Förster,
                 <a href="http://www.sarafoerster.de" target="_blank">www.sarafoerster.de</a><br>
@@ -67,11 +87,11 @@
 
 
 
-            <h2 class="heading1">Haftung für Inhalte
+            <h2 data-i18n="header_liability" class="heading1">Haftung für Inhalte
             </h2>
 
 
-            <p class="paragraph">Als Diensteanbieter sind wir gemäß <a
+            <p data-i18n="p_inhalt_1" class="paragraph">Als Diensteanbieter sind wir gemäß <a
                     href="https://www.gesetze-im-internet.de/tmg/__7.html">§
                 7 Abs. 1 TMG</a> für eigene Inhalte auf diesen Seiten
                 nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8
@@ -83,7 +103,7 @@
             </p>
 
 
-            <p class="paragraph">Verpflichtungen zur
+            <p data-i18n="p_inhalt_2" class="paragraph">Verpflichtungen zur
                 Entfernung oder Sperrung der Nutzung von
                 Informationen nach den allgemeinen Gesetzen
                 bleiben hiervon unberührt.
@@ -97,11 +117,11 @@
             </p>
 
 
-            <h2 class="heading1">Haftung für Links
+            <h2 data-i18n="heading_links" class="heading1">Haftung für Links
             </h2>
 
 
-            <p class="paragraph">Unser Angebot
+            <p data-i18n="p_links_1" class="paragraph">Unser Angebot
                 enthält Links zu externen
                 Webseiten Dritter, auf deren
                 Inhalte wir keinen Einfluss
@@ -121,7 +141,7 @@
             </p>
 
 
-            <p class="paragraph">Eine
+            <p data-i18n="p_links_2" class="paragraph">Eine
                 permanente inhaltliche
                 Kontrolle der verlinkten
                 Seiten ist
@@ -137,12 +157,12 @@
             </p>
 
 
-            <h2 class="heading1">
+            <h2 data-i18n="heading_copyright" class="heading1">
                 Urheberrecht
             </h2>
 
 
-            <p class="paragraph">
+            <p data-i18n="p_copyright_1" class="paragraph">
                 Die
                 durch
                 Bas&amp;Aer
@@ -178,7 +198,7 @@
             </p>
 
 
-            <p class="paragraph">
+            <p data-i18n="p_copyright_2" class="paragraph">
                 Soweit
                 die
                 Inhalte

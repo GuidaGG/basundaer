@@ -11,9 +11,30 @@
 
     <script type="module">
         import workshopPageReady from "/static/js/workshop.js"
-        $("body").ready(function () {
-            workshopPageReady()
+
+        import Translator from "./static/js/translator.js";
+        let t =  new Translator("workshop");
+
+       async function loadContent(lang = null, overlay = true){
+        await t.load(lang)
+        workshopPageReady(t.translations)
+        }
+  
+        $('body').ready(function () { 
+
+            loadContent()
+
+           document.querySelector("form").addEventListener("click", function(evt) {
+                if (evt.target.tagName === "INPUT") {
+                    //t.load(evt.target.value);
+                    loadContent(evt.target.value, false)
+                    /*console.log(t.translations)
+                    studioPageReady(t.translations, false)*/
+                }
+             })
         })
+       
+
     </script>
     <link href="/static/css/workshop.css" rel="stylesheet">
     <link href="/static/css/overlay.css" rel="stylesheet">
@@ -22,7 +43,7 @@
     <div class="close"></div>
 
     <div class="workshop content-margin-top">
-        <div class="workshopContent">
+        <div id="workshop-translations" class="workshopContent">
             <!-- content filled by workshop.js -->
         </div>
     </div>

@@ -1,0 +1,505 @@
+{
+    "section_title" : "Research",
+    "overlay_title": "OVERVIEW",
+    "previous" : "vorherige",
+    "next" : "nächste",
+    "projects": [
+        {
+        "title": "Research",
+        "subtitle" : "What do we mean by research?",
+        "id": "intro",
+        "galleryFolder": "HDJPresse",
+        "dynamic": [
+            {
+            "type": "text",
+            "class" : "intro",
+            "text": 
+            "We want to rethink our social interaction from the design practice: An open-ended process enables us to question proven ways of communication and interaction and to develop new formats, design directions and methods. \nIn addition to the creative implementation, we develop the project idea, take over planning and strategy and carry out participatory formats such as workshops. It is important to us to leave our discipline completely and to design a joint process with other experts. By doing we find solutions. \nAre you, for example, an entrepreneur looking for new forms of contact with your customers? As a city administration, are you trying to make a public space available for common use? As a scientist, do you want to use practical research methods? We are happy to be creative initiators for your project and support you in redefining questions, promoting ideas and implementing changes. \nContact us with your project ideas: <a href='mailto:info@basundaer.de' target='_blank'>info@basundaer.de</a>"
+            }
+            ]
+        },
+        
+        {
+            "title": "Flatterweg",
+            "subtitle": "Zwischennutzung auf der ehemaligen Galopprennbahn in Bremen",
+            "id": "flatterweg",
+            "galleryFolder": "Flatterweg",
+            "dynamic":
+                [
+                {
+            "type": "image",
+                "image": 
+                    {
+                    "src" : "rennbahn_web_15_crop.webp",
+                    "alt" : "alt"
+                    }
+                },
+                {
+                "type": "video",
+                "videoURL": "220704_ENT_GdP_Teaser_ah.mp4"
+                },
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "ZWISCHENNUTZUNG AUF DER EHEMALIGEN GALOPPRENNBAHN BREMEN\n\nDas über 3.000 Quadratmeter große Rennbahngelände in Bremen steht vor einem umfangreichen Umnutzungsprozess, zu Beginn 2020 wird die Fläche jedoch vorerst zur Zwischennutzung freigegeben. Der „Flatterweg“ soll Bürger:innen dazu einladen, den neuen Stadtraum zu erkunden und das Gelände mitzugestalten. Die temporäre Wegführung dient auch als Testdurchlauf für die von der Stadt geplante Wegeverbindung der angrenzenden Nachbarschaften. Welche neuen Bezüge entstehen dadurch im Stadtraum und was kann entlang der Strecke entstehen? Wir laden dazu ein <a href='https://www.youtube.com/watch?v=F2BDZ7Ku74w'target='_blank'>vorbeizuschauen.</a>"
+                },
+            
+                {
+                "type": "gallery",
+                "height": "half",
+                "gallerycaption": "Einweihung des Flatterwegs, Fotos: Ricardo Nunes",
+                "gallery": [
+                    {
+                        "src" : "rennbahn_web_52.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "rennbahn_web_36.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "rennbahn_web_55_cropped.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "rennbahn_web_62.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "rennbahn_web_39.webp",
+                        "alt" : "alt"
+                    }
+                ],
+                "classes": [
+                "half",
+                "half",
+                "quarter",
+                "half",
+                "quarter"
+                ],
+                "captions": [
+                "Blick über das Rennbahngelände",
+                "Das Design- und Produktionsteam von „Neue Wolle“",
+                "Ansicht einer Flagge",
+                "Einweihungfest auf der alten Tribüne",
+                "Begehung bei Regen"
+                ]  
+                },
+                
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "DESIGNWORKSHOP, PRODUKTION UND MONTAGE\n\nDas Frauenkreativlabor „Neue Wolle“ aus Blumenthal/ Bremen Nord gestaltete und produzierte die Fahnen für den „Flatterweg“, Grundstein dazu bildete ein von uns konzipierter Designworkshop zu Beginn der Kooperation. Durch ein einfaches Kombinationsprinzip grafischer Module wurde eine Vielzahl von Flaggendesigns gestaltet, die auch noch während des Nähprozesseses weiter variiert wurden. Mit 50 dieser Unikate wurden Fahnen auf dem Gelände errichtet, die rund 500 Meter Weg markieren."
+                },
+                
+                {
+                "type": "gallery",
+                "height": "half",
+                "gallery": [
+                    {
+                        "src" : "Rennbahn_WS_3.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "Rennbahn_WS_1.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "Rennbahn_WS_2.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "Rennbahn_Aufbau_2_quer.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "Rennbahn_Aufbau_1.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "Rennbahn_Aufbau_3.webp",
+                        "alt" : "alt"
+                    }
+                ],
+                "classes": [
+                "quarter",
+                "half",
+                "quarter",
+                "half",
+                "quarter",
+                "quarter"
+                ],
+                "captions": [
+                "Papiermodule zur Entwicklung der Designs",
+                "Blick in die Werkstatt von „Neue Wolle“ in Blumenthal",
+                "Nach dem Entwerfen werden die Stoffmodule zusammengenäht.",
+                "Aufbau auf dem Gelände",
+                "Aufbau auf dem Gelände",
+                "Nach einem Tag stehen alle Fahnen."
+                ]     
+                },
+                
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "TOOLKIT FÜR BETEILIGUNGSPROZESSE\n\nIm Rahmen eines Aktionstages platzieren wir fünf Mitmach-Stationen entlang des Weges, an denen Bürger:innen in sogenannten „Flatterheften“ ihre Gedanken und Ideen zu der Geländeumnutzung teilen konnten. Die ausgefüllten Hefte werden im Anschluss von uns zusammengefasst und an politische Entscheidungsträger:innen weitergegeben. Der Flatterweg ermöglicht dabei den Zugang zur politischen Teilhabe für Groß und Klein und direkt auf dem Gelände. Was sind die Wünsche und Ideen der Beteiligten?\nEinen Blick in das Flatterheft und die Ideen und Wünsche der Teilnehmenden finden Sie hier: <a href='https://basundaer.de/_Test/static/img/research/Flatterweg/Flatterheft_Zusammenfassung.pdf' target='_blank'>Zusammenfassung des Flatterheftes</a> \nHier gibt es einen Eindruck zum Aktionstag auf dem Gelände: <a href='https://www.zzz-bremen.de/assets/Uploads/buten-un-binnen-regionalmagazin-Besucher-beeindruckt-von-Projekten-auf-der-Bremer-Galopprennbahn-1657208917.mp4'target='_blank'>buten un binnen berichtet</a>"
+                },
+            
+                {
+                "type": "gallery",
+                "height": "half",
+                "gallery": [
+                    {
+                        "src" : "Rennbahn_AT_13.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "Rennbahn_AT_1.webp",
+                        "alt" : "alt"
+                    }
+                ],
+                "classes": [
+                "quarter",
+                "third",
+                "half",
+                "half"
+                ],
+                "captions": [
+                "Fünf Tischgruppen zum Mitmachen säumen am Aktionstag den „Flatterweg“.",
+                "Im „Flatterheft“ findet auf spielerischer Art und Weise eine Befragung zum Gelände statt."
+                ]     
+                },
+                    {
+                "type": "text",
+                "class" : "quote",
+                "text": "„Die gemeinsame Sehnsucht war [es], durch ein flexibles Design die Zugänglichkeit zu Stadtentwicklungsprozessen zu vereinfachen.“\n– Julian Essig: Die Schaffung von Sehnsuchtsorten durch Zwischennutzung; Hochschule Osnabrück 2022"
+                },
+    
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "Mit dem Fahnensystem könnten nun weitere Wegeverbindungen auf dem Rennbahngelände, aber auch an anderen Orten gemeinsam mit Nutzer:innen umgesetzt und erprobt werden. Uns interessieren hierbei alternative Beteiligungmöglichkeiten von Menschen an Stadtentwicklung. Die Teilhabe mit Hilfe von Design kann dabei unterschiedlichste Lösungsformen hervorbringen. Wir sind offen neue Herausforderungen zu finden!"
+                },
+                {
+            "type": "image",
+                "caption": ["Foto: Marek Lappe"           
+                ],     
+                "image": {
+                    "src" : "Rennbahn_Drohne_Lappe.webp",
+                    "alt" : "alt"
+                    }
+                },
+                
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "PROJEKTPARTNER:INNEN\nUnter dem Namen „Flatter-Crew“ erarbeiteten wir gemeinsam mit dem Designer <a href='https://www.instagram.com/mit_substanz/' target='_blank'>Christof Mühe</a> das Konzept zum „Flatterweg“. Uns vereint ein interdisziplinärer Designansatz, mit dem wir uns an der Schnittstelle aller Beteiligten positionieren – kommunizierend, moderierend, verbindend.\n „Neue Wolle – Frauenkreativlabor“ ist ein Projekt von Quartier gGmbH. Es richtet sich insbesondere an Migrantinnen und Alleinerziehende, die durch gemeinsames Lernen, Experimentieren und Gestalten rund um Wolle und andere Textilien unter künstlerischer Anleitung erste Schritte in Gesellschaft und Arbeitswelt wagen. Mehr Informationen zu den Projekten der Arbeitsgruppe gibt es hier: <a href='https://quartier-bremen.de/category/neue-wolle/' target='_blank'>www.quartier-bremen.de/category/neue-wolle</a>"
+                },
+                
+                {
+                "type": "gallery",
+                "height": "full",
+                "gallerycaption": "Leitungsteam, Foto: Ricardo Nunes",
+                "gallery": [
+                    {
+                        "src" :  "rennbahn_web_78.webp",
+                        "alt" : "alt"
+                    }
+                ],
+                "classes": [
+                    "half"
+                ],
+                "captions": [
+                ""
+                ]     
+                },
+                
+                {
+                "type": "gallery",
+                "height": "full",
+                "gallerycaption": "Gefördert wurde das Projekt im Rahmen der Initiative „Galop de Porc“.",
+                "gallery": [
+                    {
+                        "src" : "Logos-Bremen.svg",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "Logos-Gewoba.svg",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" :  "Logos-SMH.svg",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "Logos-Quartier.svg",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "Logos-GdP.svg",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "Logos-ZZZ.svg",
+                        "alt" : "alt"
+                    }
+                ],
+                "classes": [
+                "quarter",
+                "quarter",
+                "quarter",
+                "quarter",
+                "quarter",                
+                "quarter"
+                ],
+                "captions": [
+
+                ]
+                }
+                
+            ]
+        },
+
+
+            {
+            "title": "Land in Sicht",
+            "subtitle": "Projektwoche im Allgäu",
+            "id": "land-in-sicht",
+
+
+            "galleryFolder": "LandInSicht",
+            "dynamic":
+            [
+                {
+                "type": "text",
+                "class" : "quote",
+                "text": "Warum wollen junge Kreative nicht auf dem Land wohnen und arbeiten? Fehlt in ländlichen Gebieten der Zugang oder das Interesse an kreativen und künstlerischen Dienstleistungen?"
+                },
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "PROJEKTWOCHE IM ALLGÄU\n\nAusgehend von diesen Fragen haben wir gemeinsam mit Vanessa Müller (<a href='https://atelierbrieftau.be/'>Atelier Brieftaube</a>, Ottobeuren)‚ Land in Sicht‘ initiiert. Das Projekt möchte einen individuellen Austausch zwischen jungen Kreativen und ländlichen Gemeinden fördern. Die gemeinsame Vision ist es, innerhalb ländlicher Strukturen, neue Arbeits- und Lebensräume für Kreative zu entdecken und zu erschließen. Sowohl auf Seiten Kulturschaffender, als auch auf Seiten ruraler Gesellschaften soll ein stärkeres Verständnis für die gegenseitigen Bedürfnisse gewonnen werden."
+                },
+                {
+                "type": "video",
+                    "videoURL": "processvideo.mp4"
+                },
+                {
+                "type": "image",
+                "image": 
+                    {
+                    "src" : "LandinSicht_150ppi_19-38.webp",
+                    "alt" : "alt"
+                    }
+                },
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "In einer ersten Projektwoche kommen im Herbst 2019 13 junge Akteur*innen aus den Bereichen Malerei, Fotografie, Performance, Design, Mode und Musik in der Gemeinde <a href='http://www.ottobeuren.de/' target='_blank'>Ottobeuren im Allgäu</a> (8.381 Einwohner*innen) zusammen. Sie arbeiten als Künstler*innen und Gestalter*innen in unterschiedlichen urbanen Kontexten im kulturellen und kreativen Bereich. Innerhalb dieser Workshopwoche übertragen sie ihre Arbeitsweise in den ruralen Kontext und setzen sich mit seiner kulturellen Infrastruktur, insbesondere dem lokalen Museum für zeitgenössische Kunst auseinander. Anhand individueller Projekte und gemeinsamer Workshops erforschen sie den Ort Ottobeuren und die Potentiale, Besonderheiten und Herausforderungen des ländlichen Raums als kreative Arbeitsstätte."
+                },
+                {
+                "type": "gallery",
+                "height": "half",
+                "gallerycaption": "Eindrücke aus der Projektwoche, Fotos: Jakob Weber, Sara Förster, Luisa Recker",
+                "gallery": [
+                    {
+                        "src" : "LandinSicht_120ppi_19-2.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_120ppi_19-3.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_120ppi_19-4.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_120ppi_19-5.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" :  "LandinSicht_120ppi_19-6.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_120ppi_19-8.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_120ppi_19-9.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_120ppi_19-7.webp",
+                        "alt" : "alt"
+                    }
+                ],
+                "classes": [
+                "half",
+                "half",
+                "half",
+                "quarter",
+                "quarter",
+                "quarter",
+                "half",
+                "quarter"
+                ],
+                "captions": [
+                "Ankunft der Projektteilnehmer*innen",
+                "Ottobeuren, idyllisch gelegen im Unterallgäu",
+                "Roger Fähndrich bereitet eine Konzertbühne im Museum vor",
+                "Im Kick-Off-Workshop werden von Potentiale und Herausforderungen des Landlebens gesammelt",
+                "Christian Arnold (Käsundso) führt die Externen in die schwäbische Spätzlekultur ein",
+                "Fotoshooting auf dem Marktplatz",
+                "Der Marktplatz von Ottobeuren",
+                "Fundstücke bei ebay Kleinanzeigen für das Ausstellungsequipment"
+                ]
+
+                },
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "Als Ergebnis der individuellen Auseinandersetzung sind 18 Arbeiten entstanden. Anhand unterschiedlicher Themen und Genres thematisieren sie die persönlichen Eindrücke und Erkenntnisse aus einer Woche künstlerischer Arbeit in einer ländlichen Gemeinde. Die Arbeiten werden im Anschluss an die Projektwoche ein einer Gruppenausstellung im Foyer des <a href='http://www.mzk-diku.de/' target='_blank'>Museums für zeitgenössische Kunst - Diether Kunerth</a> der lokalen Öffentlichkeit präsentiert. Die persönlichen Erkenntnisse und Einschätzungen werden in einer Projektdokumentation zusammengeführt, analysiert und ausgewertet."
+                },
+                {
+                "type": "gallery",
+                "height": "half",
+                "gallerycaption": "Eindrücke der Abschlussausstellung, Fotos: Jakob Weber",
+                "gallery": [
+                    {
+                        "src" : "LandinSicht_120ppi_19-10.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_120ppi_19-11.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_120ppi_19-12.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_120ppi_19-13.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_120ppi_19-14.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_120ppi_19-15.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_150ppi_19-39.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_120ppi_19-19.webp",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "LandinSicht_120ppi_19-20.webp",
+                        "alt" : "alt"
+                    }
+                ],
+                "classes": [
+                "third",
+                "quarter",
+                "half",
+                "half",
+                "quarter",
+                "half",
+                "quarter",
+                "half",
+                "half"
+                ],
+                "captions": [
+                "Blick in das Museumsfoyer",
+                "Performance von Joanneke Jouwsma",
+                "2. Ottobeurer Wandzeitung von Ben Jurca",
+                "Im Außenraum: Boulespiel von Janis E. Müller",
+                "Installation von Janis E. Müller",
+                "Projektionsinstallation von Jietske Vermoortele",
+                "Modeshooting von ULTRA,  Luisa Recker, Model: Lisa Kästle",
+                "Abschlusskonzert von Roger Fähndrich",
+                "Vernissage"
+                ]
+                },
+
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "Derzeit feilen wir an einem weiteren Durchlauf von Land in Sicht und verbessern unser Format. Dich interessiert das Projekt und du hast Anregungen für uns? Du bist Kulturschaffende:r, lebst und arbeitest in einer ländlichen Region und möchtest das kulturelles Treiben hier erweitern? Du hast genug Landluft geschnuppert und benötigst frischen Wind? Dir fehlen (weitere) kreative Köpfe im Umland um mit dir ein Projekt zu realisieren? Dann melde dich gerne bei uns!\nFür mehr Informationen findet sich hier der Abschlussbericht zum Downloaden: <a href='https://basundaer.de/static/img/research/LandInSicht/LIS_19_Sachbericht.pdf' target='_blank'>Sachbericht ‚Land in Sicht‘</a>"
+                },
+
+
+                {
+                "type": "gallery",
+                "height": "full",
+                "gallery": [
+                    {   "src" : "Logo_LIS_kl.svg",
+                        "alt" : "alt"
+                    }
+
+                ],
+                "classes": [
+                "quarter"
+                ],
+                "captions": [
+
+                ]
+                },
+
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "PROJEKTPARTNERIN\nVanessa Müller hat mit dem ‚Atelier Brieftaube‘ in Ottobeuren einen Kleinod der deutschen Kulturszene im Süden Deutschlands geschaffen und belebt damit die junge Kreativ-Szene im ländlichen Raum. Vanessa arbeitet als Multimedia Designerin in München und Ottobeuren. Ihr sucht auch Designpartner:innen im Süden? Hier gibt es Einblicke in Vanessas Arbeit: <a href='https://atelierbrieftau.be' target='_blank'>www.atelierbrieftau.be</a>"
+                },
+                
+                            {
+                "type": "text",
+                "class" : "block",
+                "text": "FÖRDERPARTNER\nGefördert wurde das Projekt im Rahmen der Schirmherrschaft durch  ‚Unternehmerfrauen im Handwerk Memmingen-Mindelheim‘ von  ‚Unterallgäu aktiv/Europäischen Landwirtschaftsfonds für die Entwicklung des ländlichen Raumes‘ sowie die Marktgemeinde Ottobeuren"
+                },
+
+
+                {
+                "type": "gallery",
+                "height": "full",
+                "gallerycaption": "Förderpartner von Land in Sicht.",
+
+                "gallery": [
+                    {
+                        "src" : "Logo_UFH_sw1.svg",
+                        "alt" : "alt"
+
+                    },
+                    {
+                        "src" : "Logo_Leader_sw.svg",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "Logo_Ottobeuren_sw.svg",
+                        "alt" : "alt"
+                    }
+                ],
+                "classes": [
+                "quarter",
+                "quarter",
+                "quarter"
+                ],
+                "captions": [
+
+                ]
+                }
+
+
+            ]
+        }
+
+    
+
+    ]
+}

@@ -7,16 +7,33 @@
 </head>
 <body>
 
-<div class="contentContainer">
+<div if="research-index-translations" class="contentContainer">
     <div class="overlayPageContent">
         <script type="module">
             import {researchProjects, researchOverlay} from "/static/js/research.js"
             import ResearchIndexReady from "/static/js/researchIndex.js"
-            $('body').ready(function(){ ResearchIndexReady(researchOverlay, researchProjects) })
+            import Translator from "./static/js/translator.js";
+
+            let t =  new Translator("research-index", "research");
+
+            async function loadContent(lang = null, overlay = true){
+                await t.load(lang)
+                ResearchIndexReady(t.translations, researchOverlay, researchProjects)
+             }
+
+            $('body').ready(function(){ 
+                loadContent()
+                document.querySelector("form").addEventListener("click", function(evt) {
+                    if (evt.target.tagName === "INPUT") {
+                        loadContent(evt.target.value)
+                    }
+                })        
+            })
+
         </script>
    
 
-        <div class="research-index">
+        <div data-i18n="overlay_description"  class="research-index">
             <div class="content-index">
          
                 <div class="list">

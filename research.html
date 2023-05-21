@@ -7,31 +7,48 @@
 </head>
 <body>
 
-<div class="content">
-
+<div id="research-translations" class="content">
     <script type="module">
+        import Translator from "./static/js/translator.js";
         import researchPageReady from "./static/js/research.js"
+
+        let t =  new Translator("research");
+        async function loadContent(lang = null, overlay = true){
+            await t.load(lang)
+            researchPageReady(t.translations, overlay)
+         }  
+
+
         $('body').ready(function () {
-            researchPageReady()
+            loadContent()
+
+            document.querySelector("form").addEventListener("click", function(evt) {
+                if (evt.target.tagName === "INPUT") {
+                    loadContent(evt.target.value, false)
+
+      
+                }
+             })
         })
-    </script>
+    </script>  	
+
     <link href="/static/css/research.css" rel="stylesheet">
     <link href="/static/css/overlay.css" rel="stylesheet">
 
     <div class="sectionTitle">
-        <h1 id="firstTitle" class="heading0">Research</h1>
+        <h1 data-i18n="section_title" id="firstTitle" class="heading0">Research</h1>
         <h2 id="secondTitle" class="heading0"></h2>
     </div>
     <div class="navigation">
         <div id="previousR">
             <div class="arrow arrow-left"></div>
-            <div id="previousR" class="previousR caption">
+            <div data-i18n="previous" id="previousR" class="previousR caption">
                 previous
             </div>
         </div>
         <div id="nextR">
             <div class="arrow arrow-right"></div>
-            <div id="nextR" class="nextR caption">
+            <div data-i18n="next" id="nextR" class="nextR caption">
                 next
             </div>
         </div>
@@ -59,7 +76,7 @@
             </div>
         </div>
         <div class="openHandle">
-            <div class="overlayTitle paragraph"></div>
+            <div data-i18n="overlay_title" class="overlayTitle paragraph"></div>
         </div>
     </div>
 

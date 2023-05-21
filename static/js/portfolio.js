@@ -167,7 +167,7 @@ function filterProjects(category) {
  * @param portfolioOverlay - The overlay object containing the portfolio
  * @param designProjects - The projects of the design page, used to trigger scrolling to a specific project.
  */
-export default function portfolioReady(portfolioOverlay, designProjects) {
+export default function portfolioReady(translations, portfolioOverlay, designProjects) {
     console.log("portfolio ready")
 
     // todo: consolidate DesignProject and Project classes and just use the original designProjects data here.
@@ -175,23 +175,29 @@ export default function portfolioReady(portfolioOverlay, designProjects) {
     _originalProjects = designProjects
     _portfolioOverlay = portfolioOverlay
 
-    $.getJSON("/data/projects.json", function (projectData) {
+    
         let categories = new Set()
 
-        projectData.forEach(p => {
+        let $thumbnails = $(".thumbnails");
+        $thumbnails.html("")
+        let $categories = $(".more-categories")
+        $categories.html("")
+
+        translations.projects.forEach(p => {
             let project = new Project(p)
             _projects.push(project)
             project.categories.forEach(c => categories.add(c))
-            project.renderThumbnail($(".thumbnails"))
+          
+            project.renderThumbnail($thumbnails);
             // project.setupEventListeners()
         })
 
-        let $categories = $(".categories")
+      
         categories.forEach(c => {
             $categories.append(`<a class="projectCategory paragraph" data-category="${c}">${c}</a>`)
         })
 
-        $categories.find(".projectCategory").on("click", function (event) {
+        $(".categories").find(".projectCategory").on("click", function (event) {
             filterProjects($(event.target).data("category"))
             if(getMediaMatch() === utils.SMALL) {
                 $(this).parents(".overlay").find(".openHandle").click()
@@ -199,5 +205,5 @@ export default function portfolioReady(portfolioOverlay, designProjects) {
         })
 
         filterProjects(NO_FILTER_STRING)
-    })
+
 }

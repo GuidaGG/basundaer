@@ -92,8 +92,9 @@ class ResearchProject {
         let nextActive
         let previousR = $(".previousR");
         let nextR = $(".nextR");
-      
+
         if(direction == "prev"){
+        
             let current = $(".activeResearch");
             nextActive = current.prev();  
         }
@@ -330,12 +331,11 @@ class ResearchProject {
 
 
 
-export default function researchPageReady() {
-    console.log("research page ready!")
+export default function researchPageReady(translations) {
+    $(".researchs").html("");
 
     let counter = 0;
-    $.getJSON("/data/research.json", function (researchData) {
-        researchData.forEach(p => {
+    translations.projects.forEach(p => {
             
             let researchProject = new ResearchProject(p)
             researchProjects.push(researchProject)
@@ -375,8 +375,7 @@ export default function researchPageReady() {
                     }.bind(this))
                 }       
             }, 1000)
-        })
-     
+    
         
        const config = {
             root: null, // setting root to null sets it to viewport
@@ -415,7 +414,7 @@ export default function researchPageReady() {
             domElements.forEach(domElem => {
                // observer.observe(domElem);
           
-});
+    });
          
     })
   

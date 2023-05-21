@@ -35,11 +35,71 @@
 
     <script type="module">
         import ready from "./static/js/ba.js"
-        $('body').ready(function(){ ready()})
+        import Translator from "./static/js/translator.js";
+        let t =  new Translator("index");
+        async function loadContent(lang = null, overlay = true){
+            await t.load(lang)
+        }
+
+        function getDefaultLanguage() {
+            let lang = navigator.languages ? navigator.languages[0] : navigator.language;
+            let code = lang.substr(0, 2);
+            return code === "de" || code === "en" ? code : "de";
+
+        }
+
+        function restartButtons(){
+           let langbuttons = document.querySelectorAll(".lang");
+           console.log(langbuttons)
+           for(let i = 0; i < langbuttons.length; i++){
+            langbuttons[i].disabled = false;
+           }
+        }
+          
+        $('body').ready(function () { 
+
+            t.toggleLangTag(getDefaultLanguage())
+            
+            loadContent(getDefaultLanguage())
+            ready()
+
+            restartButtons()
+            document.querySelectorAll(`input[value=${getDefaultLanguage()}]`)[0].disabled = true;
+
+            document.querySelector("form").addEventListener("click", function(evt) {
+                    if (evt.target.tagName === "INPUT") {
+                        //t.load(evt.target.value);
+                        t.toggleLangTag(evt.target.value)
+                        loadContent(evt.target.value, false)
+                        restartButtons()
+                        evt.target.disabled = true;
+                        /*console.log(t.translations)
+                        studioPageReady(t.translations, false)*/
+                }
+            })
+        })
+
+        
+
+
     </script>
 </head>
 <body>
-    <div class="gridContainer">
+    <form class="languageSwitcher">
+       <!-- <fieldset>
+          <label>
+            <button>EN</button>  
+            <input type="radio" name="lang" value="en" /> EN
+          </label>
+          <label> <input type="radio" name="lang" value="de" checked  /> DE </label>
+        </fieldset>
+        -->
+        <input class="lang de" type="button" value="de" /> 
+        <div class="divider"></div>
+        <input class="lang en" type="button" value="en" />
+
+      </form>
+    <div id="index-translations" class="gridContainer">
         <div class="baLogo" id="baLogo">
             <div class="ba">
                 <img src="static/img/icons_bua/B&A_Logo_RGB.png" alt="Bas&Aer" title="Bar&Aer">
@@ -49,41 +109,41 @@
                 <p>Bas&Aer ist ein integriertes Designstudio in Bremen und Berlin. <a href="https://www.linkedin.com/in/astrid-hesse-2042b0250/">Astrid Hesse</a> und <a href="https://benjurca.com/">Ben Jurca</a>gestalten mit einem Fokus auf Nachhaltigkeit, Flexibilität und Klarheit. Gemeinsam mit einem Netzwerk aus Freelancer:innen brinden sie Botschaften in eine verständliche Form und Identitäten auf den Punkt.</p>
             </div>
         </div>
-        <div class="section studio" id="studio">Studio</div>
-        <div class="section workshop" id="workshop">Workshop</div>
-        <div class="section research" id="research">Research</div>
-        <div class="section design" id="design">Design</div>
-        <div class="section kontakt" id="kontakt">Kontakt</div>
-        <div class="section datenschutz" id="datenschutz">Datenschutz</div>
+        <div data-i18n="studio"  class="section studio" id="studio"></div>
+        <div data-i18n="workshop" class="section workshop" id="workshop"></div>
+        <div data-i18n="research" class="section research" id="research"></div>
+        <div data-i18n="design" class="section design" id="design"></div>
+        <div data-i18n="contact" class="section kontakt" id="kontakt"></div>
+        <div data-i18n="privacy-policy" class="section datenschutz" id="datenschutz"></div>
         <div class="section footer" id="footer"> </div>
-        <div class="section impressum" id="impressum">Impressum</div>
+        <div data-i18n="imprint" class="section impressum" id="impressum"></div>
     </div>
     <div id="studioContent" class="fullSection" style="display: none;" itemscope>
-        <h2 style="display: none;">Studio</h2>
+        <h2  style="display: none;"></h2>
                         <p style="display: none;">Bei Bas&Aer bringen wir Botschaften in eine verständliche Form und Identitäten auf den Punkt. Wir lassen Ideen lebendig und erfahrbar werden. Zweidimensional, dreidimensional, analog, digital – Wir finden die passenden Formate und Medien für jedes Vorhaben. Transparente und direkte Kommunikation, kurze Entscheidungswege und ein gemeinsamer Anspruch sind für uns die Grundlage einer erfolgreichen Zusammenarbeit. Wir sind stolz auf das uns entgegengebrachte Vertrauen, den intensiven Dialog mit unseren Kund*innen und tolle Ergebnisse.</p>
                         <p style="display: none;">Bas&Aer ist auf <a href="https://www.instagram.com/bas_und_aer/">Instagram</a></p>
     </div>
     <div id="workshopContent" class="fullSection" style="display: none;">
-        <h2 style="display: none;">Workshop</h2>
+        <h2 style="display: none;"></h2>
                         <p style="display: none;">In den <a href="https://basundaer.de/#/workshop">Workshops</a> von Bas&Aer kombinieren wir strategische und spielerische Methoden, um Ihr Unternehmen in den Bereichen Kommunikation, Identität und Innovation zu stärken und effizient nachhaltige Lösungen zu entwickeln.</p>
     </div>
     <div id="researchContent" class="fullSection" style="display: none;">
-        <h2 style="display: none;">Research</h2>
+        <h2  style="display: none;"></h2>
                         <p style="display: none;">Wir wollen unser gesellschaftliches Miteinander aus der Designpraxis heraus <a href="https://basundaer.de/#/research">neu denken</a>: Ein ergebnisoffener Prozess ermöglicht uns, bewährte Wege der Kommunikation und Interaktion infrage zu stellen und neue Formate, Gestaltungsrichtungen und Methoden zu entwickeln. Neben der gestalterischen Umsetzung, erarbeiten wir die Projektidee, übernehmen Planung und Strategie und führen partizipative Formate wie beispielsweise Workshops durch.</p>
     </div>
     <div id="designContent" class="fullSection" style="display: none;">
-        <h2 style="display: none;">Design</h2>
+        <h2  style="display: none;"></h2>
                         <p style="display: none;">Bas&Aer entwickelt <a href="https://basundaer.de/#/design">nachhaltige Gestaltung</a>: Corporate Design, Corporate Communication, Logos (Wort– und Bildmarken), Webauftritte und Digitale Anwendungen, Leit– und Orientierungssysteme, Messeauftritte und Ausstellungen, Werbung und Printmedien, Kataloge und Publikationen, Verpackungen und POS</p>
     </div>
     <div id="kontaktContent" class="fullSection" style="display: none;">
-        <h3 style="display: none;">Kontakt</h3>
+        <h3  style="display: none;"></h3>
                         <p style="display: none;">Treten Sie mit Bas&Aer in <a href="https://basundaer.de/#/kontakt">Kontakt</a>. Sie erreichen uns telefonisch, in unseren Studios in Bremen und Berlin oder rund um die Uhr per E-Mail.</p>
     </div>
-    <div id="datenschutzContent" class="fullSection" style="display: none;">
+    <div  id="datenschutzContent" class="fullSection" style="display: none;">
         <h3 style="display: none;">Datenschutz</h3>
                         <p style="display: none;"><a href="https://basundaer.de/#/datenschutz">Datenschutzerklärung</a></p>
     </div>
-    <div id="impressumContent" class="fullSection" style="display: none;">
+    <div  id="impressumContent" class="fullSection" style="display: none;">
         <h3 style="display: none;">Impressum</h3>
                         <p style="display: none;"><a href="https://basundaer.de/#/impressum">Impressum</a></p>
     </div>
