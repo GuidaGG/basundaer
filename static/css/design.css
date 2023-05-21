@@ -889,15 +889,16 @@ input.en {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  cursor: pointer;
 }
 @media (max-width: 600px) {
   #designContent > .content .projects .projectContainer .gallery .videoControls {
+    cursor: pointer;
     width: 40px;
     height: 40px;
   }
 }
 #designContent > .content .projects .projectContainer .gallery .play {
+  display: none;
   box-sizing: border-box;
   border-style: solid;
   border-width: 35px 0px 35px 70px;
@@ -906,9 +907,11 @@ input.en {
 @media (max-width: 600px) {
   #designContent > .content .projects .projectContainer .gallery .play {
     border-width: 20px 0px 20px 40px;
+    display: block;
   }
 }
 #designContent > .content .projects .projectContainer .gallery .pause {
+  display: none;
   box-sizing: border-box;
   border-style: double;
   border-width: 0px 0px 0px 70px;
@@ -916,6 +919,7 @@ input.en {
 }
 @media (max-width: 600px) {
   #designContent > .content .projects .projectContainer .gallery .pause {
+    display: block;
     border-width: 0 0px 0 20px;
   }
 }
