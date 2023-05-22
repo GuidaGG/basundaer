@@ -373,12 +373,13 @@ class DesignProject {
      * @private
      */
     _updateDots() {
-        
         let currentImage = this.imageContainer().find(".active")[0]
         let $dotIndicator = this.imageContainer().siblings().children(".dotIndicator")
         $dotIndicator.find(".dot.active").removeClass("active")
-        if(currentImage.src){
-            $dotIndicator.find(`.dot[data-src="${currentImage.src}"]`).addClass("active")
+        let src = currentImage.src ? currentImage.src : currentImage.children[0].src
+
+        if(src){
+            $dotIndicator.find(`.dot[data-src="${src}"]`).addClass("active")
         }
     
     }
@@ -451,9 +452,8 @@ class DesignProject {
         for (let i = 0; i < galleryMultiplier; ++i) {
             this.gallery.forEach(path => {
                 let src = `${this.galleryPath}/${encodeURIComponent(path.src)}`
-                console.log(path)
                 let img = this.downloadedImages[src]
-                console.log(img)
+
                 const extension = img.src.split(".")[1]
 
                     let clone = img.cloneNode(true);
@@ -471,7 +471,7 @@ class DesignProject {
             $imageContainer.css({transition: "left 200ms ease-in-out"})
         }, 100)
         $imageContainer.css("filter", "")
-        //this._updateDots()
+        this._updateDots()
     }
 
 
@@ -479,8 +479,8 @@ class DesignProject {
         let $dotIndicator = this.imageContainer().siblings().children(".dotIndicator")
    
         this.imageContainer().children().toArray().forEach(img => {
-            
-            $dotIndicator.append(`<div class="dot" data-src="${img.src}"></div>`)
+            let src = img.src ? img.src : img.children[0].src
+            $dotIndicator.append(`<div class="dot" data-src="${src}"></div>`)
         })
     }
 
