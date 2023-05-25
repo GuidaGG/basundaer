@@ -60,7 +60,7 @@
     letter-spacing: 0;
     font-family: "apercu-medium", sans-serif;
     font-size: 30pt !important;
-    line-height: 45pt;
+    line-height: auto;
     margin: 0;
     font-weight: normal;
   }
@@ -134,7 +134,7 @@
     letter-spacing: 0;
     font-family: "apercu-medium", sans-serif;
     font-size: 20pt !important;
-    line-height: 30pt;
+    line-height: auto;
     margin: 0;
     font-weight: normal;
   }
@@ -207,7 +207,7 @@
     letter-spacing: 0;
     font-family: "apercu-medium", sans-serif;
     font-size: 32pt !important;
-    line-height: 50pt;
+    line-height: auto;
     font-weight: normal;
     margin: 0;
   }
@@ -653,9 +653,15 @@ input.en {
 }
 .overlayPageContent .portfolio .content .gallery .categories .more-categories {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-content: flex-start;
+}
+@media (max-width: 600px) {
+  .overlayPageContent .portfolio .content .gallery .categories .more-categories {
+    flex-direction: column;
+    margin: 0;
+  }
 }
 .overlayPageContent .portfolio .content .gallery .categories .projectCategory {
   color: black;
