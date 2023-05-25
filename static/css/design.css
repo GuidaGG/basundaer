@@ -314,9 +314,14 @@ a {
 .languageSwitcher {
   position: fixed;
   bottom: 10px;
-  right: 80px;
+  left: 10px;
   z-index: 1000;
   display: flex;
+}
+@media (max-width: 600px) {
+  .languageSwitcher {
+    left: 0px;
+  }
 }
 input.lang {
   width: 32px;
@@ -874,12 +879,20 @@ input.en {
 #designContent > .content .projects .projectContainer .gallery .imageContainer video {
   height: 100%;
   width: auto;
+  object-fit: contain;
+}
+@media (max-width: 600px) {
+  #designContent > .content .projects .projectContainer .gallery .imageContainer video {
+    margin-right: 10px;
+  }
+}
+#designContent > .content .projects .projectContainer .gallery .imageContainer img,
+#designContent > .content .projects .projectContainer .gallery .imageContainer .videoContainer {
   margin-right: 10px;
 }
-#designContent > .content .projects .projectContainer .gallery .videoContainer {
-  position: relative;
-  flex-shrink: 2;
+#designContent > .content .projects .projectContainer .gallery .imageContainer .videoContainer {
   height: 100%;
+  width: auto;
 }
 #designContent > .content .projects .projectContainer .gallery .videoControls {
   position: absolute;
@@ -892,96 +905,17 @@ input.en {
 }
 @media (max-width: 600px) {
   #designContent > .content .projects .projectContainer .gallery .videoControls {
+    display: block;
     cursor: pointer;
     width: 40px;
     height: 40px;
   }
 }
 #designContent > .content .projects .projectContainer .gallery .play {
-  display: none;
-  box-sizing: border-box;
-  border-style: solid;
-  border-width: 35px 0px 35px 70px;
-  border-color: transparent transparent transparent #fff;
-}
-@media (max-width: 600px) {
-  #designContent > .content .projects .projectContainer .gallery .play {
-    border-width: 20px 0px 20px 40px;
-    display: block;
-  }
+  background-image: url("/static/img/icons/B&A_Icons_Play.svg");
 }
 #designContent > .content .projects .projectContainer .gallery .pause {
-  display: none;
-  box-sizing: border-box;
-  border-style: double;
-  border-width: 0px 0px 0px 70px;
-  border-color: transparent;
-}
-@media (max-width: 600px) {
-  #designContent > .content .projects .projectContainer .gallery .pause {
-    display: block;
-    border-width: 0 0px 0 20px;
-  }
-}
-#designContent > .content .projects .projectContainer .gallery .pause:hover {
-  border-color: white;
-}
-#designContent > .content .projects .projectContainer .gallery .dotIndicator {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  left: 0;
-  z-index: 10;
-}
-@media (min-width: 1201px) {
-  #designContent > .content .projects .projectContainer .gallery .dotIndicator {
-    bottom: 10px;
-    height: 10px;
-  }
-}
-@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
-  #designContent > .content .projects .projectContainer .gallery .dotIndicator {
-    bottom: 8.5px;
-    height: 10px;
-  }
-}
-@media (max-width: 600px) {
-  #designContent > .content .projects .projectContainer .gallery .dotIndicator {
-    bottom: 5px;
-    height: 8px;
-  }
-}
-#designContent > .content .projects .projectContainer .gallery .dotIndicator .dot {
-  border-radius: 50px;
-  border: 1px solid black;
-  background-color: black;
-}
-@media (min-width: 1201px) {
-  #designContent > .content .projects .projectContainer .gallery .dotIndicator .dot {
-    margin: 0 5px;
-    width: 8px;
-    height: 8px;
-  }
-}
-@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
-  #designContent > .content .projects .projectContainer .gallery .dotIndicator .dot {
-    margin: 0 4.25px;
-    width: 8px;
-    height: 8px;
-  }
-}
-@media (max-width: 600px) {
-  #designContent > .content .projects .projectContainer .gallery .dotIndicator .dot {
-    margin: 0 2.5px;
-    width: 6px;
-    height: 6px;
-  }
-}
-#designContent > .content .projects .projectContainer .gallery .dotIndicator .dot.active {
-  width: 4px;
-  height: 4px;
+  background-image: url("/static/img/icons/B&A_Icons_PAUSE.svg");
 }
 #designContent > .content .projects .projectContainer .gallery .navigation {
   position: absolute;
@@ -991,6 +925,13 @@ input.en {
   top: 0;
   display: flex;
   z-index: 5;
+  overflow: visible;
+}
+@media (max-width: 600px) {
+  #designContent > .content .projects .projectContainer .gallery .navigation {
+    top: 20%;
+    bottom: 20%;
+  }
 }
 #designContent > .content .projects .projectContainer .gallery .navigation .prevImg {
   width: 50%;
@@ -1055,5 +996,62 @@ input.en {
   #designContent > .content .projects .projectContainer .gallery .navigation .nextImg:hover {
     cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
   }
+}
+#designContent > .content .projects .projectContainer .gallery .dotIndicator {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+}
+@media (min-width: 1201px) {
+  #designContent > .content .projects .projectContainer .gallery .dotIndicator {
+    bottom: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  #designContent > .content .projects .projectContainer .gallery .dotIndicator {
+    bottom: 8.5px;
+    height: 10px;
+  }
+}
+@media (max-width: 600px) {
+  #designContent > .content .projects .projectContainer .gallery .dotIndicator {
+    bottom: -35px;
+    height: 8px;
+  }
+}
+#designContent > .content .projects .projectContainer .gallery .dotIndicator .dot {
+  border-radius: 50px;
+  border: 1px solid black;
+  background-color: black;
+}
+@media (min-width: 1201px) {
+  #designContent > .content .projects .projectContainer .gallery .dotIndicator .dot {
+    margin: 0 5px;
+    width: 8px;
+    height: 8px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  #designContent > .content .projects .projectContainer .gallery .dotIndicator .dot {
+    margin: 0 4.25px;
+    width: 8px;
+    height: 8px;
+  }
+}
+@media (max-width: 600px) {
+  #designContent > .content .projects .projectContainer .gallery .dotIndicator .dot {
+    margin: 0 2.5px;
+    width: 6px;
+    height: 6px;
+  }
+}
+#designContent > .content .projects .projectContainer .gallery .dotIndicator .dot.active {
+  width: 4px;
+  height: 4px;
 }
 /*# sourceMappingURL=design.css.map */

@@ -89,14 +89,15 @@ li:not(last-child) {
 .languageSwitcher {
   position: fixed; 
   bottom: @padding-small; 
-  right: 80px; 
+  left: 10px; 
   z-index:1000;
-  display: flex;
 
+  display: flex;
+  @media @media-small {
+    left: 0px;
+  }
   
 }
-
-
 
 input.lang {
   width: 32px;

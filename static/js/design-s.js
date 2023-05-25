@@ -141,7 +141,6 @@ class DesignProject {
             $currentActive.removeClass("active").prev().addClass("active")
             let prevImagesWidth = 0
             Array.from($currentActive.prevAll()).forEach(image => prevImagesWidth += $(image).outerWidth(true))
-            console.log($currentActive.prev().position().left)
             $imageContainer.css({
                 left: -$currentActive.prev().position().left
             })
@@ -158,7 +157,7 @@ class DesignProject {
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
         let $currentActive = $imageContainer.find(".active")
 
-       /* if ($currentActive.next().length > 0) {
+        if ($currentActive.next().length > 0) {
            
             $currentActive.removeClass("active").next().addClass("active")
             let $nextActive = $currentActive.next()
@@ -170,14 +169,7 @@ class DesignProject {
             $imageContainer.css({left: "0px"})
             $currentActive.removeClass("active")
             $imageContainer.children().first().addClass("active")
-        }*/
-        if ($currentActive.next().length > 0) {
-            $currentActive.removeClass("active").next().addClass("active")
-            let $nextActive = $currentActive.next()
-            let prevImagesWidth = 0
-            Array.from($currentActive.prevAll()).forEach(image => prevImagesWidth += $(image).outerWidth(true))
-            $imageContainer.css({left: -$nextActive.position().left})
-         }
+        }
         this._updateDots()
     }
 
@@ -186,15 +178,16 @@ class DesignProject {
         if (isElementInViewport($(`#${this.projectId}`)[0])) {
             if (!this.isGalleryRendered) {
                 this._downloadImages()
+
             }
             else{
                 // make videos autoplay on viewport
-
+                if (getMediaMatch() !== utils.SMALL) {
                     this.imageContainer().find("video").each(function() {
                         this.play()
                     })
                 
-        
+                    }
             }
         }
         else {
@@ -207,9 +200,8 @@ class DesignProject {
     }
 
     _downloadImages() {
-
         this.isGalleryRendered = true
-        this.downloadedImages = {}
+
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
         this.gallery.forEach((image, index) => {
             const source = this._getSrcForGalleryImage(image)
@@ -217,44 +209,38 @@ class DesignProject {
             const extension = url.split(".")[1]
             let content = null;
     
-            if (this.images.includes(extension)) {
-                        content = new Image();
-                        /*if (index==0) {
-                            content.classList.add("active")
-                        }*/
-                        content.onload = function (event) {
-                            let loadedImage = event.target
-                            let key = new URL(loadedImage.src).pathname
-                            this.downloadedImages[key] = loadedImage
-                            this._contentLoad(event)
-                        }.bind(this)
-                    
-                } else if (this.videos.includes(extension)) {
-                    content = document.createElement('video');
-                    content.controls = true;
-                    content.autoplay = true;
-                    content.loop = true ;
-                    /*if (index==0) {
+         if (this.images.includes(extension)) {
+                    content = new Image();
+                    if (index==0) {
                         content.classList.add("active")
-                    }*/
-                    content.onloadstart = function (event) {
-                            let loadedImage = event.target
-                            let key = new URL(loadedImage.src).pathname
-                            this.downloadedImages[key] = loadedImage
-                            this._contentLoad(event)
-                        }.bind(this)
-                    
+                    }
+                    content.onload = function (event) {
+                        this._contentLoad(event)
+                    }.bind(this)
+                 
+            } else if (this.videos.includes(extension)) {
+                content = document.createElement('video');
+                content.controls = false;
+                content.autoplay = true;
+                content.loop = true ;
+                if (index==0) {
+                    content.classList.add("active")
                 }
-                content.src = source
-                content.alt = image.alt    
-            
-            })
+                content.onloadstart = function (event) {
+                        this._contentLoad(event)
+                    }.bind(this)
+                
+            }
+            content.src = source
+            content.alt = image.alt    
+           
+        })
 
-      /*  window.setTimeout(function () {
+        window.setTimeout(function () {
             $imageContainer.css({transition: "left 200ms ease-in-out"})
             $imageContainer.css({left: "0px"})
         }, 100)
-        $imageContainer.css("filter", "")*/
+        $imageContainer.css("filter", "")
     }
 
     _contentLoad(event) {
@@ -263,17 +249,15 @@ class DesignProject {
         let loadedImage = event.target
         let key = new URL(loadedImage.src).pathname
         this.downloadedImages[key] = loadedImage
-        $imageContainer.innerHeight = ""
+
         this._appendImagesInOrder()
-    
+        
         if (Object.keys(this.downloadedImages).length === this.gallery.length) {
-            
-            
-            this._renderDotIndicator()
-            this._renderGallery()
-            
+           
+           // this._renderGallery()
             this._videoControls()
-            
+            this._renderDotIndicator()
+
             if (!overlayLoaded) {
                 overlayLoaded = true
                 portfolioOverlay.loadOverlay("portfolio",
@@ -284,7 +268,6 @@ class DesignProject {
         }
     }
     _appendImagesInOrder() {
-        this.imageContainer().innerHTML = "";
         for (let i = 0; i < this.gallery.length; ++i) {
             let img = this.gallery[i]
             let imageKey = this._getSrcForGalleryImage(img)
@@ -305,10 +288,16 @@ class DesignProject {
                     container.classList.add("videoContainer")
 
                     let controls = document.createElement('div')
-                    controls.classList.add("videoControls", "play")
+                    if(getMediaMatch() === utils.SMALL){
+                        controls.classList.add("videoControls", "play")
+                    }
+                    else{
+                        controls.classList.add("videoControls", "pause")
+                    }
+                    
 
                     container.append(downloadedImage)
-                    //container.append(controls)
+                    container.append(controls)
 
                     this.imageContainer().append(container)
                 }
@@ -375,15 +364,12 @@ class DesignProject {
      * @private
      */
     _updateDots() {
+        
         let currentImage = this.imageContainer().find(".active")[0]
         let $dotIndicator = this.imageContainer().siblings().children(".dotIndicator")
         $dotIndicator.find(".dot.active").removeClass("active")
-     
-        if(currentImage){
-        let src = currentImage.src ? currentImage.src : currentImage.children[0].src
-            if(src){
-                $dotIndicator.find(`.dot[data-src="${src}"]`).addClass("active")
-            }
+        if(currentImage.src){
+            $dotIndicator.find(`.dot[data-src="${currentImage.src}"]`).addClass("active")
         }
     
     }
@@ -396,74 +382,63 @@ class DesignProject {
      * @private
      */
 
-    _renderGallery() {
+   /* _renderGallery() {
         this.isGalleryRendered = true
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
-        let offset = 0;
-        let firstActiveImg = null
-        let galleryMultiplier = 3;
-        let content = null;
-        let containsVideo = false;
-        for (let i = 0; i < galleryMultiplier; ++i) {
-        
-            this.gallery.forEach(path => {
+
+        this.gallery.forEach((path, index) => {
+
                 let src = `${this.galleryPath}/${encodeURIComponent(path.src)}`
                 let img = this.downloadedImages[src]
-                let clone = img.cloneNode(true);
-                content = clone;
-                //change online and on nomis
+                let firstActiveImg = null;
                 const extension = img.src.split(".")[1]
 
-                if (this.videos.includes(extension)) {
-                    containsVideo = true;
+                if (this.images.includes(extension)) {
+                    $imageContainer.append(img)
+                } else if (this.videos.includes(extension)) {
+
                     let container = document.createElement('div')
                     container.classList.add("videoContainer")
-        
+
                     let controls = document.createElement('div')
+                    let videoButton = getMediaMatch() === utils.SMALL ? "play" : "pause";
+                    controls.classList.add("videoControls", videoButton)
 
-                    controls.classList.add("videoControls", "play")
+                    container.append(img)
+                    container.append(controls)
 
-                    container.append(clone)
-                    //container.append(controls)
-                    content = container
-
-                   
+                    $imageContainer.append(container)
                 }
+    
+             
+                if (index==0) {
 
-                $imageContainer.append(content)
-                offset += $(content).outerWidth(true)
-
-                if (i === 1 && firstActiveImg == null) {
-                    firstActiveImg = content
-                }        
-              
-            })
-        }
-        $(firstActiveImg).addClass("active")
-        let timeout = containsVideo ? 1000 : 100 
-
-        window.setTimeout(function () {
-            $imageContainer.css({left: -$(firstActiveImg).position().left})
-        }, timeout) 
-
+                    firstActiveImg = img
+                    $(firstActiveImg).addClass("active")
+                }
+               
+                window.setTimeout(function () {
+                    $imageContainer.css({transition: "left 200ms ease-in-out"})
+                    $imageContainer.css({left: "0px"})
+                }, 100)
+                $imageContainer.css("filter", "")
+         
+        })
         window.setTimeout(function () {
             $imageContainer.css({transition: "left 200ms ease-in-out"})
-        }, timeout + 100) 
 
+        }, 100)
         $imageContainer.css("filter", "")
-        this._updateDots()
-    }
+    } */
 
 
     _renderDotIndicator() {
         let $dotIndicator = this.imageContainer().siblings().children(".dotIndicator")
-       
-        this.gallery.forEach(img => {
-            let src = img.src ? img.src : img.children[0].src
-            let url = `${window.location.origin}${this.galleryPath}/${encodeURIComponent(src)}`
-            $dotIndicator.append(`<div class="dot" data-src="${url}"></div>`)
-        })
    
+        this.imageContainer().children().toArray().forEach(img => {
+            
+            $dotIndicator.append(`<div class="dot" data-src="${img.src}"></div>`)
+        })
     }
 
     _renderCategories() {
