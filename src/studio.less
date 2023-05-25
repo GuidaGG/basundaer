@@ -43,30 +43,38 @@
 
       }
 
+      .gallery-zone {
+        @media @media-small {
+          flex-direction: column;
+          .half {
+            width: auto;
+          }
+        }
+      }
 
-      > .description {
+      .description {
         @media @media-large, @media-l-medium {
           margin-right: 20%;
         }
       }
 
       .serviceDescriptions {
-        width: 100%;
+     
         display: flex;
 
         flex-wrap: nowrap;
 
         @media @media-large {
-          margin: @padding-large * 3 0;
+          //margin: @padding-large * 3 0;
         }
         @media @media-l-medium, @media-p-medium {
-          margin: @padding-medium * 3 0;
+          //margin: @padding-medium * 3 0;
         }
         @media @media-small {
           margin: @padding-small * 3 0;
           flex-direction: column;
         }
-
+  
         .serviceDescription {
           flex: 0 0 33%;
 
