@@ -21,7 +21,7 @@ class DesignProject {
      * Constructor
      * @param {Object} content - A data object from the projects.json file.
      */
-    constructor(content) {
+    constructor(content, translations) {
         this.title = content.title
         this.projectId = utils.normalizeID(this.title)
         this.categories = content.categories
@@ -32,6 +32,9 @@ class DesignProject {
         this.thumbnail = content.thumbnail
         this.galleryPath = "/static/img/projects/" + encodeURIComponent(content.galleryFolder)
 
+        this.translationYear = translations.year
+        this.translationCategory = translations.category
+        this.translationClient= translations.client
         /**
          * The project's description string. If the string contains a "<more>" tag, the paragraphs after this tag
          * will not be displayed, but a "mehr..." link which shows/hides the paragraphs (@media-small only).
@@ -141,7 +144,7 @@ class DesignProject {
             $currentActive.removeClass("active").prev().addClass("active")
             let prevImagesWidth = 0
             Array.from($currentActive.prevAll()).forEach(image => prevImagesWidth += $(image).outerWidth(true))
-            console.log($currentActive.prev().position().left)
+
             $imageContainer.css({
                 left: -$currentActive.prev().position().left
             })
@@ -158,19 +161,6 @@ class DesignProject {
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
         let $currentActive = $imageContainer.find(".active")
 
-       /* if ($currentActive.next().length > 0) {
-           
-            $currentActive.removeClass("active").next().addClass("active")
-            let $nextActive = $currentActive.next()
-            let prevImagesWidth = 0
-            Array.from($currentActive.prevAll()).forEach(image => prevImagesWidth += $(image).outerWidth(true))
-            $imageContainer.css({left: -$nextActive.position().left})
-        }
-        else {
-            $imageContainer.css({left: "0px"})
-            $currentActive.removeClass("active")
-            $imageContainer.children().first().addClass("active")
-        }*/
         if ($currentActive.next().length > 0) {
             $currentActive.removeClass("active").next().addClass("active")
             let $nextActive = $currentActive.next()
@@ -183,18 +173,25 @@ class DesignProject {
 
     triggerDownloadImagesIfProjectIsVisible() {
    
-        if (isElementInViewport($(`#${this.projectId}`)[0])) {
+        if (isElementInViewport($(`#${this.projectId}`)[0]) || ($(`#${this.projectId}`).index() === 0) ) {
             if (!this.isGalleryRendered) {
                 this._downloadImages()
             }
             else{
                 // make videos autoplay on viewport
-
+                if (getMediaMatch() != utils.SMALL) {
                     this.imageContainer().find("video").each(function() {
+
                         this.play()
+ 
+                        if(!this.paused){
+                        this.nextSibling.classList.remove("play")
+                        this.nextSibling.classList.add("pause")
+                        }
+
                     })
                 
-        
+                }
             }
         }
         else {
@@ -231,8 +228,7 @@ class DesignProject {
                     
                 } else if (this.videos.includes(extension)) {
                     content = document.createElement('video');
-                    content.controls = true;
-                    content.autoplay = true;
+                    content.controls = false;
                     content.loop = true ;
                     /*if (index==0) {
                         content.classList.add("active")
@@ -293,25 +289,25 @@ class DesignProject {
             if (downloadedImage === undefined) {
                 return
             }
-            const extension = img.src.split(".")[1]
-
+            const extension = img.src.split(".")[3]
+         
             if (this.images.includes(extension)) {
                 if (this.imageContainer().find(`img[src="${imageKey}"]`).length === 0) {
                     this.imageContainer().append(downloadedImage)
                 }
             } else if (this.videos.includes(extension)) {
-                if (this.imageContainer().find(`video[src="${imageKey}"]`).length === 0) {
+   
                     let container = document.createElement('div')
                     container.classList.add("videoContainer")
 
                     let controls = document.createElement('div')
-                    controls.classList.add("videoControls", "play")
-
+                    controls.classList.add("videoControls", "pause")
                     container.append(downloadedImage)
-                    //container.append(controls)
-
+                    container.append(controls)
                     this.imageContainer().append(container)
-                }
+
+        
+                
             }
 
            
@@ -412,9 +408,10 @@ class DesignProject {
                 let clone = img.cloneNode(true);
                 content = clone;
                 //change online and on nomis
-                const extension = img.src.split(".")[1]
-
+                const extension = img.src.split(".")[3]
+               
                 if (this.videos.includes(extension)) {
+                   
                     containsVideo = true;
                     let container = document.createElement('div')
                     container.classList.add("videoContainer")
@@ -422,9 +419,9 @@ class DesignProject {
                     let controls = document.createElement('div')
 
                     controls.classList.add("videoControls", "play")
-
+                   
                     container.append(clone)
-                    //container.append(controls)
+                    container.append(controls)
                     content = container
 
                    
@@ -448,10 +445,15 @@ class DesignProject {
 
         window.setTimeout(function () {
             $imageContainer.css({transition: "left 200ms ease-in-out"})
+           if (getMediaMatch() === utils.SMALL) {
+            $imageContainer.find(".videoControls").css({ display: "block"})
+           }
         }, timeout + 100) 
 
         $imageContainer.css("filter", "")
+        
         this._updateDots()
+     
     }
 
 
@@ -515,7 +517,7 @@ class DesignProject {
                         <h2 class="title paragraph">${this.title}</h2>
                         <div class="headings">
                             <div class="headingSection">
-                                <div class="headingTitle heading2">Kategorie:</div>
+                                <div class="headingTitle heading2">${this.translationCategory}:</div>
                                 <div class="headingContent heading2">
                                                                   
                                         ${this._renderCategories()}
@@ -523,11 +525,11 @@ class DesignProject {
                                 </div>
                             </div>
                             <div class="headingSection">
-                                <div class="headingTitle heading2">Kunde:</div>
+                                <div class="headingTitle heading2">${this.translationClient}:</div>
                                 <div class="headingContent heading2">${this.customer}</div>
                             </div>
                             <div class="headingSection">
-                                <div class="headingTitle heading2">Jahr:</div>
+                                <div class="headingTitle heading2">${this.translationYear}:</div>
                                 <div class="headingContent heading2">${this.year}</div>                            
                             </div>
                             ${this._renderLink()}
@@ -561,7 +563,7 @@ export default function designPageReady(translations) {
         $(".projects").html("")
         translations.projects.forEach(p => {
             
-            let project = new DesignProject(p)
+            let project = new DesignProject(p, translations)
             designProjects.push(project)
             project.appendTo($(".projects"))
             window.setTimeout(function () {

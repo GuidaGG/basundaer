@@ -33,6 +33,8 @@ p.intro a,
   font-size: 22pt;
   line-height: 27pt;
   font-weight: normal;
+}
+.heading1 {
   margin: 0;
 }
 .heading2 {

@@ -155,7 +155,7 @@
 
             img, video {
               height: 100%;
-              width: auto;  
+              width: auto;
               object-fit: contain;   
             }
           
@@ -164,7 +164,6 @@
               @media @media-small {
               
                margin-right: 10px;
-              
              
               }
             }
@@ -173,12 +172,12 @@
               
             }
             .videoContainer {
-     
+              position: relative;
               height: 100%;
-              width: auto;
+              width: auto
     
             }
-          }
+         
 
           .videoControls {
             position: absolute;
@@ -188,107 +187,32 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 10;
-            @media @media-small {
+            display: none;
+              @media @media-small {
+                cursor: pointer;
+                width: 60px;
+                height: 60px;
+              }
+            }
+
+            .videoContainer:hover .videoControls{
               display: block;
+            }
+
+          
+
+            .play{
               cursor: pointer;
-              width: 40px;
-              height: 40px;
+              background-image: url("/static/img/icons/B&A_Icons_Play.svg");
+          
             }
-          }
-
-          .play{
-            background-image: url("/static/img/icons/B&A_Icons_Play.svg");
-         
-          }
-          .pause{
-
-            background-image: url("/static/img/icons/B&A_Icons_PAUSE.svg");
-      
-          }
- 
-    
-
-          .navigation {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            top: 0;
-            display: flex;
-            z-index: 5;
-            overflow: visible;
-
-            @media @media-small {
-              top: 20%;
-              bottom: 20%
+            .pause{
+              cursor: pointer;
+              background-image: url("/static/img/icons/B&A_Icons_Pause.svg");
+        
             }
-
-            .prevImg {
-              width: 50%;
-              height: 100%;
-              background-repeat: no-repeat;
-              background-position: center center;
-              -webkit-background-size: 20px;
-              background-size: 20px;
-
-              @media @media-large {
-                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
-
-                &:hover {
-                  cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
-                }
-              }
-              @media @media-l-medium, @media-p-medium {
-                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_links.png") 46 16, auto;
-
-                &:hover {
-                  cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 46 16, auto;
-                }
-              }
-              @media @media-small {
-                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
-
-                &:hover {
-                  cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
-                }
-              }
-
-              
-            }
-
-            .nextImg {
-              width: 50%;
-              height: 100%;
-              background-repeat: no-repeat;
-              background-position: center center;
-              -webkit-background-size: 20px;
-              background-size: 20px;
-              @media @media-large {
-                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
-
-                &:hover {
-                  cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
-                }
-              }
-              @media @media-l-medium, @media-p-medium {
-                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_rechts.png") 46 16, auto;
-
-                &:hover {
-                  cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 46 16, auto;
-                }
-              }
-              @media @media-small {
-                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
-
-                &:hover {
-                  cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
-                }
-              }
-            }
-
-            
-          }
-
+          }  
+          
           .dotIndicator {
             position: absolute;
             display: flex;
@@ -339,9 +263,102 @@
             }
           }
 
+          
         }
+
+        .gallery .navigation {
+        
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0 ;
+          top: 0;
+          display: flex;
+          z-index: 5;
+          overflow: visible;
+          @media @media-small {
+            top: 60%;
+            bottom: 0%
+          }
+
+         
+
+          .prevImg {
+            width: 50%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: 20px;
+            background-size: 20px;
+
+            @media @media-large {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
+              }
+            }
+            @media @media-l-medium, @media-p-medium {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_links.png") 46 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 46 16, auto;
+              }
+            }
+            @media @media-small {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
+              }
+            }
+
+            
+          }
+
+          .nextImg {
+            width: 50%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: 20px;
+            background-size: 20px;
+            @media @media-large {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
+              }
+            }
+            @media @media-l-medium, @media-p-medium {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_rechts.png") 46 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 46 16, auto;
+              }
+            }
+            @media @media-small {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
+              }
+            }
+          }
+
+          
+        }
+
+        .gallery:hover .videoControls {
+          display: block;
+        }
+       
       }
     }
+
+   
+    
   }
+ 
 }
 

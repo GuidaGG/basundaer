@@ -1,6 +1,9 @@
 {
   "overlay_description": "Vielfältige Themen, komplexe Fragen und eine enge Zusammenarbeit. Jedes Projekt ist eine spannende Herausforderung, der wir uns mit Neugier, Leidenschaft und Hingabe widmen. So entstehen anspruchsvolle, ästhetische und sinnstiftende Designlösungen.",
   "overlay_title": "ÜBERSICHT",
+  "year" : "Jahr",
+  "category" : "Kategorie",
+  "client" : "Kunde",
   "projects": [
 
     {

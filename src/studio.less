@@ -35,7 +35,7 @@
     .studioContent {
 
       &:extend(.pageContent);
-
+      margin-right: 0px;
       .leistungen, .co-working, .kundinnen {
         .heading {
           margin-bottom: @padding-small;
@@ -43,14 +43,6 @@
 
       }
 
-      .gallery-zone {
-        @media @media-small {
-          flex-direction: column;
-          .half {
-            width: auto;
-          }
-        }
-      }
 
       .description {
         @media @media-large, @media-l-medium {
@@ -61,17 +53,9 @@
       .serviceDescriptions {
      
         display: flex;
-
         flex-wrap: nowrap;
 
-        @media @media-large {
-          //margin: @padding-large * 3 0;
-        }
-        @media @media-l-medium, @media-p-medium {
-          //margin: @padding-medium * 3 0;
-        }
-        @media @media-small {
-          margin: @padding-small * 3 0;
+        @media @media-small, @media-p-medium {
           flex-direction: column;
         }
   
@@ -176,14 +160,31 @@
 
     }
 
+
     .leistungen, .co-working {
       margin-top: 60px;
 
     }
 
-    .studio-gallery {
-      gap: 10px
+    .studioSection {
+      &:extend(.pageContent);
+      padding: 0px;
     }
+
+    .studio-gallery {
+      gap: 10px;
+      margin-right: 0px;
+      @media @media-small {
+          flex-direction: column;
+          .half {
+            width: auto;
+          }
+        }
+    }
+
+    
+  
+    
   }
 
   .overlayPageContent {
@@ -268,7 +269,19 @@
             .email {
             }
           }
+          .partners-list{
+            ul {
+              padding: 0 ;
+              padding-bottom: @padding-small;
+              list-style: none;
+              
+              li {
+                margin: 0;
+              }
+            }
+          }
         }
+
       }
     }
   }

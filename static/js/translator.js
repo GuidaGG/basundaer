@@ -51,7 +51,6 @@ translate(translation) {
     }
    
     this._elements.forEach((element) => {
-      console.log(element, this._location)
         var keys = element.dataset.i18n.split(".");
         var text = keys.reduce((obj, i) => obj[i], translation);
 

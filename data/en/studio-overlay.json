@@ -2,5 +2,19 @@
     "ben": "Ben Jurca",
     "ben_description" : "English",
     "astrid" : "Astrid Hesse",
-    "astrid_description" : "English"
+    "astrid_description" : "English",
+    "partners_title" : "Here is our list of partnerts",
+    "partners_description": "Description of the list of parteners",
+    "partners": [
+        {
+            "name": "HEllo my name",
+            "profession" : "gardener",
+            "url": "www.google.com"
+        },
+        {
+            "name": "Kassandra Kassada",
+            "profession" : "Karaoke Singer",
+            "url": "www.google.com"
+        }
+    ]
 }

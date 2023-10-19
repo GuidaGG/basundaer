@@ -11,6 +11,7 @@
     <script type="text/javascript" src="./static/js/jquery-3.3.1.js"></script>
     
     <link href="/static/css/ba.css" rel="stylesheet">
+    <link href="/static/css/custom.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="57x57" href="/static/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/static/img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/static/img/favicon/apple-icon-72x72.png">
@@ -68,13 +69,11 @@
 
             document.querySelector("form").addEventListener("click", function(evt) {
                     if (evt.target.tagName === "INPUT") {
-                        //t.load(evt.target.value);
                         t.toggleLangTag(evt.target.value)
                         loadContent(evt.target.value, false)
                         restartButtons()
                         evt.target.disabled = true;
-                        /*console.log(t.translations)
-                        studioPageReady(t.translations, false)*/
+ 
                 }
             })
         })
@@ -86,18 +85,9 @@
 </head>
 <body>
     <form class="languageSwitcher">
-       <!-- <fieldset>
-          <label>
-            <button>EN</button>  
-            <input type="radio" name="lang" value="en" /> EN
-          </label>
-          <label> <input type="radio" name="lang" value="de" checked  /> DE </label>
-        </fieldset>
-        -->
         <input class="lang de" type="button" value="de" /> 
         <div class="divider"></div>
         <input class="lang en" type="button" value="en" />
-
       </form>
     <div id="index-translations" class="gridContainer">
         <div class="baLogo" id="baLogo">

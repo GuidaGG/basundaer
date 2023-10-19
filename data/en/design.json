@@ -1,6 +1,9 @@
 {
   "overlay_description": "ENGLISHENGLISHENGLIS",
   "overlay_title": "OVERVIEW",
+  "year" : "Year",
+  "category" : "Category",
+  "client" : "Client",
   "projects": [
 
     {

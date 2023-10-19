@@ -234,7 +234,6 @@ export default function ResearchIndexReady(translations, portfolioOverlay, desig
     _portfolioOverlay = portfolioOverlay
     $(".list").html("");
         translations.projects.forEach(p => {
-            console.log(translations)
             let project = new Index(p)
             _projects.push(project)
             project.renderTitle($(".list"))

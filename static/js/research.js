@@ -217,7 +217,7 @@ class ResearchProject {
 
         let result = ''
         result += `<div class="${data.height} gallery-zone zone"></div>`;
-
+        result +=  `<div class="caption-zone">${this._renderCaptions(data)}</div>`
         return result
     }
 
@@ -233,24 +233,71 @@ class ResearchProject {
                 this._downloadImages() 
                 this._removeImageBackground()
             }
-            
          
         }
-        if (getMediaMatch() !== utils.SMALL) {
+       /* if (getMediaMatch() !== utils.SMALL) {
             if(isElementInViewport(container, 100, 0)){
 
                 container.querySelectorAll("video").forEach(function(video){
                     video.play()
+                    video.nextSibling.classList.remove("play")
+                    video.nextSibling.classList.add("pause")
         
                 })
             }else{
                 container.querySelectorAll("video").forEach(function(video){
                     video.pause()
+                    video.nextSibling.classList.remove("pause")
+                    video.nextSibling.classList.add("play")
                 
                 })
                 
             }
-        }
+        }*/
+    }
+
+    _videoControls() {
+        let container = $(`#${this.projectId}`)[0]
+        let videoControls = container.querySelectorAll(".videoControls")
+
+        Array.from(videoControls).forEach(control => {
+
+            let video = control.previousSibling
+            control.firstChild.addEventListener("click", function() {
+
+                if (getMediaMatch() != utils.SMALL) {
+                    if(video.paused || video.ended || video.currentTime === 0){
+                        
+                        video.play();
+                        control.classList.remove("play")
+                        control.classList.add("pause")
+                    }
+                    else{
+                        video.pause();
+                        control.classList.remove("pause")
+                        control.classList.add("play")
+                    }
+                }
+                else{
+                    video.play();
+                    this.classList.remove("pause")
+                    this.classList.add("play")
+                }
+            })
+
+            control.lastChild.addEventListener("click", function() {
+               if(video.muted){
+                video.muted = false;
+                control.classList.remove("unmute")
+                control.classList.add("mute")
+               }
+               else{
+                video.muted = true
+                control.classList.remove("mute")
+                control.classList.add("unmute")
+               }
+        });
+        });
     }
 
     _renderImage(data){
@@ -269,7 +316,8 @@ class ResearchProject {
         let gallerypath = this.galleryPath;
 
         result += `<div class="video-zone zone" >`;
-        result += `<video width="1280" loop controls><source src="${gallerypath }/${encodeURIComponent(data.videoURL)}"  type="video/mp4">Your browser does not support the video tag.</video>`;
+        result += `<video width="1280" loop><source src="${gallerypath }/${encodeURIComponent(data.videoURL)}"  type="video/mp4">Your browser does not support the video tag.</video>`;
+        result += `<div class="videoControls play"><div class="pause_play"></div><div class="mute_unmute"></div></div>`;
         result += `</div>`;
         return result
     }
@@ -354,7 +402,7 @@ export default function researchPageReady(translations) {
                    
             }
             researchProject.appendTo($(".researchs"))
-
+            researchProject._videoControls();
             counter++;
             window.setTimeout(function () {
     

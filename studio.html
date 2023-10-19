@@ -16,11 +16,13 @@
         import studioPageReady from "./static/js/studio.js"
         import Translator from "./static/js/translator.js";
         let t =  new Translator("studio");
-       // await t.load();
-       async function loadContent(lang = null, overlay = true){
-        await t.load(lang)
-        studioPageReady(t.translations, overlay)
-     }
+
+        // await t.load();
+        async function loadContent(lang = null, overlay = true){
+            await t.load(lang)
+            studioPageReady(t.translations, overlay)
+        }
+
         $('body').ready(function () { 
 
             loadContent()
@@ -44,13 +46,13 @@
 
     <div class="studio">
         <div class="headerImage"></div>
-        <div class="studioContent pageContent">
-            <div>
-                <h1 data-i18n="subtitle_1" class="heading heading1 description">Wir sind Bas&Aer.</h1>
+        <div >
+            <div class="studioContent">
+                <h1 data-i18n="subtitle_1" class="heading heading1 description studioSection">Wir sind Bas&Aer.</h1>
 
-                <h2 data-i18n="subtitle_2" class="subHeading heading2 hheading description" style="margin-top: 0px">Integriertes Designstudio aus Bremen und Berlin</h2>
+                <h2 data-i18n="subtitle_2" class="subHeading heading2 hheading description studioSection" style="margin-top: 0px">Integriertes Designstudio aus Bremen und Berlin</h2>
 
-                <div class="description paragraph">
+                <div class="description paragraph studioSection">
                     <p data-i18n="paragraph_1">
                         Bei Bas&Aer bringen wir Botschaften in eine verständliche Form und Identitäten auf den Punkt. Wir lassen Ideen lebendig und erfahrbar werden. Zweidimensional, dreidimensional, analog, digital – Wir finden die passenden Formate und Medien für jedes Vorhaben.
                     </p>
@@ -58,13 +60,13 @@
                         Transparente und direkte Kommunikation, kurze Entscheidungswege und ein gemeinsamer Anspruch sind für uns die Grundlage einer erfolgreichen Zusammenarbeit. Wir sind stolz auf das uns entgegengebrachte Vertrauen, den intensiven Dialog mit unseren Kund:innen und tolle Ergebnisse.
                     </p>
                 </div>   
-                <div class="description paragraph leistungen">       
+                <div class="description paragraph leistungen studioSection">       
                         <h2 data-i18n="services" class="heading heading1" style="margin-top: 0px">Leistungen</h2>
                         <p data-i18n="services_description" >
                             Bas&Aer wurde im November 2017 von Katharina Brock, Astrid Hesse und Ben Jurca gegründet. Seitdem bieten wir unseren Kund:innen eine umfangreiche Betreuung in den Bereichen Unternehmensidentität und -kommunikation, Innovation und kreative Problemlösung an.
                         </p>
                 </div>   
-                <div class="description serviceDescriptions paragraph">
+                <div class="description serviceDescriptions paragraph studioSection">
                     <div class="serviceDescription">
                         <h3 data-i18n="concept_design_title" class="header paragraph">Konzept & Design</h3>
                         <div>
@@ -116,32 +118,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="description paragraph co-working">
+                <div class="description paragraph co-working studioSection">
                     <h2 data-i18n="co_working" class="heading heading1">Co-Working</h2>
                
                     <p data-i18n="co_working_description" >
                         Bas&Aer wurde im November 2017 von Katharina Brock, Astrid Hesse und Ben Jurca gegründet. Seitdem bieten wir unseren Kund:innen eine umfangreiche Betreuung in den Bereichen Unternehmensidentität und -kommunikation, Innovation und kreative Problemlösung an.
                     </p>
                 </div>
-                <div class="half gallery-zone zone studio-gallery" style="padding: 0px"> <!--  -->
+            </div>
+            <div class="half gallery-zone zone studio-gallery" style="padding: 0px"> <!--  -->
                     <div class="half">  <!---->
                     <img style="vertical-align: middle; width: 100%; margin-bottom: 5px" src="/static/img/studio/2OGohne-Logo-neu-2.jpg" alt="Casino Futur"> 
-                    <p class="paragraph" data-i18n="co_working_bremen" >Unser Coworking in Bremen: <a href="https://www.casinofutur.de/" target="_blank" >Casino Futur</a></p> 
+                    <p class="paragraph studioContent" style="padding-top:0px" data-i18n="co_working_bremen" >Unser Coworking in Bremen: <a href="https://www.casinofutur.de/" target="_blank" >Casino Futur</a></p> 
                     </div>                
                     <div class="half">
                     <img style="vertical-align: middle; width: 100%; margin-bottom: 5px" src="/static/img/studio/yoga+at+Lobe+Block-Christina+Metzler-2.jpg" alt="Lobeblock"> 
-                    <p class="paragraph" data-i18n="co_working_berlin">Unser Coworking in Berlin: <a href="https://lobe.berlin/de/" target="_blank">Lobestudio 1.2</a></p> 
+                    <p class="paragraph studioContent" style="padding-top:0px" data-i18n="co_working_berlin">Unser Coworking in Berlin: <a href="https://lobe.berlin/de/" target="_blank">Lobestudio 1.2</a></p> 
                     </div>
                     
                 </div>
-                
-                <div class="description paragraph kundinnen">
+            <div class="studioContent">   
+                <div class="description paragraph kundinnen studioSection">
                     <h2 class="heading heading1" style="margin: 60px 0 10px 0" data-i18n="clients">Kund:innen</h2>
                     <p data-i18n="clients_description">
                         Unsere Projektpartner:innen kommen aus verschiedenen Branchen mit unterschiedlichen Vorhaben und Herausforderungen zu uns. Zum Glück sind wir mit vielen talentierten Kolleg:innen gut vernetzt. So können wir auch problemlos umfangreiche und ungewöhnliche Projekte umsetzen. Wir freuen uns auf Ihre Anfrage: <a href="mailto:info@basundaer.de">info@basundaer.de</a>
                     </p> 
                 </div>   
-                <div class="description customers paragraph">
+                <div class="description customers paragraph studioSection">
                     <div class="gallery"></div>
                 </div>
             </div>
