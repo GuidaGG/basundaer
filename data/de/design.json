@@ -1,6 +1,9 @@
 {
   "overlay_description": "Vielfältige Themen, komplexe Fragen und eine enge Zusammenarbeit. Jedes Projekt ist eine spannende Herausforderung, der wir uns mit Neugier, Leidenschaft und Hingabe widmen. So entstehen anspruchsvolle, ästhetische und sinnstiftende Designlösungen.",
   "overlay_title": "ÜBERSICHT",
+  "year" : "Jahr",
+  "category" : "Kategorie",
+  "client" : "Kunde",
   "projects": [
 
     {
@@ -110,6 +113,10 @@
         },
         {
           "src" : "BuA_TAD_LM_web_26.webp",
+          "alt" : "alt"
+        },
+        {
+          "src" : "Nele_Web_browser_Leiste_1200px_1_3.mp4",
           "alt" : "alt"
         },
         {

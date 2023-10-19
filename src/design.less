@@ -9,7 +9,7 @@
   }
 
   & > .content {
-
+   
     @import "closeButtonAndSectionTitle";
 
     overflow-y: auto;
@@ -156,16 +156,28 @@
             img, video {
               height: 100%;
               width: auto;
-              margin-right: 10px;
-            
+              object-fit: contain;   
             }
-          }
-
-          .videoContainer {
-            position: relative;
-            flex-shrink: 2;
-            height: 100%;
-          }
+          
+            video {
+             
+              @media @media-small {
+              
+               margin-right: 10px;
+             
+              }
+            }
+            img, .videoContainer {
+              margin-right: 10px;  
+              
+            }
+            .videoContainer {
+              position: relative;
+              height: 100%;
+              width: auto
+    
+            }
+         
 
           .videoControls {
             position: absolute;
@@ -175,36 +187,32 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 10;
-            cursor: pointer;
-            @media @media-small {
-              width: 40px;
-              height: 40px;
+            display: none;
+              @media @media-small {
+                cursor: pointer;
+                width: 60px;
+                height: 60px;
+              }
             }
-          }
 
-          .play{
-            box-sizing: border-box;
-            border-style: solid;
-            border-width: 35px 0px 35px 70px;
-            border-color: transparent transparent transparent #fff;
-            @media @media-small {
-              border-width: 20px 0px 20px 40px;
+            .videoContainer:hover .videoControls{
+              display: block;
             }
-          }
-          .pause{
-            box-sizing: border-box;
-            border-style: double;
-            border-width: 0px 0px 0px 70px;
-            border-color: transparent;
-            @media @media-small {
-              border-width: 0 0px 0 20px;
+
+          
+
+            .play{
+              cursor: pointer;
+              background-image: url("/static/img/icons/B&A_Icons_Play.svg");
+          
             }
-          }
-          .pause:hover {
-            border-color: white;
-          }
-
-
+            .pause{
+              cursor: pointer;
+              background-image: url("/static/img/icons/B&A_Icons_Pause.svg");
+        
+            }
+          }  
+          
           .dotIndicator {
             position: absolute;
             display: flex;
@@ -222,7 +230,7 @@
               height: 10px;
             }
             @media @media-small {
-              bottom: @padding-small / 2;
+              bottom: -35px;
               height: 8px;
             }
 
@@ -255,80 +263,102 @@
             }
           }
 
-          .navigation {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            top: 0;
-            display: flex;
-            //display: none;
-            z-index: 5;
+          
+        }
 
-            .prevImg {
-              width: 50%;
-              height: 100%;
-              background-repeat: no-repeat;
-              background-position: center center;
-              -webkit-background-size: 20px;
-              background-size: 20px;
+        .gallery .navigation {
+        
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0 ;
+          top: 0;
+          display: flex;
+          z-index: 5;
+          overflow: visible;
+          @media @media-small {
+            top: 60%;
+            bottom: 0%
+          }
 
-              @media @media-large {
+         
+
+          .prevImg {
+            width: 50%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: 20px;
+            background-size: 20px;
+
+            @media @media-large {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
+
+              &:hover {
                 cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
-
-                &:hover {
-                  cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
-                }
               }
-              @media @media-l-medium, @media-p-medium {
-                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_links.png") 46 16, auto;
+            }
+            @media @media-l-medium, @media-p-medium {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_links.png") 46 16, auto;
 
-                &:hover {
-                  cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 46 16, auto;
-                }
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 46 16, auto;
               }
-              @media @media-small {
+            }
+            @media @media-small {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
+
+              &:hover {
                 cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
-
-                &:hover {
-                  cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
-                }
               }
             }
 
-            .nextImg {
-              width: 50%;
-              height: 100%;
-              background-repeat: no-repeat;
-              background-position: center center;
-              -webkit-background-size: 20px;
-              background-size: 20px;
-              @media @media-large {
+            
+          }
+
+          .nextImg {
+            width: 50%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: 20px;
+            background-size: 20px;
+            @media @media-large {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
+
+              &:hover {
                 cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
-
-                &:hover {
-                  cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
-                }
               }
-              @media @media-l-medium, @media-p-medium {
-                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_rechts.png") 46 16, auto;
+            }
+            @media @media-l-medium, @media-p-medium {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_rechts.png") 46 16, auto;
 
-                &:hover {
-                  cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 46 16, auto;
-                }
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 46 16, auto;
               }
-              @media @media-small {
+            }
+            @media @media-small {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
+
+              &:hover {
                 cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
-
-                &:hover {
-                  cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
-                }
               }
             }
           }
+
+          
         }
+
+        .gallery:hover .videoControls {
+          display: block;
+        }
+       
       }
     }
+
+   
+    
   }
+ 
 }
 

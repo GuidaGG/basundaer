@@ -32,9 +32,13 @@
           }
           .more-categories {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: flex-start;
             align-content: flex-start;
+            @media @media-small {
+              flex-direction: column;
+              margin: 0;
+            }
           }
           .projectCategory {
             color: black;

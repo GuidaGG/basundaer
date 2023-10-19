@@ -1,6 +1,9 @@
 {
   "overlay_description": "ENGLISHENGLISHENGLIS",
   "overlay_title": "OVERVIEW",
+  "year" : "Year",
+  "category" : "Category",
+  "client" : "Client",
   "projects": [
 
     {
@@ -110,6 +113,10 @@
         },
         {
           "src" : "BuA_TAD_LM_web_26.webp",
+          "alt" : "alt"
+        },
+        {
+          "src" : "Nele_Web_browser_Leiste_1200px_1_3.mp4",
           "alt" : "alt"
         },
         {
@@ -618,10 +625,6 @@
         },
         {
           "src" : "BA_MoinSonne_branding_04.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "processvideo.mp4",
           "alt" : "alt"
         },
         {
