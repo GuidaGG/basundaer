@@ -14,6 +14,10 @@
         "src":  "BA_Website_client_KAE.png",
         "alt" : "alt"
       },
+        {
+        "src":  "BA_Website_client_POB.png",
+        "alt" : "alt"
+      },
       {
         "src": "BA_Website_client_STGB.png",
         "alt" : "alt"
@@ -27,15 +31,11 @@
           "alt" : "alt"
         },
         {
-          "src":  "BA_Website_client_NUM.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_BPP.png",
-          "alt" : "alt"
-        },
-        {
           "src": "BA_Website_client_FHB-SK.png",
+          "alt" : "alt"
+        },
+        {
+          "src":  "BA_Website_client_NUM.png",
           "alt" : "alt"
         },
         {
@@ -48,10 +48,6 @@
         },
         {
           "src": "BA_Website_client_KLZ.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_ZVC.png",
           "alt" : "alt"
         },
         {
@@ -72,10 +68,6 @@
         },
         {
           "src": "BA_Website_client_VRW.png",
-          "alt" : "alt"
-        },
-        {
-          "src":  "BA_Website_client_CIN.png",
           "alt" : "alt"
         },
         {

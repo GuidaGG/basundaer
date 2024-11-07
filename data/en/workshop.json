@@ -124,12 +124,12 @@
       {
         "type": "text",
         "class" : "intro",
-        "text": "ENGLISH Ob es um die Positionierung Ihres Unternehmens, die Entwicklung eines innnovativen Serviceangebotes oder den Zugang zu Ihrer Zielgruppe geht – die Workshops von Bas&Aer bieten Raum, Zeit und das nötige Know-How, um bestehende Herausforderungen intensiv zu betrachten und gemeinsam eine Vision zu erarbeiten: So finden wir individuelle Stärken und authentische Geschichten, die im Gedächtnis bleiben und das Herz berühren."
+        "text": "Whether it is about the positioning of your company, the development of an innovative service offer or the access to your target group - the workshops of Bas&Aer offer space, time and the necessary know-how to look intensively at existing challenges and to work out a vision together: In this way, we find individual strengths and authentic stories that remain in the memory and touch the heart."
         },
         {
           "type": "text",
           "class" : "intro",
-          "text": "Jeder Workshop stellt mit seinen Erkenntnissen die entscheidenden Weichen für die weitere Entwicklung: Mit einem tiefgreifenden Verständnis von Ausgangslage und Anforderungen, sowie einer klaren Perspektive auf konkrete Umsetzungsmöglichkeiten können alle Beteiligten besser involviert werden. Und das spart Zeit und Geld."
+          "text": "With its findings, each workshop sets the decisive course for further development: with a profound understanding of the initial situation and requirements, as well as a clear perspective on concrete implementation possibilities, all participants can be better involved. And that saves time and money."
         },
         {
           "type": "image",
@@ -141,23 +141,28 @@
         {
           "type": "text",
           "class" : "intro",
-          "text": "ENGLISH In unseren Workshops arbeiten wir auf Augenhöhe. Wir beziehen die Stärken, Perspektiven und Kenntnisse aller Personen am Tisch mit ein. Neben einer Bandbreite an Kreativmethoden setzen wir auf eine klare Moderation: empathisch und reflektiert, ideenreich und kritisch."
+          "text": "In our workshops we work at eye level. We include the strengths, perspectives and knowledge of all the people around the table. In addition to a range of creative methods, we rely on clear moderation: empathetic and reflective, imaginative and critical."
         },
 
         {
           "type": "text",
           "class" : "intro",
-          "text": "ENGLISH  Unsere Herangehensweise ist eine Balance aus Intuition und Diskussion. Mit diesen grundlegenden Bestandteilen kreativer Arbeit lösen wir Denkblockaden, locken innovative Ideen hervor und erarbeiten präzise, konsequente Konzepte."
+          "text": "Our approach is a balance of intuition and discussion. With these fundamental components of creative work, we loosen your thinking, tease out innovative ideas and develop precise, consistent concepts."
         },
         {
           "type": "text",
           "class" : "intro",
-          "text": "ENGLISH  ENGLISH Klicken Sie für einen ersten Eindruck von unsere Workshop Formaten rechts auf den Seitenstreifen oder fragen Sie uns nach einem individuell auf Ihre Bedürfnissen und Anforderung zugeschnittenen Workshop:"
+          "text": "Click on the sidebar on the right for a first impression of our workshop formats or ask us for a workshop tailored to your individual needs and requirements:"
         },
         {
           "type": "text",
           "class" : "intro",
           "text": "<a href='mailto:info@basundaer.de' target='_blank'>info@basundaer.de</a>"
+        },
+        {
+          "type": "text",
+          "class" : "intro",
+          "text": "<br>"
         }
     ]
 

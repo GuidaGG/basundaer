@@ -1,27 +1,323 @@
 {
     "section_title" : "Research",
     "overlay_title": "OVERVIEW",
-    "previous" : "vorherige",
-    "next" : "nächste",
+    "previous" : "previous",
+    "next" : "next",
     "projects": [
         {
         "title": "Research",
         "subtitle" : "What do we mean by research?",
         "id": "intro",
-        "galleryFolder": "HDJPresse",
         "dynamic": [
             {
             "type": "text",
             "class" : "intro",
-            "text": 
-            "We want to rethink our social interaction from the design practice: An open-ended process enables us to question proven ways of communication and interaction and to develop new formats, design directions and methods. \nIn addition to the creative implementation, we develop the project idea, take over planning and strategy and carry out participatory formats such as workshops. It is important to us to leave our discipline completely and to design a joint process with other experts. By doing we find solutions. \nAre you, for example, an entrepreneur looking for new forms of contact with your customers? As a city administration, are you trying to make a public space available for common use? As a scientist, do you want to use practical research methods? We are happy to be creative initiators for your project and support you in redefining questions, promoting ideas and implementing changes. \nContact us with your project ideas: <a href='mailto:info@basundaer.de' target='_blank'>info@basundaer.de</a>"
+            "text": "We want to rethink our social interaction from a design practice perspective: an open-ended process allows us to question proven ways of communication and interaction and to develop new formats, design directions and methods. \nIn addition to the design implementation, we develop the project idea, take over planning and strategy and carry out participative formats such as workshops. In doing so, it is important for us to leave our discipline completely and to create a joint process with other experts. By doing, we find solutions. \nFor example, are you an entrepreneur looking for new forms of contact with your customers? Are you, as a municipality, trying to make a public space available for community use? Are you a scientist who wants to apply practical research methods? We are happy to provide creative impulses for your project and support you in redefining questions, advancing ideas and implementing changes. \nContact us with your project ideas: <a href='mailto:info@basundaer.de' target='_blank'>info@basundaer.de</a>"
             }
+            ]
+        },
+        
+        
+        {
+        "title": "Building Cultural Landscapes",
+        "subtitle": "Visual Essay for conference publication „STRING FIGURES – Transforming together“",
+        "id": "Stringfigures",
+        "galleryFolder": "StringFigures",
+        "dynamic":
+            [
+                                {
+            "type": "text",
+            "class" : "block",
+            "text": "LESSONS WE LEARNT – VISUAL ESSAY TO ‘LAND IN SICHT’\nAs part of the ‘String Figures - Transforming Together’ conference at <a href='https://www.unibz.it/en/faculties/design-art/master-eco-social-design/' target='_blank'>the University of Bolzano</a> 2023, we were able to present and critically reflect on the experiences from the <a href='https://www.landinsicht-format.de/' target='_blank'>‘Land in Sicht’ project</a> to an expert audience. Everyone who initiates new projects can report on resistance and challenges. However, we also gain new insights through experimental and unfamiliar approaches. Our contribution focuses on the potential of fictional narratives from our project week and the lessons that can be learnt from them for the successful development of new cultural landscapes."
+            }, 
+                {
+                "type": "image",
+                "image": 
+                    {
+                        "src" : "LandinSicht-Scenario1.webp",
+                        "alt" : "Illustration of a futuristic village center"
+                    }
+
+                },
+                   
+                            {
+            "type": "text",
+            "class" : "block",
+            "text": "At the centre of our investigation there are the results of the design fiction workshop conducted during the ‘Land in Sicht’ project (workshop facilitator G. Graf), in which the participants were asked to imagine a life as creative professionals in rural areas in the future. What kind of world would they find themselves in? What challenges and opportunities would there be for them? From the four fictional stories that emerged, we developed factors that are relevant to the success of transformation in cultural landscapes in the course of our research work."
+            },
+                            
+                                {
+                "type": "gallery",
+                "height": "full",
+                "gallery": [
+                    {
+                        "src" : "LandinSicht-Scenario1-hoch.webp",
+                        "alt" : "Illustration of a creatur that stick its head into a bubble"
+                    },
+                    {
+                        "src" : "LandinSicht-Scenario2-hoch.webp",
+                        "alt" : "Illustration of Underwater Air Camp"
+                    } 
+                ],
+                "classes": [
+                "half",
+                "half"
+
+                ],
+                "captions": [
+                "Design Fiction Scenario: “The Underwater Air Camp”",
+                "Design Fiction Scenario: “The Artist and the Monk”"    
+                ]
+                },
+
+                                                                  {
+                "type": "text",
+                "class" : "quote",
+                "text": "From this Design Fiction narratives of the workshop four factors can be derived to effect the success of cultural transforamtion in rural (or any other) areas:"
+                },
+                                  {
+            "type": "text",
+            "class" : "block",
+            "text": "1. CULTURAL MEDIATOR\nIn transformative cultural projects, the involvement of a cultural mediator is essential. The person should be able to translate effectively between artists and local communities.\n In the design fiction scenario “The Underwater Air Camp”, a hybrid being, the ‘Humano-Marinaio-Didatico’, takes on this role. In the story, it mediates between a fictitious underwater colony and outsiders and responds sensitively to the expectations, needs and expressed values of both parties. This role model, the trust and empathy that goes with it creates a stable basis for fragile relationships in new types of cultural projects."
+            },     
+                                                  {
+            "type": "text",
+            "class" : "block",
+            "text": "2. NEUTRAL AUDITOR\nIn contrast to the mediator, the person in this role is not involved in the project. He or she should be objective and impartial as well as have the necessary qualifications to challenge the established structures between artists and locals (society). The neutral auditor checks that the intended project runs smoothly and does not stray off course.\nThe scenario “The Artist and the Monk” from the design fiction workshop serves as a model for this role. It describes how the hustle and bustle of a village gets out of control due to crazy ideals and how this is only recognised by an impartial actor."
+            },        
+                                                               {
+            "type": "text",
+            "class" : "block",
+            "text": "3. COMMON GROUND\nIn the “Modular Artist Residency” scenario, the (re)creation of shared values is at the centre of a completely new community. This is a decisive factor for lasting, site-specific transformations. In order to effectively build or revitalise a local community, mutual acceptance and the definition of commonalities are required.\n The introduction of a modular residency system for artists challenges conventional notions of living spaces and offers an inventive approach to cultivating a nomadic art community. This scenario encourages a rethinking of the boundaries between city and countryside."
+            },        
+                                                                  {
+            "type": "text",
+            "class" : "block",
+            "text": "4. MOMENTS OF INCUBATION\nInitial interventions serve as ‘door openers’ (portals), which are often the starting point for unusual collaborations. The interest groups – artists and closed communities – can change perspectives here.\nA vivid example of such an incubation moment could be the sound installation “Boule” by Janis E. Müller, which was shown during the opening of the ‘Land in Sicht’ exhibition in Ottobeuren. In the live sound installation, a set of boules balls invited visitors to play and thus participate in unconventional experiences with artistic practices. The accessible interaction generated a jubilant response, regardless of the cultural background of the guests."
+            },           
+                
+            {
+                "type": "gallery",
+                "height": "full",
+                "gallery": [
+                    {
+                        "src" : "LandinSicht-Scenario3-hoch.webp",
+                        "alt" : "Illustration of a modular Artist Residence"
+                    },
+                   {
+                        "src" : "LandinSicht-portals-hoch.webp",
+                        "alt" : "Illustration of boule players"
+                    } 
+                ],
+                "classes": [
+                "half",
+                "half"
+
+                ],
+                "captions": [
+                "Design Fiction Scenario: “Modular Artist Residence”, Illustration: Vanessa Müller-Graf",                
+                "Inspired by the sound performance: “Boule” of Janis E. Müller"
+                ]
+                },
+  
+                                                                  {
+                "type": "text",
+                "class" : "quote",
+                "text": "“Playing games of string figures is about giving and receiving patterns, dropping threads and failing but sometimes finding something that works, something consequential and maybe even beautiful, that wasn’t there before, of relaying connections that matter, of telling stories in hand upon hand, digit upon digit, attachment site upon attachment site, to craft conditions for finite flourishing on terra, on earth.” – Donna Haraway, 2016"
+                },
+                                                 
+                {
+            "type": "text",
+            "class" : "block",
+            "text": "BY DESIGN OR BY DISASTER – CONFERENCE\nThe conference series of the University of Bolzano, Department of Social Design, is a platform for projects that reshape social coexistence through research, experimentation and practice. With the motto ‘By Design or by Disaster’, the theories and ideas of philosopher Donna Haraway form the basis of the conference.\n\nConference Website: <a href='https://designdisaster.unibz.it/2023/' target='_blank'>designdisaster.unibz.it</a>"
+            },  
+
+            {
+                "type": "text",
+                "class" : "block",
+                "text": "CO-AUTHOR\nThe visual essay ‘Building Cultural Landscapes in Rural Areas - Lessons from the Land in Sicht Project’ was co-authored with our project partner <a href='https://atelierbrieftau.be' target='_blank'>Vanessa Graf-Müller</a>, who also designed the illustrations for the text.\n Publication Download: <a href='ftpes://bas-aer-web@hosting109772.af988.netcup.net/_Test/static/img/research/StringFigures/String%20Figures%20-%20Transforming%20Together_2023.pdf' target='_blank'>String Figures – Transforming Together</a>"
+                },
+                                {
+                "type": "text",
+                "class" : "block",
+                "text": "LAND IN SICHT – FORMAT\nGet more information of the project ‚Land in Sicht‘ and our activities here: <a href='https://www.landinsicht-format.de/' target='_blank'>www.landinsicht-format.de</a>"
+                },
+                                                {
+                "type": "gallery",
+                "height": "full",
+                "gallery": [
+                    {   "src" : "Logo_LIS_kl.svg",
+                        "alt" : "Logo of Land in Sicht"
+                    }
+
+                ],
+                "classes": [
+                "quarter"
+                ],
+                "captions": [
+
+                ]
+                }
+
+            ]
+        },
+
+                
+        
+        {
+            "title": "Between Opposites",
+            "subtitle": "Sustainable consumption and social participation",
+            "id": "between-opposites",
+            "galleryFolder": "ZwischenGegensaetzen",
+            "dynamic":
+                [
+                {
+                "type": "image",
+                "image":
+                    {
+                    "src" : "240221_RZ_ZG_web_quer_gr_ah.png",
+                    "alt" : "alt"
+                    }
+                }, 
+                {
+                "type": "text",
+                "class" : "quote",
+                "text": "What role does social justice play in relation to sustainability and consumer behaviour?\nWhat opportunities lie in improving economic and social relations between urban and rural areas?\nHow can sustainable consumption be achieved in times of crisis and increasing polarisation?"
+                },
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "INVITATION TO THE DISCUSSION ROUND 'BETWEEN OPPOSITES'\nWe would like to invite you to our panel discussion »BETWEEN opposites - Sustainable consumption and social participation« on Saturday 16 March 2024 from 6.00 to 7.30 pm. \nYou are welcome to join us for networking afterwards. To book a hot meal, please follow the information below."
+                },
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "In the form of a fishbowl discussion, our talk guests will provide initial impetus and invite you to join in the discussion:"
+                },
+
+                {
+                "type": "gallery",
+                "height": "half",
+                "gallery": [
+                    {
+                        "src" : "ZG_SM_personen_1.png",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "ZG_SM_personen_2.png",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "ZG_SM_personen_3.png",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "ZG_SM_personen_4.png",
+                        "alt" : "alt"
+                    }
+                ],
+                "classes": [
+                "half full_height",
+                "half full_height",
+                "half full_height",
+                "half full_height"
+                ],
+                "captions": [
+                "Davide Brocchi (Independent sociologist)",
+                "Thomas Thunig (Ceramic master)",
+                "Tamina Hipp (Federal Environment Agency)",
+                "Eva Howitz (lokaltextil UG)"
+                ]
+                },
+
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "MODERATION\nIngo Warnke (Professor of German Linguistics Contradiction Studies)"
+                },
+                    
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "WHERE?\nLobe Block Event Space (Ground floor, entrance through canteen)\nBöttgerstraße 16, 13357 Berlin Gesundbrunnen"
+                },
+                    
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "ENTRANCE?\nFree"
+                },
+                    
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "FOOD & DRINKS?\nThe Lobe Block Canteen provides a hot evening meal.\nIf you would like to take advantage of this offer, we ask you to make your reservation for more planning security at the following <a href='https://www.eventbrite.de/e/zwischen-gegensatzen-diskussionsrunde-und-netzwerk-essen-reservierung-tickets-841464642397?keep_tld=1' target='_blank'>link</a>.\nThe cost of food and drinks is between €5 and €15, payment is made on site. "
+                },
+
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "ORGANISATION\nThe event concept was developed in co-operation with the plan A+ association."
+                },
+    
+
+                {
+                "type": "gallery",
+                "height": "full",
+                "gallerycaption": "",
+                "gallery": [
+                    {
+                        "src" :  "PlanA+_Logo-Final.png",
+                        "alt" : "alt"
+                    }
+                ],
+                "classes": [
+                    "quarter"
+                ],
+                "captions": [
+                ""
+                ]
+                },
+                {
+                "type": "text",
+                "class" : "block",
+                "text": "THANKS"
+                },
+
+                {
+                "type": "gallery",
+                "height": "full",
+                "gallerycaption": "",
+                "gallery": [
+                    {
+                        "src" : "lobecanteen.png",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" : "gls_treuhand.png",
+                        "alt" : "alt"
+                    },
+                    {
+                        "src" :  "lobe-block-logo-02.webp",
+                        "alt" : "alt"
+                    }
+                ],
+                "classes": [
+                "quarter",
+                "quarter",
+                "quarter"
+                ],
+                "captions": [
+
+                ]
+                }
+
             ]
         },
         
         {
             "title": "Flatterweg",
-            "subtitle": "Zwischennutzung auf der ehemaligen Galopprennbahn in Bremen",
+            "subtitle": "Interim use on the former racecourse in Bremen",
             "id": "flatterweg",
             "galleryFolder": "Flatterweg",
             "dynamic":
@@ -35,19 +331,15 @@
                     }
                 },
                 {
-                "type": "video",
-                "videoURL": "220704_ENT_GdP_Teaser_ah.mp4"
-                },
-                {
                 "type": "text",
                 "class" : "block",
-                "text": "ZWISCHENNUTZUNG AUF DER EHEMALIGEN GALOPPRENNBAHN BREMEN\n\nDas über 3.000 Quadratmeter große Rennbahngelände in Bremen steht vor einem umfangreichen Umnutzungsprozess, zu Beginn 2020 wird die Fläche jedoch vorerst zur Zwischennutzung freigegeben. Der „Flatterweg“ soll Bürger:innen dazu einladen, den neuen Stadtraum zu erkunden und das Gelände mitzugestalten. Die temporäre Wegführung dient auch als Testdurchlauf für die von der Stadt geplante Wegeverbindung der angrenzenden Nachbarschaften. Welche neuen Bezüge entstehen dadurch im Stadtraum und was kann entlang der Strecke entstehen? Wir laden dazu ein <a href='https://www.youtube.com/watch?v=F2BDZ7Ku74w'target='_blank'>vorbeizuschauen.</a>"
+                "text": "INTERIM USE ON THE FORMER RACECOURSE IN BREMEN\n\nThe more than 3,000 square meter racecourse site in Bremen is about to undergo an extensive conversion process, but at the beginning of 2020 the area will be opened up for interim use for the time being. The „Flatterweg“ is intended to invite citizens to explore the new urban space and help shape the site. The temporary pathway will also serve as a test run for the pathway connection planned by the city for the adjacent neighborhoods. What new references will this create in the urban space and what can be created along the route? We invite you <a href='https://www.youtube.com/watch?v=F2BDZ7Ku74w'target='_blank'>to drop by.</a>"
                 },
             
                 {
                 "type": "gallery",
                 "height": "half",
-                "gallerycaption": "Einweihung des Flatterwegs, Fotos: Ricardo Nunes",
+                "gallerycaption": "Inauguration of the Flatterweg, Photos: Ricardo Nunes",
                 "gallery": [
                     {
                         "src" : "rennbahn_web_52.webp",
@@ -78,18 +370,18 @@
                 "quarter"
                 ],
                 "captions": [
-                "EN Blick über das Rennbahngelände",
-                "EN Das Design- und Produktionsteam von „Neue Wolle“",
-                "EN Ansicht einer Flagge",
-                "EN Einweihungfest auf der alten Tribüne",
-                "EN Begehung bei Regen"
+                "View over the racecourse",
+                "The „Neue Wolle“ design and production team",
+                "View of a flag",
+                "Inauguration party on the old tribune",
+                "Walk-through in the rain"
                 ]  
                 },
                 
                 {
                 "type": "text",
                 "class" : "block",
-                "text": "DESIGNWORKSHOP, PRODUKTION UND MONTAGE\n\nDas Frauenkreativlabor „Neue Wolle“ aus Blumenthal/ Bremen Nord gestaltete und produzierte die Fahnen für den „Flatterweg“, Grundstein dazu bildete ein von uns konzipierter Designworkshop zu Beginn der Kooperation. Durch ein einfaches Kombinationsprinzip grafischer Module wurde eine Vielzahl von Flaggendesigns gestaltet, die auch noch während des Nähprozesseses weiter variiert wurden. Mit 50 dieser Unikate wurden Fahnen auf dem Gelände errichtet, die rund 500 Meter Weg markieren."
+                "text": "DESIGN WORKSHOP, PRODUCTION AND ASSEMBLY\n\nThe women's creative laboratory „Neue Wolle“ from Blumenthal/ Bremen North designed and produced the flags for the „Flatterweg“. The cornerstone for this was a design workshop conceived by us at the beginning of the cooperation. Using a simple combination principle of graphic modules, a large number of flag designs were created, which were further varied during the sewing process. With 50 of these unique pieces, flags were erected on the site, marking around 500 meters of path."
                 },
                 
                 {
@@ -130,19 +422,19 @@
                 "quarter"
                 ],
                 "captions": [
-                "Papiermodule zur Entwicklung der Designs",
-                "Blick in die Werkstatt von „Neue Wolle“ in Blumenthal",
-                "Nach dem Entwerfen werden die Stoffmodule zusammengenäht.",
-                "Aufbau auf dem Gelände",
-                "Aufbau auf dem Gelände",
-                "Nach einem Tag stehen alle Fahnen."
+                "Paper modules for developing the designs",
+                "View into the workshop of „Neue Wolle“ in Bremen, Blumenthal",
+                "After designing, the fabric modules are sewn together.",
+                "Setting up on site",
+                "Setting up on site",
+                "After one day, all the flags are up."
                 ]     
                 },
                 
                 {
                 "type": "text",
                 "class" : "block",
-                "text": "TOOLKIT FÜR BETEILIGUNGSPROZESSE\n\nIm Rahmen eines Aktionstages platzieren wir fünf Mitmach-Stationen entlang des Weges, an denen Bürger:innen in sogenannten „Flatterheften“ ihre Gedanken und Ideen zu der Geländeumnutzung teilen konnten. Die ausgefüllten Hefte werden im Anschluss von uns zusammengefasst und an politische Entscheidungsträger:innen weitergegeben. Der Flatterweg ermöglicht dabei den Zugang zur politischen Teilhabe für Groß und Klein und direkt auf dem Gelände. Was sind die Wünsche und Ideen der Beteiligten?\nEinen Blick in das Flatterheft und die Ideen und Wünsche der Teilnehmenden finden Sie hier: <a href='https://basundaer.de/_Test/static/img/research/Flatterweg/Flatterheft_Zusammenfassung.pdf' target='_blank'>Zusammenfassung des Flatterheftes</a> \nHier gibt es einen Eindruck zum Aktionstag auf dem Gelände: <a href='https://www.zzz-bremen.de/assets/Uploads/buten-un-binnen-regionalmagazin-Besucher-beeindruckt-von-Projekten-auf-der-Bremer-Galopprennbahn-1657208917.mp4'target='_blank'>buten un binnen berichtet</a>"
+                "text": "TOOLKIT FOR PARTICIPATION PROCESSES\n\nAs part of a day of action, we set up five participation stations along the path where citizens could share their thoughts and ideas on the reuse of the site in so-called „Flatterheften“. We will then summarize the completed booklets and pass them on to political decision-makers. The Flatterweg provides access to political participation for young and old and directly on the site. What are the wishes and ideas of the participants?\nA look into the Flatterheft and the ideas and wishes of the participants can be found here (in German): <a href='https://basundaer.de/_Test/static/img/research/Flatterweg/Flatterheft_Zusammenfassung.pdf' target='_blank'>Summary of the Flatterheft</a> \nHere is an impression of the action day on site: <a href='https://www.zzz-bremen.de/assets/Uploads/buten-un-binnen-regionalmagazin-Besucher-beeindruckt-von-Projekten-auf-der-Bremer-Galopprennbahn-1657208917.mp4'target='_blank'>buten un binnen reports</a>"
                 },
             
                 {
@@ -165,24 +457,24 @@
                 "half"
                 ],
                 "captions": [
-                "Fünf Tischgruppen zum Mitmachen säumen am Aktionstag den „Flatterweg“.",
-                "Im „Flatterheft“ findet auf spielerischer Art und Weise eine Befragung zum Gelände statt."
+                "Five groups of tables for participation line the „Flatterweg“ on the day of action.",
+                "The „Flatterheft“ is a playful way to take part in a survey of the site."
                 ]     
                 },
                     {
                 "type": "text",
                 "class" : "quote",
-                "text": "„Die gemeinsame Sehnsucht war [es], durch ein flexibles Design die Zugänglichkeit zu Stadtentwicklungsprozessen zu vereinfachen.“\n– Julian Essig: Die Schaffung von Sehnsuchtsorten durch Zwischennutzung; Hochschule Osnabrück 2022"
+                "text": "„The common desire was [to] simplify accessibility to urban development processes through flexible design.“\n– Julian Essig: Die Schaffung von Sehnsuchtsorten durch Zwischennutzung; Hochschule Osnabrück 2022"
                 },
     
                 {
                 "type": "text",
                 "class" : "block",
-                "text": "Mit dem Fahnensystem könnten nun weitere Wegeverbindungen auf dem Rennbahngelände, aber auch an anderen Orten gemeinsam mit Nutzer:innen umgesetzt und erprobt werden. Uns interessieren hierbei alternative Beteiligungmöglichkeiten von Menschen an Stadtentwicklung. Die Teilhabe mit Hilfe von Design kann dabei unterschiedlichste Lösungsformen hervorbringen. Wir sind offen neue Herausforderungen zu finden!"
+                "text": "The flag system could now be used to implement and test further pathways on the racecourse site, but also in other places, together with users. We are interested in alternative ways for people to participate in urban development. Participation with the help of design can produce the most diverse forms of solutions. We are open to find new challenges!"
                 },
                 {
             "type": "image",
-                "caption": ["Foto: Marek Lappe"           
+                "caption": ["Photo: Marek Lappe"           
                 ],     
                 "image": {
                     "src" : "Rennbahn_Drohne_Lappe.webp",
@@ -193,13 +485,13 @@
                 {
                 "type": "text",
                 "class" : "block",
-                "text": "PROJEKTPARTNER:INNEN\nUnter dem Namen „Flatter-Crew“ erarbeiteten wir gemeinsam mit dem Designer <a href='https://www.instagram.com/mit_substanz/' target='_blank'>Christof Mühe</a> das Konzept zum „Flatterweg“. Uns vereint ein interdisziplinärer Designansatz, mit dem wir uns an der Schnittstelle aller Beteiligten positionieren – kommunizierend, moderierend, verbindend.\n „Neue Wolle – Frauenkreativlabor“ ist ein Projekt von Quartier gGmbH. Es richtet sich insbesondere an Migrantinnen und Alleinerziehende, die durch gemeinsames Lernen, Experimentieren und Gestalten rund um Wolle und andere Textilien unter künstlerischer Anleitung erste Schritte in Gesellschaft und Arbeitswelt wagen. Mehr Informationen zu den Projekten der Arbeitsgruppe gibt es hier: <a href='https://quartier-bremen.de/category/neue-wolle/' target='_blank'>www.quartier-bremen.de/category/neue-wolle</a>"
+                "text": "PROJECT PARTNER\nUnder the name „Flatter-Crew“  we developed the concept for the „Flatterweg“ togehter with the designer <a href='https://www.instagram.com/mit_substanz/' target='_blank'>Christof Mühe</a>. We are united by an interdisciplinary design approach, with which we position ourselves at the interface of all participants - communicating, moderating, connecting. \n „Neue Wolle – Frauenkreativlabor“  is a project of Quartier gGmbH. It is aimed in particular at migrant women and single parents who dare to take their first steps into society and the world of work by learning, experimenting and designing together around wool and other textiles under artistic guidance. More information on the projects of the working group is available here: <a href='https://quartier-bremen.de/category/neue-wolle/' target='_blank'>www.quartier-bremen.de/category/neue-wolle</a>"
                 },
                 
                 {
                 "type": "gallery",
                 "height": "full",
-                "gallerycaption": "Leitungsteam, Foto: Ricardo Nunes",
+                "gallerycaption": "Creative team, Photo: Ricardo Nunes",
                 "gallery": [
                     {
                         "src" :  "rennbahn_web_78.webp",
@@ -217,7 +509,7 @@
                 {
                 "type": "gallery",
                 "height": "full",
-                "gallerycaption": "Gefördert wurde das Projekt im Rahmen der Initiative „Galop de Porc“.",
+                "gallerycaption": "The project was funded within the framework of the „Galop de Porc“ initiative.",
                 "gallery": [
                     {
                         "src" : "Logos-Bremen.svg",
@@ -263,7 +555,7 @@
 
             {
             "title": "Land in Sicht",
-            "subtitle": "Projektwoche im Allgäu",
+            "subtitle": "Project week in the Allgäu",
             "id": "land-in-sicht",
 
 
@@ -273,16 +565,12 @@
                 {
                 "type": "text",
                 "class" : "quote",
-                "text": "Warum wollen junge Kreative nicht auf dem Land wohnen und arbeiten? Fehlt in ländlichen Gebieten der Zugang oder das Interesse an kreativen und künstlerischen Dienstleistungen?"
+                "text": "Why don't young creatives want to live and work in the countryside? Is there a lack of access or interest in creative and artistic services in rural areas?"
                 },
                 {
                 "type": "text",
                 "class" : "block",
-                "text": "PROJEKTWOCHE IM ALLGÄU\n\nAusgehend von diesen Fragen haben wir gemeinsam mit Vanessa Müller (<a href='https://atelierbrieftau.be/'>Atelier Brieftaube</a>, Ottobeuren)‚ Land in Sicht‘ initiiert. Das Projekt möchte einen individuellen Austausch zwischen jungen Kreativen und ländlichen Gemeinden fördern. Die gemeinsame Vision ist es, innerhalb ländlicher Strukturen, neue Arbeits- und Lebensräume für Kreative zu entdecken und zu erschließen. Sowohl auf Seiten Kulturschaffender, als auch auf Seiten ruraler Gesellschaften soll ein stärkeres Verständnis für die gegenseitigen Bedürfnisse gewonnen werden."
-                },
-                {
-                "type": "video",
-                    "videoURL": "processvideo.mp4"
+                "text": "PROJECT WEEK IN THE ALLGÄU\n\nBased on these questions, we initiated 'Land in Sicht' together with Vanessa Müller (<a href='https://atelierbrieftau.be/'>Atelier Brieftaube</a>, Ottobeuren). The project aims to promote an individual exchange between young creatives and rural communities. The common vision is to discover and open up new working and living spaces for creative people within rural structures. Both on the part of cultural creators and on the part of rural societies, a stronger understanding of each other's needs is to be gained."
                 },
                 {
                 "type": "image",
@@ -295,12 +583,12 @@
                 {
                 "type": "text",
                 "class" : "block",
-                "text": "In einer ersten Projektwoche kommen im Herbst 2019 13 junge Akteur*innen aus den Bereichen Malerei, Fotografie, Performance, Design, Mode und Musik in der Gemeinde <a href='http://www.ottobeuren.de/' target='_blank'>Ottobeuren im Allgäu</a> (8.381 Einwohner*innen) zusammen. Sie arbeiten als Künstler*innen und Gestalter*innen in unterschiedlichen urbanen Kontexten im kulturellen und kreativen Bereich. Innerhalb dieser Workshopwoche übertragen sie ihre Arbeitsweise in den ruralen Kontext und setzen sich mit seiner kulturellen Infrastruktur, insbesondere dem lokalen Museum für zeitgenössische Kunst auseinander. Anhand individueller Projekte und gemeinsamer Workshops erforschen sie den Ort Ottobeuren und die Potentiale, Besonderheiten und Herausforderungen des ländlichen Raums als kreative Arbeitsstätte."
+                "text": "In a first project week in autumn 2019, 13 young creatives from the fields of painting, photography, performance, design, fashion and music  come together in the municipality of <a href='http://www.ottobeuren.de/' target='_blank'>Ottobeuren in the Allgäu</a> (population 8,381). They work as artists and designers in different urban contexts in the cultural and creative field. During this workshop week, they will transfer their working methods to the rural context and engage with its cultural infrastructure, especially the local museum for contemporary art. Through individual projects and joint workshops, they will explore the place of Ottobeuren and the potentials, particularities and challenges of rural areas as creative workplaces."
                 },
                 {
                 "type": "gallery",
                 "height": "half",
-                "gallerycaption": "Eindrücke aus der Projektwoche, Fotos: Jakob Weber, Sara Förster, Luisa Recker",
+                "gallerycaption": "Impressions from the project week,, Photos: Jakob Weber, Sara Förster, Luisa Recker",
                 "gallery": [
                     {
                         "src" : "LandinSicht_120ppi_19-2.webp",
@@ -346,26 +634,26 @@
                 "quarter"
                 ],
                 "captions": [
-                "Ankunft der Projektteilnehmer*innen",
-                "Ottobeuren, idyllisch gelegen im Unterallgäu",
-                "Roger Fähndrich bereitet eine Konzertbühne im Museum vor",
-                "Im Kick-Off-Workshop werden von Potentiale und Herausforderungen des Landlebens gesammelt",
-                "Christian Arnold (Käsundso) führt die Externen in die schwäbische Spätzlekultur ein",
-                "Fotoshooting auf dem Marktplatz",
-                "Der Marktplatz von Ottobeuren",
-                "Fundstücke bei ebay Kleinanzeigen für das Ausstellungsequipment"
+                "Arrival of the project participants",
+                "Ottobeuren, idyllically situated in Unterallgäu",
+                "Roger Fähndrich prepares a concert stage in the museum",
+                "In the kick-off workshop, potentials and challenges of rural life are collected",
+                "Christian Arnold (Käsundso) introduces the external participants to Swabian spaetzle culture",
+                "Photo shoot on the market square",
+                "The market square of Ottobeuren",
+                "Findings on ebay for the exhibition equipment"
                 ]
 
                 },
                 {
                 "type": "text",
                 "class" : "block",
-                "text": "Als Ergebnis der individuellen Auseinandersetzung sind 18 Arbeiten entstanden. Anhand unterschiedlicher Themen und Genres thematisieren sie die persönlichen Eindrücke und Erkenntnisse aus einer Woche künstlerischer Arbeit in einer ländlichen Gemeinde. Die Arbeiten werden im Anschluss an die Projektwoche ein einer Gruppenausstellung im Foyer des <a href='http://www.mzk-diku.de/' target='_blank'>Museums für zeitgenössische Kunst - Diether Kunerth</a> der lokalen Öffentlichkeit präsentiert. Die persönlichen Erkenntnisse und Einschätzungen werden in einer Projektdokumentation zusammengeführt, analysiert und ausgewertet."
+                "text": "As a result of the individual confrontation, 18 works were created. Using different themes and genres, they thematise the personal impressions and insights gained from a week of artistic work in a rural community. Following the project week, the works will be presented to the local public in a group exhibition in the foyer of the <a href='http://www.mzk-diku.de/' target='_blank'>Museum of Contemporary Art - Diether Kunerth</a>.The personal insights and assessments will be compiled, analysed and evaluated in a project documentation."
                 },
                 {
                 "type": "gallery",
                 "height": "half",
-                "gallerycaption": "Eindrücke der Abschlussausstellung, Fotos: Jakob Weber",
+                "gallerycaption": "Impressions of the final exhibition, Photos: Jakob Weber",
                 "gallery": [
                     {
                         "src" : "LandinSicht_120ppi_19-10.webp",
@@ -416,14 +704,14 @@
                 "half"
                 ],
                 "captions": [
-                "Blick in das Museumsfoyer",
-                "Performance von Joanneke Jouwsma",
-                "2. Ottobeurer Wandzeitung von Ben Jurca",
-                "Im Außenraum: Boulespiel von Janis E. Müller",
-                "Installation von Janis E. Müller",
-                "Projektionsinstallation von Jietske Vermoortele",
-                "Modeshooting von ULTRA,  Luisa Recker, Model: Lisa Kästle",
-                "Abschlusskonzert von Roger Fähndrich",
+                "View of the museum foyer",
+                "Performance by Joanneke Jouwsma",
+                "2nd Ottobeuren wall newspaper by Ben Jurca",
+                "In the outdoor space: petanque game by Janis E. Müller",
+                "Installation by Janis E. Müller",
+                "Projection installation by Jietske Vermoortele",
+                "Fashion shoot by ULTRA, Luisa Recker, Model: Lisa Kästle",
+                "Closing concert by Roger Fähndrich",
                 "Vernissage"
                 ]
                 },
@@ -431,7 +719,7 @@
                 {
                 "type": "text",
                 "class" : "block",
-                "text": "Derzeit feilen wir an einem weiteren Durchlauf von Land in Sicht und verbessern unser Format. Dich interessiert das Projekt und du hast Anregungen für uns? Du bist Kulturschaffende:r, lebst und arbeitest in einer ländlichen Region und möchtest das kulturelles Treiben hier erweitern? Du hast genug Landluft geschnuppert und benötigst frischen Wind? Dir fehlen (weitere) kreative Köpfe im Umland um mit dir ein Projekt zu realisieren? Dann melde dich gerne bei uns!\nFür mehr Informationen findet sich hier der Abschlussbericht zum Downloaden: <a href='https://basundaer.de/static/img/research/LandInSicht/LIS_19_Sachbericht.pdf' target='_blank'>Sachbericht ‚Land in Sicht‘</a>"
+                "text": "We are currently working on another run of Land in Sight and improving our format. Are you interested in the project and do you have suggestions for us? Are you a cultural worker who lives and works in a rural region and would like to expand the cultural life here? You have had enough of a taste of the countryside and need a breath of fresh air? You are missing (more) creative minds in the surrounding area to realise a project with you? Then get in touch with us!\nFor more information, you can download the final report here: <a href='https://basundaer.de/static/img/research/LandInSicht/LIS_19_Sachbericht.pdf' target='_blank'>Report ‚Land in Sicht‘</a>"
                 },
 
 
@@ -455,20 +743,20 @@
                 {
                 "type": "text",
                 "class" : "block",
-                "text": "PROJEKTPARTNERIN\nVanessa Müller hat mit dem ‚Atelier Brieftaube‘ in Ottobeuren einen Kleinod der deutschen Kulturszene im Süden Deutschlands geschaffen und belebt damit die junge Kreativ-Szene im ländlichen Raum. Vanessa arbeitet als Multimedia Designerin in München und Ottobeuren. Ihr sucht auch Designpartner:innen im Süden? Hier gibt es Einblicke in Vanessas Arbeit: <a href='https://atelierbrieftau.be' target='_blank'>www.atelierbrieftau.be</a>"
+                "text": "PROJECT PARTNER\nVanessa Müller has created the 'Atelier Brieftaube' in Ottobeuren, a gem of the German cultural scene in the south of Germany, revitalising the young creative scene in rural areas. Vanessa works as a multimedia designer in Munich and Ottobeuren. Are you also looking for design partners in the south? Here are some insights into Vanessa's work: <a href='https://atelierbrieftau.be' target='_blank'>www.atelierbrieftau.be</a>"
                 },
                 
                             {
                 "type": "text",
                 "class" : "block",
-                "text": "FÖRDERPARTNER\nGefördert wurde das Projekt im Rahmen der Schirmherrschaft durch  ‚Unternehmerfrauen im Handwerk Memmingen-Mindelheim‘ von  ‚Unterallgäu aktiv/Europäischen Landwirtschaftsfonds für die Entwicklung des ländlichen Raumes‘ sowie die Marktgemeinde Ottobeuren"
+                "text": "FUNDING PARTNERS\nThe project was funded under the auspices of ‚Unternehmerfrauen im Handwerk Memmingen-Mindelheim‘, by ‚Unterallgäu aktiv/Europäischen Landwirtschaftsfonds für die Entwicklung des ländlichen Raumes‘ and by the municipality of Ottobeuren"
                 },
 
 
                 {
                 "type": "gallery",
                 "height": "full",
-                "gallerycaption": "Förderpartner von Land in Sicht.",
+                "gallerycaption": "Funding partners of 'Land in Sicht'",
 
                 "gallery": [
                     {

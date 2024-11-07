@@ -182,6 +182,7 @@ class DesignProject {
                 if (getMediaMatch() != utils.SMALL) {
                     this.imageContainer().find("video").each(function() {
 
+                        this.load()
                         this.play()
  
                         if(!this.paused){
@@ -212,10 +213,12 @@ class DesignProject {
             const source = this._getSrcForGalleryImage(image)
             const url = image.src
             const extension = url.split(".")[1]
+            
             let content = null;
-    
             if (this.images.includes(extension)) {
+
                         content = new Image();
+
                         /*if (index==0) {
                             content.classList.add("active")
                         }*/
@@ -227,6 +230,7 @@ class DesignProject {
                         }.bind(this)
                     
                 } else if (this.videos.includes(extension)) {
+            
                     content = document.createElement('video');
                     content.controls = false;
                     content.loop = true ;
@@ -241,7 +245,8 @@ class DesignProject {
                         }.bind(this)
                     
                 }
-                content.src = source
+           
+                content.src = source ? source : "";
                 content.alt = image.alt    
             
             })
@@ -289,9 +294,9 @@ class DesignProject {
             if (downloadedImage === undefined) {
                 return
             }
-            const extension = img.src.split(".")[3]
-         
-            if (this.images.includes(extension)) {
+            const extension = img.src.split(".")[1]
+
+            /* if (this.images.includes(extension)) {
                 if (this.imageContainer().find(`img[src="${imageKey}"]`).length === 0) {
                     this.imageContainer().append(downloadedImage)
                 }
@@ -309,12 +314,13 @@ class DesignProject {
         
                 
             }
-
+ */
            
         }
     }
 
     _getSrcForGalleryImage(image) {
+
         return `${this.galleryPath}/${encodeURIComponent(image.src)}`
     }
 
@@ -408,8 +414,8 @@ class DesignProject {
                 let clone = img.cloneNode(true);
                 content = clone;
                 //change online and on nomis
-                const extension = img.src.split(".")[3]
-               
+                const extension = img.src.split(".")[1]
+   
                 if (this.videos.includes(extension)) {
                    
                     containsVideo = true;
