@@ -8,8 +8,10 @@ let overlayLoaded = false
 import getMediaMatch, * as utils from "/static/js/utils.js"
 
 function isElementInViewport(el) {
+    if(el){
     let rect = el.getBoundingClientRect();
     return rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.top > 0
+    }   
 }
 
 /**
@@ -27,14 +29,18 @@ class DesignProject {
         this.categories = content.categories
         this.customer = content.customer
         this.year = content.year
+        this.endYear = content.endYear
         this.link = content.link
         this.linkText = content.linkText
         this.thumbnail = content.thumbnail
+        this.with = content.with
         this.galleryPath = "/static/img/projects/" + encodeURIComponent(content.galleryFolder)
 
         this.translationYear = translations.year
         this.translationCategory = translations.category
         this.translationClient= translations.client
+        this.translationWith = translations.with
+        this.translationSince = translations.since
         /**
          * The project's description string. If the string contains a "<more>" tag, the paragraphs after this tag
          * will not be displayed, but a "mehr..." link which shows/hides the paragraphs (@media-small only).
@@ -172,7 +178,7 @@ class DesignProject {
     }
 
     triggerDownloadImagesIfProjectIsVisible() {
-   
+           
         if (isElementInViewport($(`#${this.projectId}`)[0]) || ($(`#${this.projectId}`).index() === 0) ) {
             if (!this.isGalleryRendered) {
                 this._downloadImages()
@@ -182,8 +188,8 @@ class DesignProject {
                 if (getMediaMatch() != utils.SMALL) {
                     this.imageContainer().find("video").each(function() {
 
-                        this.load()
-                        this.play()
+                        //this.load()
+                        //this.play()
  
                         if(!this.paused){
                         this.nextSibling.classList.remove("play")
@@ -274,6 +280,7 @@ class DesignProject {
             this._renderGallery()
             
             this._videoControls()
+            this._removeBackground()
             
             if (!overlayLoaded) {
                 overlayLoaded = true
@@ -319,8 +326,12 @@ class DesignProject {
         }
     }
 
-    _getSrcForGalleryImage(image) {
+    _removeBackground() {
+        let $imageContainer = $(`#${this.projectId} .imageContainer`)
+        $imageContainer.css("background", "none")
+    }
 
+    _getSrcForGalleryImage(image) {
         return `${this.galleryPath}/${encodeURIComponent(image.src)}`
     }
 
@@ -512,6 +523,30 @@ class DesignProject {
             : ""
     }
 
+    _renderYear() {
+
+        return this.endYear ? this.endYear == "now" ?`<div class="headingContent heading2">${this.translationSince} ${this.year}</div>`  : `<div class="headingContent heading2">${this.year} - ${this.endYear}  </div>` 
+            :  `<div class="headingContent heading2">${this.year}</div>` 
+    }
+
+    _renderWith() {
+        let content = "";
+        if(this.with){
+
+            content += `<div class="headingSection">
+                                <div class="headingTitle heading2">${this.translationWith}:</div><div>`;
+
+            this.with.forEach(w => {
+               content += `<div class="headingContent heading2">
+                <a href="${w.website}" target="_blank">${w.name}</a>
+               </div>`
+            });
+
+            content += `</div></div>`;
+        }
+        return content;
+    }
+    
     _render() {
         return `
             <div class="projectContainer" 
@@ -536,8 +571,12 @@ class DesignProject {
                             </div>
                             <div class="headingSection">
                                 <div class="headingTitle heading2">${this.translationYear}:</div>
-                                <div class="headingContent heading2">${this.year}</div>                            
+                                ${this._renderYear()}
+                                              
                             </div>
+                       
+                            ${this._renderWith()}
+                                       
                             ${this._renderLink()}
                         </div>
                     </div>

@@ -4,6 +4,8 @@
   "year" : "Year",
   "category" : "Category",
   "client" : "Client",
+  "with" : "With",
+  "since": "Since",
   "projects": [
           
   {
