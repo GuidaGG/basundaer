@@ -4,6 +4,8 @@
   "year" : "Jahr",
   "category" : "Kategorie",
   "client" : "Kunde",
+  "with" : "Mit",
+  "since": "Seit",
   "projects": [
 
           
@@ -12,6 +14,7 @@
       "categories": ["Kampagne"],
       "customer": "Städtische Galerie Bremen",
       "year": 2023,
+      "endYear": "now",
       "thumbnail": "STGB_DasBleibt_Flyer_080.webp",
       "galleryFolder": "Dasbleibt",
       "gallery": [
@@ -65,6 +68,7 @@
     "categories": ["Raum", "Kampagne"],
     "customer": "Hochschule für Künste Bremen",
     "year": 2023,
+    "endYear" : 2024,
     "thumbnail": "HfK-JA_Ausstellung_außen_03.webp",
     "galleryFolder": "HFK",
     "gallery": [
@@ -193,6 +197,17 @@
     "link": "https://netzwerkzwischennutzung.de/",
     "linkText": "Netzwerk Zwischennutzung",
     "thumbnail": "NZN_Web_Mobile_2.webp",
+    "with": [
+      {
+        "name": "Guida Ribeiro",
+        "website": "https://guidaribeiro.net/"
+      },
+      {
+        "name": "Farzad Golghasemi",
+        "website": "https://fagosemi.xyz/"
+      }
+    ],
+      
     "galleryFolder": "NZN",
     "gallery": [
         {
