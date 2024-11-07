@@ -1,7 +1,7 @@
 {
   "section_title": "Studio",
   "overlay_title" : "Team",
-  "subtitle_1": "wir sind Bas&Aer.",
+  "subtitle_1": "Wir sind Bas&Aer.",
   "subtitle_2": "Integriertes Designstudio aus Bremen und Berlin",
   "paragraph_1": "Bei Bas&Aer bringen wir Botschaften in eine verständliche Form und Identitäten auf den Punkt. Wir lassen Ideen lebendig und erfahrbar werden. Zweidimensional, dreidimensional, analog, digital – Wir finden die passenden Formate und Medien für jedes Vorhaben.",
   "paragraph_2" : " Transparente und direkte Kommunikation, kurze Entscheidungswege und ein gemeinsamer Anspruch sind für uns die Grundlage einer erfolgreichen Zusammenarbeit. Wir sind stolz auf das uns entgegengebrachte Vertrauen, den intensiven Dialog mit unseren Kund:innen und tolle Ergebnisse.",
@@ -44,94 +44,125 @@
     }
   },
   "co-working" : "Co-Working",
-  "co_working_description": "Bas&Aer wurde im November 2017 von Katharina Brock, Astrid Hesse und Ben Jurca gegründet. Seitdem bieten wir unseren Kund:innen eine umfangreiche Betreuung in den Bereichen Unternehmensidentität und -kommunikation, Innovation und kreative Problemlösung an.",
-  "co_working_bremen": "Unser Coworking in Bremen:",
-  "co_working_berlin" : "Unser Coworking in Berlin:",
+  "co_working_description": "Teil einer Coworking Gemeinschaft zu sein, passt zu unserer Vorstellung einer flexiblen Arbeitsweise. Wir teilen uns den Ort mit vielen netten Menschen aus verschiedenen Disziplinen. So lernen wir neue Herangehensweisen kennen, inspirieren einander und arbeiten kollaborativ. Wenn du in der Nähe bist, komm auf ein Getränk vorbei.",
+  "co_working_bremen": "Unser Coworking in Bremen: <a href='https://www.casinofutur.de/'>Casino Futur</a>",
+  "co_working_berlin" : "Unser Coworking in Berlin: <a href='https://lobe.berlin/de/'>Lobestudio 1.2</a>",
   "clients" : "Kund:innen",
   "clients_description" : "Unsere Projektpartner:innen kommen aus verschiedenen Branchen mit unterschiedlichen Vorhaben und Herausforderungen zu uns. Zum Glück sind wir mit vielen talentierten Kolleg:innen gut vernetzt. So können wir auch problemlos umfangreiche und ungewöhnliche Projekte umsetzen. Wir freuen uns auf Ihre Anfrage: <a href='mailto:info@basundaer.de'>info@basundaer.de</a>",
-  "gallery": {
+   "gallery": {
     "imagePath": "/static/img/Bas_Aer_Kundenlogos",
     "images": [ 
       {
       "src": "BA_Website_client_UHB20.png",
-      "alt" : "alt in german"
+      "alt" : "Universität Bremen",
+      "href" : "https://www.uni-bremen.de/"
       },
       {
-        "src": "BA_Website_client_PDS.png",
-        "alt" : "alt"
+      "src": "BA_Website_client_PDS.png",
+      "alt" : "Paramount Dental Studio",
+      "href" : "https://paramountdentalstudio.com/"
       },
       {
-        "src":  "BA_Website_client_KAE.png",
-        "alt" : "alt"
+      "src": "BA_Website_client_CMB.png",
+      "alt" : "cambio",
+      "href" : "https://www.cambio-carsharing.de/"
       },
       {
-        "src": "BA_Website_client_STGB.png",
-        "alt" : "alt"
+      "src":  "BA_Website_client_BDM.png",
+      "alt" : "Duales Studium Informatik",
+      "href" : "https://www.duales-studium-informatik.de/"
       },
       {
-        "src": "BA_Website_client_SHB.png",
-        "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_COM.png",
-          "alt" : "alt"
-        },
-        {
-          "src":  "BA_Website_client_NUM.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_BPP.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_FHB-SK.png",
-          "alt" : "alt"
-        },
-        {
-          "src":  "BA_Website_client_K2.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_STE.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_KLZ.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_ZVC.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_ULU.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_KOC.png",
-          "alt" : "alt"
-        },
-        {
-          "src":  "BA_Website_client_ZPI.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_MBB.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_VRW.png",
-          "alt" : "alt"
-        },
-        {
-          "src":  "BA_Website_client_CIN.png",
-          "alt" : "alt"
-        },
-        {
-          "src":  "BA_Website_client_UVE.png",
-          "alt" : "alt"
-        }
+      "src":  "BA_Website_client_KAE.png",
+      "alt" : "KAEFER"
+      },
+      {
+      "src":  "BA_Website_client_HFK.png",
+      "alt" : "HFK Bremen",
+      "href" : "https://www.hfk-bremen.de/"
+      },
+      {
+      "src":  "BA_Website_client_POB.png",
+      "alt" : "POB Office Bremen",
+      "href" : "https://www.pop-office.de/"
+      },
+      {
+      "src": "BA_Website_client_STGB.png",
+      "alt" : "Städtische Galerie Bremen",
+      "href" : "https://www.staedtischegalerie-bremen.de/"
+      },
+      {
+      "src": "BA_Website_client_VLFT.png",
+      "alt" : "vielfältig. Bremen"
+      },
+      {
+      "src": "BA_Website_client_TUD.png",
+      "alt" : "TU Dresden"
+      },
+      {
+      "src": "BA_Website_client_SHB.png",
+      "alt" : "STARTHAUS BREMEN"
+      },
+      {
+      "src": "BA_Website_client_COM.png",
+      "alt" : "Collective Ma'louba"
+      },
+      {
+      "src": "BA_Website_client_FHB-SK.png",
+      "alt" : "Der Senator für Kultur - Bremen"
+      },
+      {
+      "src":  "BA_Website_client_NUM.png",
+      "alt" : "Natur & Mohr"
+      },
+      {
+      "src":  "BA_Website_client_FII.png",
+      "alt" : "Futur Zwei"
+      },
+      {
+      "src":  "BA_Website_client_K2.png",
+      "alt" : "K2 Dental Arts"
+      },
+      {
+      "src": "BA_Website_client_STE.png",
+      "alt" : "Stefes Pro"
+      },
+      {
+      "src": "BA_Website_client_CU.png",
+      "alt" : "Constructor University"
+      },
+      {
+      "src": "BA_Website_client_FKC.png",
+      "alt" : "Freiburger Kammerchor"
+      },
+      {
+      "src": "BA_Website_client_KLZ.png",
+      "alt" : "kauflokal.zone"
+      },
+      {
+      "src": "BA_Website_client_ULU.png",
+      "alt" : "Universität Luxemburg"
+      },
+      {
+      "src": "BA_Website_client_KOC.png",
+      "alt" : "Komodo Coffee"
+      },
+      {
+      "src":  "BA_Website_client_ZPI.png",
+      "alt" : "ZPI Dortmund"
+      },
+      {
+      "src": "BA_Website_client_MBB.png",
+      "alt" : "Metallbau Brock"
+      },
+      {
+      "src": "BA_Website_client_VRW.png",
+      "alt" : "Vorweg"
+      },
+      {
+      "src":  "BA_Website_client_UVE.png",
+      "alt" : "Universität Vechta"
+      }
     ]
 
   }

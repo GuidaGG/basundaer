@@ -1,20 +1,70 @@
 {
     "ben": "Ben Jurca",
-    "ben_description" : "Ben hat über einen kunstgeschichtlichen Umweg sein Glück im Kommunikationsdesign gefunden. Seitdem shoppt er unentwegt Typo-Bundles im Netz und baut für seinen gesamten Freundeskreis Webseiten. 2014 kam er nach Bremen, um an der Hochschule für Künste alles über das Arbeiten zwischen den Designdisziplinen zu lernen. Heute ist er Meister darin, Zusammenhänge zu erkennen, Brücken zu bauen und zielführende Lösungen zu gestalten. Wenn er mal nicht im Studio ist, findet man ihn entweder in Schweden auf irgendeinem See paddeln oder trashige Actionfilme schauen.",
+    "ben_description" : "Ben leitet unser Studio in Bremen. Als integrierter Designer ist ihm die Nähe zu unseren Kund:innen besonders wichtig: Der Designprozess bedeutet für ihn, Menschen auf dem Weg zu einer nachhaltigen Lösung zu begleiten. Das Ergebnis sorgt am Ende für ein hohes Maß an Zufriedenheit und Begeisterung. \nAls Workshopleiter oder Dozent sorgt Ben für Klarheit nach Brainstomings und kann Zusammenhänge schnell erkennen. Der Mix aus Pragmatismus, Kreativität und Einfühlungsvermögen macht ihn zu einem Meister des Human Centred Design.",
     "astrid" : "Astrid Hesse",
-    "astrid_description" : "Astrid ist im Kommunikationsdesign beheimatet, lotet jedoch stetig Schnittstellen zu anderen Fachbereichen, wie der Kunst, aus. Sie nähert sich Gestaltungsaufgaben spielerisch und experimentell und findet somit immer neuartige und originelle Lösungen im Design. Bas&Aer hat sie 2017 mit Ben und Katharina gegründet, um an den wichtigen Themen und Fragen da draußen mitzugestalten. Sie will die Dinge hinterfragen und anders machen. Zumindest hinterfragt sie wöchentlich die Ordnung in ihrer Wohnung oder warum ihr das Hobbygärtnern so viel Spaß bringt, aber nur so wenig Früchte.",
-    "partners_title" : "Unsere liste der teilnehmer titel",
-    "partners_description": "Beschreibung unserer Partner",
+    "astrid_description" : "Das Berliner Studio wird von Astrid geführt. Ihr Fokus liegt auf Innovation und ganzheitlichen Gestaltungsansätzen: Als Designerin werden Problemstellungen zuerst dekonstruiert, um sie anschließend wieder neu zusammenzusetzen. Das führt zu individuellen Lösungen. In freien Projekten und Workshops entwickelt Astrid neue Formate und Methoden und erkennt schnell die Potentiale in Ideen, Produkten und disziplinübergreifenden Kollaborationen.",
+ "partners_title" : "Unsere Partner:innen",
+    "partners_description": "Wir arbeiten in der Umsetzung unserer Projekte mit talentierten Menschen zusammen, die uns mit ihrer Expertise unterstützen.",
     "partners": [
         {
-            "name": "Hallo meine Name",
-            "profession" : "gardener",
-            "url": "www.google.com"
+            "name": "Barbara Bernardy",
+            "profession" : "Kommunikationsdesign",
+            "url": "https://barbarabernardy.de/de"
         },
         {
-            "name": "Kassandra Kassada",
-            "profession" : "Karaoke Singer",
-            "url": "www.google.com"
+            "name": "Christine Rudi",
+            "profession" : "Kommunikationsdesign",
+            "url": "https://www.xing.com/profile/Christine_Rudi"
+        },
+        {
+            "name": "Christof Mühe",
+            "profession" : "Design und Beratung zu Nachhaltigkeit",
+            "url": "https://de.linkedin.com/in/christof-m%C3%BChe-046637112"
+        },
+        {
+            "name": "Fabian Brunke",
+            "profession" : "Digital Media (Design & Webentwicklung)",
+            "url": "https://www.fabian-brunke.com/"
+        },
+        {
+            "name": "Guida Riberio",
+            "profession" : "Webentwicklung",
+            "url": "https://guidaribeiro.net/"
+        },
+        {
+            "name": "Jakob Weber",
+            "profession" : "Fotografie",
+            "url": "http://jakobweber.de/"
+        },
+        {
+            "name": "Malte Heitmüller",
+            "profession" : "Digital Media (Webentwicklung)",
+            "url": "https://malteheitmueller.de/"
+        },
+        {
+            "name": "Sara Förster",
+            "profession" : "Fotografie",
+            "url": "http://www.sarafoerster.de/"
+        },
+        {
+            "name": "Tom Gable Lane",
+            "profession" : "3D- & Motion Design",
+            "url": "http://tomgeibellane.com/"
+        },
+        {
+            "name": "Tonia Sperling",
+            "profession" : "Kommunikation und Beratung zu Barrierefreiheit",
+            "url": "https://speakerinnen.org/de/profiles/tonia-sperling"
+        },
+        {
+            "name": "Vanessa Graf-Müller",
+            "profession" : "Atelier Brieftaube: Visual Identity & Research",
+            "url": "https://atelierbrieftau.be/"
+        },
+        {
+            "name": "",
+            "profession" : "",
+            "url": ""
         }
     ]
 }
