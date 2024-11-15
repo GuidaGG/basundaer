@@ -422,6 +422,10 @@ input.en {
     margin-right: unset;
   }
 }
+figure {
+  margin: 0;
+  padding: 0;
+}
 .gallery-zone,
 .caption-zone {
   position: relative;
@@ -537,6 +541,20 @@ input.en {
 .gallery-zone .gallery-captions .caption span,
 .caption-zone .gallery-captions .caption span {
   font-family: 'apercu-medium';
+}
+.gallery-logos .quarter,
+.gallery-logos .half,
+.gallery-logos .third,
+.gallery-logos .full {
+  width: calc(20% - 10px);
+}
+@media (max-width: 600px), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  .gallery-logos .quarter,
+  .gallery-logos .half,
+  .gallery-logos .third,
+  .gallery-logos .full {
+    width: calc(50% - 10px);
+  }
 }
 .caption-zone {
   padding-top: 0px;

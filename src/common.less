@@ -232,7 +232,10 @@ input.en {
   }
 }
 
-
+figure {
+  margin: 0;
+  padding: 0;
+}
 
 .gallery-zone, .caption-zone{
 
@@ -256,6 +259,7 @@ input.en {
   }
 
 
+
   .image-container{
     display: inline-block;
     overflow: hidden;
@@ -276,6 +280,7 @@ input.en {
     }
    
   }
+
   .quarter{
     width: calc(25% - 10px);
 
@@ -330,6 +335,15 @@ input.en {
 
         font-family: 'apercu-medium';
       }
+    }
+  }
+}
+
+.gallery-logos {
+  .quarter, .half, .third, .full {
+    width: calc(20% - 10px);
+    @media @media-small, @media-p-medium {
+      width: calc(50% - 10px);
     }
   }
 }
