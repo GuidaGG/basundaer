@@ -3,6 +3,7 @@ import getMediaMatch, * as utils from "/static/js/utils.js"
 
 let _projects = []
 let _activeFilter = null
+let _activeSector = null
 let _originalProjects = null
 let _portfolioOverlay = null
 
@@ -29,6 +30,7 @@ class Project {
     constructor(content) {
         this.title = content.title
         this.categories = content.categories
+        this.sectors = content.sectors
         this.customer = content.customer
         this.year = content.year
         this.thumbnail = content.thumbnail
@@ -37,10 +39,13 @@ class Project {
     }
 
     renderThumbnail($appendTo) {
+
+        let sectors = this.sectors ? this.sectors.join(",") : ""
         let renderedThumbnail = `<a class="thumbnail" 
                                     data-projectid="${this._getProjectAnchor()}"
                                     onmouseover=""
                                     data-categories="${this.categories.join(',')}"
+                                    data-sectors="${sectors}"
                                     style="background: url('${this.thumbnailPath}/${this.thumbnail}') no-repeat center;">
                                         <div class="thumbnailProjectTitleContainer">
                                             <div class="thumbnailProjectTitle paragraph">${this.title}</div> 
@@ -90,34 +95,76 @@ function hideThumbnails($thumbnails) {
  * Todo: This actually conflicts with the separation of concerns principle, as the overlay triggers changes on
  *  the main page. Maybe provide a filter callback from the design page?
  * @param {string} category - The category to filter the projects by.
+ * @param {string} sector - The sector to filter the projects by.
  */
-function filterDesignPage(category) {
-    let $categoryProjectFilter = $("#designContent .sectionTitle .projectFilter")
-    let $clickableSectionTitle = $("#designContent .sectionTitle .clickableSectionTitle")
+function filterDesignPage(category, sector) {
+    let $categoryProjectFilter = $("#designContent .sectionTitle .projectFilter");
+    let $clickableSectionTitle = $("#designContent .sectionTitle .clickableSectionTitle");
     let $projectContainer = $(".projectContainer");
 
-    if (category) {
-        $categoryProjectFilter.html(`&nbsp;/ ${category}`)
-        $clickableSectionTitle.on("click", function () {
-            filterProjects(NO_FILTER_STRING)
-        }).addClass("islink")
+    // Update the filter display and clickable title based on category or sector
+    if (category || sector) {
+        let filterText = '';
+
+        if (category) {
+            filterText = `&nbsp;/ ${category}`;
+        }
+
+        if (sector) {
+            filterText += filterText ? ` & ${sector}` : `&nbsp;/ ${sector}`;
+        }
+        $categoryProjectFilter.html(filterText);
+
+        $clickableSectionTitle
+            .on("click", function () {
+                filterProjects(NO_FILTER_STRING);
+            })
+            .addClass("islink");
     } else {
-        $categoryProjectFilter.text("")
-        $clickableSectionTitle.removeClass("islink")
-        $projectContainer.show()
-        return
+        $categoryProjectFilter.text("");
+        $clickableSectionTitle.removeClass("islink");
+        $projectContainer.show();
+        return;
     }
 
+    // Filter projects based on category, sector, or both
     Array.from($projectContainer).forEach(pc => {
-        if ($(pc).data("categories").split(",").includes(category)) {
-            $(pc).removeClass("hiddenProject").show()
-        } else {
-            $(pc).addClass("hiddenProject").hide()
+        const categories = $(pc).data("categories") ? $(pc).data("categories").split(",") : [];
+        const sectors = $(pc).data("sectors") ? $(pc).data("sectors").split(",") : [];
+
+        // Case 1: Both category and sector are specified
+        if (category && sector) {
+            if (categories.includes(category) && sectors.includes(sector)) {
+                $(pc).removeClass("hiddenProject").show();
+            } else {
+                $(pc).addClass("hiddenProject").hide();
+            }
         }
-        window.setTimeout(function () {
-            scrollToProject($(".projectContainer:not(.hiddenProject)").first().attr("id"))
-        }, 100)
-    })
+        // Case 2: Only category is specified
+        else if (category && !sector) {
+            if (categories.includes(category)) {
+                $(pc).removeClass("hiddenProject").show();
+            } else {
+                $(pc).addClass("hiddenProject").hide();
+            }
+        }
+        // Case 3: Only sector is specified
+        else if (!category && sector) {
+            if (sectors.includes(sector)) {
+                $(pc).removeClass("hiddenProject").show();
+            } else {
+                $(pc).addClass("hiddenProject").hide();
+            }
+        }
+    });
+
+    // Scroll to the first visible project after filtering
+    window.setTimeout(function () {
+        const firstVisibleProject = $(".projectContainer:not(.hiddenProject)").first();
+        if (firstVisibleProject.length) {
+            scrollToProject(firstVisibleProject.attr("id"));
+        }
+    }, 100);
 }
 
 /**
@@ -126,14 +173,21 @@ function filterDesignPage(category) {
  * as well as the projects on the design page.
  * @param {string} category - The category to filter the projects by.
  */
-function filterProjects(category) {
+function filterProjects(category, sector) {
     if (category === NO_FILTER_STRING) {
         _activeFilter = null
     } else {
         _activeFilter = category
     }
 
-    filterDesignPage(_activeFilter)
+    if (sector === NO_FILTER_STRING) {
+        _activeSector = null
+    } else {
+        _activeSector = sector
+    }
+
+
+    filterDesignPage(_activeFilter, _activeSector )
 
     Array.from($(".projectCategory")).forEach(c => {
         if (_activeFilter === $(c).data("category")) {
@@ -143,24 +197,59 @@ function filterProjects(category) {
         }
     })
 
-    let $allThumbnails = $(".thumbnail");
-
-    if (!_activeFilter) {
-        showThumbnails($allThumbnails)
-        $(`.projectCategory[data-category=GESAMT]`).addClass("active")
-        return
-    } else {
-        $(`.projectCategory[data-category=GESAMT]`).removeClass("active")
-    }
-
-    Array.from($allThumbnails).forEach(t => {
-        if ($(t).data("categories").split(",").includes(_activeFilter)) {
-            showThumbnails($(t))
+    Array.from($(".sectorCategory")).forEach(c => {
+        if (_activeSector === $(c).data("sector")) {
+            $(c).addClass("active")
         } else {
-            hideThumbnails($(t))
+            $(c).removeClass("active")
         }
     })
+
+    let $allThumbnails = $(".thumbnail");
+    
+    // Check if both _activeFilter and _activeSector are null to show all thumbnails
+    if (!_activeFilter && !_activeSector) {
+
+        showThumbnails($allThumbnails);
+        $(`.projectCategory[data-category=GESAMT]`).addClass("active");
+        $(`.sectorCategory[data-sector=GESAMT]`).addClass("active");
+    } else {
+        $(`.projectCategory[data-category=GESAMT]`).toggleClass("active", !_activeFilter);
+        $(`.sectorCategory[data-sector=GESAMT]`).toggleClass("active", !_activeSector);
+    
+        // Iterate through each thumbnail to apply the filtering logic
+        Array.from($allThumbnails).forEach(t => {
+            const categories = $(t).data("categories").split(",");
+            const sectors = $(t).data("sectors").split(",");
+    
+            // Case 1: Both _activeFilter and _activeSector are set
+            if (_activeFilter && _activeSector) {
+                if (categories.includes(_activeFilter) && sectors.includes(_activeSector)) {
+                    showThumbnails($(t));
+                } else {
+                    hideThumbnails($(t));
+                }
+            }
+            // Case 2: Only _activeFilter is set
+            else if (_activeFilter && !_activeSector) {
+                if (categories.includes(_activeFilter)) {
+                    showThumbnails($(t));
+                } else {
+                    hideThumbnails($(t));
+                }
+            }
+            // Case 3: Only _activeSector is set
+            else if (!_activeFilter && _activeSector) {
+                if (sectors.includes(_activeSector)) {
+                    showThumbnails($(t));
+                } else {
+                    hideThumbnails($(t));
+                }
+            }
+        });
+    }
 }
+
 
 /**
  * Triggered by body.ready of the portfolio page.
@@ -177,19 +266,27 @@ export default function portfolioReady(translations, portfolioOverlay, designPro
 
     
         let categories = new Set()
+        let sectors = new Set()
 
         let $thumbnails = $(".thumbnails");
         $thumbnails.html("")
+
         let $categories = $(".more-categories")
         $categories.html("")
+
+        let $sectors = $(".more-sectors")
+        $sectors.html("")
 
         translations.projects.forEach(p => {
             let project = new Project(p)
             _projects.push(project)
+
             project.categories.forEach(c => categories.add(c))
-          
+            if (project.sectors){
+                project.sectors.forEach(t => sectors.add(t))
+            }
             project.renderThumbnail($thumbnails);
-            // project.setupEventListeners()
+            //project.setupEventListeners()
         })
 
       
@@ -197,8 +294,21 @@ export default function portfolioReady(translations, portfolioOverlay, designPro
             $categories.append(`<a class="projectCategory paragraph" data-category="${c}">${c}</a>`)
         })
 
+        sectors.forEach(t => {
+            $sectors.append(`<a class="sectorCategory paragraph" data-sector="${t}">${t}</a>`)
+        })
+
         $(".categories").find(".projectCategory").on("click", function (event) {
-            filterProjects($(event.target).data("category"))
+            _activeFilter = $(event.target).data("category");
+            filterProjects(_activeFilter , _activeSector)
+            if(getMediaMatch() === utils.SMALL) {
+                $(this).parents(".overlay").find(".openHandle").click()
+            }
+        })
+
+        $(".sectors").find(".sectorCategory").on("click", function (event) {
+            _activeSector = $(event.target).data("sector");
+            filterProjects(_activeFilter, _activeSector)
             if(getMediaMatch() === utils.SMALL) {
                 $(this).parents(".overlay").find(".openHandle").click()
             }

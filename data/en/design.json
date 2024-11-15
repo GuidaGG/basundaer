@@ -1,8 +1,10 @@
 {
   "overlay_description": "Diverse topics, complex issues and close collaboration. Every project is an exciting challenge that we address with curiosity, passion and dedication. This is how sophisticated, aesthetic and meaningful design solutions are created.",
   "overlay_title": "OVERVIEW",
+  "overlay_all" : "All",
   "year" : "Year",
   "category" : "Category",
+  "sector" : "Sector",
   "client" : "Client",
   "with" : "With",
   "since": "Since",
@@ -11,6 +13,7 @@
   {
       "title": "Das bleibt",
       "categories": ["Kampagne"],
+      "sectors": ["Social"],
       "customer": "Städtische Galerie Bremen",
       "year": 2023,
       "thumbnail": "STGB_DasBleibt_Flyer_080.webp",
@@ -62,6 +65,7 @@
                  {
     "title": "POP Office Bremen",
     "categories": ["Web", "Branding"],
+    "sectors": ["Kultur"],
     "customer": "POP Office Bremen e.V.",
     "year": 2023,
     "link": "https://popofficebremen.de/en/",
@@ -123,6 +127,7 @@
     "title": "Netzwerk Zwischennutzung",
     "categories": ["Web"],
     "customer": "AAA GmbH",
+    "sectors": ["Culture", "Economy", "Social"],
     "year": 2024,
     "link": "https://netzwerkzwischennutzung.de/",
     "linkText": "netzwerkzwischennutzung.de",
@@ -164,6 +169,7 @@
      {
     "title": "Bike in Head",
     "categories": ["Campaign"],
+    "sectors": ["Culture", "Art"],
     "customer": "Städtische Galerie Bremen",
     "year": 2022,
     "thumbnail": "STGB_BikeInHead_Banner_02.webp",
@@ -197,6 +203,7 @@
       {
     "title": "Nele Hendrikje Sandner",
     "categories": ["Web"],
+    "sectors": ["Culture", "Art", "Economy", "Social"],
     "customer": "Nele Hendrikje Sandner",
     "year": 2022,
     "link": "https://nelehendrikjesandner.de/",

@@ -111,7 +111,8 @@
     letter-spacing: 0.9px;
   }
   a:hover,
-  .overlayPageContent .portfolio .content .gallery .categories .projectCategory.active {
+  .overlayPageContent .portfolio .content .gallery .categories .projectCategory.active,
+  .overlayPageContent .portfolio .content .gallery .categories .sectorCategory.active {
     font-family: "apercu-light", sans-serif;
     letter-spacing: 0.9px;
   }
@@ -184,7 +185,8 @@
     letter-spacing: 0.9px;
   }
   a:hover,
-  .overlayPageContent .portfolio .content .gallery .categories .projectCategory.active {
+  .overlayPageContent .portfolio .content .gallery .categories .projectCategory.active,
+  .overlayPageContent .portfolio .content .gallery .categories .sectorCategory.active {
     font-family: "apercu-light", sans-serif;
     letter-spacing: 0.9px;
   }
@@ -256,7 +258,8 @@
     letter-spacing: 0.9px;
   }
   a:hover,
-  .overlayPageContent .portfolio .content .gallery .categories .projectCategory.active {
+  .overlayPageContent .portfolio .content .gallery .categories .projectCategory.active,
+  .overlayPageContent .portfolio .content .gallery .categories .sectorCategory.active {
     font-family: "apercu-light", sans-serif;
     letter-spacing: 0.9px;
   }
@@ -729,35 +732,41 @@ input.en {
     margin: 0;
   }
 }
-.overlayPageContent .portfolio .content .gallery .categories .more-categories {
+.overlayPageContent .portfolio .content .gallery .categories .more-categories,
+.overlayPageContent .portfolio .content .gallery .categories .more-sectors {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-content: flex-start;
 }
 @media (max-width: 600px) {
-  .overlayPageContent .portfolio .content .gallery .categories .more-categories {
+  .overlayPageContent .portfolio .content .gallery .categories .more-categories,
+  .overlayPageContent .portfolio .content .gallery .categories .more-sectors {
     flex-direction: column;
     margin: 0;
   }
 }
-.overlayPageContent .portfolio .content .gallery .categories .projectCategory {
+.overlayPageContent .portfolio .content .gallery .categories .projectCategory,
+.overlayPageContent .portfolio .content .gallery .categories .sectorCategory {
   color: black;
   text-decoration: none;
 }
 @media (max-width: 600px) {
-  .overlayPageContent .portfolio .content .gallery .categories .projectCategory {
+  .overlayPageContent .portfolio .content .gallery .categories .projectCategory,
+  .overlayPageContent .portfolio .content .gallery .categories .sectorCategory {
     margin-right: 20px;
     margin-bottom: 10px;
   }
 }
 @media (min-width: 1201px) {
-  .overlayPageContent .portfolio .content .gallery .categories .projectCategory {
+  .overlayPageContent .portfolio .content .gallery .categories .projectCategory,
+  .overlayPageContent .portfolio .content .gallery .categories .sectorCategory {
     margin-right: 40px;
   }
 }
 @media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
-  .overlayPageContent .portfolio .content .gallery .categories .projectCategory {
+  .overlayPageContent .portfolio .content .gallery .categories .projectCategory,
+  .overlayPageContent .portfolio .content .gallery .categories .sectorCategory {
     margin-right: 34px;
   }
 }

@@ -27,6 +27,7 @@ class DesignProject {
         this.title = content.title
         this.projectId = utils.normalizeID(this.title)
         this.categories = content.categories
+        this.sectors = content.sectors
         this.customer = content.customer
         this.year = content.year
         this.endYear = content.endYear
@@ -38,6 +39,7 @@ class DesignProject {
 
         this.translationYear = translations.year
         this.translationCategory = translations.category
+        this.translationSector = translations.sector
         this.translationClient= translations.client
         this.translationWith = translations.with
         this.translationSince = translations.since
@@ -489,6 +491,12 @@ class DesignProject {
         return this.categories.join(', ')
     }
 
+    
+    _renderSectors() {
+        const sectors = this.sectors ? this.sectors.join(', ') : "";
+        return sectors;
+    }
+
     _renderDescription() {
         let result = ''
         let paragraphs = this.description.split('\n')
@@ -547,12 +555,15 @@ class DesignProject {
         return content;
     }
     
+
     _render() {
+
         return `
             <div class="projectContainer" 
                 id="${this.projectId}"  
                 name="${this.projectId}"
-                data-categories="${this.categories.join(',')}">
+                data-categories="${this.categories.join(',')}"
+                data-sectors="${this._renderSectors()}">
                 <div class="text">
                     <div class="header">
                         <h2 class="title paragraph">${this.title}</h2>
@@ -562,6 +573,14 @@ class DesignProject {
                                 <div class="headingContent heading2">
                                                                   
                                         ${this._renderCategories()}
+                                    
+                                </div>
+                            </div>
+                            <div class="headingSection">
+                                <div class="headingTitle heading2">${this.translationSector}:</div>
+                                <div class="headingContent heading2">
+                                                                  
+                                        ${this._renderSectors()}
                                     
                                 </div>
                             </div>
