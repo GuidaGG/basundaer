@@ -72,9 +72,9 @@ class ResearchProject {
         
         nextActive.addClass('activeResearch')
         nextActive.next().addClass('nextResearch')
-
-        $('.researchs').animate({scrollLeft: nextActive[0].offsetLeft}, {queue: false}); 
-
+        if(nextActive[0].offsetLeft){
+            $('.researchs').animate({scrollLeft: nextActive[0].offsetLeft}, {queue: false}); 
+        }
         let titleContainer = $('#secondTitle')
 
         if(nextActive.data("title") != "Research"){ 
@@ -385,28 +385,41 @@ class ResearchProject {
 
 
 
-export default function researchPageReady(translations) {
+export default function researchPageReady(translations, overlay, activeResearch) {
     $(".researchs").html("");
 
     let counter = 0;
     translations.projects.forEach(p => {
             
             let researchProject = new ResearchProject(p)
-            researchProjects.push(researchProject)
+           
             if(counter == 0){
-                researchProjects[counter].active = "activeResearch";
+
                 let previousR = $(".previousR");
                 previousR.html("")
                 $("#previousR").hide()
             }
 
-            if(counter == 1){
-                researchProjects[counter].active = "nextResearch";
-                 
-                 let nextR = $(".nextR");
-                 nextR.html(researchProjects[counter].title)
-                   
+
+            if(counter == activeResearch-1 && activeResearch != 0){
+                let previousR = $(".previousR");
+                previousR.html(researchProject.title)
+                $("#previousR").show()
             }
+
+
+            if(counter == activeResearch){
+                researchProject.active = "activeResearch";
+            }
+
+
+            if(counter == activeResearch+1){
+                researchProject.active = "nextResearch";
+                let nextR = $(".nextR");
+                nextR.html(researchProject.title)
+            }
+
+            researchProjects.push(researchProject)
             researchProject.appendTo($(".researchs"))
             researchProject._videoControls();
             counter++;
@@ -415,18 +428,18 @@ export default function researchPageReady(translations) {
             $("#"+researchProject.projectId).on("click", researchProject.nextResearch.bind(this))
            
             let researchNavigation =  $("#"+researchProject.projectId)
-            if (getMediaMatch() !== utils.SMALL) {
-                new TouchDragHandlerSimplified(
-                    researchNavigation[0],
-                    $(".researchs"),
-                    function () {
-                        researchProject.touch("next")
-                    }, function () {
-                        researchProject.touch("prev")
-                    },
-                    200,
-                    function () {
-                    }.bind(this))
+                if (getMediaMatch() !== utils.SMALL) {    
+                    new TouchDragHandlerSimplified(
+                        researchNavigation[0],
+                        $(".researchs"),
+                        function () {
+                            researchProject.touch("next")
+                        }, function () {
+                            researchProject.touch("prev")
+                        },
+                        200,
+                        function () {
+                        }.bind(this))
                 }       
             }, 1000)
     
@@ -472,28 +485,6 @@ export default function researchPageReady(translations) {
          
     })
   
-    //mobile, finish
-    /* window.setTimeout(function () {
-
-      
-        
-        let galleryNavigation = $(`#researchContent .navigation`)
-        
-        new TouchDragHandler(
-            galleryNavigation[0],
-            galleryNavigation.siblings()[0],
-            function () {
-                alert("hex")
-            }, function () {
-                alert("olll")
-            },
-            200,
-            function () {
-                console.log("drag none")
-            }.bind(this))
-    }, 100)
-    
-    */
     
     if (!overlayLoaded) {
         overlayLoaded = true
