@@ -1,8 +1,10 @@
 {
   "overlay_description": "Vielfältige Themen, komplexe Fragen und eine enge Zusammenarbeit. Jedes Projekt ist eine spannende Herausforderung, der wir uns mit Neugier, Leidenschaft und Hingabe widmen. So entstehen anspruchsvolle, ästhetische und sinnstiftende Designlösungen.",
   "overlay_title": "ÜBERSICHT",
+  "overlay_all" : "Gesamt",
   "year" : "Jahr",
   "category" : "Kategorie",
+  "sector" : "Sektor",
   "client" : "Kunde",
   "with" : "Mit",
   "since": "Seit",
@@ -12,6 +14,7 @@
   {
       "title": "Das bleibt",
       "categories": ["Kampagne"],
+      "sectors": ["Soziales"],
       "customer": "Städtische Galerie Bremen",
       "year": 2023,
       "endYear": "now",
@@ -66,6 +69,7 @@
       {
     "title": "Jahresausstellung 2023",
     "categories": ["Raum", "Kampagne"],
+    "sectors": ["Kultur", "Kunst"],
     "customer": "Hochschule für Künste Bremen",
     "year": 2023,
     "endYear" : 2024,
@@ -132,6 +136,7 @@
                  {
     "title": "POP Office Bremen e.V.",
     "categories": ["Web", "Branding"],
+    "sectors": ["Kultur"],
     "customer": "POP Office Bremen e.V.",
     "year": 2023,
     "link": "https://popofficebremen.de/",
@@ -192,6 +197,7 @@
            {
     "title": "Netzwerk Zwischennutzung",
     "categories": ["Web"],
+    "sectors": ["Kultur", "Wirtschaft", "Soziales"],
     "customer": "AAA GmbH",
     "year": 2024,
     "link": "https://netzwerkzwischennutzung.de/",
@@ -246,6 +252,7 @@
       {
     "title": "Bike in Head",
     "categories": ["Web", "Kampagne"],
+    "sectors": ["Kultur", "Kunst"],
     "customer": "Städtische Galerie Bremen",
     "year": 2022,
     "thumbnail": "STGB_BikeInHead_Banner_02.webp",
@@ -282,6 +289,7 @@
       {
     "title": "Nele Hendrikje Sandner",
     "categories": ["Web"],
+    "sectors": ["Kultur", "Kunst", "Wirtschaft", "Soziales"],
     "customer": "Nele Hendrikje Sandner",
     "year": 2022,
     "link": "https://nelehendrikjesandner.de/",
