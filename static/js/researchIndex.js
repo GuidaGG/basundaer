@@ -14,7 +14,33 @@ function beginResearch(e){
     previousResearch()
 }
 
+function activateVisibleProject() {
+    // Check if there's already an .activeResearch
+ 
+    // Select all .projectContainer elements
+    const projectContainers = document.querySelectorAll('.projectContainer');
+
+    // Set up an IntersectionObserver to detect elements in view
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the .activeResearch class to the currently visible .projectContainer
+                entry.target.classList.add('activeResearch');
+                observer.disconnect(); // Stop observing once we find the target
+            }
+        });
+    }, { threshold: 0.5 }); // Adjust threshold as needed (0.5 = 50% visibility)
+
+    // Observe each .projectContainer
+    projectContainers.forEach(container => observer.observe(container));
+}
+
+// Call the function
+
+
+
 function previousResearch(e){
+  
 
     let nextActive = $(".activeResearch").prev();
     let $container = $(".researchs")
@@ -32,8 +58,9 @@ function previousResearch(e){
     nextActive.addClass('activeResearch')
     nextActive.next().addClass('nextResearch')
 
+    if(nextActive[0]){
     $('.researchs').animate({scrollLeft: nextActive[0].offsetLeft}, {queue: true}); 
-   
+    }   
     let titleContainer = $('#secondTitle')
     let previousR = $(".previousR");
     let nextR = $(".nextR");
@@ -76,8 +103,9 @@ function nextResearch(){
     nextActive.addClass('activeResearch')
     nextActive.next().addClass('nextResearch')
 
-    $('.researchs').animate({scrollLeft: nextActive[0].offsetLeft}, {queue: true}); 
-   
+    if(nextActive[0]){
+        $('.researchs').animate({scrollLeft: nextActive[0].offsetLeft}, {queue: true}); 
+    }
     let titleContainer = $('#secondTitle')
 
     let previousR = $(".previousR");
@@ -241,7 +269,12 @@ export default function ResearchIndexReady(translations, portfolioOverlay, desig
 
   
 
-     //backbutton
+    // Remove existing event listeners to avoid duplicates
+    $(".back").off("click");
+    $("#previousR").off("click");
+    $("#nextR").off("click");
+    $("#firstTitle").off("click");
+  
        
     $(".back").on("click", previousResearch.bind(this))
     $("#previousR").on("click", previousResearch.bind(this))    

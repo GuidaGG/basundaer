@@ -13,9 +13,9 @@
         import researchPageReady from "./static/js/research.js"
 
         let t =  new Translator("research");
-        async function loadContent(lang = null, overlay = true){
+        async function loadContent(lang = null, overlay = true, activeResearchIndex = 0) {
             await t.load(lang)
-            researchPageReady(t.translations, overlay)
+            researchPageReady(t.translations, overlay, activeResearchIndex )
          }  
 
 
@@ -24,7 +24,17 @@
 
             document.querySelector("form").addEventListener("click", function(evt) {
                 if (evt.target.tagName === "INPUT") {
-                    loadContent(evt.target.value, false)
+                     // Find all .projectContainer elements
+                    const projectContainers = document.querySelectorAll(".projectContainer");
+                    
+                    // Find the index of the element with the class 'activeResearch'
+                    let activeIndex = -1;
+                    projectContainers.forEach((container, index) => {
+                        if (container.classList.contains("activeResearch")) {
+                            activeIndex = index;
+                        }
+                    });
+                    loadContent(evt.target.value, false, activeIndex)
 
       
                 }
