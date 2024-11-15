@@ -422,6 +422,10 @@ input.en {
     margin-right: unset;
   }
 }
+figure {
+  margin: 0;
+  padding: 0;
+}
 .gallery-zone,
 .caption-zone {
   position: relative;

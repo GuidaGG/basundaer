@@ -9,10 +9,10 @@ let overlayLoaded = false
 import getMediaMatch, * as utils from "/static/js/utils.js"
 
 function isElementInViewport(el, left, right) {
-    let rect = el.getBoundingClientRect();
- 
-    return (rect.left <= left && rect.right > right)
-   
+    if(el){
+        let rect = el.getBoundingClientRect();
+        return (rect.left <= left && rect.right > right)
+    }
 }
 
 /**
@@ -159,31 +159,13 @@ class ResearchProject {
         return `<div class="zone quote-zone">${data.quote}</div>`;
     }
 
-    _renderCaptions(data){
-        let result = ''
-        let increase = 1;
-        result += `<div class="gallery-captions">`;
-        if(data.gallerycaption){
-        result += `<div class="main-caption">${data.gallerycaption}</div>`;
-        }
-        data.captions.forEach(function(caption, index) {
-            if(caption){
-            result += `<div class="caption"><span>${increase}</span> ${caption}
-          
-            </div>`;
-            increase++;
-            }
-        })
-        result += `</div>`;
-        return result
-    }
-
-
     _downloadImages() {
         this.isGalleryRendered = true
         let gallerypath = this.galleryPath;
         let increase = 1;
+        let increaseCaption = 1;
         let galleryContainers = $(`#${this.projectId} .gallery-zone`);
+        let galleryCaptions = $(`#${this.projectId} .caption-zone`);
         
         this.galleries.forEach(function(data, index) {
             let result = '';
@@ -197,10 +179,27 @@ class ResearchProject {
                 }
                 result += `<img src="${gallerypath }/${encodeURIComponent(image.src)}" alt="${image.alt}">
                 </div>`;
+
            
             });
 
-            galleryContainers[index].innerHTML = result
+            let resultCaptions = ''
+            resultCaptions += `<div class="gallery-captions">`;
+            if(data.gallerycaption){
+                resultCaptions += `<div class="main-caption">${data.gallerycaption}</div>`;
+            }
+            data.captions.forEach(function(caption, index) {
+                if(caption){
+                    resultCaptions += `<div class="caption"><span>${increaseCaption}</span> ${caption}
+              
+                </div>`;
+                increaseCaption++;
+                }
+            })
+            resultCaptions += `</div>`;
+            
+            galleryContainers[index].innerHTML = result;
+            galleryCaptions[index].innerHTML = resultCaptions;
         });
         
     }
@@ -217,7 +216,7 @@ class ResearchProject {
 
         let result = ''
         result += `<div class="${data.height} gallery-zone zone"></div>`;
-        result +=  `<div class="caption-zone">${this._renderCaptions(data)}</div>`
+        result +=  `<div class="caption-zone"></div>`
         return result
     }
 
@@ -306,8 +305,11 @@ class ResearchProject {
         let gallerypath = this.galleryPath;
  
         result += `<div class="image-zone zone">`;
-        result += `<img src="${gallerypath }/${encodeURIComponent(data.image.src)}" alt="${data.image.alt}">`;
-        result += `</div>`;
+        result += `<figure><img src="${gallerypath }/${encodeURIComponent(data.image.src)}" alt="${data.image.alt}">`;
+        if(data.image.credit){
+            result +=  `<figcaption class="image-credit">${data.image.credit}</figcaption>`;
+        }
+        result += `</div></figure>`;
         return result
     }
 
