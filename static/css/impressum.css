@@ -604,14 +604,14 @@ figure {
 .gallery-logos .half,
 .gallery-logos .third,
 .gallery-logos .full {
-  width: calc(20% - 10px);
+  width: calc(20% - 10px) !important;
 }
 @media (max-width: 600px), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
   .gallery-logos .quarter,
   .gallery-logos .half,
   .gallery-logos .third,
   .gallery-logos .full {
-    width: calc(50% - 10px);
+    width: calc(50% - 10px) !important;
   }
 }
 .caption-zone {

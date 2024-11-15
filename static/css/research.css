@@ -601,14 +601,14 @@ figure {
 .gallery-logos .half,
 .gallery-logos .third,
 .gallery-logos .full {
-  width: calc(20% - 10px);
+  width: calc(20% - 10px) !important;
 }
 @media (max-width: 600px), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
   .gallery-logos .quarter,
   .gallery-logos .half,
   .gallery-logos .third,
   .gallery-logos .full {
-    width: calc(50% - 10px);
+    width: calc(50% - 10px) !important;
   }
 }
 .caption-zone {
@@ -934,6 +934,11 @@ figure {
 #researchContent .content #secondTitle {
   line-height: 40px;
 }
+@media (max-width: 600px) {
+  #researchContent .content #secondTitle {
+    line-height: 28px;
+  }
+}
 #researchContent .content .back {
   height: 100vh;
   width: 10%;
@@ -946,7 +951,7 @@ figure {
 #researchContent .content .navigation {
   display: none;
   position: fixed;
-  top: 85px;
+  top: 100px;
   left: 0;
   z-index: 2;
   padding: 10px;
@@ -1053,7 +1058,7 @@ figure {
 @media (max-width: 600px) {
   #researchContent .content .projectContainer {
     width: 100%;
-    padding-top: 130px;
+    padding-top: 150px;
   }
 }
 #researchContent .content .projectContainer .dynamicContent {
@@ -1069,6 +1074,11 @@ figure {
   }
   #researchContent .content .projectContainer .dynamicContent .zone:last-of-type {
     padding-bottom: 200px;
+  }
+}
+@media (min-width: 1920px) {
+  #researchContent .content .projectContainer .dynamicContent {
+    width: 60%;
   }
 }
 #researchContent .content .projectContainer:last-of-type {

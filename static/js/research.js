@@ -72,9 +72,9 @@ class ResearchProject {
         
         nextActive.addClass('activeResearch')
         nextActive.next().addClass('nextResearch')
-
-        $('.researchs').animate({scrollLeft: nextActive[0].offsetLeft}, {queue: false}); 
-
+        if(nextActive[0].offsetLeft){
+            $('.researchs').animate({scrollLeft: nextActive[0].offsetLeft}, {queue: false}); 
+        }
         let titleContainer = $('#secondTitle')
 
         if(nextActive.data("title") != "Research"){ 
