@@ -514,12 +514,15 @@
                 "gallerycaption": "The project was funded within the framework of the „Galop de Porc“ initiative.",
                 "gallery": [
                     {
+                     
                         "src" : "Logos-Bremen.svg",
-                        "alt" : "alt"
+                        "alt" : "alt",
+                        "link" : "https://www.bremen.de/"
                     },
                     {
                         "src" : "Logos-Gewoba.svg",
-                        "alt" : "alt"
+                        "alt" : "alt",
+                        "link" : "https://www.gewoba.de/"
                     },
                     {
                         "src" :  "Logos-SMH.svg",

@@ -177,10 +177,14 @@ class ResearchProject {
                     result += `<div class="image-number">${increase}</div>`;
                     increase++
                 }
-                result += `<img src="${gallerypath }/${encodeURIComponent(image.src)}" alt="${image.alt}">
-                </div>`;
+                result += `
+                ${image.link ? `<a href="${image.link}" target="_blank">` : ''}
+                    <img src="${gallerypath}/${encodeURIComponent(image.src)}" alt="${image.alt}">
+                ${image.link ? `</a>` : ''}</div>
+                `;
+            
 
-           
+
             });
 
             let resultCaptions = ''
@@ -215,7 +219,7 @@ class ResearchProject {
     _renderGallery(data){
 
         let result = ''
-        result += `<div class="${data.height} gallery-zone zone"></div>`;
+        result += `<div class="${data.height} ${data.logos ? "gallery-logos" : "gallery-regular"} gallery-zone zone"></div>`;
         result +=  `<div class="caption-zone"></div>`
         return result
     }
