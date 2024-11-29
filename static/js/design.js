@@ -102,7 +102,7 @@ class DesignProject {
             this.triggerDownloadImagesIfProjectIsVisible()
             $(window).on('DOMContentLoaded load resize scroll', this.triggerDownloadImagesIfProjectIsVisible.bind(this))
             $("#designContent .content").on("scroll", this.triggerDownloadImagesIfProjectIsVisible.bind(this))
-        }.bind(this), 200)
+        }.bind(this), 200) 
     }
 
     /**
@@ -157,6 +157,7 @@ class DesignProject {
                 left: -$currentActive.prev().position().left
             })
         }
+
         this._updateDots()
     }
 
@@ -175,13 +176,19 @@ class DesignProject {
             let prevImagesWidth = 0
             Array.from($currentActive.prevAll()).forEach(image => prevImagesWidth += $(image).outerWidth(true))
             $imageContainer.css({left: -$nextActive.position().left})
+         }else{
+            $currentActive.removeClass("active")
+            $imageContainer.children().first().addClass("active")
+            let $nextActive = $imageContainer.children().first();
+            $imageContainer.css({left: -$nextActive.position().left})
          }
+ 
         this._updateDots()
     }
 
     triggerDownloadImagesIfProjectIsVisible() {
            
-        if (isElementInViewport($(`#${this.projectId}`)[0]) || ($(`#${this.projectId}`).index() === 0) ) {
+      //  if (isElementInViewport($(`#${this.projectId}`)[0]) || ($(`#${this.projectId}`).index() === 0) ) {
             if (!this.isGalleryRendered) {
                 this._downloadImages()
             }
@@ -202,15 +209,15 @@ class DesignProject {
                 
                 }
             }
-        }
-        else {
+      /*  }
+        else {*/
              // pause videos when out of viewport
             this.imageContainer().find("video").each(function() {
                 this.pause()
             })
                                
-        }       
-    }
+        //}       
+ }
 
     _downloadImages() {
 
@@ -221,7 +228,7 @@ class DesignProject {
             const source = this._getSrcForGalleryImage(image)
             const url = image.src
             const extension = url.split(".")[1]
-            
+            console.log("extension - downloadimages", extension)    
             let content = null;
             if (this.images.includes(extension)) {
 
@@ -303,9 +310,10 @@ class DesignProject {
             if (downloadedImage === undefined) {
                 return
             }
-            const extension = img.src.split(".")[1]
+            /* change */
+  
 
-            /* if (this.images.includes(extension)) {
+/*              if (this.images.includes(extension)) {
                 if (this.imageContainer().find(`img[src="${imageKey}"]`).length === 0) {
                     this.imageContainer().append(downloadedImage)
                 }
@@ -323,7 +331,7 @@ class DesignProject {
         
                 
             }
- */
+  */
            
         }
     }
@@ -348,14 +356,14 @@ class DesignProject {
             return
         }
 
-        $imageContainer.css({transition: "left 0ms ease-in-out"})
+      /*  $imageContainer.css({transition: "left 0ms ease-in-out"})
         $imageContainer.css({
             left: -$currentActive.position().left
         })
         $imageContainer.children().css({width: "auto", height: "100%"})
         window.setTimeout(function () {
             $imageContainer.css({transition: "left 200ms ease-in-out"})
-        }, 100)
+        }, 100) */
     }
 
     _videoControls() {
@@ -416,19 +424,19 @@ class DesignProject {
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
         let offset = 0;
         let firstActiveImg = null
-        let galleryMultiplier = 3;
+        let galleryMultiplier = 1;
         let content = null;
         let containsVideo = false;
-        for (let i = 0; i < galleryMultiplier; ++i) {
+        //for (let i = 0; i < galleryMultiplier; ++i) {
         
-            this.gallery.forEach(path => {
+            this.gallery.forEach((path, index) => {
                 let src = `${this.galleryPath}/${encodeURIComponent(path.src)}`
                 let img = this.downloadedImages[src]
                 let clone = img.cloneNode(true);
                 content = clone;
                 //change online and on nomis
-                const extension = img.src.split(".")[1]
-   
+                const extension = img.src.split(".")[3]
+        
                 if (this.videos.includes(extension)) {
                    
                     containsVideo = true;
@@ -447,14 +455,17 @@ class DesignProject {
                 }
 
                 $imageContainer.append(content)
-                offset += $(content).outerWidth(true)
+                //offset += $(content).outerWidth(true)
 
-                if (i === 1 && firstActiveImg == null) {
+               // if (i === 1 && firstActiveImg == null) {
+               if(index === 0){
                     firstActiveImg = content
-                }        
+               }
+               // }        
               
             })
-        }
+        //}
+    
         $(firstActiveImg).addClass("active")
         let timeout = containsVideo ? 1000 : 100 
 

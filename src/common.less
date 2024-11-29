@@ -3,6 +3,7 @@
 @overlay-overlap-medium: 50px;
 @overlay-overlap-small: 30px;
 
+@media-huge: ~'(min-width: 1920px)';
 @media-large: ~'(min-width: 1201px)';
 @media-l-medium: ~'(max-width: 1200px) and (min-width: 601px) and (orientation: landscape)';
 @media-p-medium: ~'(max-width: 1200px) and (min-width: 601px) and (orientation: portrait)';
@@ -52,6 +53,13 @@
   p {
     margin: 0 0 @padding-large 0;
   }
+}
+
+
+@media @media-huge {
+  @import "text-defaults";
+  @import "./text_huge";
+
 }
 
 h1, h2, h3, h4 {
