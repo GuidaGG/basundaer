@@ -21,7 +21,7 @@
     letter-spacing: 0;
     font-family: "apercu-medium", sans-serif;
     font-size: 30pt !important;
-    line-height: auto;
+    line-height: 36pt;
     margin: 0;
     font-weight: normal;
   }
@@ -95,7 +95,8 @@
     letter-spacing: 0;
     font-family: "apercu-medium", sans-serif;
     font-size: 20pt !important;
-    line-height: auto;
+    line-height: 22pt;
+    /* chekc here */
     margin: 0;
     font-weight: normal;
   }
@@ -169,7 +170,8 @@
     letter-spacing: 0;
     font-family: "apercu-medium", sans-serif;
     font-size: 32pt !important;
-    line-height: auto;
+    line-height: 38pt !important;
+    /*check */
     font-weight: normal;
     margin: 0;
   }

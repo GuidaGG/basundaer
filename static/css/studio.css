@@ -70,7 +70,7 @@
     letter-spacing: 0;
     font-family: "apercu-medium", sans-serif;
     font-size: 30pt !important;
-    line-height: auto;
+    line-height: 36pt;
     margin: 0;
     font-weight: normal;
   }
@@ -144,7 +144,8 @@
     letter-spacing: 0;
     font-family: "apercu-medium", sans-serif;
     font-size: 20pt !important;
-    line-height: auto;
+    line-height: 22pt;
+    /* chekc here */
     margin: 0;
     font-weight: normal;
   }
@@ -218,7 +219,8 @@
     letter-spacing: 0;
     font-family: "apercu-medium", sans-serif;
     font-size: 32pt !important;
-    line-height: auto;
+    line-height: 38pt !important;
+    /*check */
     font-weight: normal;
     margin: 0;
   }
@@ -890,7 +892,22 @@ figure {
 }
 #studioContent .studio .studioContent .serviceDescriptions {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+}
+@media (min-width: 1201px) {
+  #studioContent .studio .studioContent .serviceDescriptions {
+    gap: 20px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  #studioContent .studio .studioContent .serviceDescriptions {
+    gap: 17px;
+  }
+}
+@media (max-width: 600px) {
+  #studioContent .studio .studioContent .serviceDescriptions {
+    gap: 30px;
+  }
 }
 @media (max-width: 600px), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
   #studioContent .studio .studioContent .serviceDescriptions {
@@ -898,21 +915,29 @@ figure {
   }
 }
 #studioContent .studio .studioContent .serviceDescriptions .serviceDescription {
-  flex: 0 0 33%;
-}
-@media (min-width: 1201px) {
-  #studioContent .studio .studioContent .serviceDescriptions .serviceDescription:not(:last-child) {
-    margin-right: 20px;
-  }
+  flex: 0 0 32%;
+  margin: 0px;
+  /*      &:not(:last-child) {
+            @media @media-large {
+              margin-right: @padding-large;
+            }
+            @media @media-l-medium, @media-p-medium {
+              margin-right: @padding-medium;
+            }
+            @media @media-small {
+              margin-bottom: @padding-small * 3;
+            }
+          }
+ */
 }
 @media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
-  #studioContent .studio .studioContent .serviceDescriptions .serviceDescription:not(:last-child) {
-    margin-right: 17px;
+  #studioContent .studio .studioContent .serviceDescriptions .serviceDescription {
+    flex: 0 0 45%;
   }
 }
 @media (max-width: 600px) {
-  #studioContent .studio .studioContent .serviceDescriptions .serviceDescription:not(:last-child) {
-    margin-bottom: 30px;
+  #studioContent .studio .studioContent .serviceDescriptions .serviceDescription {
+    gap: 30px;
   }
 }
 #studioContent .studio .studioContent .serviceDescriptions .serviceDescription ul {
