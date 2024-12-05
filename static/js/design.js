@@ -102,7 +102,7 @@ class DesignProject {
             this.triggerDownloadImagesIfProjectIsVisible()
             //$(window).on('DOMContentLoaded load resize scroll', this.triggerDownloadImagesIfProjectIsVisible.bind(this))
             $("#designContent .content").on("scroll", this.triggerDownloadImagesIfProjectIsVisible.bind(this))
-        }.bind(this), 200)
+        }.bind(this), 200) 
     }
 
     /**
@@ -145,6 +145,7 @@ class DesignProject {
                 left: -$currentActive.prev().position().left
             })
         }
+
         this._updateDots()
     }
 
@@ -169,6 +170,7 @@ class DesignProject {
             let $nextActive = $imageContainer.children().first();
             $imageContainer.css({left: -$nextActive.position().left})
          }
+ 
         this._updateDots()
     }
 
@@ -195,15 +197,19 @@ class DesignProject {
                 
                 }
             }
+
         //}
        // else {
+
              // pause videos when out of viewport
             this.imageContainer().find("video").each(function() {
                 this.pause()
             })
                                
         //}       
+
     } 
+
 
     _downloadImages() {
 
@@ -215,7 +221,7 @@ class DesignProject {
             const extraSource = this._getExtraSrcForGalleryVideo(image)
             const url = image.src
             const extension = url.split(".")[1]
-            
+            console.log("extension - downloadimages", extension)    
             let content = null;
             if (this.images.includes(extension)) {
 
@@ -316,7 +322,7 @@ class DesignProject {
                 return
             }
 
-           
+      
         }
     }
 
@@ -407,7 +413,7 @@ class DesignProject {
         let galleryMultiplier = 1;
         let content = null;
         let containsVideo = false;
-        for (let i = 0; i < galleryMultiplier; ++i) {
+        //for (let i = 0; i < galleryMultiplier; ++i) {
         
             this.gallery.forEach((path, index) => {
                 let src = `${this.galleryPath}/${encodeURIComponent(path.src)}`
@@ -419,6 +425,7 @@ class DesignProject {
                 // nomis: 3
                 const extension = img.src ? img.src.split(".")[1] : img.dataset.src.split(".")[1];
               
+
                 if (this.videos.includes(extension)) {
                    
                     containsVideo = true;
@@ -438,12 +445,15 @@ class DesignProject {
 
                 $imageContainer.append(content)
 
+
                 if(index === 0){
                     firstActiveImg = content
                 }     
+
               
             })
-        }
+        //}
+    
         $(firstActiveImg).addClass("active")
 
         /*wait a bit if there is video) */
