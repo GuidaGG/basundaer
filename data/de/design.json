@@ -1,7 +1,8 @@
 {
   "overlay_description": "Vielfältige Themen, komplexe Fragen und eine enge Zusammenarbeit. Jedes Projekt ist eine spannende Herausforderung, der wir uns mit Neugier, Leidenschaft und Hingabe widmen. So entstehen anspruchsvolle, ästhetische und sinnstiftende Designlösungen.",
   "overlay_title": "ÜBERSICHT",
-  "overlay_all" : "Gesamt",
+  "overlay_all_sectors" : "Gesamt Sektoren",
+  "overlay_all_categories" : "Gesamt Kategorien",
   "year" : "Jahr",
   "category" : "Kategorie",
   "sector" : "Sektor",
@@ -23,6 +24,7 @@
       "gallery": [
         {
           "src" : "STGB_DasBleibt_Plakat_02.mp4",
+          "srcExtra": "STGB_DasBleibt_Plakat_02.webm",
           "alt" : "Posteranimation zu der Ausstellung Das bleibt"
         },
         {

@@ -110,7 +110,7 @@ export default class Overlay {
             this.$overlay = $mainContentElement.find(".overlay")
         }
         this.$openHandle.on("click", function (event) {
-            console.log(event.target)
+
             this.toggleOverlay()
         }.bind(this))
     }

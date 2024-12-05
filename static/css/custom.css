@@ -13,7 +13,7 @@ ul.partner {
     }
 
 #designContent > .content .projects .projectContainer .gallery .imageContainer .pause, #designContent > .content .projects .projectContainer .gallery .imageContainer .play {
-    display: none!important;    
+    /*display: none!important;   */
     }
 
 #designContent > .content .projects #Bike_in_Head .gallery .imageContainer .videoContainer {

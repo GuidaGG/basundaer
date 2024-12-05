@@ -234,7 +234,7 @@ class Section {
         for (let side of Object.keys(rect)) {
 
             if (rect[side] > 1) {
-                console.log(`border-${side}`)
+      
                 this.$border.addClass(`border-${side} fsBorder`)
                 if (!this._isFullScreen()) {
                     $(this.fullSection).find(".content").addClass(`border-${side}`)
@@ -253,7 +253,7 @@ class Section {
         $("body").append(this.$border)
 
         this.$border.on("transitionend", function () {
-            console.log("hide border")
+
             $(this).hide()
         })
 

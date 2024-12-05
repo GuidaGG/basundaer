@@ -220,7 +220,7 @@ class ResearchProject {
 
         let result = ''
         result += `<div class="${data.height} ${data.logos ? "gallery-logos" : "gallery-regular"} gallery-zone zone"></div>`;
-        result +=  `<div class="caption-zone"></div>`
+        result +=  `<div class="caption-zone zone"></div>`
         return result
     }
 
