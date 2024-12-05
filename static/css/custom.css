@@ -1,0 +1,48 @@
+@media (min-width: 1201px){
+    p.intro {
+        margin: 0 0 20px;
+        }
+    }
+
+.partners .heading1 {
+    margin: 0 0 20px;
+    }
+
+ul.partner {
+    margin: 10px 0 0 0!important;
+    }
+
+#designContent > .content .projects .projectContainer .gallery .imageContainer .pause, #designContent > .content .projects .projectContainer .gallery .imageContainer .play {
+
+    /*display: none!important;   */
+    }
+
+#designContent > .content .projects #Bike_in_Head .gallery .imageContainer .videoContainer {
+    position: relative;
+    height: 105%!important;
+    width: auto;
+    top: -2.5%;
+    }
+
+
+#research-zwischen-gegensaetzen .video-zone {
+    position: relative;
+   /* height: 105%!important; */
+    width: auto;
+    top: -2.5%;
+    }
+
+.footerText a, .footerText span{
+    font-size: 3vh!important;
+    }   
+
+.full_height.image-container {
+    height:100%!important;
+    }
+
+
+@media (min-width: 1201px) {
+  p {
+    margin: 0 0 10px 0!important;
+  }
+}

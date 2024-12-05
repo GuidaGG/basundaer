@@ -211,12 +211,12 @@ function filterProjects(category, sector) {
     if (!_activeFilter && !_activeSector) {
 
         showThumbnails($allThumbnails);
-        $(`.projectCategory[data-category=GESAMT]`).addClass("active");
-        $(`.sectorCategory[data-sector=GESAMT]`).addClass("active");
+        $(`.projectCategory[data-category=Gesamt]`).addClass("active");
+        $(`.sectorCategory[data-sector=Gesamt]`).addClass("active");
     } else {
-        $(`.projectCategory[data-category=GESAMT]`).toggleClass("active", !_activeFilter);
-        $(`.sectorCategory[data-sector=GESAMT]`).toggleClass("active", !_activeSector);
-    
+        $(`.projectCategory[data-category=Gesamt]`).toggleClass("active", !_activeFilter);
+        $(`.sectorCategory[data-sector=Gesamt]`).toggleClass("active", !_activeSector);
+
         // Iterate through each thumbnail to apply the filtering logic
         Array.from($allThumbnails).forEach(t => {
             const categories = $(t).data("categories").split(",");

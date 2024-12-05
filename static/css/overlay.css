@@ -20,7 +20,7 @@
     letter-spacing: 0;
     font-family: "apercu-medium", sans-serif;
     font-size: 30pt !important;
-    line-height: auto;
+    line-height: 36pt;
     margin: 0;
     font-weight: normal;
   }
@@ -92,7 +92,8 @@
     letter-spacing: 0;
     font-family: "apercu-medium", sans-serif;
     font-size: 20pt !important;
-    line-height: auto;
+    line-height: 22pt;
+    /* chekc here */
     margin: 0;
     font-weight: normal;
   }
@@ -164,7 +165,8 @@
     letter-spacing: 0;
     font-family: "apercu-medium", sans-serif;
     font-size: 32pt !important;
-    line-height: auto;
+    line-height: 38pt !important;
+    /*check */
     font-weight: normal;
     margin: 0;
   }
@@ -223,6 +225,35 @@
   }
   p {
     margin: 0 0 20px 0;
+  }
+}
+@media (min-width: 1920px) {
+  .heading1,
+  p.intro,
+  p.intro a,
+  .paragraph.quote,
+  .paragraph.quote a {
+    letter-spacing: 0;
+    font-family: "apercu-medium", sans-serif;
+    font-size: 28pt;
+    line-height: 34pt;
+    font-weight: normal;
+  }
+  .heading2 {
+    letter-spacing: 0;
+    font-family: "apercu-light", sans-serif;
+    font-size: 22pt;
+    line-height: 26pt;
+    margin: 0;
+    font-weight: lighter;
+  }
+  .paragraph,
+  .paragraph a {
+    letter-spacing: 0.5px;
+    font-family: "apercu-medium", sans-serif;
+    font-size: 22pt;
+    line-height: 26pt;
+    font-weight: normal;
   }
 }
 h1,
@@ -542,18 +573,33 @@ figure {
 .caption-zone .gallery-captions .caption span {
   font-family: 'apercu-medium';
 }
-.gallery-logos .quarter,
-.gallery-logos .half,
-.gallery-logos .third,
-.gallery-logos .full {
-  width: calc(20% - 10px) !important;
-}
-@media (max-width: 600px), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+@media (min-width: 1201px) {
   .gallery-logos .quarter,
   .gallery-logos .half,
   .gallery-logos .third,
   .gallery-logos .full {
-    width: calc(50% - 10px) !important;
+    height: 150px !important;
+    width: 250px !important;
+    padding-right: 30px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  .gallery-logos .quarter,
+  .gallery-logos .half,
+  .gallery-logos .third,
+  .gallery-logos .full {
+    height: 130px !important;
+    width: 240px !important;
+  }
+}
+@media (max-width: 600px) {
+  .gallery-logos .quarter,
+  .gallery-logos .half,
+  .gallery-logos .third,
+  .gallery-logos .full {
+    height: 100px !important;
+    width: 49% !important;
   }
 }
 .caption-zone {

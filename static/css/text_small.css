@@ -19,7 +19,8 @@ p {
   letter-spacing: 0;
   font-family: "apercu-medium", sans-serif;
   font-size: 20pt !important;
-  line-height: auto;
+  line-height: 22pt;
+  /* chekc here */
   margin: 0;
   font-weight: normal;
 }

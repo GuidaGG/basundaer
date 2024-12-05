@@ -5,6 +5,22 @@
   "subtitle_2": "Integrated design studio in Bremen and Berlin",
   "paragraph_1": "At Bas&Aer, we bring messages into an understandable form and identities to the point. We bring ideas to life and make them tangible. Two-dimensional, three-dimensional, analog, digital - we find the right formats and media for every project:",
   "paragraph_2" : "Transparent and direct communication, short decision-making processes and a common standard are the basis of a successful cooperation. We are proud of the trust placed in us, the intensive dialog with our customers and the great results.",
+<<<<<<< HEAD
+=======
+  "references" : "References",
+  "references_description": "Description of references",
+  "references_column1_title": "Corporate Design",
+  "reference_column1": {
+    "1": "Recefenreces 111",
+    "2": "asdasddasads",
+    "3": "Wasddasadasdasds",
+    "4": "Guidance and orientation systems",
+    "5": "Trade fair and exhibition design",
+    "6": "Advertising and print media",
+    "7": "Catalogues and publications",
+    "8": "Packaging and POS"
+  },
+>>>>>>> 16b7e5e6135b09c44119417a16b6083a541648fc
   "services" : "Services" ,
   "services_description" : "Bas&Aer was founded in November 2017 by Katharina Brock, Astrid Hesse and Ben Jurca. Since then, we have been providing our clients* with comprehensive support in the areas of corporate identity and communication, innovation and creative problem solving.",
   "concept_design_title": "Concept & Design",
