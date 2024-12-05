@@ -125,17 +125,7 @@ class DesignProject {
             return
         }
 
-        // todo: append when scrolling further backwards?
-        // if ($currentActive[0].src === this.downloadedImages[0].src) {
-        //     console.log("prepend")
-        //     this.downloadedImages.reverse().forEach(img => {
-        //         let clone = img.cloneNode(true);
-        //         // let scaledWidth = img.width * $imageContainer.height() / img.height
-        //         // console.log("render img at", `${start + offset}px`, img.src)
-        //         // $(clone).css("transform", `translateX(${start}px)`)
-        //         $imageContainer.prepend(clone)
-        //     })
-        // }
+ 
 
         if ($currentActive.prev().length > 0) {
             $currentActive.removeClass("active").prev().addClass("active")
