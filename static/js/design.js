@@ -64,7 +64,7 @@ class DesignProject {
         this._imageContainer = null
 
         this.images = ["jpg", "gif", "png", "webp"]
-        this.videos = ["mp4", "3gp", "ogg"]
+        this.videos = ["mp4", "3gp", "ogg", "webm"]
 
 
 
@@ -100,7 +100,7 @@ class DesignProject {
 
         window.setTimeout(function () {
             this.triggerDownloadImagesIfProjectIsVisible()
-            $(window).on('DOMContentLoaded load resize scroll', this.triggerDownloadImagesIfProjectIsVisible.bind(this))
+            //$(window).on('DOMContentLoaded load resize scroll', this.triggerDownloadImagesIfProjectIsVisible.bind(this))
             $("#designContent .content").on("scroll", this.triggerDownloadImagesIfProjectIsVisible.bind(this))
         }.bind(this), 200) 
     }
@@ -135,18 +135,6 @@ class DesignProject {
         if ($currentActive === $imageContainer.children().first()) {
             return
         }
-
-        // todo: append when scrolling further backwards?
-        // if ($currentActive[0].src === this.downloadedImages[0].src) {
-        //     console.log("prepend")
-        //     this.downloadedImages.reverse().forEach(img => {
-        //         let clone = img.cloneNode(true);
-        //         // let scaledWidth = img.width * $imageContainer.height() / img.height
-        //         // console.log("render img at", `${start + offset}px`, img.src)
-        //         // $(clone).css("transform", `translateX(${start}px)`)
-        //         $imageContainer.prepend(clone)
-        //     })
-        // }
 
         if ($currentActive.prev().length > 0) {
             $currentActive.removeClass("active").prev().addClass("active")
@@ -197,8 +185,8 @@ class DesignProject {
                 if (getMediaMatch() != utils.SMALL) {
                     this.imageContainer().find("video").each(function() {
 
-                        //this.load()
-                        //this.play()
+                       // this.load()
+                      //  this.play()
  
                         if(!this.paused){
                         this.nextSibling.classList.remove("play")
@@ -209,15 +197,19 @@ class DesignProject {
                 
                 }
             }
-      /*  }
-        else {*/
+
+        //}
+       // else {
+
              // pause videos when out of viewport
             this.imageContainer().find("video").each(function() {
                 this.pause()
             })
                                
         //}       
- }
+
+    } 
+
 
     _downloadImages() {
 
@@ -225,7 +217,8 @@ class DesignProject {
         this.downloadedImages = {}
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
         this.gallery.forEach((image, index) => {
-            const source = this._getSrcForGalleryImage(image)
+            const source = this._getSrcForGalleryItem(image)
+            const extraSource = this._getExtraSrcForGalleryVideo(image)
             const url = image.src
             const extension = url.split(".")[1]
             console.log("extension - downloadimages", extension)    
@@ -239,10 +232,14 @@ class DesignProject {
                         }*/
                         content.onload = function (event) {
                             let loadedImage = event.target
-                            let key = new URL(loadedImage.src).pathname
+                            let url = loadedImage.src ? loadedImage.src : loadedImage.children[0].src;
+                            let key = new URL(url).pathname
+                            
+                            //let key = new URL(loadedImage.src).pathname
                             this.downloadedImages[key] = loadedImage
                             this._contentLoad(event)
                         }.bind(this)
+                        content.src = source ? source : "";
                     
                 } else if (this.videos.includes(extension)) {
             
@@ -254,30 +251,44 @@ class DesignProject {
                     }*/
                     content.onloadstart = function (event) {
                             let loadedImage = event.target
-                            let key = new URL(loadedImage.src).pathname
+                            let url = loadedImage.src ? loadedImage.src : loadedImage.children[0].src;
+                            let key = new URL(url).pathname
                             this.downloadedImages[key] = loadedImage
                             this._contentLoad(event)
                         }.bind(this)
-                    
+                        content.dataset.src = source ? source : "";
+
+                    if(source){
+
+                    const mainSourceElement = document.createElement('source');
+                        mainSourceElement.src = source;
+                        content.appendChild(mainSourceElement);
+                    } 
+
+                    if (extraSource) {
+                        
+                        const sourceElement = document.createElement('source');
+                        sourceElement.src = extraSource;
+                        content.appendChild(sourceElement);
+                    }
+                  
+
                 }
-           
-                content.src = source ? source : "";
+               
+               
                 content.alt = image.alt    
             
             })
 
-      /*  window.setTimeout(function () {
-            $imageContainer.css({transition: "left 200ms ease-in-out"})
-            $imageContainer.css({left: "0px"})
-        }, 100)
-        $imageContainer.css("filter", "")*/
     }
 
     _contentLoad(event) {
         this.isGalleryRendered = true
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
         let loadedImage = event.target
-        let key = new URL(loadedImage.src).pathname
+       // let key = new URL(loadedImage.src).pathname
+       let url = loadedImage.src ? loadedImage.src : loadedImage.children[0].src;
+       let key = new URL(url).pathname
         this.downloadedImages[key] = loadedImage
         $imageContainer.innerHeight = ""
         this._appendImagesInOrder()
@@ -304,35 +315,14 @@ class DesignProject {
         this.imageContainer().innerHTML = "";
         for (let i = 0; i < this.gallery.length; ++i) {
             let img = this.gallery[i]
-            let imageKey = this._getSrcForGalleryImage(img)
+            let imageKey = this._getSrcForGalleryItem(img)
             let downloadedImage = this.downloadedImages[imageKey]
 
             if (downloadedImage === undefined) {
                 return
             }
-            /* change */
-  
 
-/*              if (this.images.includes(extension)) {
-                if (this.imageContainer().find(`img[src="${imageKey}"]`).length === 0) {
-                    this.imageContainer().append(downloadedImage)
-                }
-            } else if (this.videos.includes(extension)) {
-   
-                    let container = document.createElement('div')
-                    container.classList.add("videoContainer")
-
-                    let controls = document.createElement('div')
-                    controls.classList.add("videoControls", "pause")
-                    container.append(downloadedImage)
-                    container.append(controls)
-                    this.imageContainer().append(container)
-
-        
-                
-            }
-  */
-           
+      
         }
     }
 
@@ -341,8 +331,14 @@ class DesignProject {
         $imageContainer.css("background", "none")
     }
 
-    _getSrcForGalleryImage(image) {
-        return `${this.galleryPath}/${encodeURIComponent(image.src)}`
+    _getSrcForGalleryItem(item) {
+        return `${this.galleryPath}/${encodeURIComponent(item.src)}`
+    }
+    _getExtraSrcForGalleryVideo(item) {
+        if(item.srcExtra){
+            return `${this.galleryPath}/${encodeURIComponent(item.srcExtra)}`
+        }
+        
     }
 
     /**
@@ -356,14 +352,6 @@ class DesignProject {
             return
         }
 
-      /*  $imageContainer.css({transition: "left 0ms ease-in-out"})
-        $imageContainer.css({
-            left: -$currentActive.position().left
-        })
-        $imageContainer.children().css({width: "auto", height: "100%"})
-        window.setTimeout(function () {
-            $imageContainer.css({transition: "left 200ms ease-in-out"})
-        }, 100) */
     }
 
     _videoControls() {
@@ -374,7 +362,7 @@ class DesignProject {
                 let video = this.previousSibling
                 if (getMediaMatch() != utils.SMALL) {
                     if(video.paused || video.ended || video.currentTime === 0){
-                        
+                
                         video.play();
                         this.classList.remove("play")
                         this.classList.add("pause")
@@ -412,10 +400,8 @@ class DesignProject {
     }
 
     /**
-     * Render each image 10 times and set the first image of the 6th group active.
-     * Todo: This is a workaround to create a "fake" carousel. Find a way to dynamically append/prepend images on the fly.
-     * Todo: OR: Move the image container back to the first image when the last image is reached, but invisibly (omit the animation)
-     * Todo: OR OR: Find a nice plugin which does that :)
+     * Render Images
+     * 
      * @private
      */
 
@@ -434,9 +420,12 @@ class DesignProject {
                 let img = this.downloadedImages[src]
                 let clone = img.cloneNode(true);
                 content = clone;
+
                 //change online and on nomis
-                const extension = img.src.split(".")[3]
-        
+                // nomis: 3
+                const extension = img.src ? img.src.split(".")[1] : img.dataset.src.split(".")[1];
+              
+
                 if (this.videos.includes(extension)) {
                    
                     containsVideo = true;
@@ -455,18 +444,19 @@ class DesignProject {
                 }
 
                 $imageContainer.append(content)
-                //offset += $(content).outerWidth(true)
 
-               // if (i === 1 && firstActiveImg == null) {
-               if(index === 0){
+
+                if(index === 0){
                     firstActiveImg = content
-               }
-               // }        
+                }     
+
               
             })
         //}
     
         $(firstActiveImg).addClass("active")
+
+        /*wait a bit if there is video) */
         let timeout = containsVideo ? 1000 : 100 
 
         window.setTimeout(function () {

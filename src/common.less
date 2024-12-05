@@ -349,9 +349,20 @@ figure {
 
 .gallery-logos {
   .quarter, .half, .third, .full {
-    width: calc(20% - 10px) !important;
-    @media @media-small, @media-p-medium {
-      width: calc(50% - 10px)  !important;
+
+    @media @media-large {
+      height: 150px !important;
+      width: 250px !important;
+      padding-right:30px;
+      padding-bottom: 20px;
+    }
+    @media @media-l-medium, @media-p-medium {
+      height: 130px !important;
+      width: 240px !important;
+    }
+    @media @media-small {
+      height: 100px !important;
+      width: 49% !important;
     }
   }
 }
