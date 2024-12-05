@@ -158,6 +158,11 @@
           "type": "text",
           "class" : "intro",
           "text": "<a href='mailto:info@basundaer.de' target='_blank'>info@basundaer.de</a>"
+        },
+        {
+          "type": "text",
+          "class" : "intro",
+          "text": "<br>"
         }
     ]
 

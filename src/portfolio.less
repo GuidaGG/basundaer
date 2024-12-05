@@ -30,13 +30,17 @@
             flex-direction: column;
             margin: 0;
           }
-          .more-categories {
+          .more-categories, .more-sectors{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: flex-start;
             align-content: flex-start;
+            @media @media-small {
+              flex-direction: column;
+              margin: 0;
+            }
           }
-          .projectCategory {
+          .projectCategory, .sectorCategory {
             color: black;
             text-decoration: none;
 

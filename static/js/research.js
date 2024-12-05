@@ -9,10 +9,10 @@ let overlayLoaded = false
 import getMediaMatch, * as utils from "/static/js/utils.js"
 
 function isElementInViewport(el, left, right) {
-    let rect = el.getBoundingClientRect();
- 
-    return (rect.left <= left && rect.right > right)
-   
+    if(el){
+        let rect = el.getBoundingClientRect();
+        return (rect.left <= left && rect.right > right)
+    }
 }
 
 /**
@@ -72,9 +72,9 @@ class ResearchProject {
         
         nextActive.addClass('activeResearch')
         nextActive.next().addClass('nextResearch')
-
-        $('.researchs').animate({scrollLeft: nextActive[0].offsetLeft}, {queue: false}); 
-
+        if(nextActive[0].offsetLeft){
+            $('.researchs').animate({scrollLeft: nextActive[0].offsetLeft}, {queue: false}); 
+        }
         let titleContainer = $('#secondTitle')
 
         if(nextActive.data("title") != "Research"){ 
@@ -159,31 +159,13 @@ class ResearchProject {
         return `<div class="zone quote-zone">${data.quote}</div>`;
     }
 
-    _renderCaptions(data){
-        let result = ''
-        let increase = 1;
-        result += `<div class="gallery-captions">`;
-        if(data.gallerycaption){
-        result += `<div class="main-caption">${data.gallerycaption}</div>`;
-        }
-        data.captions.forEach(function(caption, index) {
-            if(caption){
-            result += `<div class="caption"><span>${increase}</span> ${caption}
-          
-            </div>`;
-            increase++;
-            }
-        })
-        result += `</div>`;
-        return result
-    }
-
-
     _downloadImages() {
         this.isGalleryRendered = true
         let gallerypath = this.galleryPath;
         let increase = 1;
+        let increaseCaption = 1;
         let galleryContainers = $(`#${this.projectId} .gallery-zone`);
+        let galleryCaptions = $(`#${this.projectId} .caption-zone`);
         
         this.galleries.forEach(function(data, index) {
             let result = '';
@@ -195,12 +177,33 @@ class ResearchProject {
                     result += `<div class="image-number">${increase}</div>`;
                     increase++
                 }
-                result += `<img src="${gallerypath }/${encodeURIComponent(image.src)}" alt="${image.alt}">
-                </div>`;
-           
+                result += `
+                ${image.link ? `<a href="${image.link}" target="_blank">` : ''}
+                    <img src="${gallerypath}/${encodeURIComponent(image.src)}" alt="${image.alt}">
+                ${image.link ? `</a>` : ''}</div>
+                `;
+            
+
+
             });
 
-            galleryContainers[index].innerHTML = result
+            let resultCaptions = ''
+            resultCaptions += `<div class="gallery-captions">`;
+            if(data.gallerycaption){
+                resultCaptions += `<div class="main-caption">${data.gallerycaption}</div>`;
+            }
+            data.captions.forEach(function(caption, index) {
+                if(caption){
+                    resultCaptions += `<div class="caption"><span>${increaseCaption}</span> ${caption}
+              
+                </div>`;
+                increaseCaption++;
+                }
+            })
+            resultCaptions += `</div>`;
+            
+            galleryContainers[index].innerHTML = result;
+            galleryCaptions[index].innerHTML = resultCaptions;
         });
         
     }
@@ -216,8 +219,8 @@ class ResearchProject {
     _renderGallery(data){
 
         let result = ''
-        result += `<div class="${data.height} gallery-zone zone"></div>`;
-
+        result += `<div class="${data.height} ${data.logos ? "gallery-logos" : "gallery-regular"} gallery-zone zone"></div>`;
+        result +=  `<div class="caption-zone"></div>`
         return result
     }
 
@@ -233,24 +236,71 @@ class ResearchProject {
                 this._downloadImages() 
                 this._removeImageBackground()
             }
-            
          
         }
-        if (getMediaMatch() !== utils.SMALL) {
+       /* if (getMediaMatch() !== utils.SMALL) {
             if(isElementInViewport(container, 100, 0)){
 
                 container.querySelectorAll("video").forEach(function(video){
                     video.play()
+                    video.nextSibling.classList.remove("play")
+                    video.nextSibling.classList.add("pause")
         
                 })
             }else{
                 container.querySelectorAll("video").forEach(function(video){
                     video.pause()
+                    video.nextSibling.classList.remove("pause")
+                    video.nextSibling.classList.add("play")
                 
                 })
                 
             }
-        }
+        }*/
+    }
+
+    _videoControls() {
+        let container = $(`#${this.projectId}`)[0]
+        let videoControls = container.querySelectorAll(".videoControls")
+
+        Array.from(videoControls).forEach(control => {
+
+            let video = control.previousSibling
+            control.firstChild.addEventListener("click", function() {
+
+                if (getMediaMatch() != utils.SMALL) {
+                    if(video.paused || video.ended || video.currentTime === 0){
+                        
+                        video.play();
+                        control.classList.remove("play")
+                        control.classList.add("pause")
+                    }
+                    else{
+                        video.pause();
+                        control.classList.remove("pause")
+                        control.classList.add("play")
+                    }
+                }
+                else{
+                    video.play();
+                    this.classList.remove("pause")
+                    this.classList.add("play")
+                }
+            })
+
+            control.lastChild.addEventListener("click", function() {
+               if(video.muted){
+                video.muted = false;
+                control.classList.remove("unmute")
+                control.classList.add("mute")
+               }
+               else{
+                video.muted = true
+                control.classList.remove("mute")
+                control.classList.add("unmute")
+               }
+        });
+        });
     }
 
     _renderImage(data){
@@ -259,8 +309,11 @@ class ResearchProject {
         let gallerypath = this.galleryPath;
  
         result += `<div class="image-zone zone">`;
-        result += `<img src="${gallerypath }/${encodeURIComponent(data.image.src)}" alt="${data.image.alt}">`;
-        result += `</div>`;
+        result += `<figure><img src="${gallerypath }/${encodeURIComponent(data.image.src)}" alt="${data.image.alt}">`;
+        if(data.image.credit){
+            result +=  `<figcaption class="image-credit">${data.image.credit}</figcaption>`;
+        }
+        result += `</div></figure>`;
         return result
     }
 
@@ -269,7 +322,8 @@ class ResearchProject {
         let gallerypath = this.galleryPath;
 
         result += `<div class="video-zone zone" >`;
-        result += `<video width="1280" loop controls><source src="${gallerypath }/${encodeURIComponent(data.videoURL)}"  type="video/mp4">Your browser does not support the video tag.</video>`;
+        result += `<video width="1280" loop><source src="${gallerypath }/${encodeURIComponent(data.videoURL)}"  type="video/mp4">Your browser does not support the video tag.</video>`;
+        result += `<div class="videoControls play"><div class="pause_play"></div><div class="mute_unmute"></div></div>`;
         result += `</div>`;
         return result
     }
@@ -331,48 +385,61 @@ class ResearchProject {
 
 
 
-export default function researchPageReady(translations) {
+export default function researchPageReady(translations, overlay, activeResearch) {
     $(".researchs").html("");
 
     let counter = 0;
     translations.projects.forEach(p => {
             
             let researchProject = new ResearchProject(p)
-            researchProjects.push(researchProject)
+           
             if(counter == 0){
-                researchProjects[counter].active = "activeResearch";
+
                 let previousR = $(".previousR");
                 previousR.html("")
                 $("#previousR").hide()
             }
 
-            if(counter == 1){
-                researchProjects[counter].active = "nextResearch";
-                 
-                 let nextR = $(".nextR");
-                 nextR.html(researchProjects[counter].title)
-                   
-            }
-            researchProject.appendTo($(".researchs"))
 
+            if(counter == activeResearch-1 && activeResearch != 0){
+                let previousR = $(".previousR");
+                previousR.html(researchProject.title)
+                $("#previousR").show()
+            }
+
+
+            if(counter == activeResearch){
+                researchProject.active = "activeResearch";
+            }
+
+
+            if(counter == activeResearch+1){
+                researchProject.active = "nextResearch";
+                let nextR = $(".nextR");
+                nextR.html(researchProject.title)
+            }
+
+            researchProjects.push(researchProject)
+            researchProject.appendTo($(".researchs"))
+            researchProject._videoControls();
             counter++;
             window.setTimeout(function () {
     
             $("#"+researchProject.projectId).on("click", researchProject.nextResearch.bind(this))
            
             let researchNavigation =  $("#"+researchProject.projectId)
-            if (getMediaMatch() !== utils.SMALL) {
-                new TouchDragHandlerSimplified(
-                    researchNavigation[0],
-                    $(".researchs"),
-                    function () {
-                        researchProject.touch("next")
-                    }, function () {
-                        researchProject.touch("prev")
-                    },
-                    200,
-                    function () {
-                    }.bind(this))
+                if (getMediaMatch() !== utils.SMALL) {    
+                    new TouchDragHandlerSimplified(
+                        researchNavigation[0],
+                        $(".researchs"),
+                        function () {
+                            researchProject.touch("next")
+                        }, function () {
+                            researchProject.touch("prev")
+                        },
+                        200,
+                        function () {
+                        }.bind(this))
                 }       
             }, 1000)
     
@@ -418,28 +485,6 @@ export default function researchPageReady(translations) {
          
     })
   
-    //mobile, finish
-    /* window.setTimeout(function () {
-
-      
-        
-        let galleryNavigation = $(`#researchContent .navigation`)
-        
-        new TouchDragHandler(
-            galleryNavigation[0],
-            galleryNavigation.siblings()[0],
-            function () {
-                alert("hex")
-            }, function () {
-                alert("olll")
-            },
-            200,
-            function () {
-                console.log("drag none")
-            }.bind(this))
-    }, 100)
-    
-    */
     
     if (!overlayLoaded) {
         overlayLoaded = true

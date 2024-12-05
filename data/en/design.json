@@ -1,13 +1,257 @@
 {
-  "overlay_description": "ENGLISHENGLISHENGLIS",
+  "overlay_description": "Diverse topics, complex issues and close collaboration. Every project is an exciting challenge that we address with curiosity, passion and dedication. This is how sophisticated, aesthetic and meaningful design solutions are created.",
   "overlay_title": "OVERVIEW",
+  "overlay_all" : "All",
+  "year" : "Year",
+  "category" : "Category",
+  "sector" : "Sector",
+  "client" : "Client",
+  "with" : "With",
+  "since": "Since",
   "projects": [
+          
+  {
+      "title": "Das bleibt",
+      "categories": ["Kampagne"],
+      "sectors": ["Social"],
+      "customer": "Städtische Galerie Bremen",
+      "year": 2023,
+      "thumbnail": "STGB_DasBleibt_Flyer_080.webp",
+      "galleryFolder": "Dasbleibt",
+      "gallery": [
+        {
+          "src" : "STGB_DasBleibt_Plakat_02.mp4",
+          "alt" : "Animated Poster for the exhibition Das bleibt"
+        },
+        {
+          "src" : "STGB_DasBleibt_07.webp",
+          "alt" : "Banner for the exhibition Das bleibt"
+        },
+        {
+          "src" : "STGB_DasBleibt_03.webp",
+          "alt" : "Banner for the exhibition Das bleibt"
+        },
+                  {
+          "src" : "STGB_DasBleibt_Flyer_088.png",
+          "alt" : "Flyer for the exhibition Das bleibt"
+        },
+        {
+          "src" : "STGB_DasBleibt_Flyer_011.webp",
+          "alt" : "Flyer for the exhibition Das bleibt"
+        },
+        {
+          "src" : "STGB_DasBleibt_04.webp",
+          "alt" : "Banner for the exhibition Das bleibt"
+        },
+                  {
+          "src" : "STGB_DasBleibt_10.webp",
+          "alt" : "Banner for the exhibition Das bleibt"
+        },
+                  {
+          "src" : "STGB_DasBleibt_Plakat.gif",
+          "alt" : "Poster for the exhibition Das bleibt"
+        },
+                                      {
+          "src" : "STGB_DasBleibt_06.webp",
+          "alt" : "Poster for the exhibition Das bleibt"
+        },
+        {
+          "src" : "STGB_DasBleibt_Flyer_044.webp",
+          "alt" : "Flyer for the exhibition Das bleibt"
+        }
+      ],
+      "description": "With this exhibition, the Städtische Galerie Bremen is showing parts of the art collection of the Hanseatic City of Bremen. In the course of archive work, the exhibition rooms are transformed into storage areas for the collection, through which visitors can browse.\n<more>With the purely typographic solution of the advertising campaign, we follow on from the exhibition “Was bleibt (What remains)” and impose a supposed answer: “Das bleibt (That remains)”."
+    }, 
+                 {
+    "title": "POP Office Bremen",
+    "categories": ["Web", "Branding"],
+    "sectors": ["Kultur"],
+    "customer": "POP Office Bremen e.V.",
+    "year": 2023,
+    "link": "https://popofficebremen.de/en/",
+    "linkText": "popofficebremen.de",
+    "thumbnail": "POB_Visitenkarten_04.webp",
+    "galleryFolder": "POP",
+    "gallery": [
+        
+                {
+        "src" : "POB_Visitenkarten_03.webp",
+        "alt" : "alt"
+      },
+        
+                             {
+        "src" : "POB_Event_4.webp",
+        "alt" : "alt"
+      },   
 
-    {
+          {
+        "src" : "POB_Web_browser.gif",
+        "alt" : "alt"
+      }, 
+                        {
+        "src" : "POB_Mobile_2.webp",
+        "alt" : "alt"
+      },
+                        {
+        "src" : "POB_Event_3.webp",
+        "alt" : "alt"
+      },
+                        {
+        "src" : "POP_Branding_02.webp",
+        "alt" : "alt"
+      },
+                        {
+        "src" : "POP_Branding_11.webp",
+        "alt" : "alt"
+      },   
+                        {
+        "src" : "POB_Event_1.webp",
+        "alt" : "alt"
+      },
+          {
+        "src" : "POB_Web_browser.mp4",
+        "alt" : "alt"
+      },                             {
+        "src" : "POB_Event_2.webp",
+        "alt" : "alt"
+      }
+            
+        
+            ],
+    "description": "POP Office Bremen sees itself as a funding platform for the pop-cultural music scene of Bremen, Germany. And it does this in many ways: A an advice center and mediator between culture and politics, a funding institution, stage and mouthpiece.\n<more>With the visual identity and by supporting the communication process, we help the POP Office Bremen to be open and approachable. The jointly developed website makes information, people and expertise accessible."
+  },
+      
+      
+      
+           {
+    "title": "Netzwerk Zwischennutzung",
+    "categories": ["Web"],
+    "customer": "AAA GmbH",
+    "sectors": ["Culture", "Economy", "Social"],
+    "year": 2024,
+    "link": "https://netzwerkzwischennutzung.de/",
+    "linkText": "netzwerkzwischennutzung.de",
+    "thumbnail": "NZN_Web_Mobile_2.webp",
+    "galleryFolder": "NZN",
+    "gallery": [
+        {
+        "src" : "NZN_Web_Browser_1_small.mp4",
+        "alt" : "alt"
+      },
+          {
+        "src" : "NZN_Web_Mobile_2.webp",
+        "alt" : "alt"
+      },     
+          {
+        "src" : "NZN_Web_Mobile_3_small.mp4",
+        "alt" : "alt"
+      },
+        {
+        "src" : "NZN_Web_Browser_4.webp",
+        "alt" : "alt"
+      },
+                              {
+        "src" : "NZN_Web_Mobile_5.webp",
+        "alt" : "alt"
+      },                      {
+        "src" : "NZN_Web_Browser_6.webp",
+        "alt" : "alt"
+      },
+                              {
+        "src" : "NZN_Web_Browser_7.webp",
+        "alt" : "alt"
+      }
+        
+            ],
+    "description": "We had the opportunity to design the website of Netzwerk Zwischennutzung. This initiative promotes the temporary use of buildings and vacant spaces in Germany. Thereby it fosters and connects creative, social, and economic organisations for urban revitalisation and sustainable neighborhood development.\n<more>The growing database is structured by a complex yet intuitive user interface. Aesthetically, we combine the clear building charm of the 1950s and 60s with a vibrant green colour palette."
+  },
+      
+     {
+    "title": "Bike in Head",
+    "categories": ["Campaign"],
+    "sectors": ["Culture", "Art"],
+    "customer": "Städtische Galerie Bremen",
+    "year": 2022,
+    "thumbnail": "STGB_BikeInHead_Banner_02.webp",
+    "galleryFolder": "BikeinHead",
+    "gallery": [
+      {
+        "src" : "STGB_BikeInHead_Banner_01.webp",
+        "alt" : "alt"
+      },
+        {
+        "src" : "STGB_BikeInHead_Banner_02.webp",
+        "alt" : "alt"
+      },
+
+      {
+        "src" : "STGB_BikeInHead_Banner_04.webp",
+        "alt" : "alt"
+      },
+              {
+        "src" : "STGB_BikeInHead_06.webp",
+        "alt" : "alt"
+      },
+      {
+        "src" : "STGB_BikeInHead_05.webp",
+        "alt" : "alt"
+      }
+    ],
+    "description": "A yellow ramp takes you on your own two wheels directly into the exhibition »bike in head«. Here everything revolves around the bicycle as an indispensable everyday object, as a means of transport, but also as a philosophical symbol, art object and muse. Visitors are invited to participate and discuss with a wide range of works, readings and actions.\n<more>To promote the exhibition, we started with a specially designed tricot, cap and a hand-drawn font. These adorn a variety of media – from promotional posters to the exhibition catalogue."
+  },
+       
+      {
+    "title": "Nele Hendrikje Sandner",
+    "categories": ["Web"],
+    "sectors": ["Culture", "Art", "Economy", "Social"],
+    "customer": "Nele Hendrikje Sandner",
+    "year": 2022,
+    "link": "https://nelehendrikjesandner.de/",
+    "linkText": "Nele Hendrikje Sandner",
+    "thumbnail": "Nele_Web_browser_4.jpg",
+    "galleryFolder": "Nele",
+    "gallery": [
+      {
+        "src" : "Nele_Web_mobile_2.jpg",
+        "alt" : "alt"
+      },
+        {
+        "src" : "Nele_Web_browser_kl.mp4",
+        "alt" : "alt"
+      },
+      {
+        "src" : "Nele_Web_mobile_3.jpg",
+        "alt" : "alt"
+      },
+      {
+        "src" : "Nele_Web_browser_2.jpg",
+        "alt" : "alt"
+      },
+      {
+        "src" : "Nele_Web_browser_4.jpg",
+        "alt" : "alt"
+      },
+      {
+        "src" : "Nele_Web_browser_test.mp4",
+        "alt" : "alt"
+      },
+  
+      {
+        "src" : "Nele_Web_browser_5.jpg",
+        "alt" : "alt"
+      }
+    ],
+    "description": "We were allowed to stage the work of the Leipzig artist Nele Hendrikje Sandner on a new website. Delicate and sharp shapes, pastel and strong colours come together in many overlapping layers and structures to form graphic collages.\n<more>We have transferred the emerging spatial depth in Nele's works into a website structure through overlapping layers, in which the works also interact with each other."
+  },
+      
+      
+      {
     "title": "Spielend Stadt Gestalten",
     "categories": ["Campaign","Web"],
-    "customer": "SpielLandschaftStadt e.V. ENGLISHHHH",
+    "customer": "SpielLandschaftStadt e.V.",
     "year": 2021,
+    "link": "https://spielend-stadt-gestalten.de/",
+    "linkText": "Spielend Stadt Gestalten",
     "thumbnail": "SLS_Kampagne_55.jpg",
     "galleryFolder": "SLS",
     "gallery": [
@@ -49,53 +293,14 @@
       }
   
     ],
-    "description": "The SpielLandschaftStadt association is committed to creating and maintaining a child- and family-friendly city. With a support fund for the development of recreational and play spaces, children and young people in Bremen are encouraged to contribute their needs and ideas.\n<more>In close cooperation with the association, we developed a target group-oriented campaign including child-friendly wording and sympathetic design for a range of advertising media such as flyers, posters and social media posts."
+    "description": "The SpielLandschaftStadt association is committed to creating and maintaining a child- and family-friendly city. With a fund for the development of recreational and play spaces, children and young people in Bremen are encouraged to contribute their needs and ideas.\n<more>In close cooperation with the association, we developed a target group-oriented campaign including child-friendly wording and sympathetic design for a range of advertising media such as flyers, posters and social media posts."
   },
-  
-      {
-    "title": "Nele Hendrikje Sandner",
-    "categories": ["Web"],
-    "customer": "Nele Hendrikje Sandner ENGLISHHHH",
-    "year": 2022,
-    "thumbnail": "Nele_Web_browser_4.jpg",
-    "galleryFolder": "Nele",
-    "gallery": [
-      {
-        "src" : "Nele_Web_mobile_2.jpg",
-        "alt" : "alt"
-      },
-        {
-        "src" : "Nele_Web_browser_kl.mp4",
-        "alt" : "alt"
-      },
-      {
-        "src" : "Nele_Web_mobile_3.jpg",
-        "alt" : "alt"
-      },
-      {
-        "src" : "Nele_Web_browser_2.jpg",
-        "alt" : "alt"
-      },
-      {
-        "src" : "Nele_Web_browser_4.jpg",
-        "alt" : "alt"
-      },
-      {
-        "src" : "Nele_Web_browser_test.mp4",
-        "alt" : "alt"
-      },
-  
-      {
-        "src" : "Nele_Web_browser_5.jpg",
-        "alt" : "alt"
-      }
-    ],
-    "description": "ENGLISHHHHENG durften die Arbeit der Leipziger Künstlerin Nele Hendrikje Sandner auf einer neuen Webseite in Szene setzen. Zarte und scharfe Formen, pastellige und kräftige Farben fügen sich in vielen sich überlagernden Schichten und Strukturen zu zeichnerischen Collagen zusammen\n<more>Die entstehende räumliche Tiefe in Neles Werken haben wir durch sich überlagernde Ebenen in eine Webseitenstruktur überführt, in der auch die Arbeiten miteinander interargieren."
-  },
+      
+      
   {
       "title": "TAD - Liber Memorialis",
       "categories": ["Editorial"],
-      "customer": "Université du Luxembourg",
+      "customer": "University of Luxemburg",
       "year": 2021,
       "thumbnail": "BuA_TAD_LM_web_16.webp",
       "galleryFolder": "TAD_LM",
@@ -110,6 +315,10 @@
         },
         {
           "src" : "BuA_TAD_LM_web_26.webp",
+          "alt" : "alt"
+        },
+        {
+          "src" : "Nele_Web_browser_Leiste_1200px_1_3.mp4",
           "alt" : "alt"
         },
         {
@@ -161,7 +370,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "Über 12 Jahre hat sich die Konferenzreihe  »Transatlantic Dialogue« intensiv mit kultureller Diplomatie, transkontinentalem Dialog und freiheitlicher Bildung auseinandergesetzt; es war Zeit für einen Rückblick auf die Geschichte und Reichweite der Konferenz. \n<more>Für diese Rückschau haben wir uns auf den gestalterischen Ausgangspunkt zurück besonnen: Der Dialog wird in diesem Buch neu interpretiert und entwickelt sich analog zur inhaltlichen Entwicklung der Konferenz zu einem komplexen, vielstimmigen Geflecht aus Meinungen und Forschungsperspektiven."
+      "description": "Over 12 years, the »Transatlantic Dialogue« conference series has intensively explored cultural diplomacy, transcontinental dialogue and liberal education; it was time to look back at the history and scope of the conference. \n<more>For this retrospective, we have gone back to the creative starting point: Dialogue is reinterpreted in this book and develops analogously to the development of the conference's content into a complex, multi-voiced mesh of opinions and research perspectives."
     },
   
   {
@@ -201,7 +410,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "Mit der Ausstellung „Was bleibt” zeigt die Städtische Galerie Bremen (STGB) Einblicke in die Kunstsammlung der Hansestadt Bremen. Neben einer Auswahl von Werken der Nachkriegszeit bis heute werden erstmals die neuen Ankäufe Bremens im Rahmen der Corona Soforthilfen gezeigt. \n<more>Durch unsere rein typografische Lösung unterstreichen wir in der Werbekampagne die zeitliche Dimension der Ausstellung, die sich den Besucher*innen in mehrfacher Hinsicht zeigt. Für die STGB gestalten wir Einladungskarte, Plakate, Banner und Anzeigenkampagne."
+      "description": "With the exhibition »Was bleibt« , the Städtische Galerie Bremen (STGB) is showing insights into the art collection of the Hanseatic City of Bremen. In addition to a selection of works from the post-war period to the present day, Bremen's new acquisitions as part of the Corona emergency aid will be shown for the first time. \n<more>Through our purely typographic solution, we emphasise the temporal dimension of the exhibition in the advertising campaign, which is revealed to visitors in several ways. For the STGB, we designed the invitation card, posters, banners and advertising campaign."
     },
   
        {
@@ -231,6 +440,10 @@
           "alt" : "alt"
         },
         {
+        "src" :   "GRK_CS_Logo_RGB.webp",
+        "alt" : "alt"
+        },
+        {
           "src" :   "GRK_CS_Web_mobile_1500px_5.webp",
           "alt" : "alt"
         },
@@ -243,12 +456,12 @@
           "alt" : "alt"
         }
       ],
-      "description": "Widerspruchsforschung ist der Schwerpunkt des Graduiertenkollegs »Contradiction Studies«. Ab 2022 sind insbesondere Graduierte der Geistes-, Sozial- und Rechtswissenschaften eingeladen, Widerspruch und Praktiken des Widersprechens im engen Austausch untereinander zu untersuchen. \n<more>Als Grundlage der Gestaltung dient die vermeintlich einfachste Form des Widerspruchs, der Gegensatz. Im Dialog zeichnen sich Facetten der Widersprüchlichkeit ab. Der flirrenden Farbgebung wirken ein aufgeräumtes Schriftbild und eine nutzerfreundliche Interaktionsebene entgegen und machen so eine komplexe Thematik selbst für ein fachfremdes Publikum nahbar und reizvoll."
+      "description": "Research on contradiction is the focus of the Research Training Group »Contradiction Studies«. Starting in 2022, graduate students in the humanities, social sciences and law in particular are invited to examine contradiction and practices of contradiction in close exchange with each other. \n<more>The supposedly simplest form of contradiction, the opposition, serves as the basis of the design. Facets of contradiction emerge in the dialogue. The shimmering colour scheme is countered by a tidy typeface and a user-friendly interaction level, making a complex topic approachable and appealing even to an audience outside the field."
     },
   
       {
       "title": "Natur und Mohr",
-      "categories": ["Branding"],
+      "categories": ["Branding", "Packaging"],
       "customer": "Natur und Mohr",
       "year": 2020,
       "thumbnail": "NuM_CD_Packaging_96-3.webp",
@@ -299,7 +512,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "Judith und Dennis Mohr setzen auf die Qualitäten des traditionellen Obstbaus. Ihre Streuobstwiesen beheimaten nicht nur verschiedene alte Baumsorten, sondern auch eine Vielzahl von Vogel- und Insektenarten; gemeinsam mit den Mohrs sorgen diese für den Erhalt der immer seltener werdenden Kulturlandschaften. \n<more>Aus der herbstlichen Ernte werden leckere Säfte und feine Spirituosen gewonnen. Bas&Aer verpasst dem wachsenden Sortiment ein schmackhaftes Äußeres. Das klare Design zeigt was drin steckt: Pure Frucht und ganz viel Herzblut."
+      "description": "Judith and Dennis Mohr rely on the qualities of traditional fruit growing. Their meadow orchards are not only home to various old tree varieties, but also to a variety of bird and insect species; together with the Mohrs, they ensure the preservation of the increasingly rare cultivated landscapes. \n<more>Delicious juices and fine spirits are made from the autumn harvest. Bas&Aer gives the growing range a tasty exterior. The clear design shows what is inside: pure fruit and a lot of passion."
     },
   
       {
@@ -367,7 +580,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "pan productions steht für atmosphärisch dichte, poetische Theaterstücke. Sie werden in einem kooperativen Prozess durch Künstler*innen aus den Bereichen Regie, Spiel, Tanz, Choreographie, Videokunst, Raumkunst, Lichtkunst, bildender Kunst und Sprache entwickelt. \n<more>Für die Gestaltung standen der neckische Flötengott Pan und das klassische Gegensatzpaar von Drama und Komödie Pate. In dieser Doppelfunktion spannen die Wortmarke und ihr Gegenüber (als „Synonym“) einen leeren Theaterraum auf, der bespielt werden will."
+      "description": "pan productions stands for atmospherically dense, poetic theatre pieces. They are developed in a cooperative process by artists from the fields of directing, acting, dance, choreography, video art, spatial art, light art, visual art and language. \n<more>The teasing flute god Pan and the classical opposites of drama and comedy were the inspiration for the design. In this double function, the word mark and its counterpart (as a ›synonym‹) span an empty theatre space that wants to be played with."
     },
   
       {
@@ -419,7 +632,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "Das Museum für Fotokopie in Mülheim an der Ruhr hat mit ca. 30.000 Objekten bestehend aus Copy Art, Kopiergeräten und dokumentarischem Material die weltweit größte Sammlung ihrer Art. Eine umfangreiche Digitalisierung ermöglicht nun eine langfristige Archivierung und Zugänglichkeit der Objekte. \n<more>In Zusammenarbeit mit Margarida Ribeiro entwickelt Bas&Aer das Corporate Design und eine Webseite, die als Onlinearchiv Zugang zu der umfangreichen Sammlung bietet. Dabei zelebriert sie in ihrer Benutzung das Erlebnis des Kopierens: Wie auf einem Kopiergerät lassen sich die Archiv-Dokumente und Seiten beliebig anordnen, sortieren und sogar kopieren."
+      "description": "The Museum für Fotokopie in Mülheim an der Ruhr has the world's largest collection of its kind with around 30,000 objects consisting of copy art, photocopiers and documentary material. Extensive digitisation now enables long-term archiving and accessibility of the objects. \n<more>In collaboration with Margarida Ribeiro, Bas&Aer developed the corporate design and a website that provides access to the extensive collection as an online archive. In the process, it celebrates the experience of copying in its use: just like on a photocopier, the archive documents and pages can be arranged, sorted and even copied as desired."
     },
   
       {
@@ -485,7 +698,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "Das Diakoniewerk Simeon ist eine soziale, gemeinnützige Organisation an fast 90 Standorten in Berlin und Brandenburg. In Kooperation mit dem Designer und Fotografen Jakob Weber entwickelten wir für das Haus in der Sonnenallee in Berlin ein modulares Leitsystem. \n<more>Die Beschilderung besticht durch ein cleveres Schienensystem, das je Nutzungsszenario individuell eingesetzt werden kann. Zum Beispiel als Infoboard, als Garderobe, als Tafel für schnelle Notizen, als Lichtleiste. Die Kombination aus Linien und Flächen gewährleistet eine schnelle Orientierung und eine harmonische Integration in die bestehende Gebäudestruktur."
+      "description": "Diakoniewerk Simeon is a social, non-profit organisation with almost 90 locations in Berlin and Brandenburg. In cooperation with the designer and photographer Jakob Weber, we developed a modular signage system for the house in Sonnenallee in Berlin. \n<more>The signage impresses with a clever rail system that can be used individually depending on the usage scenario. For example, as an info board, as a coat rack, as a board for quick notes, as a light strip. The combination of lines and surfaces ensures quick orientation and harmonious integration into the existing building structure."
     },
   
     {
@@ -541,7 +754,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "PostHeimat ist ein Zusammenschluss unterschiedlicher Theaterprojekte, die sich mit den Themen Migration, Flucht, Identität, Mehrsprachigkeit und Machtstrukturen auseinandersetzen. Gemeinsam verfolgen sie das Ziel, strukturelle Hierarchien im Theater zu hinterfragen, sowie Diskriminierung und Rassismus abzubauen.\n<more>Klarheit, deutliche Statements und keine Labels sind die Grundlage unserer Gestaltung. Und mittendrin bietet sie Raum für Individualität, künstlerischen Ausdruck und ein wachsendes Netzwerk, das hoffentlich unsere Gesellschaft ein bisschen besser macht."
+      "description": "PostHeimat is an association of different theatre projects that deal with the issues of migration, flight, identity, multilingualism and power structures. Together they pursue the goal of questioning structural hierarchies in theatre and dismantling discrimination and racism. \n<more>Clarity, bold statements and no labels are the basis of our design. And in the midst of it all, it offers space for individuality, artistic expression and a growing network that hopefully makes our society a little better."
     },
   
     {
@@ -591,7 +804,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "Vom 24.–27. November 2019 tagten 42 Redner*innen im Haus der Wissenschaft in Bremen. Es ging um die Vielfalt und zeitgenössische Bedeutung der deutsch–jüdischen Presse von der Aufklärung bis zum Nationalsozialismus. \n<more>Drei Konferenztage auf drei DIN A4 Blätter – Wir entwickelten einen Programmflyer, der durch ausgewählte Papiere in Grautönen, ein charakteristisches Typeface und eine clevere Faltung besticht. Ein blauer Infozettel setzt den entscheidenden Akzent. Mit dem gleichen Maß an durchdachter Einfachheit gestalteten wir die Broschüre für die Abstracts."
+      "description": "From 24–27 November 2019, 42 speakers met at the Haus der Wissenschaft in Bremen. The focus was on the diversity and contemporary significance of the German-Jewish press from the Enlightenment to National Socialism. \n<more>Three conference days on three DIN A4 sheets - We developed a programme flyer that captivates with selected papers in grey tones, a characteristic typeface and a clever folding. A blue information leaflet sets the decisive accent. We designed the brochure for the abstracts with the same degree of thoughtful simplicity."
     },
   
       {
@@ -618,10 +831,6 @@
         },
         {
           "src" : "BA_MoinSonne_branding_04.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "processvideo.mp4",
           "alt" : "alt"
         },
         {
@@ -661,7 +870,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "MoinSonne – Mach Watt draus! Vom kleinen Balkonkraftwerk über komplette Photovoltaikanlagen bis hin zum smarten Energiemanagement. Die autarke Energieversorgung aus regenerativer Energie ist die Vision und Mission von AOT Elektrotechnik. \n<more>Wir überführten Leidenschaft und Know How der Elektrotechniker in ein farbenfrohes, freundliches Branding mit plakativen Mustern und einem bodenständigen Wording, das die Norddeutschen sicherlich zum Handeln inspiriert."
+      "description": "MoinSonne – Mach Watt draus! From small balcony power plants to complete photovoltaic systems and smart energy management. Self-sufficient energy supply from regenerative energy is the vision and mission of AOT Elektrotechnik. \n<more>We transferred the passion and know-how of the electrical engineers into a colourful, friendly branding with striking patterns and down-to-earth wording that is sure to inspire the northern Germans to take action."
     },
   
     {
@@ -706,7 +915,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "Neu zugewanderte Schüler*innen werden in die Schule aufgenommen, andere verlassen die Schule wieder oder verbringen einen Teil ihrer Schulzeit im Ausland. Im Forschungsprojekt TraMiS geht es um das Thema „Transnationale Mobilität in Schulen“. \n<more>Wie lässt sich ein solch komplexes Thema gestalterisch abstrahieren? Für die Konzeption und Gestaltung von Logo und Webseite ging es uns um Lebenslinien, Grenzüberschreitung und die Verbindung von wissenschaftlicher Arbeit und nicht geradliniger Biografien."
+      "description": "Newly immigrated pupils are admitted to school, others leave school again or spend part of their school years abroad. The TraMiS research project deals with the topic of »Transnational Mobility in Schools«. \n<more>How can such a complex topic be abstracted in terms of design? For the conception and design of the logo and website, we were concerned with lifelines, border crossing and the connection between academic work and non-straight biographies."
     },
   
     {
@@ -736,7 +945,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "VORWEG unterstützt und berät mittelständische Unternehmen in betriebswirtschaftlichen Belangen und bietet außerdem Schulungen zum Datenschutz an. Zwei Themen, die auf den ersten Blick dröge um die Ecke kommen und förmlich nach Frische und Leichtigkeit rufen. \n<more>Für uns eine spannende Aufgabe, der wir mit einem knackigen Farbkonzept, klarer Typografie und einem Set an Grafikelementen geantwortet haben. Alles zum selber bauen, mit einer Word–Vorlage für Geschäftsdokumente und einem Styleguide, der die grundlegenden Gestaltungsregeln erklärt und veranschaulicht. "
+      "description": "VORWEG supports and advises small and medium-sized enterprises on business management issues and also offers training on data protection. Two topics that, at first glance, seem dull and call for freshness and lightness. \n<more>For us, this was an exciting task, to which we responded with a crisp colour concept, clear typography and a set of graphic elements. Everything to build yourself, with a Word template for business documents and a style guide that explains and illustrates the basic design rules."
     },
   
     {
@@ -802,7 +1011,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "Die Gemeinde einer Kleinstadt in Ostwestfalen feiert 50-jähriges Jubiläum. Bas&Aer feiert mit. Gemeinsam mit dem Kunden entwickelten wir eine Festschrift, die die Geschichte der Kirche und schließlich auch die Entwicklung der Stadtsiedlung bis zum heutigen Tag erzählt. \n<more>Für das Gestaltungskonzept durften wir in die historischen Baupläne der Kirche schauen. So wie der Grundriss den Faltenwurf eines Mantels darstellt, umwickelt nun unser Umschlag vollständig das Buch. Wie in der Kirche geben Ausschnitte der roten und blauen Fenster im Inneren den Rhythmus an."
+      "description": "The church of a small town in East Westphalia celebrates its 50th anniversary. Bas&Aer joins in the celebrations. Together with the client, we developed a commemorative publication that tells the story of the church and ultimately also the development of the town settlement up to the present day. \n<more>For the design concept, we were allowed to look into the historical building plans of the church. Just as the ground plan represents the folds of a coat, our cover now completely wraps the book. As in the church, sections of the red and blue windows inside set the rhythm."
     },
   
     {
@@ -848,13 +1057,13 @@
           "alt" : "alt"
         }
       ],
-      "description": "Anlässlich der Heilig–Rock–Wallfahrt 2012, erwartete die Stadt Trier etwa 500.000 Besucher*innen. In einem Wettbewerb rief die Stadt zu Beiträgen für ein Orientierungssystem auf, welches den Anforderungen der Menschenmenge standhält und nicht Gefahr läuft in der Stadtbeschilderung unterzugehen. \n<more>Kernidee des hier gezeigten Beitrages war, die Formsprache des Heilig Rock Logos aufzugreifen und den Leitspruch „Und führe zusammen, was getrennt ist” in den Fokus zu rücken. Entstanden ist ein modulares System aus trapezförmigen Einzelteilen des Rocks, die als großformatige Banner in der Stadt angebracht sind."
+      "description": "On the occasion of the Holy Tunic pilgrimage in 2012, the city of Trier expected about 500,000 visitors. In a competition, the city called for contributions for an orientation system that would withstand the demands of the crowds and not run the risk of being lost in the city signage. \n<more>The core idea of the contribution shown here was to take up the formal language of the logo and to focus on the motto »And bring together what is separate«. The result is a modular system of trapezoidal individual parts of the rock, which are displayed as large-format banners in the city."
     },
   
     {
       "title": "Komodo Coffee",
       "categories": [
-        "Branding"
+        "Branding", "Packaging"
       ],
       "customer": "Komodo Coffee",
       "year": 2015,
@@ -878,7 +1087,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "Direkt gehandelter Kaffee aus Indonesien, in Bremen schonend geröstet und vertrieben. Hinter ›Dolok Marapi‹, ›Orang Gunong‹, ›Harangan Udan‹ und ›Tao Touran‹ verbergen sich echte Charakterköpfe mit eigener Geschichte.\n<more>Das Zusammenspiel der beiden farbenfrohen Verpackungsaufkleber verweist auf die enge Kooperation mit den Kaffeebauern. Denn bei Komodo Coffee steht der direkte Handel an erster Stelle – und gleich danach kommt natürlich der Genuss von erstklassigen Kaffees und Espressos!"
+      "description": "Directly traded coffee from Indonesia, gently roasted and distributed in Bremen. Behind the names ›Dolok Marapi‹, ›Orang Gunong‹, ›Harangan Udan‹ and ›Tao Touran‹ you will find real character heads with their own history. \n<more>The interplay of the two colourful packaging labels points to the close cooperation with the coffee farmers. Because at Komodo Coffee, direct trade comes first - and right after that, of course, comes the enjoyment of first-class coffees and espressos!"
     },
   
     {
@@ -936,7 +1145,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "Im Konferenzband »Transatlantic Dialogue« wird auf über 150 Seiten kulturelle Diplomatie aus unterschiedlichen Perspektiven beleuchtet. Wir haben eine Dokumentation entwickelt, die zum Fortführen, Weiterdenken und Diskutieren einlädt.\n<more>Hinter dem spielerisch anmutenden Umgang mit Farbe steckt ein Ordnungsprinzip, das die Beiträge der Konferenz thematisch und zeitlich strukturiert. Dabei stehen sich jeweils zwei Farben im Dialog gegenüber. In den Bildern mischen sich diese und geben ihnen so eine eigenständige Farbgebung."
+      "description": "In the conference proceedings »Transatlantic Dialogue«, cultural diplomacy is examined from different perspectives on more than 150 pages. We have developed a documentation that invites you to continue, think and discuss. \n<more>Behind the seemingly playful use of colour is an organising principle that structures the contributions to the conference thematically and chronologically. Two colours face each other in dialogue. In the pictures, these mix and thus give them an independent colouring."
     },
   
     {
@@ -974,7 +1183,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "Die Ausstellung in der Bremischen Bürgerschaft zeigt die wirtschaftliche, gesellschaftliche und politische Situation in Bremen in der Zeit des Ersten Weltkriegs – und reflektiert, wie darüber berichtet wurde.\n<more>Querlesen erwünscht! – Mittels visueller und grafischer Verweise werden verschiedene Perspektiven miteinander in Verbindung gesetzt. Ein roter Faden leitet den Betrachter durch die 15 Schwerpunktthemen und verknüpft Inhalte, Bilder und Texte gestalterisch und sinnstiftend."
+      "description": "The exhibition in the Bremen Parliament shows the economic, social and political situation in Bremen during the First World War - and reflects on how it was reported. \n<more>Cross-reading is encouraged! - By means of visual and graphic references, different perspectives are connected with each other. A common thread guides the viewer through the 15 main topics and links content, images and texts in a creative and meaningful way."
     },
   
     {
@@ -1020,7 +1229,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "Dass es nicht leicht werden würde, wussten wir gleich. Die eigene visuelle Identität zu entwickeln war eine echte Herausforderung. Die Anforderungen hoch, der eigene Anspruch höher. Wir wollten uns natürlich alle Drei als Gestalter*innen wiederfinden. \n<more>Unser gemeinsamer Nenner heißt „Räume aufmachen, betreten, erschließen und verändern.“ Die Idee haben wir in ein dynamisches Linienraster übersetzt, das scheinbar immer in Bewegung ist: Neben Struktur und Klarheit bietet es auch Platz für Überraschung und Spiel, was bei der Entwicklung unserer Webseite besonders viel Spaß gemacht hat."
+      "description": "We knew right away that it would not be easy. Developing our own visual identity was a real challenge. The demands were high, our own standards higher. Of course, all three of us wanted to find ourselves as designers. \n<more>Our common denominator is »open up, enter, open up and change spaces«. We translated the idea into a dynamic grid of lines that seems to be always in motion: In addition to structure and clarity, it also offers space for surprise and play, which was particularly fun during the development of our website."
     },
   
     {
@@ -1070,67 +1279,8 @@
           "alt" : "alt"
         }
       ],
-      "description": "Die Künstlerin Amina Brotz arbeitet vornehmlich ortsbezogen und prozesshaft. Sie thematisiert stets ihren eigenen Lebens– und Arbeitszusammenhang, indem sie Möbel, persönliche Gegenstände und Arbeitsmaterialien in einen neuen Kontext überführt.\n<more>Das prozesshafte Arbeiten haben wir in das Konzept für ihren Ausstellungskatalog ›in Teilen vor Ort‹ überführt: Wir zeigen den nackten Buchblock. Der ist was er ist, ein Gebrauchsgegenstand – nicht mehr und nicht weniger. Und weil die Projekte bei Amina stets ineinandergreifen, gibt es beim Katalog auch kein Cover – weder vorne noch hinten."
-    },
-  
-    {
-      "title": "Terroir Moselle",
-      "categories": [
-        "Branding"
-      ],
-      "customer": "Wettbewerbsbeitrag",
-      "year": 2012,
-      "thumbnail": "B&A_TerroirMoselle_CD_144ppi_1.webp",
-      "galleryFolder": "Terroir Moselle",
-      "gallery": [
-        {
-          "src" : "B&A_TerroirMoselle_CD_144ppi_1.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "B&A_TerroirMoselle_CD_144ppi_2.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "B&A_TerroirMoselle_CD_144ppi_3.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "B&A_TerroirMoselle_CD_144ppi_4.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "B&A_TerroirMoselle_CD_144ppi_5.webp",
-          "alt" : "alt"
-        }
-      ],
-      "description": "In grenzüberschreitender Zusammenarbeit wollen die französischen, luxemburgischen und deutschen Moselwinzer mit diesem Projekt Image und Bekanntheit ihrer Weine fördern.\n<more>Wir entwickelten dazu ein vermeintlich naheliegendes Gestaltungskonzept: Wir zeichnen den Verlauf der Mosel nach. Je Weinhang und ansässigen Winzern vergeben wir die individuelle Teilstrecke des Flusses und erstellen so ein einzigartiges und dennoch verbindendes Qualitätssiegel als Bildmarke."
-    },
-  
-    {
-      "title": "FLUX 1.0",
-      "categories": [
-        "Editorial"
-      ],
-      "customer": "Flux Light Art Series",
-      "year": 2015,
-      "thumbnail": "BA_Flux_katalog_72ppi_01.webp",
-      "galleryFolder": "Flux",
-      "gallery": [
-        {
-          "src" : "BA_Flux_katalog_72ppi_01.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_Flux_katalog_72ppi_02.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_Flux_katalog_72ppi_03.webp",
-          "alt" : "alt"
-        }
-      ],
-      "description": "Ausgehend vom ›UNESCO International Year of Light‹ entstand mit der ›FLUX Light Art Series‹ eine interdisziplinäre Ausstellungsreihe, die sich mit zeitgenössischer Verwendung von Licht in der bildenden Kunst auseinandersetzt.\n<more>Wir entwickelten dazu das Konzept und Design für den Ausstellungskatalog: Die einzelnen, nummerierten Projektbeschreibungen liegen bei den Exponaten aus und lassen sich mittels Banderole und Band vom Besucher selbst zusammentragen."
+      "description": "Artist Amina Brotz's work is primarily site-specific and processual. She always addresses her own living and working context by transferring furniture, personal objects and working materials into a new context. \n<more>We have transferred the processual work into the concept for her exhibition catalogue ›In Parts on Site‹: We show the naked book block. It is what it is, an object of use - no more and no less. And because Amina's projects always interlock, there is no cover for the catalogue - neither at the front nor at the back."
     }
+    
   ]
 }

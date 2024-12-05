@@ -13,310 +13,9 @@
             {
             "type": "text",
             "class" : "intro",
-            "text":
+            "text": 
             "Wir wollen unser gesellschaftliches Miteinander aus der Designpraxis heraus neu denken: Ein ergebnisoffener Prozess ermöglicht uns, bewährte Wege der Kommunikation und Interaktion infrage zu stellen und neue Formate, Gestaltungsrichtungen und Methoden zu entwickeln. \nNeben der gestalterischen Umsetzung, erarbeiten wir die Projektidee, übernehmen Planung und Strategie und führen partizipative Formate wie beispielsweise Workshops durch. Dabei ist es uns wichtig, auch mal ganz unsere Disziplin zu verlassen und mit anderen Expert*innen einen gemeinsamen Prozess zu gestalten. Durchs Machen finden wir Lösungen. \nSind Sie zum Beispiel als Unternehmer*in auf der Suche nach neuen Kontaktformen mit Ihren Kund*innen? Versuchen Sie als Stadtverwaltung einen öffentlichen Raum einer gemeinschaftlichen Nutzung zur Verfügung zu stellen? Wollen Sie als Wissenschaftler*in praktische Forschungsmethoden einsetzen? Wir sind gerne kreative Impulsgeber*in für Ihr Vorhaben und unterstützen Sie dabei, Fragen neu zu definieren, Ideen voranzubringen und Veränderungen umzusetzen. \nKontaktieren Sie uns mit Ihren Projektideen: <a href='mailto:info@basundaer.de' target='_blank'>info@basundaer.de</a>"
             }
-            ]
-
-        },
-        
-        
-        
-         {
-        "title": "Building Cultural Landscapes",
-        "subtitle": "Visual Essay in dem Konferenzband „STRING FIGURES – Transforming together“",
-        "id": "Stringfigures",
-        "galleryFolder": "StringFigures",
-        "dynamic":
-            [
-
-                                        {
-            "type": "text",
-            "class" : "block",
-            "text": "WAS WIR GELERNT HABEN – VISUAL ESSAY ZU ‚LAND IN SICHT‘\nIm Zuge der Konferenz ‚String Figures – Transforming Together‘ der <a href='https://www.unibz.it/en/faculties/design-art/master-eco-social-design/' target='_blank'>Universität Bozen</a> 2023 konnten wir die Erfahrungen aus dem Projekt <a href='https://www.landinsicht-format.de/' target='_blank'>‘Land in Sicht’</a> einem Fachpublikum präsentieren und kritisch reflektieren. Von Widerständen und Herausforderungen können wohl alle berichten, die neue Projekte in die Wege leiten. Über experimentelle und ungewohnte Wege gelangen wir dabei aber auch zu neuen Erkenntnissen. Unser Beitrag fokussiert sich auf das Potential fiktiver Narrative unserer Projektwoche und die daraus abzuleitenden Lektionen für die erfolgreiche Entwicklung neuer kultureller Räume."
-            }, 
-                {
-                "type": "image",
-                "image": 
-                    {
-                        "src" : "LandinSicht-Scenario1.webp",
-                        "alt" : "Illustration von Wesen in Blase",
-                        "credit" : "Illustration: Vanessa Graf-Müller"
-                    }
-
-                },
-                   
-                            {
-            "type": "text",
-            "class" : "block",
-            "text": "Im Zentrum unserer Untersuchung stehen die Ergebnisse des während des ‚Land in Sicht‘ Projektes durchgeführten Design Fiction Workshops (Workshopleiter G. Graf), in dem sich die Teilnehmenden ein Leben als Kreativschaffende in ländlichen Gebieten in der Zukunft vorstellen sollten. In was für einer Welt würden sie sich befinden? Welche Herausforderungen und Chancen gäbe es dort für sie? Aus den vier entstandenen fiktiven Geschichten entwickeln wir im Zuge der Recherchearbeit Faktoren, die das Gelingen von Transformation von Kulturlandschaften relevant sind."
-            },
-                            
-                                {
-                "type": "gallery",
-                "height": "full",
-                "gallery": [
-                    {
-                        "src" : "LandinSicht-Scenario1-hoch.webp",
-                        "alt" : "Illustration von einem Wesen in einer Blase"
-                    },
-                    {
-                        "src" : "LandinSicht-Scenario2-hoch.webp",
-                        "alt" : "Illustration eines Underwater Air Camp"
-                    } 
-                ],
-                "classes": [
-                "half",
-                "half"
-
-                ],
-                "captions": [
-                "Design Fiction Szenario: “The Underwater Air Camp”",
-                "Design Fiction Szenario: “Der Künstler und der Mönch”"    
-                ]
-                },
-
-                                                                  {
-                "type": "text",
-                "class" : "quote",
-                "text": "Aus den Design Fiction Narrativen des Workshops lassen sich vier Faktoren für das gelingen von kulturellen Tranformationen für rurale (und urbane) Räume ableiten:"
-                },
-                                  {
-            "type": "text",
-            "class" : "block",
-            "text": "1. KULTUR-MEDIATOR:IN\nBei transformativen Kulturprojekten ist die Einbindung von Kulturmediator:innen unerlässlich. Die Person sollte in der Lage sein, effektiv zwischen Künstler:innen und lokalen Gemeinschaften zu vermitteln.\n In dem Design Fiction Szenario „The Underwater Air Camp“ nimmt ein Hybridwesen, der „Humano-Marinaio-Didatico“ diese Rolle ein. Es vermittelt in der Geschichte zwischen einer fiktiven Unterwasserkolonie und Außenstehenden und geht sensibel auf Erwartungen, Bedürfnisse und die zum Ausdruck gebrachten Werte beider Parteien ein. Dieses Rollenmodell und das damit einhergehende Vertrauen und Empathie schaffen eine stabile Grundlage für fragile Beziehungen in neuartigen Kulturprojekten."
-            },     
-                                                  {
-            "type": "text",
-            "class" : "block",
-            "text": "2. NEUTRALE:R AUDITOR:IN\nIm Gegensatz zu dem/der Mediator:in sollte die Person in dieser Rolle objektiv und unparteiisch sein sowie über die notwendigen Qualifikationen verfügen, um die etablierten Strukturen zwischen Künstler:innen und Einheimischen (Gesellschaft) zu hinterfragen. Der/die neutrale Auditor:in prüft, ob der beabsichtigte Projekt reibungslos abläuft und nicht vom Kurs abkommt.\nDas Szenario „Der Künstler und der Mönch“ des durchgeführten Design Fiction Workshops dient als Vorbild für diese Rolle. Es beschreibt, wie das Treiben eines Dorfes durch wahnwitzige Ideale außer Kontrolle gerät und dies erst durch einen unbefangenen Akteur erkennt."
-            },        
-                                                               {
-            "type": "text",
-            "class" : "block",
-            "text": "3. GEMEINSAME WERTE\nIm Szenario „Modulare Künstlerresidenz“ steht die (Um-)Gestaltung gemeinsamer Werte im Mittelpunkt einer sich völlig neu gegründeten Gemeinschaft. Dies ist ein entscheidender Faktor für dauerhafte, standortspezifische Transformationen. Um eine lokale Gemeinschaft effektiv aufzubauen oder zu beleben, bedarf es gegenseitige Akzeptanz und das Definieren von Gemeinsamkeiten.\n Die Einführung eines modularen Residenzsystems für Künstler:innen stellt die konventionellen Vorstellungen von Lebensräumen in Frage und bietet einen erfinderischen Ansatz für die Kultivierung einer nomadischen Kunstgemeinschaft. Dieses Szenario regt dazu an, die Grenzen zwischen Stadt und Land neu zu überdenken."
-            },        
-                                                                  {
-            "type": "text",
-            "class" : "block",
-            "text": "4. INKUBATIONSMOMENTE\nErste Interventionen dienen als „Türöffner“ (Portal), mit denen ungewohnte Kooperationen häufig beginnen. Die Interessengruppen – Künstler:innen und Gemeinden – können hier die Perspektive wechseln.\n Ein anschauliches Beispiel für einen solchen Inkubationsmoment könnte die Klanginstallation „Boule“ von Janis E. Müller sein, die während der Ausstellungseröffnung von Land in Sicht in Ottobeuren gezeigt wurde. Bei der Live-Soundinstallation lud ein Set Boule-Kugeln die Besucher:innen dazu ein, zu spielen und so an unkonventionellen Erfahrungen mit künstlerischen Praktiken teilzuhaben. Die zugängliche Interaktion erzeugte eine jubelnde Resonanz, unabhängig vom kulturellen Hintergrund der Gäste."
-            },           
-                
-            {
-                "type": "gallery",
-                "height": "full",
-                "gallery": [
-                    {
-                        "src" : "LandinSicht-Scenario3-hoch.webp",
-                        "alt" : "Illustration einer modularen Künstlerresidenz"
-                    },
-                   {
-                        "src" : "LandinSicht-portals-hoch.webp",
-                        "alt" : "Illustration von Boulespieler:innen"
-                    } 
-                ],
-                "classes": [
-                "half",
-                "half"
-
-                ],
-                "captions": [
-                "Design Fiction Szenario: „Modulare Künstlerresidenz“",                
-                "Inspiriert von der Klangkunstperformance: „Boule“ von Janis E. Müller"
-                ]
-                },
-  
-             {
-                "type": "text",
-                "class" : "quote",
-                "text": "“Playing games of string figures is about giving and receiving patterns, dropping threads and failing but sometimes finding something that works, something consequential and maybe even beautiful, that wasn’t there before, of relaying connections that matter, of telling stories in hand upon hand, digit upon digit, attachment site upon attachment site, to craft conditions for finite flourishing on terra, on earth.” – Donna Haraway, 2016"
-                },
-                                                 
-            {
-            "type": "text",
-            "class" : "block",
-            "text": "BY DESIGN OR BY DISASTER – KONFERENZ\nDie Konferenzreihe der Universität Bozen, Fachbereich Socialdesign, ist eine Plattform für Projekte, die durch Recherche, Experiment und Praxis das gesellschaftliche Miteinander neu gestalten. Mit dem Motto „By Design or by Disaster“ stellen die Theorien und Ideen der Philosophin Donna Haraway die Basis der Konferenz.\n\nWebseite der Konferenz: <a href='https://designdisaster.unibz.it/2023/' target='_blank'>designdisaster.unibz.it</a>"
-            },  
-
-                                                              {
-                "type": "text",
-                "class" : "block",
-                "text": "CO-AUTORIN\nDer Visual Essay „Building Cultural Landscapes in Rural Areas – Lessons from the Land in Sicht Project“ ist in Co-Autorenschaft mit unserer Projektpartnerin <a href='https://atelierbrieftau.be' target='_blank'>Vanessa Graf-Müller</a> entstanden, die auch die Illustrationen zum Text gestaltet hat.\n Download der Publikation zur Konferenz: <a href='https://basundaer.de/static/img/research/StringFigures/String Figures - Transforming Together_2023.pdf' target='_blank'>String Figures – Transforming Together</a>"
-                },  
-                                {
-                "type": "text",
-                "class" : "block",
-                "text": "LAND IN SICHT – FORMAT\nHier erfahrt ihr mehr zu dem Projekt ‚Land in Sicht‘ und unseren Aktivitäten: <a href='https://www.landinsicht-format.de/' target='_blank'>www.landinsicht-format.de</a>"
-                },
-                                {
-                "type": "gallery",
-                "height": "full",
-                "gallery": [
-                    {   "src" : "Logo_LIS_kl.svg",
-                        "alt" : "Logo Land in Sicht"
-                    }
-
-                ],
-                "classes": [
-                "quarter"
-                ],
-                "captions": [
-
-                ]
-                }
-
-        ]
-    },    
-        
-
-        
-        
-        
-        {
-            "title": "Zwischen Gegensätzen",
-            "subtitle": "Nachhaltiger Konsum und soziale Teilhabe",
-            "id": "zwischen-gegensaetzen",
-            "galleryFolder": "ZwischenGegensaetzen",
-            "dynamic":
-                [
-                {
-                "type": "video",
-                "videoURL": "ZG_web_animation_quer.mp4" 
-                },
-
-                {
-                "type": "text",
-                "class" : "quote",
-                "text": "Welche Rolle spielt soziale Gerechtigkeit in Bezug auf Nachhaltigkeit und Konsumverhalten?\nWelche Chancen liegen in einer Verbesserung der ökonomischen und sozialen Beziehungen zwischen Stadt und Land?\nWie kann nachhaltiger Konsum in Zeiten von Krisen und zunehmender Polarisierung erreicht werden?"
-                },
-                {
-                "type": "text",
-                "class" : "block",
-                "text": "EINLADUNG ZUR DISKUSSUIONSRUNDE 'ZWISCHEN GEGENSÄTZEN'\nWir möchten Sie zu unserer Diskussionsrunde »ZWISCHEN gegensätzen – Nachhaltiger Konsum und Soziale Teilhabe« am Samstag den 16. März 2024 von 18.00 bis 19.30 Uhr herzlich einladen. \nGerne können Sie im Anschluss mit uns zum Netzwerken zu verweilen. Zur Reservierung von warmem Essen, folgen Sie bitte den Informationen weiter unten."
-                },
-                {
-                "type": "text",
-                "class" : "block",
-                "text": "In Form einer Fishbowl Diskussion geben unsere Talk-Gäste erste Impulse und laden zum Mitdiskutieren ein:"
-                },
-
-                {
-                "type": "gallery",
-                "height": "half",
-                "gallery": [
-                    {
-                        "src" : "ZG_SM_personen_1.png",
-                        "alt" : "alt"
-                    },
-                    {
-                        "src" : "ZG_SM_personen_2.png",
-                        "alt" : "alt"
-                    },
-                    {
-                        "src" : "ZG_SM_personen_3.png",
-                        "alt" : "alt"
-                    },
-                    {
-                        "src" : "ZG_SM_personen_4.png",
-                        "alt" : "alt"
-                    }
-                ],
-                "classes": [
-                "half full_height",
-                "half full_height",
-                "half full_height",
-                "half full_height"
-                ],
-                "captions": [
-                "Davide Brocchi (Freier Soziologe)",
-                "Thomas Thunig (Keramikmeister)",
-                "Tamina Hipp (Umweltbundesamt)",
-                "Eva Howitz (lokaltextil UG)"
-                ]
-                },
-
-                {
-                "type": "text",
-                "class" : "block",
-                "text": "MODERATION\nIngo Warnke (Professor für Deutsche Sprachwissenschaft Contradiction Studies)"
-                },
-                    
-                {
-                "type": "text",
-                "class" : "block",
-                "text": "WO?\nLobe Block Event Space (Erdgeschoss, Eingang durch Kantine)\nBöttgerstraße 16, 13357 Berlin Gesundbrunnen"
-                },
-                    
-                                    {
-                "type": "text",
-                "class" : "block",
-                "text": "EINTRITT?\nFrei"
-                },
-                    
-                                    {
-                "type": "text",
-                "class" : "block",
-                "text": "ESSEN & GETRÄNKE?\nFür warmes Abendessen sorgt die Lobe Block Canteen.\nMöchten Sie dieses Angebot wahrnehmen bitten wir Sie für mehr Planungssicherheit, um ihre Reservierung unter folgendem <a href='https://www.eventbrite.de/e/zwischen-gegensatzen-diskussionsrunde-und-netzwerk-essen-reservierung-tickets-841464642397?keep_tld=1' target='_blank'>Link</a>.\nDer Kostenumfang für Essen und Getränke liegt zwischen 5 und 15 €, die Bezahlung erfolgt erst vor Ort. "
-                },
-
-                {
-                "type": "text",
-                "class" : "block",
-                "text": "ORGANISATION\nDas Veranstaltungskonzept wurde in Kooperation mit dem Verein plan A+ entwickelt."
-                },
-    
-
-                {
-                "type": "gallery",
-                "height": "full",
-                "gallerycaption": "",
-                "gallery": [
-                    {
-                        "src" :  "PlanA+_Logo-Final.png",
-                        "alt" : "alt"
-                    }
-                ],
-                "classes": [
-                    "quarter"
-                ],
-                "captions": [
-                ""
-                ]
-                },
-                      {
-                "type": "text",
-                "class" : "block",
-                "text": "DANK"
-                },
-
-                {
-                "type": "gallery",
-                "height": "full",
-                "gallerycaption": "",
-                "gallery": [
-                    {
-                        "src" : "lobecanteen.png",
-                        "alt" : "alt"
-                    },
-                    {
-                        "src" : "gls_treuhand.png",
-                        "alt" : "alt"
-                    },
-                    {
-                        "src" :  "lobe-block-logo-02.webp",
-                        "alt" : "alt"
-                    }
-                ],
-                "classes": [
-                "quarter",
-                "quarter",
-                "quarter"
-                ],
-                "captions": [
-
-                ]
-                }
-
             ]
         },
         
@@ -329,23 +28,18 @@
                 [
                 {
             "type": "image",
-                "image":
+                "image": 
                     {
                     "src" : "rennbahn_web_15_crop.webp",
                     "alt" : "alt"
                     }
                 },
-                {
-                "type": "video",
-                "videoURL": "220704_ENT_GdP_Teaser_ah.mp4"  
-                },
-
                   {
                 "type": "text",
                 "class" : "block",
                 "text": "ZWISCHENNUTZUNG AUF DER EHEMALIGEN GALOPPRENNBAHN BREMEN\n\nDas über 3.000 Quadratmeter große Rennbahngelände in Bremen steht vor einem umfangreichen Umnutzungsprozess, zu Beginn 2020 wird die Fläche jedoch vorerst zur Zwischennutzung freigegeben. Der „Flatterweg“ soll Bürger:innen dazu einladen, den neuen Stadtraum zu erkunden und das Gelände mitzugestalten. Die temporäre Wegführung dient auch als Testdurchlauf für die von der Stadt geplante Wegeverbindung der angrenzenden Nachbarschaften. Welche neuen Bezüge entstehen dadurch im Stadtraum und was kann entlang der Strecke entstehen? Wir laden dazu ein <a href='https://www.youtube.com/watch?v=F2BDZ7Ku74w'target='_blank'>vorbeizuschauen.</a>"
                 },
-
+            
                 {
                 "type": "gallery",
                 "height": "half",
@@ -385,15 +79,15 @@
                 "Ansicht einer Flagge",
                 "Einweihungfest auf der alten Tribüne",
                 "Begehung bei Regen"
-                ]
+                ]  
                 },
-
+                
                 {
                 "type": "text",
                 "class" : "block",
                 "text": "DESIGNWORKSHOP, PRODUKTION UND MONTAGE\n\nDas Frauenkreativlabor „Neue Wolle“ aus Blumenthal/ Bremen Nord gestaltete und produzierte die Fahnen für den „Flatterweg“, Grundstein dazu bildete ein von uns konzipierter Designworkshop zu Beginn der Kooperation. Durch ein einfaches Kombinationsprinzip grafischer Module wurde eine Vielzahl von Flaggendesigns gestaltet, die auch noch während des Nähprozesseses weiter variiert wurden. Mit 50 dieser Unikate wurden Fahnen auf dem Gelände errichtet, die rund 500 Meter Weg markieren."
                 },
-
+                
                 {
                 "type": "gallery",
                 "height": "half",
@@ -438,15 +132,15 @@
                 "Aufbau auf dem Gelände",
                 "Aufbau auf dem Gelände",
                 "Nach einem Tag stehen alle Fahnen."
-                ]
+                ]     
                 },
-
+                
                 {
                 "type": "text",
                 "class" : "block",
                 "text": "TOOLKIT FÜR BETEILIGUNGSPROZESSE\n\nIm Rahmen eines Aktionstages platzieren wir fünf Mitmach-Stationen entlang des Weges, an denen Bürger:innen in sogenannten „Flatterheften“ ihre Gedanken und Ideen zu der Geländeumnutzung teilen konnten. Die ausgefüllten Hefte werden im Anschluss von uns zusammengefasst und an politische Entscheidungsträger:innen weitergegeben. Der Flatterweg ermöglicht dabei den Zugang zur politischen Teilhabe für Groß und Klein und direkt auf dem Gelände. Was sind die Wünsche und Ideen der Beteiligten?\nEinen Blick in das Flatterheft und die Ideen und Wünsche der Teilnehmenden finden Sie hier: <a href='https://basundaer.de/_Test/static/img/research/Flatterweg/Flatterheft_Zusammenfassung.pdf' target='_blank'>Zusammenfassung des Flatterheftes</a> \nHier gibt es einen Eindruck zum Aktionstag auf dem Gelände: <a href='https://www.zzz-bremen.de/assets/Uploads/buten-un-binnen-regionalmagazin-Besucher-beeindruckt-von-Projekten-auf-der-Bremer-Galopprennbahn-1657208917.mp4'target='_blank'>buten un binnen berichtet</a>"
                 },
-
+            
                 {
                 "type": "gallery",
                 "height": "half",
@@ -469,14 +163,14 @@
                 "captions": [
                 "Fünf Tischgruppen zum Mitmachen säumen am Aktionstag den „Flatterweg“.",
                 "Im „Flatterheft“ findet auf spielerischer Art und Weise eine Befragung zum Gelände statt."
-                ]
+                ]     
                 },
                     {
                 "type": "text",
                 "class" : "quote",
                 "text": "„Die gemeinsame Sehnsucht war [es], durch ein flexibles Design die Zugänglichkeit zu Stadtentwicklungsprozessen zu vereinfachen.“\n– Julian Essig: Die Schaffung von Sehnsuchtsorten durch Zwischennutzung; Hochschule Osnabrück 2022"
                 },
-
+    
                 {
                 "type": "text",
                 "class" : "block",
@@ -484,20 +178,20 @@
                 },
                 {
             "type": "image",
-                "caption": ["Foto: Marek Lappe"
-                ],
+                "caption": ["Foto: Marek Lappe"           
+                ],     
                 "image": {
                     "src" : "Rennbahn_Drohne_Lappe.webp",
                     "alt" : "alt"
                     }
                 },
-
+                
                 {
                 "type": "text",
                 "class" : "block",
                 "text": "PROJEKTPARTNER:INNEN\nUnter dem Namen „Flatter-Crew“ erarbeiteten wir gemeinsam mit dem Designer <a href='https://www.instagram.com/mit_substanz/' target='_blank'>Christof Mühe</a> das Konzept zum „Flatterweg“. Uns vereint ein interdisziplinärer Designansatz, mit dem wir uns an der Schnittstelle aller Beteiligten positionieren – kommunizierend, moderierend, verbindend.\n „Neue Wolle – Frauenkreativlabor“ ist ein Projekt von Quartier gGmbH. Es richtet sich insbesondere an Migrantinnen und Alleinerziehende, die durch gemeinsames Lernen, Experimentieren und Gestalten rund um Wolle und andere Textilien unter künstlerischer Anleitung erste Schritte in Gesellschaft und Arbeitswelt wagen. Mehr Informationen zu den Projekten der Arbeitsgruppe gibt es hier: <a href='https://quartier-bremen.de/category/neue-wolle/' target='_blank'>www.quartier-bremen.de/category/neue-wolle</a>"
                 },
-
+                
                 {
                 "type": "gallery",
                 "height": "full",
@@ -513,9 +207,9 @@
                 ],
                 "captions": [
                 ""
-                ]
+                ]     
                 },
-
+                
                 {
                 "type": "gallery",
                 "height": "full",
@@ -523,13 +217,11 @@
                 "gallery": [
                     {
                         "src" : "Logos-Bremen.svg",
-                        "alt" : "alt",
-                        "link" : "https://www.bremen.de/"
+                        "alt" : "alt"
                     },
                     {
                         "src" : "Logos-Gewoba.svg",
-                        "alt" : "alt",
-                        "link" : "https://www.gewoba.de/"
+                        "alt" : "alt"
                     },
                     {
                         "src" :  "Logos-SMH.svg",
@@ -553,14 +245,14 @@
                 "quarter",
                 "quarter",
                 "quarter",
-                "quarter",
+                "quarter",                
                 "quarter"
                 ],
                 "captions": [
 
                 ]
                 }
-
+                
             ]
         },
 
@@ -586,7 +278,7 @@
                 },
                                {
                 "type": "image",
-                "image":
+                "image": 
                     {
                     "src" : "LandinSicht_150ppi_19-38.webp",
                     "alt" : "alt"
@@ -757,7 +449,7 @@
                 "class" : "block",
                 "text": "PROJEKTPARTNERIN\nVanessa Müller hat mit dem ‚Atelier Brieftaube‘ in Ottobeuren einen Kleinod der deutschen Kulturszene im Süden Deutschlands geschaffen und belebt damit die junge Kreativ-Szene im ländlichen Raum. Vanessa arbeitet als Multimedia Designerin in München und Ottobeuren. Ihr sucht auch Designpartner:innen im Süden? Hier gibt es Einblicke in Vanessas Arbeit: <a href='https://atelierbrieftau.be' target='_blank'>www.atelierbrieftau.be</a>"
                 },
-
+                
                             {
                 "type": "text",
                 "class" : "block",
@@ -799,7 +491,7 @@
             ]
         }
 
-
+    
 
     ]
 }

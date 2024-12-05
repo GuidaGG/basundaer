@@ -134,7 +134,10 @@
       cursor: pointer;
     }
     #secondTitle{
-      line-height: 40px
+      line-height: 40px;
+       @media @media-small{
+        line-height: 28px;
+      }
     }
 
     .back{
@@ -147,12 +150,10 @@
       cursor: url(/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png) 46 16, auto;
     } 
      
-
-  
     .navigation{
       display: none;
       position: fixed;
-      top: 85px;
+      top: 100px;
       left: 0;
       z-index: 2;
       padding: @padding-small;
@@ -266,6 +267,7 @@
       overflow-y: scroll;
       scrollbar-width: none;
 
+   
       @media @media-large {
 
       }
@@ -274,7 +276,7 @@
       }
       @media @media-small {
         width: 100%;
-        padding-top: 130px
+        padding-top: 150px
       }
 
       .dynamicContent{
@@ -295,6 +297,9 @@
             padding-bottom: 200px;
          
           }
+        }
+        @media  (min-width: 1920px ){
+          width: 60%;
         }
       
       

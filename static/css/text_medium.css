@@ -19,7 +19,7 @@ p {
   letter-spacing: 0;
   font-family: "apercu-medium", sans-serif;
   font-size: 30pt !important;
-  line-height: 45pt;
+  line-height: auto;
   margin: 0;
   font-weight: normal;
 }

@@ -61,10 +61,6 @@
       "src" : "Nele_Web_mobile_2.jpg",
       "alt" : "alt"
     },
-      {
-      "src" : "Nele_Web_browser_kl.mp4",
-      "alt" : "alt"
-    },
     {
       "src" : "Nele_Web_mobile_3.jpg",
       "alt" : "alt"
@@ -78,10 +74,9 @@
       "alt" : "alt"
     },
     {
-      "src" : "Nele_Web_browser_test.mp4",
+      "src" : "Nele_Web_browser_kl.mp4",
       "alt" : "alt"
     },
-
     {
       "src" : "Nele_Web_browser_5.jpg",
       "alt" : "alt"
@@ -212,31 +207,35 @@
     "galleryFolder": "GRK",
     "gallery": [
       {
-        "src" : "GRK_CS_Web_browser_1200px_1.webp",
+        "src" : "GRK_CS_Mappe_01.webp",
         "alt" : "alt"
       },
       {
-        "src" :   "GRK_CS_Web_tablet_1000px_2.webp",
+        "src" :   "GRK_CS_Web_mobile_02.mp4",
         "alt" : "alt"
       },
       {
-        "src" :   "GRK_CS_Web_browser_1200px_3.gif",
+        "src" :   "GRK_CS_Web_browser_03.jpg",
         "alt" : "alt"
       },
       {
-        "src" :   "GRK_CS_Web_browser_1200px_4.webp",
+        "src" :   "GRK_CS_Web_browser_04.mp4",
         "alt" : "alt"
       },
       {
-        "src" :   "GRK_CS_Web_mobile_1500px_5.webp",
+        "src" :   "GRK_CS_browser_05.webp",
         "alt" : "alt"
       },
       {
-        "src" :   "GRK_CS_Web_mobile_1500px_6.webp",
+        "src" :   "GRK_CS_Web_Stift_06.webp",
         "alt" : "alt"
       },
       {
-        "src" :   "GRK_CS_Web_tablet_1500px_7.webp",
+        "src" :   "GRK_CS_tablet_07.webp",
+        "alt" : "alt"
+      },
+      {
+        "src" :   "GRK_CS_Mappe_07.webp",
         "alt" : "alt"
       }
     ],

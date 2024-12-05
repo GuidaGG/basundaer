@@ -1,13 +1,343 @@
 {
   "overlay_description": "Vielfältige Themen, komplexe Fragen und eine enge Zusammenarbeit. Jedes Projekt ist eine spannende Herausforderung, der wir uns mit Neugier, Leidenschaft und Hingabe widmen. So entstehen anspruchsvolle, ästhetische und sinnstiftende Designlösungen.",
   "overlay_title": "ÜBERSICHT",
+  "overlay_all" : "Gesamt",
+  "year" : "Jahr",
+  "category" : "Kategorie",
+  "sector" : "Sektor",
+  "client" : "Kunde",
+  "with" : "Mit",
+  "since": "Seit",
   "projects": [
 
-    {
+          
+  {
+      "title": "Das bleibt",
+      "categories": ["Kampagne"],
+      "sectors": ["Soziales"],
+      "customer": "Städtische Galerie Bremen",
+      "year": 2023,
+      "endYear": "now",
+      "thumbnail": "STGB_DasBleibt_Flyer_080.webp",
+      "galleryFolder": "Dasbleibt",
+      "gallery": [
+        {
+          "src" : "STGB_DasBleibt_Plakat_02.mp4",
+          "alt" : "Posteranimation zu der Ausstellung Das bleibt"
+        },
+        {
+          "src" : "STGB_DasBleibt_07.webp",
+          "alt" : "Banner zu der Ausstellung Das bleibt"
+        },
+        {
+          "src" : "STGB_DasBleibt_03.webp",
+          "alt" : "Banner zu der Ausstellung Das bleibt"
+        },
+                  {
+          "src" : "STGB_DasBleibt_Flyer_088.png",
+          "alt" : "Flyer zu der Ausstellung Das bleibt"
+        },
+        {
+          "src" : "STGB_DasBleibt_Flyer_011.webp",
+          "alt" : "Flyer zu der Ausstellung Das bleibt"
+        },
+        {
+          "src" : "STGB_DasBleibt_04.webp",
+          "alt" : "Blick auf die Städtische Galerie Bremen mit Banner zu der Ausstellung Das bleibt"
+        },
+                  {
+          "src" : "STGB_DasBleibt_10.webp",
+          "alt" : "Banner zu der Ausstellung Das bleibt"
+        },
+                  {
+          "src" : "STGB_DasBleibt_Plakat.gif",
+          "alt" : "Plakate zu der Ausstellung Das bleibt"
+        },
+          
+                            {
+          "src" : "STGB_DasBleibt_06.webp",
+          "alt" : "Plakate zu der Ausstellung Das bleibt"
+        },
+        {
+          "src" : "STGB_DasBleibt_Flyer_044.webp",
+          "alt" : "Flyer zu der Ausstellung Das bleibt"
+        }
+      ],
+      "description": "Mit der Ausstellung zeigt die Städtische Galerie Bremen Teile der Kunstsammlung der Hansestadt Bremen. Im Zuge von Archivarbeiten verwandeln sich die Ausstellungsräume in Lagerflächen der Sammlung durch die Besucher:innen stöbern können.\n<more>Mit der rein typografischen Lösung der Werbekampagne schließen wir an die Ausstellung „Was bleibt“ und geben darauf die vermeintliche Antwort: „Das bleibt“."
+    },      
+      
+      {
+    "title": "Jahresausstellung 2023",
+    "categories": ["Raum", "Kampagne"],
+    "sectors": ["Kultur", "Kunst"],
+    "customer": "Hochschule für Künste Bremen",
+    "year": 2023,
+    "endYear" : 2024,
+    "thumbnail": "HfK-JA_Ausstellung_außen_03.webp",
+    "galleryFolder": "HFK",
+    "gallery": [
+      {
+        "src" : "HfK-JA_Ausstellung_01.webp",
+        "alt" : "alt"
+      },
+                        {
+        "src" : "HfK-JA_Ausstellung_außen_12.webp",
+        "alt" : "alt"
+      },
+         {
+        "src" : "HfK-JA_Ausstellung_08.webp",
+        "alt" : "alt"
+      },
+                      {
+        "src" : "HfK-JA_Ausstellung_09.webp",
+        "alt" : "alt"
+      },
+        {
+        "src" : "HfK-JA_Ausstellung_02.webp",
+        "alt" : "alt"
+      },
+                      {
+        "src" : "HfK-JA_Ausstellung_05.webp",
+        "alt" : "alt"
+      },
+                        {
+        "src" : "HfK-JA_Ausstellung_13.webp",
+        "alt" : "alt"
+      },
+      {
+        "src" : "HfK-JA_Ausstellung_06.webp",
+        "alt" : "alt"
+      },                         
+       {
+        "src" : "HfK-JA_Ausstellung_14.webp",
+        "alt" : "alt"
+      },
+              {
+        "src" : "HfK-JA_Ausstellung_außen_15.webp",
+        "alt" : "alt"
+      },  
+      {
+        "src" : "HfK-JA_Ausstellung_außen_04.webp",
+        "alt" : "alt"
+      },
+                {
+        "src" : "HfK_JA_Plakat_3.webp",
+        "alt" : "alt"
+      },
+                {
+        "src" : "HfK-JA_Plakat_11.jpg",
+        "alt" : "alt"
+      }
+    
+    ],
+    "description": "Welche inhaltlichen und formalen Fragen beschäftigen Absolvent*innen der Digitalen Medien und des Designs aktuell? Einen Einblick dazu liefert die Jahresausstellung der Hochschule für Künste Bremen. Wir durften das Ausstellungkonzept sowie die Kommunikationskampagne entwickeln. Bei der Kuration galt es, die Vielfalt der Arbeiten zu einem harmonischen Gefüge zusammenzustellen.\n<more>Die Gestaltung sollte die Eigenschaften der Halle wie Struktur und Materialien hervorheben und integrieren. Dazu hielten wir die Ausstellungsarchitektur durchlässig, Besucher*innen konnten sich frei zwischen den Exponaten bewegen. Wie in einer Messehalle sind die Abschlussprojekte gleichzeitig der strengen Rasterung des Raumes unterworfen, wodurch eine Orientierung ermöglicht wird."
+  },
+        
+                 {
+    "title": "POP Office Bremen e.V.",
+    "categories": ["Web", "Branding"],
+    "sectors": ["Kultur"],
+    "customer": "POP Office Bremen e.V.",
+    "year": 2023,
+    "link": "https://popofficebremen.de/",
+    "linkText": "popofficebremen.de",
+    "thumbnail": "POB_Visitenkarten_04.webp",
+    "galleryFolder": "POP",
+    "gallery": [
+        
+                {
+        "src" : "POB_Visitenkarten_03.webp",
+        "alt" : "alt"
+      },
+        
+                             {
+        "src" : "POB_Event_4.webp",
+        "alt" : "alt"
+      },   
+
+          {
+        "src" : "POB_Web_browser.gif",
+        "alt" : "alt"
+      }, 
+                        {
+        "src" : "POB_Mobile_2.webp",
+        "alt" : "alt"
+      },
+                        {
+        "src" : "POB_Event_3.webp",
+        "alt" : "alt"
+      },
+                        {
+        "src" : "POP_Branding_02.webp",
+        "alt" : "alt"
+      },
+                        {
+        "src" : "POP_Branding_11.webp",
+        "alt" : "alt"
+      },   
+                        {
+        "src" : "POB_Event_1.webp",
+        "alt" : "alt"
+      },
+          {
+        "src" : "POB_Web_browser.mp4",
+        "alt" : "alt"
+      },                             {
+        "src" : "POB_Event_2.webp",
+        "alt" : "alt"
+      }
+            
+        
+            ],
+    "description": "Das POP Office Bremen versteht sich als Förderplattform der popkulturellen Musikszene Bremens. Und das in vielerlei Hinsicht: Als Beratungsstelle und Vermittlerin zwischen Kultur und Politik, als Förderinstitution, Bühne und Sprachrohr. \n<more>Mit der visuellen Identität und der Begleitung des Kommunikationsprozesses helfen wir dem POP Office Bremen dabei, als Anlaufstelle offen und nahbar zu sein. Die gemeinsam entwickelte Webseite macht Informationen, Menschen und Kompetenzen zugänglich."
+  },
+      
+      
+      
+           {
+    "title": "Netzwerk Zwischennutzung",
+    "categories": ["Web"],
+    "sectors": ["Kultur", "Wirtschaft", "Soziales"],
+    "customer": "AAA GmbH",
+    "year": 2024,
+    "link": "https://netzwerkzwischennutzung.de/",
+    "linkText": "Netzwerk Zwischennutzung",
+    "thumbnail": "NZN_Web_Mobile_2.webp",
+    "with": [
+      {
+        "name": "Guida Ribeiro",
+        "website": "https://guidaribeiro.net/"
+      },
+      {
+        "name": "Farzad Golghasemi",
+        "website": "https://fagosemi.xyz/"
+      }
+    ],
+      
+    "galleryFolder": "NZN",
+    "gallery": [
+        {
+        "src" : "NZN_Web_Browser_1_small.mp4",
+        "alt" : "alt"
+      },
+          {
+        "src" : "NZN_Web_Mobile_2.webp",
+        "alt" : "alt"
+      },     
+          {
+        "src" : "NZN_Web_Mobile_3_small.mp4",
+        "alt" : "alt"
+      },
+        {
+        "src" : "NZN_Web_Browser_4.webp",
+        "alt" : "alt"
+      },
+                              {
+        "src" : "NZN_Web_Mobile_5.webp",
+        "alt" : "alt"
+      },                      {
+        "src" : "NZN_Web_Browser_6.webp",
+        "alt" : "alt"
+      },
+                              {
+        "src" : "NZN_Web_Browser_7.webp",
+        "alt" : "alt"
+      }
+        
+            ],
+    "description": "Wir hatten die Gelegenheit, die Website des Netzwerks Zwischennutzung zu gestalten, einer Initiative, die sich für die temporäre Nutzung von Gebäuden und leerstehenden Räumen in Deutschland einsetzt. Dabei werden kreative, soziale und wirtschaftliche Initiativen zur Wiederbelebung von Städten und zur nachhaltigen Entwicklung von Stadtvierteln gefördert und vernetzt.\n<more>Die wachsende Datenbank ist durch eine komplexe und doch intuitiven Nutzerführung strukturiert. Ästhetisch paaren wir dabei den übersichtlichen Gebäudecharme der 1950er und 60er Jahre mit der vibrierenden Grün-Palette."
+  },      
+      
+      
+      {
+    "title": "Bike in Head",
+    "categories": ["Web", "Kampagne"],
+    "sectors": ["Kultur", "Kunst"],
+    "customer": "Städtische Galerie Bremen",
+    "year": 2022,
+    "thumbnail": "STGB_BikeInHead_Banner_02.webp",
+    "galleryFolder": "BikeinHead",
+    "gallery": [
+      {
+        "src" : "STGB_BikeInHead_Banner_01.webp",
+        "alt" : "alt"
+      },
+        {
+        "src" : "STGB_BikeInHead_Banner_02.webp",
+        "alt" : "alt"
+      },
+      {
+        "src" : "STGB_BikeinHead_Countdown_03b.mp4",
+        "alt" : "alt"
+      },
+      {
+        "src" : "STGB_BikeInHead_Banner_04.webp",
+        "alt" : "alt"
+      },
+              {
+        "src" : "STGB_BikeInHead_06.webp",
+        "alt" : "alt"
+      },
+      {
+        "src" : "STGB_BikeInHead_05.webp",
+        "alt" : "alt"
+      }
+    ],
+    "description": "Über eine gelbe Rampe gelangt man auf den eigenen zwei Rädern direkt in die Ausstellung »bike in head«. Hier dreht sich alles um das Fahrrad als unverzichtbaren Alltagsgegenstand, als Fortbewegungsmittel, aber auch als philosophisches Symbol, Kunstobjekt und Muse. Dabei werden Besucher:innen mit einer Bandbreite an Werken, Lesungen und Aktionen zum Mitmachen und Diskutieren eingeladen.\n<more>Zur Bewerbung der Ausstellung gingen wir mit eigens entworfenem Trikot, Cap und einer handgezeichneten Schrift an den Start. Diese zieren eine Vielzahl an Medien – vom Werbeplakat bis hin zum Ausstellungskatalog."
+  },
+      
+      {
+    "title": "Nele Hendrikje Sandner",
+    "categories": ["Web"],
+    "sectors": ["Kultur", "Kunst", "Wirtschaft", "Soziales"],
+    "customer": "Nele Hendrikje Sandner",
+    "year": 2022,
+    "link": "https://nelehendrikjesandner.de/",
+    "linkText": "Nele Hendrikje Sandner",
+    "thumbnail": "Nele_Web_browser_4.jpg",
+    "galleryFolder": "Nele",
+    "gallery": [
+      {
+        "src" : "Nele_Web_mobile_2.jpg",
+        "alt" : "alt"
+      },
+        {
+        "src" : "Nele_Web_browser_kl.mp4",
+        "alt" : "alt"
+      },
+      {
+        "src" : "Nele_Web_mobile_3.jpg",
+        "alt" : "alt"
+      },
+      {
+        "src" : "Nele_Web_browser_2.jpg",
+        "alt" : "alt"
+      },
+      {
+        "src" : "Nele_Web_browser_4.jpg",
+        "alt" : "alt"
+      },
+      {
+        "src" : "Nele_Web_browser_test.mp4",
+        "alt" : "alt"
+      },
+  
+      {
+        "src" : "Nele_Web_browser_5.jpg",
+        "alt" : "alt"
+      }
+    ],
+    "description": "Wir durften die Arbeit der Leipziger Künstlerin Nele Hendrikje Sandner auf einer neuen Webseite in Szene setzen. Zarte und scharfe Formen, pastellige und kräftige Farben fügen sich in vielen sich überlagernden Schichten und Strukturen zu zeichnerischen Collagen zusammen.\n<more>Die entstehende räumliche Tiefe in Neles Werken haben wir durch sich überlagernde Ebenen in eine Webseitenstruktur überführt, in der auch die Arbeiten miteinander interargieren."
+  },
+      
+      
+      {
     "title": "Spielend Stadt Gestalten",
     "categories": ["Kampagne","Web"],
     "customer": "SpielLandschaftStadt e.V.",
     "year": 2021,
+    "link": "https://spielend-stadt-gestalten.de/",
+    "linkText": "Spielend Stadt Gestalten",
     "thumbnail": "SLS_Kampagne_55.jpg",
     "galleryFolder": "SLS",
     "gallery": [
@@ -51,47 +381,7 @@
     ],
     "description": "Der Verein SpielLandschaftStadt setzt sich für die Schaffung und den Erhalt einer kinder- und familienfreundlichen Stadt ein. Mit einem Förderfonds zur Entwicklung von Aufenthalts- und Spielräumen werden Kinder und Jugendliche in Bremen ermutigt, ihre Bedürfnisse und Ideen mit einzubringen.\n<more>In enger Zusammenarbeit mit dem Verein entwickelten wir eine zielgruppenorientierte Kampagne samt kindgerechtem Wording und sympathischem Design für eine Reihe von Werbemedien wie Flyer, Poster und Social Media Beiträgen."
   },
-  
-      {
-    "title": "Nele Hendrikje Sandner",
-    "categories": ["Web"],
-    "customer": "Nele Hendrikje Sandner",
-    "year": 2022,
-    "thumbnail": "Nele_Web_browser_4.jpg",
-    "galleryFolder": "Nele",
-    "gallery": [
-      {
-        "src" : "Nele_Web_mobile_2.jpg",
-        "alt" : "alt"
-      },
-        {
-        "src" : "Nele_Web_browser_kl.mp4",
-        "alt" : "alt"
-      },
-      {
-        "src" : "Nele_Web_mobile_3.jpg",
-        "alt" : "alt"
-      },
-      {
-        "src" : "Nele_Web_browser_2.jpg",
-        "alt" : "alt"
-      },
-      {
-        "src" : "Nele_Web_browser_4.jpg",
-        "alt" : "alt"
-      },
-      {
-        "src" : "Nele_Web_browser_test.mp4",
-        "alt" : "alt"
-      },
-  
-      {
-        "src" : "Nele_Web_browser_5.jpg",
-        "alt" : "alt"
-      }
-    ],
-    "description": "Wir durften die Arbeit der Leipziger Künstlerin Nele Hendrikje Sandner auf einer neuen Webseite in Szene setzen. Zarte und scharfe Formen, pastellige und kräftige Farben fügen sich in vielen sich überlagernden Schichten und Strukturen zu zeichnerischen Collagen zusammen\n<more>Die entstehende räumliche Tiefe in Neles Werken haben wir durch sich überlagernde Ebenen in eine Webseitenstruktur überführt, in der auch die Arbeiten miteinander interargieren."
-  },
+      
   {
       "title": "TAD - Liber Memorialis",
       "categories": ["Editorial"],
@@ -110,6 +400,10 @@
         },
         {
           "src" : "BuA_TAD_LM_web_26.webp",
+          "alt" : "alt"
+        },
+        {
+          "src" : "Nele_Web_browser_Leiste_1200px_1_3.mp4",
           "alt" : "alt"
         },
         {
@@ -201,7 +495,7 @@
           "alt" : "alt"
         }
       ],
-      "description": "Mit der Ausstellung „Was bleibt” zeigt die Städtische Galerie Bremen (STGB) Einblicke in die Kunstsammlung der Hansestadt Bremen. Neben einer Auswahl von Werken der Nachkriegszeit bis heute werden erstmals die neuen Ankäufe Bremens im Rahmen der Corona Soforthilfen gezeigt. \n<more>Durch unsere rein typografische Lösung unterstreichen wir in der Werbekampagne die zeitliche Dimension der Ausstellung, die sich den Besucher*innen in mehrfacher Hinsicht zeigt. Für die STGB gestalten wir Einladungskarte, Plakate, Banner und Anzeigenkampagne."
+      "description": "Mit der Ausstellung »Was bleibt« zeigt die Städtische Galerie Bremen (STGB) Einblicke in die Kunstsammlung der Hansestadt Bremen. Neben einer Auswahl von Werken der Nachkriegszeit bis heute werden erstmals die neuen Ankäufe Bremens im Rahmen der Corona Soforthilfen gezeigt. \n<more>Durch unsere rein typografische Lösung unterstreichen wir in der Werbekampagne die zeitliche Dimension der Ausstellung, die sich den Besucher*innen in mehrfacher Hinsicht zeigt. Für die STGB gestalten wir Einladungskarte, Plakate, Banner und Anzeigenkampagne."
     },
   
        {
@@ -214,41 +508,49 @@
       "thumbnail": "GRK_CS_Web_browser_1200px_1.webp",
       "galleryFolder": "GRK",
       "gallery": [
-        {
-          "src" : "GRK_CS_Web_browser_1200px_1.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :   "GRK_CS_Web_tablet_1000px_2.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :   "GRK_CS_Web_browser_1200px_3.gif",
-          "alt" : "alt"
-        },
-        {
-          "src" :   "GRK_CS_Web_browser_1200px_4.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :   "GRK_CS_Web_mobile_1500px_5.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :   "GRK_CS_Web_mobile_1500px_6.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :   "GRK_CS_Web_tablet_1500px_7.webp",
-          "alt" : "alt"
-        }
+      {
+        "src" : "GRK_CS_Mappe_01.webp",
+        "alt" : "alt"
+      },
+      {
+        "src" :   "GRK_CS_Web_mobile_02.mp4",
+        "alt" : "alt"
+      },
+                          {
+        "src" :   "GRK_CS_Stift_06.webp",
+        "alt" : "alt"
+      },
+      {
+        "src" :   "GRK_CS_Web_browser_03.jpg",
+        "alt" : "alt"
+      },
+      {
+        "src" :   "GRK_CS_Web_browser_04.mp4",
+        "alt" : "alt"
+      },
+                {
+        "src" :   "GRK_CS_Web_tablet_07.webp",
+        "alt" : "alt"
+      },
+                {
+        "src" :   "GRK_CS_Web_mobile_05.jpg",
+        "alt" : "alt"
+      },
+      {
+        "src" :   "GRK_CS_Web_browser_05.webp",
+        "alt" : "alt"
+      },
+      {
+        "src" :   "GRK_CS_Mappe_07.webp",
+        "alt" : "alt"
+      }
       ],
       "description": "Widerspruchsforschung ist der Schwerpunkt des Graduiertenkollegs »Contradiction Studies«. Ab 2022 sind insbesondere Graduierte der Geistes-, Sozial- und Rechtswissenschaften eingeladen, Widerspruch und Praktiken des Widersprechens im engen Austausch untereinander zu untersuchen. \n<more>Als Grundlage der Gestaltung dient die vermeintlich einfachste Form des Widerspruchs, der Gegensatz. Im Dialog zeichnen sich Facetten der Widersprüchlichkeit ab. Der flirrenden Farbgebung wirken ein aufgeräumtes Schriftbild und eine nutzerfreundliche Interaktionsebene entgegen und machen so eine komplexe Thematik selbst für ein fachfremdes Publikum nahbar und reizvoll."
     },
   
       {
       "title": "Natur und Mohr",
-      "categories": ["Branding"],
+      "categories": ["Branding", "Verpackung"],
       "customer": "Natur und Mohr",
       "year": 2020,
       "thumbnail": "NuM_CD_Packaging_96-3.webp",
@@ -854,7 +1156,7 @@
     {
       "title": "Komodo Coffee",
       "categories": [
-        "Branding"
+        "Branding", "Verpackung"
       ],
       "customer": "Komodo Coffee",
       "year": 2015,
@@ -1071,66 +1373,8 @@
         }
       ],
       "description": "Die Künstlerin Amina Brotz arbeitet vornehmlich ortsbezogen und prozesshaft. Sie thematisiert stets ihren eigenen Lebens– und Arbeitszusammenhang, indem sie Möbel, persönliche Gegenstände und Arbeitsmaterialien in einen neuen Kontext überführt.\n<more>Das prozesshafte Arbeiten haben wir in das Konzept für ihren Ausstellungskatalog ›in Teilen vor Ort‹ überführt: Wir zeigen den nackten Buchblock. Der ist was er ist, ein Gebrauchsgegenstand – nicht mehr und nicht weniger. Und weil die Projekte bei Amina stets ineinandergreifen, gibt es beim Katalog auch kein Cover – weder vorne noch hinten."
-    },
-  
-    {
-      "title": "Terroir Moselle",
-      "categories": [
-        "Branding"
-      ],
-      "customer": "Wettbewerbsbeitrag",
-      "year": 2012,
-      "thumbnail": "B&A_TerroirMoselle_CD_144ppi_1.webp",
-      "galleryFolder": "Terroir Moselle",
-      "gallery": [
-        {
-          "src" : "B&A_TerroirMoselle_CD_144ppi_1.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "B&A_TerroirMoselle_CD_144ppi_2.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "B&A_TerroirMoselle_CD_144ppi_3.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "B&A_TerroirMoselle_CD_144ppi_4.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "B&A_TerroirMoselle_CD_144ppi_5.webp",
-          "alt" : "alt"
-        }
-      ],
-      "description": "In grenzüberschreitender Zusammenarbeit wollen die französischen, luxemburgischen und deutschen Moselwinzer mit diesem Projekt Image und Bekanntheit ihrer Weine fördern.\n<more>Wir entwickelten dazu ein vermeintlich naheliegendes Gestaltungskonzept: Wir zeichnen den Verlauf der Mosel nach. Je Weinhang und ansässigen Winzern vergeben wir die individuelle Teilstrecke des Flusses und erstellen so ein einzigartiges und dennoch verbindendes Qualitätssiegel als Bildmarke."
-    },
-  
-    {
-      "title": "FLUX 1.0",
-      "categories": [
-        "Editorial"
-      ],
-      "customer": "Flux Light Art Series",
-      "year": 2015,
-      "thumbnail": "BA_Flux_katalog_72ppi_01.webp",
-      "galleryFolder": "Flux",
-      "gallery": [
-        {
-          "src" : "BA_Flux_katalog_72ppi_01.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_Flux_katalog_72ppi_02.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_Flux_katalog_72ppi_03.webp",
-          "alt" : "alt"
-        }
-      ],
-      "description": "Ausgehend vom ›UNESCO International Year of Light‹ entstand mit der ›FLUX Light Art Series‹ eine interdisziplinäre Ausstellungsreihe, die sich mit zeitgenössischer Verwendung von Licht in der bildenden Kunst auseinandersetzt.\n<more>Wir entwickelten dazu das Konzept und Design für den Ausstellungskatalog: Die einzelnen, nummerierten Projektbeschreibungen liegen bei den Exponaten aus und lassen sich mittels Banderole und Band vom Besucher selbst zusammentragen."
     }
+  
+    
   ]
 }

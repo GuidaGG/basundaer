@@ -2,136 +2,161 @@
   "section_title": "Studio",
   "overlay_title" : "Team",
   "subtitle_1": "We are Bas&Aer.",
-  "subtitle_2": "Integrated design studio from Bremen and Berlin",
-  "paragraph_1": "Bei Bas&Aer bringen wir Botschaften in eine verständliche Form und Identitäten auf den Punkt. Wir lassen Ideen lebendig und erfahrbar werden. Zweidimensional, dreidimensional, analog, digital – Wir finden die passenden Formate und Medien für jedes Vorhaben.english",
-  "paragraph_2" : " Transparente und direkte Kommunikation, kurze Entscheidungswege und ein gemeinsamer Anspruch sind für uns die Grundlage einer erfolgreichen Zusammenarbeit. Wir sind stolz auf das uns entgegengebrachte Vertrauen, den intensiven Dialog mit unseren Kund:innen und tolle Ergebnisse.english",
-  "services" : "Leistungen" ,
-  "services_description" : "Bas&Aer wurde im November 2017 von Katharina Brock, Astrid Hesse und Ben Jurca gegründet. Seitdem bieten wir unseren Kund:innen eine umfangreiche Betreuung in den Bereichen Unternehmensidentität und -kommunikation, Innovation und kreative Problemlösung an.english",
-  "concept_design_title": "Konzept & Design english",
+  "subtitle_2": "Integrated design studio in Bremen and Berlin",
+  "paragraph_1": "At Bas&Aer, we bring messages into an understandable form and identities to the point. We bring ideas to life and make them tangible. Two-dimensional, three-dimensional, analog, digital - we find the right formats and media for every project:",
+  "paragraph_2" : "Transparent and direct communication, short decision-making processes and a common standard are the basis of a successful cooperation. We are proud of the trust placed in us, the intensive dialog with our customers and the great results.",
+  "services" : "Services" ,
+  "services_description" : "Bas&Aer was founded in November 2017 by Katharina Brock, Astrid Hesse and Ben Jurca. Since then, we have been providing our clients* with comprehensive support in the areas of corporate identity and communication, innovation and creative problem solving.",
+  "concept_design_title": "Concept & Design",
   "concept_design" : {
-    "1": "Corporate Design & Communicationenglish",
-    "2": "Logos (Wort– und Bildmarken)english",
-    "3": "Webauftritte und Digitale Anwendunge english",
-    "4": "Leit– und Orientierungssysteme english",
-    "5": "Messeauftritte und Ausstellungen english",
-    "6": "Werbung und Printmedien english",
-    "7": "Kataloge und Publikationen english",
-    "8": "Verpackungen und POS english"
+    "1": "Corporate Design & Communication",
+    "2": "Logos",
+    "3": "Websites and digital applications",
+    "4": "Guidance and orientation systems",
+    "5": "Trade fair and exhibition design",
+    "6": "Advertising and print media",
+    "7": "Catalogues and publications",
+    "8": "Packaging and POS"
   },
-  "workshops_coaching_title" : "Workshop & Coaching  english",
+  "workshops_coaching_title" : "Workshop & Coaching",
   "workshops_coaching" :  {
-      "1": "Verschiedene Workshopformate zu  english",
+      "1": "Different workshop formats for",
       "1_list" : {
-        "1" : "Identität– und Profilschärfun  english",
-        "2" : "Storytelling und USP  english",
-        "3" : "Ziele und Visionen  english",
-        "4" : "Angebot und Dienstleistung  english",
-        "5" : "Wording und Namensfindung  english"
+        "1" : "Identity and Profile",
+        "2" : "Storytelling and USP",
+        "3" : "Mission and Vision",
+        "4" : "Offers and Services",
+        "5" : "Wording and Naming"
       },
-      "2": "Seminare und Einzelcoachings für Existenzgründer*innen zu Themen der Corporate Identity english"
+      "2": "Seminars and individual coaching for start-ups on corporate identity topics"
   },
-  "research_teaching_title" : "Research & Lehre  english",
+  "research_teaching_title" : "Research & Education",
   "research_teaching" : {
-  "1" : "Entwicklung und Durchführung von praktischen Forschungsprojekten",
-  "2" : "Gestaltungsanalysen english",
-  "3" : "Ideen und Konzepte für neue Produktangebote und Services english",
-  "4" : "Lehraufträge und Seminare im Bereich english",
+  "1" : "Development and implementation of practical research projects",
+  "2" : "Design analyses",
+  "3" : "Ideas and concepts for new products and services",
+  "4" : "Teaching assignments and seminars in the fields of",
   "4_list" : {
-      "1" : "Design Thinking english",
-      "2" : "Grundlagen des Designs english",
-      "3" : "Experimental Design english",
-      "4" : "Corporate Design und Storytelling english"
+      "1" : "Design Thinking",
+      "2" : "Basics of design",
+      "3" : "Experimental design",
+      "4" : "Corporate Design and Storytelling"
     }
   },
-  "co-working" : "Co-Working english",
-  "co_working_description": "Bas&Aer wurde im November 2017 von Katharina Brock, Astrid Hesse und Ben Jurca gegründet. Seitdem bieten wir unseren Kund:innen eine umfangreiche Betreuung in den Bereichen Unternehmensidentität und -kommunikation, Innovation und kreative Problemlösung an. english",
-  "co_working_bremen": "Unser Coworking in Bremen: english",
-  "co_working_berlin" : "Unser Coworking in Berlin: english",
-  "clients" : "Kund:innen english",
-  "clients_description" : "Unsere Projektpartner:innen kommen aus verschiedenen Branchen mit unterschiedlichen Vorhaben und Herausforderungen zu uns. Zum Glück sind wir mit vielen talentierten Kolleg:innen gut vernetzt. So können wir auch problemlos umfangreiche und ungewöhnliche Projekte umsetzen. Wir freuen uns auf Ihre Anfrage: <a href='mailto:info@basundaer.de'>info@basundaer.de</a> english",
-  "gallery": {
+    
+  "co-working" : "Co-Working",
+  "co_working_description": "Being part of a coworking space matches our idea of a flexible way of working. We share the space with many nice people from different disciplines. We experience new approaches, get inspired by each other and work in collaborations. If you are close by, we welcome you to step by for a drink.",
+  "co_working_bremen": "Our Co-Working in Bremen: <a href='https://www.casinofutur.de/'>Casino Futur</a>",
+  "co_working_berlin" : "Our Co-Working in Berlin: <a href='https://lobe.berlin/de/'>Lobestudio 1.2</a>",
+  "clients" : "Clients",
+  "clients_description" : "Our project partners come to us from a variety of industries with different projects and challenges. Fortunately, we are well-connected with many talented colleagues. This enables us to implement even large-scale and unusual projects without any problems. We look forward to your inquiry: <a href='mailto:info@basundaer.de'>info@basundaer.de</a>",
+   "gallery": {
     "imagePath": "/static/img/Bas_Aer_Kundenlogos",
     "images": [ 
       {
       "src": "BA_Website_client_UHB20.png",
-      "alt" : "alt in english"
+      "alt" : "Universität Bremen"
       },
       {
-        "src": "BA_Website_client_PDS.png",
-        "alt" : "alt"
+      "src": "BA_Website_client_CMB.png",
+      "alt" : "cambio"
       },
       {
-        "src":  "BA_Website_client_KAE.png",
-        "alt" : "alt"
+      "src": "BA_Website_client_PDS.png",
+      "alt" : "Paramount Dental Studio"
       },
       {
-        "src": "BA_Website_client_STGB.png",
-        "alt" : "alt"
+      "src":  "BA_Website_client_BDM.png",
+      "alt" : "Duales Studium Informatik"
       },
       {
-        "src": "BA_Website_client_SHB.png",
-        "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_COM.png",
-          "alt" : "alt"
-        },
-        {
-          "src":  "BA_Website_client_NUM.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_BPP.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_FHB-SK.png",
-          "alt" : "alt"
-        },
-        {
-          "src":  "BA_Website_client_K2.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_STE.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_KLZ.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_ZVC.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_ULU.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_KOC.png",
-          "alt" : "alt"
-        },
-        {
-          "src":  "BA_Website_client_ZPI.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_MBB.png",
-          "alt" : "alt"
-        },
-        {
-          "src": "BA_Website_client_VRW.png",
-          "alt" : "alt"
-        },
-        {
-          "src":  "BA_Website_client_CIN.png",
-          "alt" : "alt"
-        },
-        {
-          "src":  "BA_Website_client_UVE.png",
-          "alt" : "alt"
-        }
+      "src":  "BA_Website_client_KAE.png",
+      "alt" : "KAEFER"
+      },
+      {
+      "src":  "BA_Website_client_HFK.png",
+      "alt" : "HFK Bremen"
+      },
+      {
+      "src":  "BA_Website_client_POB.png",
+      "alt" : "POB Office Bremen"
+      },
+      {
+      "src": "BA_Website_client_STGB.png",
+      "alt" : "Städtische Galerie Bremen"
+      },
+      {
+      "src": "BA_Website_client_VLFT.png",
+      "alt" : "vielfältig. Bremen"
+      },
+      {
+      "src": "BA_Website_client_TUD.png",
+      "alt" : "TU Dresden"
+      },
+      {
+      "src": "BA_Website_client_SHB.png",
+      "alt" : "STARTHAUS BREMEN"
+      },
+      {
+      "src": "BA_Website_client_COM.png",
+      "alt" : "Collective Ma'louba"
+      },
+      {
+      "src": "BA_Website_client_FHB-SK.png",
+      "alt" : "Der Senator für Kultur - Bremen"
+      },
+      {
+      "src":  "BA_Website_client_NUM.png",
+      "alt" : "Natur & Mohr"
+      },
+      {
+      "src":  "BA_Website_client_FII.png",
+      "alt" : "Futur Zwei"
+      },
+      {
+      "src":  "BA_Website_client_K2.png",
+      "alt" : "K2 Dental Arts"
+      },
+      {
+      "src": "BA_Website_client_STE.png",
+      "alt" : "Stefes Pro"
+      },
+      {
+      "src": "BA_Website_client_CU.png",
+      "alt" : "Constructor University"
+      },
+      {
+      "src": "BA_Website_client_FKC.png",
+      "alt" : "Freiburger Kammerchor"
+      },
+      {
+      "src": "BA_Website_client_KLZ.png",
+      "alt" : "kauflokal.zone"
+      },
+      {
+      "src": "BA_Website_client_ULU.png",
+      "alt" : "Universität Luxemburg"
+      },
+      {
+      "src": "BA_Website_client_KOC.png",
+      "alt" : "Komodo Coffee"
+      },
+      {
+      "src":  "BA_Website_client_ZPI.png",
+      "alt" : "ZPI Dortmund"
+      },
+      {
+      "src": "BA_Website_client_MBB.png",
+      "alt" : "Metallbau Brock"
+      },
+      {
+      "src": "BA_Website_client_VRW.png",
+      "alt" : "Vorweg"
+      },
+      {
+      "src":  "BA_Website_client_UVE.png",
+      "alt" : "Universität Vechta"
+      }
     ]
 
   }

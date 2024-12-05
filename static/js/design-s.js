@@ -8,10 +8,8 @@ let overlayLoaded = false
 import getMediaMatch, * as utils from "/static/js/utils.js"
 
 function isElementInViewport(el) {
-    if(el){
     let rect = el.getBoundingClientRect();
     return rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.top > 0
-    }   
 }
 
 /**
@@ -23,26 +21,17 @@ class DesignProject {
      * Constructor
      * @param {Object} content - A data object from the projects.json file.
      */
-    constructor(content, translations) {
+    constructor(content) {
         this.title = content.title
         this.projectId = utils.normalizeID(this.title)
         this.categories = content.categories
-        this.sectors = content.sectors
         this.customer = content.customer
         this.year = content.year
-        this.endYear = content.endYear
         this.link = content.link
         this.linkText = content.linkText
         this.thumbnail = content.thumbnail
-        this.with = content.with
         this.galleryPath = "/static/img/projects/" + encodeURIComponent(content.galleryFolder)
 
-        this.translationYear = translations.year
-        this.translationCategory = translations.category
-        this.translationSector = translations.sector
-        this.translationClient= translations.client
-        this.translationWith = translations.with
-        this.translationSince = translations.since
         /**
          * The project's description string. If the string contains a "<more>" tag, the paragraphs after this tag
          * will not be displayed, but a "mehr..." link which shows/hides the paragraphs (@media-small only).
@@ -152,7 +141,6 @@ class DesignProject {
             $currentActive.removeClass("active").prev().addClass("active")
             let prevImagesWidth = 0
             Array.from($currentActive.prevAll()).forEach(image => prevImagesWidth += $(image).outerWidth(true))
-
             $imageContainer.css({
                 left: -$currentActive.prev().position().left
             })
@@ -170,37 +158,36 @@ class DesignProject {
         let $currentActive = $imageContainer.find(".active")
 
         if ($currentActive.next().length > 0) {
+           
             $currentActive.removeClass("active").next().addClass("active")
             let $nextActive = $currentActive.next()
             let prevImagesWidth = 0
             Array.from($currentActive.prevAll()).forEach(image => prevImagesWidth += $(image).outerWidth(true))
             $imageContainer.css({left: -$nextActive.position().left})
-         }
+        }
+        else {
+            $imageContainer.css({left: "0px"})
+            $currentActive.removeClass("active")
+            $imageContainer.children().first().addClass("active")
+        }
         this._updateDots()
     }
 
     triggerDownloadImagesIfProjectIsVisible() {
-           
-        if (isElementInViewport($(`#${this.projectId}`)[0]) || ($(`#${this.projectId}`).index() === 0) ) {
+   
+        if (isElementInViewport($(`#${this.projectId}`)[0])) {
             if (!this.isGalleryRendered) {
                 this._downloadImages()
+
             }
             else{
                 // make videos autoplay on viewport
-                if (getMediaMatch() != utils.SMALL) {
+                if (getMediaMatch() !== utils.SMALL) {
                     this.imageContainer().find("video").each(function() {
-
-                        //this.load()
-                        //this.play()
- 
-                        if(!this.paused){
-                        this.nextSibling.classList.remove("play")
-                        this.nextSibling.classList.add("pause")
-                        }
-
+                        this.play()
                     })
                 
-                }
+                    }
             }
         }
         else {
@@ -213,57 +200,47 @@ class DesignProject {
     }
 
     _downloadImages() {
-
         this.isGalleryRendered = true
-        this.downloadedImages = {}
+
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
         this.gallery.forEach((image, index) => {
             const source = this._getSrcForGalleryImage(image)
             const url = image.src
             const extension = url.split(".")[1]
-            
             let content = null;
-            if (this.images.includes(extension)) {
-
-                        content = new Image();
-
-                        /*if (index==0) {
-                            content.classList.add("active")
-                        }*/
-                        content.onload = function (event) {
-                            let loadedImage = event.target
-                            let key = new URL(loadedImage.src).pathname
-                            this.downloadedImages[key] = loadedImage
-                            this._contentLoad(event)
-                        }.bind(this)
-                    
-                } else if (this.videos.includes(extension)) {
-            
-                    content = document.createElement('video');
-                    content.controls = false;
-                    content.loop = true ;
-                    /*if (index==0) {
+    
+         if (this.images.includes(extension)) {
+                    content = new Image();
+                    if (index==0) {
                         content.classList.add("active")
-                    }*/
-                    content.onloadstart = function (event) {
-                            let loadedImage = event.target
-                            let key = new URL(loadedImage.src).pathname
-                            this.downloadedImages[key] = loadedImage
-                            this._contentLoad(event)
-                        }.bind(this)
-                    
+                    }
+                    content.onload = function (event) {
+                        this._contentLoad(event)
+                    }.bind(this)
+                 
+            } else if (this.videos.includes(extension)) {
+                content = document.createElement('video');
+                content.controls = false;
+                content.autoplay = true;
+                content.loop = true ;
+                if (index==0) {
+                    content.classList.add("active")
                 }
+                content.onloadstart = function (event) {
+                        this._contentLoad(event)
+                    }.bind(this)
+                
+            }
+            content.src = source
+            content.alt = image.alt    
            
-                content.src = source ? source : "";
-                content.alt = image.alt    
-            
-            })
+        })
 
-      /*  window.setTimeout(function () {
+        window.setTimeout(function () {
             $imageContainer.css({transition: "left 200ms ease-in-out"})
             $imageContainer.css({left: "0px"})
         }, 100)
-        $imageContainer.css("filter", "")*/
+        $imageContainer.css("filter", "")
     }
 
     _contentLoad(event) {
@@ -272,18 +249,15 @@ class DesignProject {
         let loadedImage = event.target
         let key = new URL(loadedImage.src).pathname
         this.downloadedImages[key] = loadedImage
-        $imageContainer.innerHeight = ""
+
         this._appendImagesInOrder()
-    
+        
         if (Object.keys(this.downloadedImages).length === this.gallery.length) {
-            
-            
-            this._renderDotIndicator()
-            this._renderGallery()
-            
+           
+           // this._renderGallery()
             this._videoControls()
-            this._removeBackground()
-            
+            this._renderDotIndicator()
+
             if (!overlayLoaded) {
                 overlayLoaded = true
                 portfolioOverlay.loadOverlay("portfolio",
@@ -294,7 +268,6 @@ class DesignProject {
         }
     }
     _appendImagesInOrder() {
-        this.imageContainer().innerHTML = "";
         for (let i = 0; i < this.gallery.length; ++i) {
             let img = this.gallery[i]
             let imageKey = this._getSrcForGalleryImage(img)
@@ -305,32 +278,33 @@ class DesignProject {
             }
             const extension = img.src.split(".")[1]
 
-            /* if (this.images.includes(extension)) {
+            if (this.images.includes(extension)) {
                 if (this.imageContainer().find(`img[src="${imageKey}"]`).length === 0) {
                     this.imageContainer().append(downloadedImage)
                 }
             } else if (this.videos.includes(extension)) {
-   
+                if (this.imageContainer().find(`video[src="${imageKey}"]`).length === 0) {
                     let container = document.createElement('div')
                     container.classList.add("videoContainer")
 
                     let controls = document.createElement('div')
-                    controls.classList.add("videoControls", "pause")
+                    if(getMediaMatch() === utils.SMALL){
+                        controls.classList.add("videoControls", "play")
+                    }
+                    else{
+                        controls.classList.add("videoControls", "pause")
+                    }
+                    
+
                     container.append(downloadedImage)
                     container.append(controls)
-                    this.imageContainer().append(container)
 
-        
-                
+                    this.imageContainer().append(container)
+                }
             }
- */
+
            
         }
-    }
-
-    _removeBackground() {
-        let $imageContainer = $(`#${this.projectId} .imageContainer`)
-        $imageContainer.css("background", "none")
     }
 
     _getSrcForGalleryImage(image) {
@@ -390,15 +364,12 @@ class DesignProject {
      * @private
      */
     _updateDots() {
+        
         let currentImage = this.imageContainer().find(".active")[0]
         let $dotIndicator = this.imageContainer().siblings().children(".dotIndicator")
         $dotIndicator.find(".dot.active").removeClass("active")
-     
-        if(currentImage){
-        let src = currentImage.src ? currentImage.src : currentImage.children[0].src
-            if(src){
-                $dotIndicator.find(`.dot[data-src="${src}"]`).addClass("active")
-            }
+        if(currentImage.src){
+            $dotIndicator.find(`.dot[data-src="${currentImage.src}"]`).addClass("active")
         }
     
     }
@@ -411,90 +382,67 @@ class DesignProject {
      * @private
      */
 
-    _renderGallery() {
+   /* _renderGallery() {
         this.isGalleryRendered = true
         let $imageContainer = $(`#${this.projectId} .imageContainer`)
-        let offset = 0;
-        let firstActiveImg = null
-        let galleryMultiplier = 3;
-        let content = null;
-        let containsVideo = false;
-        for (let i = 0; i < galleryMultiplier; ++i) {
-        
-            this.gallery.forEach(path => {
+
+        this.gallery.forEach((path, index) => {
+
                 let src = `${this.galleryPath}/${encodeURIComponent(path.src)}`
                 let img = this.downloadedImages[src]
-                let clone = img.cloneNode(true);
-                content = clone;
-                //change online and on nomis
+                let firstActiveImg = null;
                 const extension = img.src.split(".")[1]
-   
-                if (this.videos.includes(extension)) {
-                   
-                    containsVideo = true;
+
+                if (this.images.includes(extension)) {
+                    $imageContainer.append(img)
+                } else if (this.videos.includes(extension)) {
+
                     let container = document.createElement('div')
                     container.classList.add("videoContainer")
-        
+
                     let controls = document.createElement('div')
+                    let videoButton = getMediaMatch() === utils.SMALL ? "play" : "pause";
+                    controls.classList.add("videoControls", videoButton)
 
-                    controls.classList.add("videoControls", "play")
-                   
-                    container.append(clone)
+                    container.append(img)
                     container.append(controls)
-                    content = container
 
-                   
+                    $imageContainer.append(container)
                 }
+    
+             
+                if (index==0) {
 
-                $imageContainer.append(content)
-                offset += $(content).outerWidth(true)
-
-                if (i === 1 && firstActiveImg == null) {
-                    firstActiveImg = content
-                }        
-              
-            })
-        }
-        $(firstActiveImg).addClass("active")
-        let timeout = containsVideo ? 1000 : 100 
-
-        window.setTimeout(function () {
-            $imageContainer.css({left: -$(firstActiveImg).position().left})
-        }, timeout) 
-
+                    firstActiveImg = img
+                    $(firstActiveImg).addClass("active")
+                }
+               
+                window.setTimeout(function () {
+                    $imageContainer.css({transition: "left 200ms ease-in-out"})
+                    $imageContainer.css({left: "0px"})
+                }, 100)
+                $imageContainer.css("filter", "")
+         
+        })
         window.setTimeout(function () {
             $imageContainer.css({transition: "left 200ms ease-in-out"})
-           if (getMediaMatch() === utils.SMALL) {
-            $imageContainer.find(".videoControls").css({ display: "block"})
-           }
-        }, timeout + 100) 
 
+        }, 100)
         $imageContainer.css("filter", "")
-        
-        this._updateDots()
-     
-    }
+    } */
 
 
     _renderDotIndicator() {
         let $dotIndicator = this.imageContainer().siblings().children(".dotIndicator")
-       
-        this.gallery.forEach(img => {
-            let src = img.src ? img.src : img.children[0].src
-            let url = `${window.location.origin}${this.galleryPath}/${encodeURIComponent(src)}`
-            $dotIndicator.append(`<div class="dot" data-src="${url}"></div>`)
-        })
    
+        this.imageContainer().children().toArray().forEach(img => {
+            
+            $dotIndicator.append(`<div class="dot" data-src="${img.src}"></div>`)
+        })
     }
 
     _renderCategories() {
         return this.categories.join(', ')
-    }
-
-    
-    _renderSectors() {
-        const sectors = this.sectors ? this.sectors.join(', ') : "";
-        return sectors;
     }
 
     _renderDescription() {
@@ -531,45 +479,18 @@ class DesignProject {
             : ""
     }
 
-    _renderYear() {
-
-        return this.endYear ? this.endYear == "now" ?`<div class="headingContent heading2">${this.translationSince} ${this.year}</div>`  : `<div class="headingContent heading2">${this.year} - ${this.endYear}  </div>` 
-            :  `<div class="headingContent heading2">${this.year}</div>` 
-    }
-
-    _renderWith() {
-        let content = "";
-        if(this.with){
-
-            content += `<div class="headingSection">
-                                <div class="headingTitle heading2">${this.translationWith}:</div><div>`;
-
-            this.with.forEach(w => {
-               content += `<div class="headingContent heading2">
-                <a href="${w.website}" target="_blank">${w.name}</a>
-               </div>`
-            });
-
-            content += `</div></div>`;
-        }
-        return content;
-    }
-    
-
     _render() {
-
         return `
             <div class="projectContainer" 
                 id="${this.projectId}"  
                 name="${this.projectId}"
-                data-categories="${this.categories.join(',')}"
-                data-sectors="${this._renderSectors()}">
+                data-categories="${this.categories.join(',')}">
                 <div class="text">
                     <div class="header">
                         <h2 class="title paragraph">${this.title}</h2>
                         <div class="headings">
                             <div class="headingSection">
-                                <div class="headingTitle heading2">${this.translationCategory}:</div>
+                                <div class="headingTitle heading2">Kategorie:</div>
                                 <div class="headingContent heading2">
                                                                   
                                         ${this._renderCategories()}
@@ -577,25 +498,13 @@ class DesignProject {
                                 </div>
                             </div>
                             <div class="headingSection">
-                                <div class="headingTitle heading2">${this.translationSector}:</div>
-                                <div class="headingContent heading2">
-                                                                  
-                                        ${this._renderSectors()}
-                                    
-                                </div>
-                            </div>
-                            <div class="headingSection">
-                                <div class="headingTitle heading2">${this.translationClient}:</div>
+                                <div class="headingTitle heading2">Kunde:</div>
                                 <div class="headingContent heading2">${this.customer}</div>
                             </div>
                             <div class="headingSection">
-                                <div class="headingTitle heading2">${this.translationYear}:</div>
-                                ${this._renderYear()}
-                                              
+                                <div class="headingTitle heading2">Jahr:</div>
+                                <div class="headingContent heading2">${this.year}</div>                            
                             </div>
-                       
-                            ${this._renderWith()}
-                                       
                             ${this._renderLink()}
                         </div>
                     </div>
@@ -627,7 +536,7 @@ export default function designPageReady(translations) {
         $(".projects").html("")
         translations.projects.forEach(p => {
             
-            let project = new DesignProject(p, translations)
+            let project = new DesignProject(p)
             designProjects.push(project)
             project.appendTo($(".projects"))
             window.setTimeout(function () {

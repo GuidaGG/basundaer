@@ -11,15 +11,27 @@
     <div class="overlayPageContent">
         <script type="module">
             import Translator from "./static/js/translator.js";
+            import studioOverlayReady from "./static/js/studioOverlay.js"
             let tOverlay =  new Translator("studio-overlay");
 
-            await tOverlay.load();  
+            async function loadContent(lang = null, overlay = true){
+                await tOverlay.load(lang)
+                studioOverlayReady(tOverlay.translations, overlay)
+            }
 
-            document.querySelector("form").addEventListener("click", function(evt) {
-                        if (evt.target.tagName === "INPUT") {
-                            tOverlay.load(evt.target.value);
-                        }
-             })
+            $('body').ready(function () { 
+
+                loadContent()
+    
+               document.querySelector("form").addEventListener("click", function(evt) {
+                    if (evt.target.tagName === "INPUT") {
+                        //t.load(evt.target.value);
+                        loadContent(evt.target.value, false)
+                        /*console.log(t.translations)
+                        studioPageReady(t.translations, false)*/
+                    }
+                 })
+            })
         </script>
 
         <div id="studio-overlay-translations" class="studioOverlay">
@@ -53,7 +65,17 @@
                             <a href="mailto:ah@basundaer.de" class="email paragraph">ah@basundaer.de</a>
                         </div>
                     </div>
+                    <div class="partners">
+                        <h2 data-i18n="partners_title" class="name heading1"></h2>
+                        <div class="description paragraph">
+                            <p data-i18n="partners_description">
+                               
+                            </p>
+                            <div class="partners-list"></div>
+                        </div>
+                    </div>
                 </div>
+              
             </div>
         </div>
 
