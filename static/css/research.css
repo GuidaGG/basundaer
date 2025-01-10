@@ -39,13 +39,13 @@
   font-style: normal;
 }
 .bg-flieder {
-  background: #9699c7;
+  background: #cc4f7b;
 }
 .bg-rot {
-  background: #dc7e74;
+  background: #4f83f6;
 }
 .bg-gelb {
-  background: #FDE600;
+  background: #E9C286;
 }
 @media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
   p {
@@ -807,7 +807,7 @@ figure {
 #researchContent .overlay,
 #researchContent img,
 #researchContent video {
-  background: #9699c7;
+  background: #cc4f7b;
 }
 #researchContent .content {
   width: 100%;
