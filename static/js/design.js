@@ -100,7 +100,7 @@ class DesignProject {
 
         window.setTimeout(function () {
             this.triggerDownloadImagesIfProjectIsVisible()
-            //$(window).on('DOMContentLoaded load resize scroll', this.triggerDownloadImagesIfProjectIsVisible.bind(this))
+            $(window).on('DOMContentLoaded load resize scroll', this.triggerDownloadImagesIfProjectIsVisible.bind(this))
             $("#designContent .content").on("scroll", this.triggerDownloadImagesIfProjectIsVisible.bind(this))
         }.bind(this), 200) 
     }
@@ -175,20 +175,31 @@ class DesignProject {
     }
 
     triggerDownloadImagesIfProjectIsVisible() {
-           
-      //  if (isElementInViewport($(`#${this.projectId}`)[0]) || ($(`#${this.projectId}`).index() === 0) ) {
-            if (!this.isGalleryRendered) {
-                this._downloadImages()
+        if (getMediaMatch() == utils.SMALL) {     
+            if (isElementInViewport($(`#${this.projectId}`)[0]) || ($(`#${this.projectId}`).index() === 0) ) {
+
+                if (!this.isGalleryRendered) {
+                    this._downloadImages()
+                }
             }
-            else{
+        }
+        else{
+
+            if (isElementInViewport($(`#${this.projectId}`)[0]) || ($(`#${this.projectId}`).index() === 0) ) {
+
+                if (!this.isGalleryRendered) {
+                    this._downloadImages()
+                }
+            }
+        }
+            //if (isElementInViewport($(`#${this.projectId}`)[0]) || ($(`#${this.projectId}`).index() === 0) ) {
                 // make videos autoplay on viewport
                 if (getMediaMatch() != utils.SMALL) {
                     this.imageContainer().find("video").each(function() {
-
-                       // this.load()
-                      //  this.play()
- 
+                     
+                        //this.play()
                         if(!this.paused){
+                         
                         this.nextSibling.classList.remove("play")
                         this.nextSibling.classList.add("pause")
                         }
@@ -196,17 +207,24 @@ class DesignProject {
                     })
                 
                 }
-            }
+                else{
+                    this.imageContainer().find("video").each(function() {
+                        this.pause()
+                        this.nextSibling.classList.remove("pause")
+                        this.nextSibling.classList.add("play")
+                    })
+                }
+            //}
 
-        //}
-       // else {
+
+         /*else {
 
              // pause videos when out of viewport
             this.imageContainer().find("video").each(function() {
-                this.pause()
+                //this.pause()
             })
                                
-        //}       
+       }     */  
 
     } 
 
@@ -221,7 +239,7 @@ class DesignProject {
             const extraSource = this._getExtraSrcForGalleryVideo(image)
             const url = image.src
             const extension = url.split(".")[1]
-            console.log("extension - downloadimages", extension)    
+ 
             let content = null;
             if (this.images.includes(extension)) {
 
@@ -246,6 +264,11 @@ class DesignProject {
                     content = document.createElement('video');
                     content.controls = false;
                     content.loop = true ;
+
+                    if (getMediaMatch() != utils.SMALL) {
+                    content.muted = true ;
+                    content.autoplay = true;
+                    }
                     /*if (index==0) {
                         content.classList.add("active")
                     }*/
@@ -256,11 +279,11 @@ class DesignProject {
                             this.downloadedImages[key] = loadedImage
                             this._contentLoad(event)
                         }.bind(this)
-                        content.dataset.src = source ? source : "";
+                        
 
                     if(source){
-
-                    const mainSourceElement = document.createElement('source');
+                        content.dataset.src = source ? source : "";
+                        const mainSourceElement = document.createElement('source');
                         mainSourceElement.src = source;
                         content.appendChild(mainSourceElement);
                     } 
@@ -270,6 +293,10 @@ class DesignProject {
                         const sourceElement = document.createElement('source');
                         sourceElement.src = extraSource;
                         content.appendChild(sourceElement);
+                    }
+                    if (getMediaMatch() != utils.SMALL) {
+                        content.load();
+                        content.play();
                     }
                   
 
@@ -362,7 +389,6 @@ class DesignProject {
                 let video = this.previousSibling
                 if (getMediaMatch() != utils.SMALL) {
                     if(video.paused || video.ended || video.currentTime === 0){
-                
                         video.play();
                         this.classList.remove("play")
                         this.classList.add("pause")
@@ -423,8 +449,7 @@ class DesignProject {
 
                 //change online and on nomis
                 // nomis: 3
-                const extension = img.src ? img.src.split(".")[1] : img.dataset.src.split(".")[1];
-              
+                const extension = img.src.length > 0 ? img.src.split(".")[1] : img.dataset.src.split(".")[1];
 
                 if (this.videos.includes(extension)) {
                    

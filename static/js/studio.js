@@ -3,8 +3,8 @@ import Overlay from "/static/js/overlay.js"
 function renderCustomerGallery(gallery) {
     let result = ""
     gallery.images.forEach((image) => {
-        let link = image.href ? image.href : "";
-        if(link) { 
+        let href = image.href ? image.href : "";
+        if(href) { 
         result += `
                 <a  class="imageContainer" href="${image.href}" target="_blank" aria-label="${image.alt}">
                     <div class="image" 
@@ -38,6 +38,7 @@ export default function studioPageReady(translations, overlay = true) {
         "Team")
     }
 
+    if(translations)
     renderCustomerGallery(translations.gallery)
     /*Ü$.getJSON("/data/studio.json", function (studioData) {
         renderCustomerGallery(studioData.gallery)

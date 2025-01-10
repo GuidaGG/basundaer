@@ -151,6 +151,7 @@
                                 {
                 "type": "gallery",
                 "height": "full",
+                "logos" : true,
                 "gallery": [
                     {   "src" : "Logo_LIS_kl.svg",
                         "alt" : "Logo Land in Sicht"
@@ -181,7 +182,10 @@
                 [
                 {
                 "type": "video",
-                "videoURL": "ZG_web_animation_quer.mp4" 
+                "videoURL": "ZG_web_animation_quer.webm",
+                "extraSource": "ZG_web_animation_quer.mp4"
+                },
+                {
                 },
 
                 {
@@ -293,6 +297,7 @@
                 "type": "gallery",
                 "height": "full",
                 "gallerycaption": "",
+                "logos" : true,
                 "gallery": [
                     {
                         "src" : "lobecanteen.png",
@@ -519,6 +524,7 @@
                 {
                 "type": "gallery",
                 "height": "full",
+                "logos" : true,
                 "gallerycaption": "Gefördert wurde das Projekt im Rahmen der Initiative „Galop de Porc“.",
                 "gallery": [
                     {
@@ -738,6 +744,7 @@
                 {
                 "type": "gallery",
                 "height": "full",
+                "logos" : true,
                 "gallery": [
                     {   "src" : "Logo_LIS_kl.svg",
                         "alt" : "alt"
@@ -769,7 +776,7 @@
                 "type": "gallery",
                 "height": "full",
                 "gallerycaption": "Förderpartner von ‚Land in Sicht‘",
-
+                "logos" : true,
                 "gallery": [
                     {
                         "src" : "Logo_UFH_sw1.svg",

@@ -38,7 +38,8 @@ p.intro a,
 .heading1 {
   margin: 0;
 }
-.heading2 {
+.heading2,
+.heading2 a {
   letter-spacing: 0;
   font-family: "apercu-light", sans-serif;
   font-size: 16pt;

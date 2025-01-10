@@ -146,6 +146,7 @@
                                                 {
                 "type": "gallery",
                 "height": "full",
+                "logos" : true,
                 "gallery": [
                     {   "src" : "Logo_LIS_kl.svg",
                         "alt" : "Logo of Land in Sicht"
@@ -289,6 +290,7 @@
                 "type": "gallery",
                 "height": "full",
                 "gallerycaption": "",
+                "logos" : true,
                 "gallery": [
                     {
                         "src" : "lobecanteen.png",
@@ -526,11 +528,13 @@
                     },
                     {
                         "src" :  "Logos-SMH.svg",
-                        "alt" : "alt"
+                        "alt" : "alt",
+                        "link" : "https://www.gewoba.de/"
                     },
                     {
                         "src" : "Logos-Quartier.svg",
-                        "alt" : "alt"
+                        "alt" : "alt",
+                        "link" : "https://www.gewoba.de/"
                     },
                     {
                         "src" : "Logos-GdP.svg",
@@ -731,6 +735,7 @@
                 {
                 "type": "gallery",
                 "height": "full",
+                "logos" : true,
                 "gallery": [
                     {   "src" : "Logo_LIS_kl.svg",
                         "alt" : "alt"
@@ -762,7 +767,7 @@
                 "type": "gallery",
                 "height": "full",
                 "gallerycaption": "Funding partners of 'Land in Sicht'",
-
+                "logos" : true,
                 "gallery": [
                     {
                         "src" : "Logo_UFH_sw1.svg",

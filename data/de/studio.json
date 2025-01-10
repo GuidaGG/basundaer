@@ -7,6 +7,15 @@
   "paragraph_2" : " Transparente und direkte Kommunikation, kurze Entscheidungswege und ein gemeinsamer Anspruch sind für uns die Grundlage einer erfolgreichen Zusammenarbeit. Wir sind stolz auf das uns entgegengebrachte Vertrauen, den intensiven Dialog mit unseren Kund:innen und tolle Ergebnisse.",
   "services" : "Leistungen" ,
   "services_description" : "Bas&Aer wurde im November 2017 von Katharina Brock, Astrid Hesse und Ben Jurca gegründet. Seitdem bieten wir unseren Kund:innen eine umfangreiche Betreuung in den Bereichen Unternehmensidentität und -kommunikation, Innovation und kreative Problemlösung an.",
+  "references_title": "Referenzen",
+  "references_workshop_coaching_title": "Workshops/Coaching",
+  "references_workshop_coaching": {
+    "1": "Workshop zu Zukunftskompetenz „Future Warm-Ups“, 2024 <br>mit Christof Mühe",
+    "2": "Workshop zu barrierearmer und diversitätssensibler Kommunikation, 2023–24 <br>mit Antonia Sperling",
+    "3": "STARTHAUS Coaching Programm, Einzelcoachings, 2020–23",
+    "4": "Designworkshop mit Schüler:innen, Oberschule Sebaldsbrück 2022–23 <br>mit Christof Mühe"
+  },
+  "references_lehre_title": "Lehre",
   "concept_design_title": "Konzept & Design",
   "concept_design" : {
     "1": "Corporate Design & Communication",

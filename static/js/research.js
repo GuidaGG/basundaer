@@ -58,6 +58,7 @@ class ResearchProject {
     }
 
     nextResearch(e){
+    
         let $container = $(".researchs");
         let sections = $('.projectContainer')
         sections.removeClass('activeResearch nextResearch')
@@ -148,10 +149,12 @@ class ResearchProject {
    
     _renderText(data){
         let result = ''
+        if(data.text){
         let paragraphs = data.text.split('\n')
         paragraphs.forEach(p => {
             result += `<p class="paragraph ${data.class}">${p}</p>`
         })
+        }
         return  result
     }
 
@@ -170,17 +173,25 @@ class ResearchProject {
         this.galleries.forEach(function(data, index) {
             let result = '';
                 data.gallery.forEach(function(image, index) {
-
-                result += `<div class="${data.classes[index]} image-container">`;
+                result += `
+                ${image.href ? `<a class="${data.classes[index]} image-container" href="${image.href}" target="_blank">` : `<div class="${data.classes[index]} image-container">`}`;
+             
                 if(data.captions[index]){
                 
                     result += `<div class="image-number">${increase}</div>`;
                     increase++
                 }
-                result += `
-                ${image.link ? `<a href="${image.link}" target="_blank">` : ''}
-                    <img src="${gallerypath}/${encodeURIComponent(image.src)}" alt="${image.alt}">
-                ${image.link ? `</a>` : ''}</div>
+               
+
+                    if(data.logos){
+                     result += ` <div class="image" style="background: url('${gallerypath}/${encodeURIComponent(image.src)}') no-repeat center; 
+                        background-size: contain" alt="${image.alt}')"></div>`
+                    }
+                    else {
+                    result += ` <img src="${gallerypath}/${encodeURIComponent(image.src)}" alt="${image.alt}">`
+                    }
+
+                 result += ` ${image.href ? `</a>` : '</div>'}
                 `;
             
 
@@ -230,33 +241,50 @@ class ResearchProject {
 
     
     _triggerDownloadImagesAndVideoIfResearchIsVisible() {
-        let container = $(`#${this.projectId}`)[0]
-        if (isElementInViewport(container, window.innerWidth, 0)) {
-            if (!this.isGalleryRendered) { 
-                this._downloadImages() 
-                this._removeImageBackground()
-            }
-         
-        }
-       /* if (getMediaMatch() !== utils.SMALL) {
-            if(isElementInViewport(container, 100, 0)){
 
-                container.querySelectorAll("video").forEach(function(video){
-                    video.play()
-                    video.nextSibling.classList.remove("play")
-                    video.nextSibling.classList.add("pause")
-        
-                })
-            }else{
-                container.querySelectorAll("video").forEach(function(video){
-                    video.pause()
-                    video.nextSibling.classList.remove("pause")
-                    video.nextSibling.classList.add("play")
-                
-                })
-                
+        let container = $(`#${this.projectId}`)[0] ? $(`#${this.projectId}`)[0] : $(`#${this.projectId}`)
+
+        if (container instanceof HTMLElement) {
+            if (isElementInViewport(container, window.innerWidth, 0)) {
+                if (!this.isGalleryRendered) { 
+                    this._downloadImages() 
+                    this._removeImageBackground()
+                }
+            
             }
-        }*/
+            if (getMediaMatch() !== utils.SMALL) {
+            
+                if(isElementInViewport(container, 100, 0)){
+                    let videos = container.querySelectorAll("video")
+                    if(videos){
+        
+                                videos.forEach(function(video){
+                                if(video.paused || video.ended || video.currentTime === 0){
+                                video.play()
+                                video.nextSibling.classList.remove("play")
+                                video.nextSibling.classList.add("pause")
+                                }
+                    
+                            })
+    
+                    
+                    }
+                }else{
+                    let videos = container.querySelectorAll("video")
+                    if(videos){
+                            videos.forEach(function(video){
+                            if(!video.paused){
+                            video.pause()
+                            video.nextSibling.classList.remove("pause")
+                            video.nextSibling.classList.add("play")
+                            }
+                        
+                        })
+                        
+                    }
+                }
+            }
+        }
     }
 
     _videoControls() {
@@ -322,8 +350,13 @@ class ResearchProject {
         let gallerypath = this.galleryPath;
 
         result += `<div class="video-zone zone" >`;
-        result += `<video width="1280" loop><source src="${gallerypath }/${encodeURIComponent(data.videoURL)}"  type="video/mp4">Your browser does not support the video tag.</video>`;
-        result += `<div class="videoControls play"><div class="pause_play"></div><div class="mute_unmute"></div></div>`;
+    
+        result += `<video width="1280" muted autoplay loop>
+        <source src="${gallerypath }/${encodeURIComponent(data.videoURL)}"  type="video/${data.videoURL.split('.').pop()}">`
+        result += data.extraSource ? `<source src="${gallerypath }/${encodeURIComponent(data.extraSource)}"  type="video/${data.extraSource.split('.').pop()}">` : "";
+        result += `Your browser does not support the video tag.`
+        result += `</video>`;
+        result += `<div class="videoControls play unmute"><div class="pause_play"></div><div class="mute_unmute"></div></div>`;
         result += `</div>`;
         return result
     }
