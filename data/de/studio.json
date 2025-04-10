@@ -4,18 +4,41 @@
   "subtitle_1": "Wir sind Bas&Aer.",
   "subtitle_2": "Integriertes Designstudio aus Bremen und Berlin",
   "paragraph_1": "Bei Bas&Aer bringen wir Botschaften in eine verständliche Form und Identitäten auf den Punkt. Wir lassen Ideen lebendig und erfahrbar werden. Zweidimensional, dreidimensional, analog, digital – Wir finden die passenden Formate und Medien für jedes Vorhaben.",
-  "paragraph_2" : " Transparente und direkte Kommunikation, kurze Entscheidungswege und ein gemeinsamer Anspruch sind für uns die Grundlage einer erfolgreichen Zusammenarbeit. Wir sind stolz auf das uns entgegengebrachte Vertrauen, den intensiven Dialog mit unseren Kund:innen und tolle Ergebnisse.",
+  "paragraph_2" : "Transparente und direkte Kommunikation, kurze Entscheidungswege und ein gemeinsamer Anspruch sind für uns die Grundlage einer erfolgreichen Zusammenarbeit. Wir sind stolz auf das uns entgegengebrachte Vertrauen, den intensiven Dialog mit unseren Kund:innen und tolle Ergebnisse.",
+ 
+  
+  "references" : "Referenzen",
+  "references_workshop_coaching_title" : "Workshops/Coaching",
+  "references_workshop_coaching" : {
+    "1": "„Future Warm-Ups“ Design Futuring<br>Workshop<br><span>Heinrich Böll-Stiftung Bremen<br>mit Christof Mühe<br>2024</span>",
+    "2": "Barrierearme und diversitätssensible Kommunikation<br>Workshop<br><span>POP Office Bremen<br>mit Antonia Sperling <br>2023–24</span>",
+    "3": "STARTHAUS Coaching Programm<br>Coachings<br><span>Bremer Aufbau-Bank<br>2020–23</span>",
+    "4": "DIY Orientierungssystem<br>Workshop<br><span>Oberschule Sebaldsbrück<br>mit Christof Mühe<br>2022–23</span>"
+  },
+  "references_lehre_title" : "Lehre",
+  "references_lehre" : {
+    "1": "„Identität und Storytelling“<br>Seminar<br><span>STARTHAUS Bremen<br>2020–23",
+    "2": "„Designthinking“<br>Masterkurs<br><span>Hochschule Trier<br>mit Anna Bulanda-Pantalacci<br>2021–22"
+  },
+  "references_events_title" : "Veranstaltungen",
+  "references_events" : {
+    "1": "„Zwischen Gegensätzen“<br>Fishbowl Panel<br><span>mit Plan A+<br>2024",
+    "2": "„Utopien in Stücken, Abriss Adé“<br>Soirée<br><span>mit Plan A+ und Neue Allianzen<br>2024"
+  },
+  "references_lectures_title" : "Vorträge",
+  "references_lectures" : {
+    "1": "Kommunikationsstrategie und Umsetzung<br><span>cambio CarSharing<br>2024",
+    "2": "„Building Inclusive Cultural Landscapes in Rural Areas“<br>Paper Lessons<br><span>Universität Bozen<br>mit Vanessa Graf-Müller<br>2023"
+  },
+  "references_publications_title" : "Veröffentlichungen",
+  "references_publications" : {
+    "1": "„Building Inclusive Cultural Landscapes in Rural Areas“<br>Visual Essay<br><span>Universität Bozen<br>Co-Autorenschaft mit Vanessa Graf-Müller<br>2023"
+  },
+  
+  
+  
   "services" : "Leistungen" ,
   "services_description" : "Bas&Aer wurde im November 2017 von Katharina Brock, Astrid Hesse und Ben Jurca gegründet. Seitdem bieten wir unseren Kund:innen eine umfangreiche Betreuung in den Bereichen Unternehmensidentität und -kommunikation, Innovation und kreative Problemlösung an.",
-  "references_title": "Referenzen",
-  "references_workshop_coaching_title": "Workshops/Coaching",
-  "references_workshop_coaching": {
-    "1": "Workshop zu Zukunftskompetenz „Future Warm-Ups“, 2024 <br>mit Christof Mühe",
-    "2": "Workshop zu barrierearmer und diversitätssensibler Kommunikation, 2023–24 <br>mit Antonia Sperling",
-    "3": "STARTHAUS Coaching Programm, Einzelcoachings, 2020–23",
-    "4": "Designworkshop mit Schüler:innen, Oberschule Sebaldsbrück 2022–23 <br>mit Christof Mühe"
-  },
-  "references_lehre_title": "Lehre",
   "concept_design_title": "Konzept & Design",
   "concept_design" : {
     "1": "Corporate Design & Communication",
@@ -29,15 +52,15 @@
   },
   "workshops_coaching_title" : "Workshop & Coaching",
   "workshops_coaching" :  {
-      "1": "Verschiedene Workshopformate zu",
+      "1": "Workshopformate zu",
       "1_list" : {
-        "1" : "Identität– und Profilschärfun",
+        "1" : "Identität– und Profilschärfung",
         "2" : "Storytelling und USP",
         "3" : "Ziele und Visionen",
         "4" : "Angebot und Dienstleistung",
         "5" : "Wording und Namensfindung"
       },
-      "2": "Seminare und Einzelcoachings für Existenzgründer*innen zu Themen der Corporate Identity"
+      "2": "Seminare und Einzelcoachings für Existenzgründer:innen zu Themen der Corporate Identity"
   },
   "research_teaching_title" : "Research & Lehre",
   "research_teaching" : {
@@ -52,10 +75,14 @@
       "4" : "Corporate Design und Storytelling"
     }
   },
+  
+  
   "co-working" : "Co-Working",
   "co_working_description": "Teil einer Coworking Gemeinschaft zu sein, passt zu unserer Vorstellung einer flexiblen Arbeitsweise. Wir teilen uns den Ort mit vielen netten Menschen aus verschiedenen Disziplinen. So lernen wir neue Herangehensweisen kennen, inspirieren einander und arbeiten kollaborativ. Wenn du in der Nähe bist, komm auf ein Getränk vorbei.",
   "co_working_bremen": "Unser Coworking in Bremen: <a href='https://www.casinofutur.de/'>Casino Futur</a>",
   "co_working_berlin" : "Unser Coworking in Berlin: <a href='https://lobe.berlin/de/'>Lobestudio 1.2</a>",
+  
+  
   "clients" : "Kund:innen",
   "clients_description" : "Unsere Projektpartner:innen kommen aus verschiedenen Branchen mit unterschiedlichen Vorhaben und Herausforderungen zu uns. Zum Glück sind wir mit vielen talentierten Kolleg:innen gut vernetzt. So können wir auch problemlos umfangreiche und ungewöhnliche Projekte umsetzen. Wir freuen uns auf Ihre Anfrage: <a href='mailto:info@basundaer.de'>info@basundaer.de</a>",
    "gallery": {
@@ -67,23 +94,29 @@
       "href" : "https://www.uni-bremen.de/"
       },
       {
-      "src": "BA_Website_client_PDS.png",
-      "alt" : "Paramount Dental Studio",
-      "href" : "https://paramountdentalstudio.com/"
-      },
-      {
       "src": "BA_Website_client_CMB.png",
       "alt" : "cambio",
       "href" : "https://www.cambio-carsharing.de/"
       },
       {
+      "src": "BA_Website_client_FU.png",
+      "alt" : "FU Berlin",
+      "href" : "https://www.fu-berlin.de/"
+      },
+      {
+      "src": "BA_Website_client_PDS.png",
+      "alt" : "Paramount Dental Studio",
+      "href" : "https://paramountdentalstudio.com/"
+      },
+      {
       "src":  "BA_Website_client_BDM.png",
       "alt" : "Duales Studium Informatik",
-      "href" : "https://www.duales-studium-informatik.de/"
+      "href" : "https://dualermasterinformatik.de/"
       },
       {
       "src":  "BA_Website_client_KAE.png",
-      "alt" : "KAEFER"
+      "alt" : "KAEFER",
+      "href" : "https://kaefer.com/"
       },
       {
       "src":  "BA_Website_client_HFK.png",
@@ -91,9 +124,14 @@
       "href" : "https://www.hfk-bremen.de/"
       },
       {
+      "src":  "BA_Website_client_HBS.png",
+      "alt" : "Bremer Solidarstrom",
+      "href" : "https://bremer-solidarstrom.de/"
+      },
+      {
       "src":  "BA_Website_client_POB.png",
       "alt" : "POB Office Bremen",
-      "href" : "https://www.pop-office.de/"
+      "href" : "https://popofficebremen.de/"
       },
       {
       "src": "BA_Website_client_STGB.png",
@@ -102,75 +140,98 @@
       },
       {
       "src": "BA_Website_client_VLFT.png",
-      "alt" : "vielfältig. Bremen"
+      "alt" : "vielfältig. Bremen",
+      "href" : "https://vielfaeltig-bremen.de/"
+      },
+      {
+      "src": "BA_Website_client_HBS-HB.png",
+      "alt" : "Heinrich Böll stiftung Bremen",
+      "href" : "https://www.boell-bremen.de/de"
       },
       {
       "src": "BA_Website_client_TUD.png",
-      "alt" : "TU Dresden"
+      "alt" : "TU Dresden",
+      "href" : "https://tu-dresden.de/"
       },
       {
       "src": "BA_Website_client_SHB.png",
-      "alt" : "STARTHAUS BREMEN"
+      "alt" : "STARTHAUS BREMEN",
+      "href" : "https://www.starthaus-bremen.de/"
       },
       {
       "src": "BA_Website_client_COM.png",
-      "alt" : "Collective Ma'louba"
+      "alt" : "Collective Ma'louba",
+      "href" : "#"
       },
       {
       "src": "BA_Website_client_FHB-SK.png",
-      "alt" : "Der Senator für Kultur - Bremen"
+      "alt" : "Der Senator für Kultur - Bremen",
+      "href" : "https://www.kultur.bremen.de/"
       },
       {
       "src":  "BA_Website_client_NUM.png",
-      "alt" : "Natur & Mohr"
+      "alt" : "Natur & Mohr",
+      "href" : "https://naturundmohr.de/"
       },
       {
       "src":  "BA_Website_client_FII.png",
-      "alt" : "Futur Zwei"
+      "alt" : "Futur Zwei",
+      "href" : "https://www.futurzwei.de/"
       },
       {
       "src":  "BA_Website_client_K2.png",
-      "alt" : "K2 Dental Arts"
+      "alt" : "K2 Dental Arts",
+      "href" : "https://www.k2dentalarts.com/"
       },
       {
       "src": "BA_Website_client_STE.png",
-      "alt" : "Stefes Pro"
+      "alt" : "Stefes Pro",
+      "href" : "https://stefespro.de/"
       },
       {
       "src": "BA_Website_client_CU.png",
-      "alt" : "Constructor University"
+      "alt" : "Constructor University",
+      "href" : "https://constructor.university/"
       },
       {
       "src": "BA_Website_client_FKC.png",
-      "alt" : "Freiburger Kammerchor"
+      "alt" : "Freiburger Kammerchor",
+      "href" : "http://www.freiburgerkammerchor.de/"
       },
       {
       "src": "BA_Website_client_KLZ.png",
-      "alt" : "kauflokal.zone"
+      "alt" : "kauflokal.zone",
+      "href" : "https://kauflokal.zone/"
       },
       {
       "src": "BA_Website_client_ULU.png",
-      "alt" : "Universität Luxemburg"
+      "alt" : "Universität Luxemburg",
+      "href" : "https://www.uni.lu/de/"
       },
       {
       "src": "BA_Website_client_KOC.png",
-      "alt" : "Komodo Coffee"
+      "alt" : "Komodo Coffee",
+      "href" : "#"
       },
       {
       "src":  "BA_Website_client_ZPI.png",
-      "alt" : "ZPI Dortmund"
+      "alt" : "ZPI Dortmund",
+      "href" : "https://zpi-do.de/"
       },
       {
       "src": "BA_Website_client_MBB.png",
-      "alt" : "Metallbau Brock"
+      "alt" : "Metallbau Brock",
+      "href" : "https://www.metallbau-brock.de/"
       },
       {
       "src": "BA_Website_client_VRW.png",
-      "alt" : "Vorweg"
+      "alt" : "Vorweg",
+      "href" : "https://www.vorweg-hb.de/"
       },
       {
       "src":  "BA_Website_client_UVE.png",
-      "alt" : "Universität Vechta"
+      "alt" : "Universität Vechta",
+      "href" : "https://www.uni-vechta.de/"
       }
     ]
 

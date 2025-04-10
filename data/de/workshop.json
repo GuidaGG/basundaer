@@ -94,7 +94,7 @@
     }
   ],
 
-  "intro": "In den Workshops von Bas&Aer kombinieren wir strategische und spielerische Methoden, um Ihr Unternehmen in den Bereichen Kommunikation, Identität und Innovation zu stärken und effizient nachhaltige Lösungen zu entwickeln",
+  "intro": "In den Workshops von Bas&Aer kombinieren wir strategische und spielerische Methoden, um Ihr Unternehmen in den Bereichen Kommunikation, Identität und Innovation zu stärken und effizient nachhaltige Lösungen zu entwickeln.",
   "galleryFolder": "workshops",
   "dynamic": 
     [
@@ -106,11 +106,11 @@
         [
           {
             "src" : "BA_Workshop_144_01.webp",
-            "alt" : "alt"
+            "alt" : "Im Workshop notiert eine Frau ihre Gedanken auf Zetteln."
           },
           {
             "src" :  "BA_Workshop_144_02.webp",
-            "alt" : "alt"
+            "alt" : "Die Notizen werden vom Moderator geordnet."
           }
         ],
         "classes": [ 
@@ -135,7 +135,7 @@
           "type": "image",
           "image":  {
             "src" : "BA_Workshop_144_06.webp",
-            "alt" : "alt"
+            "alt" : "Zwei Menschen diskutieren anhand der gesammelten Ideen."
           }
         },
         {

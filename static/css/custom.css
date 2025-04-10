@@ -1,4 +1,3 @@
-
 @media (min-width: 1201px){
     p.intro {
         margin: 0 0 20px;
@@ -9,26 +8,20 @@
     margin: 0 0 20px;
     }
 
+.sectors {
+    margin-top: .5rem!important;}
+
 ul.partner {
     margin: 10px 0 0 0!important;
     }
 
 #designContent > .content .projects .projectContainer .gallery .imageContainer .pause, #designContent > .content .projects .projectContainer .gallery .imageContainer .play {
-
-    /*display: none!important;   */
+    /*display: none!important;  */  
     }
 
 #designContent > .content .projects #Bike_in_Head .gallery .imageContainer .videoContainer {
     position: relative;
     height: 105%!important;
-    width: auto;
-    top: -2.5%;
-    }
-
-
-#research-zwischen-gegensaetzen .video-zone {
-    position: relative;
-   /* height: 105%!important; */
     width: auto;
     top: -2.5%;
     }
@@ -41,9 +34,13 @@ ul.partner {
     height:100%!important;
     }
 
+.serviceDescription span {
+    font-family:apercu-light!important;
+    }
 
 @media (min-width: 1201px) {
   p {
     margin: 0 0 10px 0!important;
   }
+    
 }

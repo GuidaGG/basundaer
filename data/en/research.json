@@ -12,13 +12,13 @@
             {
             "type": "text",
             "class" : "intro",
-            "text": "We want to rethink our social interaction from a design practice perspective: an open-ended process allows us to question proven ways of communication and interaction and to develop new formats, design directions and methods. \nIn addition to the design implementation, we develop the project idea, take over planning and strategy and carry out participative formats such as workshops. In doing so, it is important for us to leave our discipline completely and to create a joint process with other experts. By doing, we find solutions. \nFor example, are you an entrepreneur looking for new forms of contact with your customers? Are you, as a municipality, trying to make a public space available for community use? Are you a scientist who wants to apply practical research methods? We are happy to provide creative impulses for your project and support you in redefining questions, advancing ideas and implementing changes. \nContact us with your project ideas: <a href='mailto:info@basundaer.de' target='_blank'>info@basundaer.de</a>"
+            "text": 
+            "We want to rethink our social interaction from a design practice perspective: an open-ended process allows us to question proven ways of communication and interaction and to develop new formats, design directions and methods. \nIn addition to the design implementation, we develop the project idea, take over planning and strategy and carry out participative formats such as workshops. In doing so, it is important for us to leave our discipline completely and to create a joint process with other experts. By doing, we find solutions. \nFor example, are you an entrepreneur looking for new forms of contact with your customers? Are you, as a municipality, trying to make a public space available for community use? Are you a scientist who wants to apply practical research methods? We are happy to provide creative impulses for your project and support you in redefining questions, advancing ideas and implementing changes. \nContact us with your project ideas: <a href='mailto:info@basundaer.de' target='_blank'>info@basundaer.de</a>"
             }
             ]
         },
         
-        
-        {
+               {
         "title": "Building Cultural Landscapes",
         "subtitle": "Visual Essay for conference publication „STRING FIGURES – Transforming together“",
         "id": "Stringfigures",
@@ -35,8 +35,7 @@
                 "image": 
                     {
                         "src" : "LandinSicht-Scenario1.webp",
-                        "alt" : "Illustration of a futuristic village center",
-                        "credit" : "Illustration: Vanessa Müller-Graf"
+                        "alt" : "Illustration of a futuristic village center"
                     }
 
                 },
@@ -146,7 +145,6 @@
                                                 {
                 "type": "gallery",
                 "height": "full",
-                "logos" : true,
                 "gallery": [
                     {   "src" : "Logo_LIS_kl.svg",
                         "alt" : "Logo of Land in Sicht"
@@ -163,161 +161,7 @@
 
             ]
         },
-
-                
-        
-        {
-            "title": "Between Opposites",
-            "subtitle": "Sustainable consumption and social participation",
-            "id": "between-opposites",
-            "galleryFolder": "ZwischenGegensaetzen",
-            "dynamic":
-                [
-                {
-                "type": "image",
-                "image":
-                    {
-                    "src" : "240221_RZ_ZG_web_quer_gr_ah.png",
-                    "alt" : "alt"
-                    }
-                }, 
-                {
-                "type": "text",
-                "class" : "quote",
-                "text": "What role does social justice play in relation to sustainability and consumer behaviour?\nWhat opportunities lie in improving economic and social relations between urban and rural areas?\nHow can sustainable consumption be achieved in times of crisis and increasing polarisation?"
-                },
-                {
-                "type": "text",
-                "class" : "block",
-                "text": "INVITATION TO THE DISCUSSION ROUND 'BETWEEN OPPOSITES'\nWe would like to invite you to our panel discussion »BETWEEN opposites - Sustainable consumption and social participation« on Saturday 16 March 2024 from 6.00 to 7.30 pm. \nYou are welcome to join us for networking afterwards. To book a hot meal, please follow the information below."
-                },
-                {
-                "type": "text",
-                "class" : "block",
-                "text": "In the form of a fishbowl discussion, our talk guests will provide initial impetus and invite you to join in the discussion:"
-                },
-
-                {
-                "type": "gallery",
-                "height": "half",
-                "gallery": [
-                    {
-                        "src" : "ZG_SM_personen_1.png",
-                        "alt" : "alt"
-                    },
-                    {
-                        "src" : "ZG_SM_personen_2.png",
-                        "alt" : "alt"
-                    },
-                    {
-                        "src" : "ZG_SM_personen_3.png",
-                        "alt" : "alt"
-                    },
-                    {
-                        "src" : "ZG_SM_personen_4.png",
-                        "alt" : "alt"
-                    }
-                ],
-                "classes": [
-                "half full_height",
-                "half full_height",
-                "half full_height",
-                "half full_height"
-                ],
-                "captions": [
-                "Davide Brocchi (Independent sociologist)",
-                "Thomas Thunig (Ceramic master)",
-                "Tamina Hipp (Federal Environment Agency)",
-                "Eva Howitz (lokaltextil UG)"
-                ]
-                },
-
-                {
-                "type": "text",
-                "class" : "block",
-                "text": "MODERATION\nIngo Warnke (Professor of German Linguistics Contradiction Studies)"
-                },
-                    
-                {
-                "type": "text",
-                "class" : "block",
-                "text": "WHERE?\nLobe Block Event Space (Ground floor, entrance through canteen)\nBöttgerstraße 16, 13357 Berlin Gesundbrunnen"
-                },
-                    
-                {
-                "type": "text",
-                "class" : "block",
-                "text": "ENTRANCE?\nFree"
-                },
-                    
-                {
-                "type": "text",
-                "class" : "block",
-                "text": "FOOD & DRINKS?\nThe Lobe Block Canteen provides a hot evening meal.\nIf you would like to take advantage of this offer, we ask you to make your reservation for more planning security at the following <a href='https://www.eventbrite.de/e/zwischen-gegensatzen-diskussionsrunde-und-netzwerk-essen-reservierung-tickets-841464642397?keep_tld=1' target='_blank'>link</a>.\nThe cost of food and drinks is between €5 and €15, payment is made on site. "
-                },
-
-                {
-                "type": "text",
-                "class" : "block",
-                "text": "ORGANISATION\nThe event concept was developed in co-operation with the plan A+ association."
-                },
-    
-
-                {
-                "type": "gallery",
-                "height": "full",
-                "gallerycaption": "",
-                "gallery": [
-                    {
-                        "src" :  "PlanA+_Logo-Final.png",
-                        "alt" : "alt"
-                    }
-                ],
-                "classes": [
-                    "quarter"
-                ],
-                "captions": [
-                ""
-                ]
-                },
-                {
-                "type": "text",
-                "class" : "block",
-                "text": "THANKS"
-                },
-
-                {
-                "type": "gallery",
-                "height": "full",
-                "gallerycaption": "",
-                "logos" : true,
-                "gallery": [
-                    {
-                        "src" : "lobecanteen.png",
-                        "alt" : "alt"
-                    },
-                    {
-                        "src" : "gls_treuhand.png",
-                        "alt" : "alt"
-                    },
-                    {
-                        "src" :  "lobe-block-logo-02.webp",
-                        "alt" : "alt"
-                    }
-                ],
-                "classes": [
-                "quarter",
-                "quarter",
-                "quarter"
-                ],
-                "captions": [
-
-                ]
-                }
-
-            ]
-        },
-        
+     
         {
             "title": "Flatterweg",
             "subtitle": "Interim use on the former racecourse in Bremen",
@@ -330,7 +174,7 @@
                 "image": 
                     {
                     "src" : "rennbahn_web_15_crop.webp",
-                    "alt" : "alt"
+                    "alt" : "A path on the former racecourse is marked by flags."
                     }
                 },
                 {
@@ -346,23 +190,23 @@
                 "gallery": [
                     {
                         "src" : "rennbahn_web_52.webp",
-                        "alt" : "alt"
+                        "alt" : "View over the site of the former racecourse."
                     },
                     {
                         "src" : "rennbahn_web_36.webp",
-                        "alt" : "alt"
+                        "alt" : "The team of the women's creative laboratory 'Neue Wolle'."
                     },
                     {
                         "src" : "rennbahn_web_55_cropped.webp",
-                        "alt" : "alt"
+                        "alt" : "A customised flag flies in the wind."
                     },
                     {
                         "src" : "rennbahn_web_62.webp",
-                        "alt" : "alt"
+                        "alt" : "Inauguration ceremony of the ‘Flatterweg’ on the grandstand of the racecourse."
                     },
                     {
                         "src" : "rennbahn_web_39.webp",
-                        "alt" : "alt"
+                        "alt" : "Women from ‘Neue Wolle’ walk the path in the rain."
                     }
                 ],
                 "classes": [
@@ -393,27 +237,27 @@
                 "gallery": [
                     {
                         "src" : "Rennbahn_WS_3.webp",
-                        "alt" : "alt"
+                        "alt" : "Geometric paper pieces in different colours."
                     },
                     {
                         "src" : "Rennbahn_WS_1.webp",
-                        "alt" : "alt"
+                        "alt" : "Workshop on the design of the flags."
                     },
                     {
                         "src" : "Rennbahn_WS_2.webp",
-                        "alt" : "alt"
+                        "alt" : "A finished flag is presented."
                     },
                     {
                         "src" : "Rennbahn_Aufbau_2_quer.webp",
-                        "alt" : "alt"
+                        "alt" : "The flags are distributed along the way by a woman."
                     },
                     {
                         "src" : "Rennbahn_Aufbau_1.webp",
-                        "alt" : "alt"
+                        "alt" : "A flag is erected."
                     },
                     {
                         "src" : "Rennbahn_Aufbau_3.webp",
-                        "alt" : "alt"
+                        "alt" : "Several colourful flags mark the ‘Flatterweg’."
                     }
                 ],
                 "classes": [
@@ -446,11 +290,11 @@
                 "gallery": [
                     {
                         "src" : "Rennbahn_AT_13.webp",
-                        "alt" : "alt"
+                        "alt" : "A hands-on station is viewed by a man."
                     },
                     {
                         "src" : "Rennbahn_AT_1.webp",
-                        "alt" : "alt"
+                        "alt" : "The interactive booklet for the campaign day can be filled out."
                     }
                 ],
                 "classes": [
@@ -481,7 +325,7 @@
                 ],     
                 "image": {
                     "src" : "Rennbahn_Drohne_Lappe.webp",
-                    "alt" : "alt"
+                    "alt" : "A bird's eye view of the ‘Flatterweg’."
                     }
                 },
                 
@@ -498,7 +342,7 @@
                 "gallery": [
                     {
                         "src" :  "rennbahn_web_78.webp",
-                        "alt" : "alt"
+                        "alt" : "The creative team"
                     }
                 ],
                 "classes": [
@@ -512,37 +356,37 @@
                 {
                 "type": "gallery",
                 "height": "full",
-                "logos" : true,
                 "gallerycaption": "The project was funded within the framework of the „Galop de Porc“ initiative.",
                 "gallery": [
                     {
-                     
-                        "src" : "Logos-Bremen.svg",
-                        "alt" : "alt",
-                        "link" : "https://www.bremen.de/"
+                    "src" : "Logos-Bremen.svg",
+                    "alt" : "Logo 'Bremen erleben'",
+                    "href" : "https://www.bremen.de/tourismus/erlebnisse"
                     },
                     {
-                        "src" : "Logos-Gewoba.svg",
-                        "alt" : "alt",
-                        "link" : "https://www.gewoba.de/"
+                    "src" : "Logos-Gewoba.svg",
+                    "alt" : "Logo 'Gewoba'", 
+                    "href" : "https://www.gewoba.de/"
                     },
                     {
-                        "src" :  "Logos-SMH.svg",
-                        "alt" : "alt",
-                        "link" : "https://www.gewoba.de/"
+                    "src" :  "Logos-SMH.svg",
+                    "alt" : "Logo 'Stadtteilmarketing Hemelingen'", 
+                    "href" : "https://www.hemelingen-marketing.de/"
                     },
                     {
-                        "src" : "Logos-Quartier.svg",
-                        "alt" : "alt",
-                        "link" : "https://www.gewoba.de/"
+                    "src" : "Logos-Quartier.svg",
+                    "alt" : "Logo 'Quartier'", 
+                    "href" : "https://www.quartier-bremen.de/"
                     },
                     {
-                        "src" : "Logos-GdP.svg",
-                        "alt" : "alt"
+                    "src" : "Logos-GdP.svg",
+                    "alt" : "Logo 'Galop de Porc'", 
+                    "href" : "https://galop-de-porc.de/"
                     },
                     {
-                        "src" : "Logos-ZZZ.svg",
-                        "alt" : "alt"
+                    "src" : "Logos-ZZZ.svg",
+                    "alt" : "Logo 'ZwischenZeitZentrale'", 
+                    "href" : "https://www.zzz-bremen.de/"
                     }
                 ],
                 "classes": [
@@ -586,7 +430,7 @@
                 "image": 
                     {
                     "src" : "LandinSicht_150ppi_19-38.webp",
-                    "alt" : "alt"
+                    "alt" : "A woman dances in a traditional dress."
                     }
                 },
                 {
@@ -601,35 +445,35 @@
                 "gallery": [
                     {
                         "src" : "LandinSicht_120ppi_19-2.webp",
-                        "alt" : "alt"
+                        "alt" : "The participants of the project week wave into a camera."
                     },
                     {
                         "src" : "LandinSicht_120ppi_19-3.webp",
-                        "alt" : "alt"
+                        "alt" : "A cow pasture with Ottobeuren Abbey in the background."
                     },
                     {
                         "src" : "LandinSicht_120ppi_19-4.webp",
-                        "alt" : "alt"
+                        "alt" : "Roger Fähndrich prepares a concert stage in the museum."
                     },
                     {
                         "src" : "LandinSicht_120ppi_19-5.webp",
-                        "alt" : "alt"
+                        "alt" : "Lots of post-its with notes stuck close together."
                     },
                     {
                         "src" :  "LandinSicht_120ppi_19-6.webp",
-                        "alt" : "alt"
+                        "alt" : "A man kneads spaetzle dough."
                     },
                     {
                         "src" : "LandinSicht_120ppi_19-8.webp",
-                        "alt" : "alt"
+                        "alt" : "Photo shoot on the market square in Ottobeuren."
                     },
                     {
                         "src" : "LandinSicht_120ppi_19-9.webp",
-                        "alt" : "alt"
+                        "alt" : "Ottobeuren market square."
                     },
                     {
                         "src" : "LandinSicht_120ppi_19-7.webp",
-                        "alt" : "alt"
+                        "alt" : "A trampoline frame is assembled."
                     }
                 ],
                 "classes": [
@@ -666,39 +510,39 @@
                 "gallery": [
                     {
                         "src" : "LandinSicht_120ppi_19-10.webp",
-                        "alt" : "alt"
+                        "alt" : "The foyer during the exhibition opening."
                     },
                     {
                         "src" : "LandinSicht_120ppi_19-11.webp",
-                        "alt" : "alt"
+                        "alt" : "A performance on the museum forecourt."
                     },
                     {
                         "src" : "LandinSicht_120ppi_19-12.webp",
-                        "alt" : "alt"
+                        "alt" : "Visitors view an exhibition project."
                     },
                     {
                         "src" : "LandinSicht_120ppi_19-13.webp",
-                        "alt" : "alt"
+                        "alt" : "Boules game in front of the museum."
                     },
                     {
                         "src" : "LandinSicht_120ppi_19-14.webp",
-                        "alt" : "alt"
+                        "alt" : "An installation with an artificial bush."
                     },
                     {
                         "src" : "LandinSicht_120ppi_19-15.webp",
-                        "alt" : "alt"
+                        "alt" : "A projection in the museum."
                     },
                     {
                         "src" : "LandinSicht_150ppi_19-39.webp",
-                        "alt" : "alt"
+                        "alt" : "A woman wears the gloves from the fashion collection."
                     },
                     {
                         "src" : "LandinSicht_120ppi_19-19.webp",
-                        "alt" : "alt"
+                        "alt" : "Roger Fähndrich performs on stage."
                     },
                     {
                         "src" : "LandinSicht_120ppi_19-20.webp",
-                        "alt" : "alt"
+                        "alt" : "Spectators at the concert."
                     }
                 ],
                 "classes": [
@@ -735,10 +579,9 @@
                 {
                 "type": "gallery",
                 "height": "full",
-                "logos" : true,
                 "gallery": [
                     {   "src" : "Logo_LIS_kl.svg",
-                        "alt" : "alt"
+                        "alt" : "Logo 'Land in Sicht'"
                     }
 
                 ],
@@ -767,20 +610,22 @@
                 "type": "gallery",
                 "height": "full",
                 "gallerycaption": "Funding partners of 'Land in Sicht'",
-                "logos" : true,
+
                 "gallery": [
                     {
                         "src" : "Logo_UFH_sw1.svg",
-                        "alt" : "alt"
-
+                        "alt" : "Logo 'UFH'", 
+                        "href" : "https://www.ufh-bv.de/"
                     },
                     {
                         "src" : "Logo_Leader_sw.svg",
-                        "alt" : "alt"
+                        "alt" : "Logo 'kneippland'",
+                        "href" : "https://lag.unterallgaeu.de/regionalentwicklung-/-leader/eu-foerderprogramm-leader"
                     },
                     {
                         "src" : "Logo_Ottobeuren_sw.svg",
-                        "alt" : "alt"
+                        "alt" : "Logo 'Ottobeuren'",
+                        "href" : "https://www.ottobeuren.de/"
                     }
                 ],
                 "classes": [

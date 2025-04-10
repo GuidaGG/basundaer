@@ -94,7 +94,7 @@
     }
   ],
 
-  "intro": "In Bas&Aer's workshops, we combine strategic and playful methods to strengthen your company in the areas of communication, identity and innovation and to efficiently develop sustainable solutions",
+  "intro": "In Bas&Aer's workshops, we combine strategic and playful methods to strengthen your company in the areas of communication, identity and innovation and to efficiently develop sustainable solutions.",
   "galleryFolder": "workshops",
   "dynamic": 
     [
@@ -106,11 +106,11 @@
         [
           {
             "src" : "BA_Workshop_144_01.webp",
-            "alt" : "alt"
+            "alt" : "In the workshop, a woman writes down her thoughts on pieces of paper."
           },
           {
             "src" :  "BA_Workshop_144_02.webp",
-            "alt" : "alt"
+            "alt" : "The notes are organized by the facilitator."
           }
         ],
         "classes": [ 
@@ -135,7 +135,7 @@
           "type": "image",
           "image":  {
             "src" : "BA_Workshop_144_06.webp",
-            "alt" : "alt"
+            "alt" : "Two people discuss the ideas collected."
           }
         },
         {

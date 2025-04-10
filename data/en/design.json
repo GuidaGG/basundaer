@@ -1,22 +1,185 @@
 {
   "overlay_description": "Diverse topics, complex issues and close collaboration. Every project is an exciting challenge that we address with curiosity, passion and dedication. This is how sophisticated, aesthetic and meaningful design solutions are created.",
   "overlay_title": "OVERVIEW",
-  "overlay_all_sectors" : "All Sectors",
+ "overlay_all_sectors" : "All Fields",
   "overlay_all_categories" : "All Categories",
   "year" : "Year",
   "category" : "Category",
-  "sector" : "Sector",
+  "sector" : "Field",
   "client" : "Client",
   "with" : "With",
   "since": "Since",
   "projects": [
-          
-  {
+    
+     {
+      "title": "Concerts of the Freiburg Chamber Choir",
+      "categories": ["Campaign", "Branding"],
+      "sectors": ["Art & Culture"],
+      "customer": "Freiburger Kammerchor",
+      "year": 2022,
+      "endYear": "now",
+      "thumbnail": "FKC_Print_2.webp",
+      "with": [
+      { "name": "Tom Lane",
+        "website": "https://tomlane.site/"}
+      ],
+      "galleryFolder": "FKC",
+      "gallery": [
+        {
+          "src" : "FKC_Print_2.webp",
+          "alt" : "Three posters of the Freiburg Chamber Choir hang next to each other."
+        },
+        {
+          "src" : "FKC_Saul.mp4",
+          "alt" : "Three spheres move inside out."
+        },
+        {
+          "src" : "FKC_Print_4.webp",
+          "alt" : "A postcard with a detailed illustration to advertise a concert."
+        },
+        {
+          "src" : "FKC_Mobile_Animation.mp4",
+          "alt" : "A social media post with moving sphere animations."
+        },
+        {
+          "src" : "FKC_Print_5.webp",
+          "alt" : "A stack of flyers announcing the concert eve(n)song."
+        },
+        {
+          "src" : "FKC_Screen.webp",
+          "alt" : "Above the cloakroom in the Konzerthaus Freiburg is a very wide screen with the concert announcement."
+        },
+        {
+          "src" : "FKC_Print_3.jpg",
+          "alt" : "Three programme brochures for the concert Messiah by the Freiburger Kammerchor."
+        }
+      ],
+      "description": "With a varied mix of classical choral music and modern compositions, the Freiburg Chamber Choir is an integral part of Freiburg's cultural scene. Its musical interpretations always provide current references and food for thought.\n<more>Every concert is a fascinating cosmos – this is the idea behind Tom Lane's animations, which, in combination with the strict layout, unfold their very own appeal."
+    },   
+    
+    {
+    "title": "POP Office Bremen",
+    "categories": ["Web", "Branding"],
+    "sectors":  ["Art & Culture"],
+    "customer": "POP Office Bremen e.V.",
+    "year": 2023,
+    "endYear": "now",
+    "link": "https://popofficebremen.de/en/",
+    "linkText": "popofficebremen.de",
+    "with": [ 
+    {"name": "Malte Heitmüller",
+    "website": "https://dotsnboxes.de/"} 
+    ],
+    "thumbnail": "POB_Visitenkarten_04.webp",
+    "galleryFolder": "POP",
+    "gallery": [
+        {
+        "src" : "POB_Visitenkarten_03.webp",
+        "alt" : "Some business cards of the POP Office Bremen are lying next to each other"
+        },
+        {
+        "src" : "POB_SM.mp4",
+        "alt" : "A quick scroll through the Social Media account of POP Office Bremen."
+        },
+        {
+        "src" : "POB_Event_4.webp",
+        "alt" : "A DJ plays at the opening ceremony of the POP Office Bremen."
+        },   
+        {
+        "src" : "POB_Web_browser.gif",
+        "alt" : "The POP Office Bremen website switches between dark mode and light mode."
+        }, 
+        {
+        "src" : "POB_Mobile_2.webp",
+        "alt" : "Three mockups show the mobile version of the POP Office Bremen website."
+        },
+        {
+        "src" : "POB_Event_3.webp",
+        "alt" : "Visitors at the opening ceremony of the POP Office Bremen."
+        },
+        {
+        "src" : "POP_Branding_02.webp",
+        "alt" : "Metallic iridescent stickers with the POP Office Bremen logo."
+        },
+        {
+        "src" : "POP_Branding_11.webp",
+        "alt" : "Lanyards with the POP Office Bremen branding."
+        },   
+        {
+        "src" : "POB_Event_1.webp",
+        "alt" : "A podium with the POP Office Bremen logo stands on an empty stage shortly before the performance."
+        },
+        {
+        "src" : "POB_Web_browser.mp4",
+        "alt" : "A mockup shows the homepage of the POP Office Bremen website."
+        },
+        {
+        "src" : "POB_Event_2.webp",
+        "alt" : "A visitor reads the flyer of the POP Office Bremen."
+        }
+        ],
+    "description": "POP Office Bremen sees itself as a funding platform for the pop-cultural music scene of Bremen, Germany. And it does this in many ways: A an advice center and mediator between culture and politics, a funding institution, stage and mouthpiece.\n<more>With the visual identity and by supporting the communication process, we help the POP Office Bremen to be open and approachable. The jointly developed website makes information, people and expertise accessible."
+    },
+    
+    {
+    "title": "Netzwerk Zwischennutzung",
+    "categories": ["Web"],
+    "sectors":  ["Public"],
+    "customer": "AAA GmbH",
+    "year": 2024,
+    "link": "https://netzwerkzwischennutzung.de/",
+    "linkText": "netzwerkzwischennutzung.de",
+    "with": [
+      {"name": "Guida Ribeiro",
+       "website": "https://guidaribeiro.net/"},
+      {"name": "Farzad Golghasemi",
+       "website": "https://fagosemi.xyz/"}
+    ],
+    "thumbnail": "NZN_Web_Mobile_2.webp",
+    "galleryFolder": "NZN",
+    "gallery": [
+        {
+        "src" : "NZN_Web_Browser_1_small.mp4",
+        "alt" : "An animated mock-up shows the interaction on the Netzwerk Zwischennutzung website."
+        },
+        {
+        "src" : "NZN_Web_Mobile_2.webp",
+        "alt" : "Three mockups show different pages in the mobile view."
+        },     
+        {
+        "src" : "NZN_Web_Mobile_3_small.mp4",
+        "alt" : "An animated mock-up shows the interaction in the mobile view of the website of the interim utilisation network."
+        },
+        {
+        "src" : "NZN_Web_Browser_4.webp",
+        "alt" : "A mockup shows a single page on the website of the Netzwerk Zwischennutzung."
+        },
+        {
+        "src" : "NZN_Web_Mobile_5.webp",
+        "alt" : "Three mockups show different pages and the menu navigation in the mobile view."
+        },
+        {
+        "src" : "NZN_Web_Browser_6.webp",
+        "alt" : "A mock-up shows best practice examples on the website of the Netzwerk Zwischennutzung."
+        },
+        {
+        "src" : "NZN_Web_Browser_7.webp",
+        "alt" : "A mockup shows the page on the Netzwerk Zwischennutzung."
+        }
+        ],
+    "description": "We had the opportunity to design the website of Netzwerk Zwischennutzung. This initiative promotes the temporary use of buildings and vacant spaces in Germany. Thereby it fosters and connects creative, social, and economic organisations for urban revitalisation and sustainable neighborhood development.\n<more>The growing database is structured by a complex yet intuitive user interface. Aesthetically, we combine the clear building charm of the 1950s and 60s with a vibrant green colour palette."
+    },
+   
+    {
       "title": "Das bleibt",
-      "categories": ["Kampagne"],
-      "sectors": ["Social"],
+      "categories": ["Campaign"],
+      "sectors":  ["Art & Culture"],
       "customer": "Städtische Galerie Bremen",
       "year": 2023,
+      "with": [
+      {"name": "Christine Rudi",
+      "website": "https://de.linkedin.com/in/christine-rudi-83b939175"}
+      ],
       "thumbnail": "STGB_DasBleibt_Flyer_080.webp",
       "galleryFolder": "Dasbleibt",
       "gallery": [
@@ -63,1224 +226,1206 @@
       ],
       "description": "With this exhibition, the Städtische Galerie Bremen is showing parts of the art collection of the Hanseatic City of Bremen. In the course of archive work, the exhibition rooms are transformed into storage areas for the collection, through which visitors can browse.\n<more>With the purely typographic solution of the advertising campaign, we follow on from the exhibition “Was bleibt (What remains)” and impose a supposed answer: “Das bleibt (That remains)”."
     }, 
-                 {
-    "title": "POP Office Bremen",
-    "categories": ["Web", "Branding"],
-    "sectors": ["Kultur"],
-    "customer": "POP Office Bremen e.V.",
+    
+        {
+    "title": "Graduation show 2023",
+    "categories": ["Space", "Campaign"],
+    "sectors":  ["Art & Culture"],
+    "customer": "University of the Arts Bremen",
     "year": 2023,
-    "link": "https://popofficebremen.de/en/",
-    "linkText": "popofficebremen.de",
-    "thumbnail": "POB_Visitenkarten_04.webp",
-    "galleryFolder": "POP",
-    "gallery": [
-        
-                {
-        "src" : "POB_Visitenkarten_03.webp",
-        "alt" : "alt"
-      },
-        
-                             {
-        "src" : "POB_Event_4.webp",
-        "alt" : "alt"
-      },   
-
-          {
-        "src" : "POB_Web_browser.gif",
-        "alt" : "alt"
-      }, 
-                        {
-        "src" : "POB_Mobile_2.webp",
-        "alt" : "alt"
-      },
-                        {
-        "src" : "POB_Event_3.webp",
-        "alt" : "alt"
-      },
-                        {
-        "src" : "POP_Branding_02.webp",
-        "alt" : "alt"
-      },
-                        {
-        "src" : "POP_Branding_11.webp",
-        "alt" : "alt"
-      },   
-                        {
-        "src" : "POB_Event_1.webp",
-        "alt" : "alt"
-      },
-          {
-        "src" : "POB_Web_browser.mp4",
-        "alt" : "alt"
-      },                             {
-        "src" : "POB_Event_2.webp",
-        "alt" : "alt"
-      }
-            
-        
-            ],
-    "description": "POP Office Bremen sees itself as a funding platform for the pop-cultural music scene of Bremen, Germany. And it does this in many ways: A an advice center and mediator between culture and politics, a funding institution, stage and mouthpiece.\n<more>With the visual identity and by supporting the communication process, we help the POP Office Bremen to be open and approachable. The jointly developed website makes information, people and expertise accessible."
-  },
-      
-      
-      
-           {
-    "title": "Netzwerk Zwischennutzung",
-    "categories": ["Web"],
-    "customer": "AAA GmbH",
-    "sectors": ["Culture", "Economy", "Social"],
-    "year": 2024,
-    "link": "https://netzwerkzwischennutzung.de/",
-    "linkText": "netzwerkzwischennutzung.de",
-    "thumbnail": "NZN_Web_Mobile_2.webp",
-    "galleryFolder": "NZN",
+    "link": "https://www.instagram.com/jahresausstellung_hfk/",
+    "linkText": "Graduation show on Instagram",
+    "thumbnail": "HfK-JA_Ausstellung_außen_03.webp",
+    "galleryFolder": "HFK",
     "gallery": [
         {
-        "src" : "NZN_Web_Browser_1_small.mp4",
-        "alt" : "alt"
-      },
-          {
-        "src" : "NZN_Web_Mobile_2.webp",
-        "alt" : "alt"
-      },     
-          {
-        "src" : "NZN_Web_Mobile_3_small.mp4",
-        "alt" : "alt"
-      },
+        "src" : "HfK-JA_Ausstellung_01.webp",
+        "alt" : "A stepladder next to the orientation system labeled E2"
+        },
         {
-        "src" : "NZN_Web_Browser_4.webp",
-        "alt" : "alt"
-      },
-                              {
-        "src" : "NZN_Web_Mobile_5.webp",
-        "alt" : "alt"
-      },                      {
-        "src" : "NZN_Web_Browser_6.webp",
-        "alt" : "alt"
-      },
-                              {
-        "src" : "NZN_Web_Browser_7.webp",
-        "alt" : "alt"
-      }
-        
-            ],
-    "description": "We had the opportunity to design the website of Netzwerk Zwischennutzung. This initiative promotes the temporary use of buildings and vacant spaces in Germany. Thereby it fosters and connects creative, social, and economic organisations for urban revitalisation and sustainable neighborhood development.\n<more>The growing database is structured by a complex yet intuitive user interface. Aesthetically, we combine the clear building charm of the 1950s and 60s with a vibrant green colour palette."
-  },
-      
-     {
+        "src" : "HfK-JA_Ausstellung_außen_12.webp",
+        "alt" : "The entrance area of Warehouse XI A is illuminated. The entrance area is highlighted in color."
+        },
+        {
+        "src" : "HfK-JA_Ausstellung_08.webp",
+        "alt" : "Four letterings of the B2 landmark are arranged in a cross shape on the floor."
+        },
+        {
+        "src" : "HfK-JA_Ausstellung_09.webp",
+        "alt" : "A stack of signage panels from the side."
+        },
+        {
+        "src" : "HfK-JA_Ausstellung_02.webp",
+        "alt" : "A view of the exhibition space of the annual exhibition of the HfK Bremen."
+        },
+        {
+        "src" : "HfK-JA_Ausstellung_05.webp",
+        "alt" : "A board with the introductory text leans in the entrance area."
+        },
+        {
+        "src" : "HfK-JA_Ausstellung_13.webp",
+        "alt" : "The opening hours of the annual exhibition are displayed on the glass entrance door."
+        },
+        {
+        "src" : "HfK-JA_Ausstellung_06.webp",
+        "alt" : "The descriptive text of a graduation project is attached to a wooden board."
+        },                         
+        {
+        "src" : "HfK-JA_Ausstellung_14.webp",
+        "alt" : "A view from the centre of the exhibition."
+        },
+        {
+        "src" : "HfK-JA_Ausstellung_außen_15.webp",
+        "alt" : "The facade of the exhibition venue Speicher XI A in Bremen's Überseestadt district."
+        },  
+        {
+        "src" : "HfK-JA_Ausstellung_außen_04.webp",
+        "alt" : "The entrance to the exhibition is emphasised by large lettering on the windows."
+        },
+        {
+        "src" : "HfK-JA_SM.webp",
+        "alt" : "Three mock-ups show the social media campaign to promote the exhibition on Instagram."
+        },
+        {
+        "src" : "HfK_JA_Plakat_3.webp",
+        "alt" : "The poster for the HfK Bremen's annual exhibition 2024, designed by Designstudio Bas and Aer."
+        },
+        {
+        "src" : "HfK-JA_Plakat_11.jpg",
+        "alt" : "The exhibition poster lies on a pedestal during the installation."
+        }
+        ],
+    "description": "What content-related and formal questions are digital media and design graduates currently dealing with? The graduation show of the University of the Arts Bremen provides an insight into this. We were asked to develop the exhibition concept and the communication campaign. For the curation we assemble the variety of works into a harmonious structure.\n<more>The design was to emphasise and integrate the hall's characteristics such as structure and materials. To achieve this, we kept the exhibition architecture permeable, allowing visitors to move freely between the exhibits. As in a trade fair hall, the final projects are at the same time subject to the strict grid of the space, which makes orientation possible."
+    },
+    
+    
+       
+    {
     "title": "Bike in Head",
-    "categories": ["Campaign"],
-    "sectors": ["Culture", "Art"],
+    "categories": ["Campaign", "Editorial"],
+    "sectors":  ["Art & Culture"],
     "customer": "Städtische Galerie Bremen",
     "year": 2022,
     "thumbnail": "STGB_BikeInHead_Banner_02.webp",
     "galleryFolder": "BikeinHead",
     "gallery": [
-      {
+        {
         "src" : "STGB_BikeInHead_Banner_01.webp",
-        "alt" : "alt"
-      },
+        "alt" : "A stand shows the poster of the Bike in Head exhibition at the Städtische Galerie Bremen."
+        },
         {
         "src" : "STGB_BikeInHead_Banner_02.webp",
-        "alt" : "alt"
-      },
-
-      {
+        "alt" : "A landscape-format banner for the Bike in Head exhibition hangs on the outside wall of the Städtische Galerie in Bremen."
+        },
+        {
+        "src" : "STGB_BikeinHead_Countdown_03b.mp4",
+        "alt" : "A hand-drawn countdown counts from 10 to 0."
+        },
+        {
         "src" : "STGB_BikeInHead_Banner_04.webp",
-        "alt" : "alt"
-      },
-              {
+        "alt" : "A huge banner with the poster motif for the Bike in Head exhibition hangs on the facade of the Städtische Galerie Bremen."
+        },
+        {
         "src" : "STGB_BikeInHead_06.webp",
-        "alt" : "alt"
-      },
-      {
+        "alt" : "The invitation cards for the exhibition are designed in two colour gradients: From violet to yellow and from turquoise to pink."
+        },
+        {
         "src" : "STGB_BikeInHead_05.webp",
-        "alt" : "alt"
-      }
-    ],
+        "alt" : "Two stacks of exhibition flyers lie on a grey background."
+        }
+        ],
     "description": "A yellow ramp takes you on your own two wheels directly into the exhibition »bike in head«. Here everything revolves around the bicycle as an indispensable everyday object, as a means of transport, but also as a philosophical symbol, art object and muse. Visitors are invited to participate and discuss with a wide range of works, readings and actions.\n<more>To promote the exhibition, we started with a specially designed tricot, cap and a hand-drawn font. These adorn a variety of media – from promotional posters to the exhibition catalogue."
-  },
+    },
        
-      {
+    {
     "title": "Nele Hendrikje Sandner",
     "categories": ["Web"],
-    "sectors": ["Culture", "Art", "Economy", "Social"],
+    "sectors":  ["Art & Culture"],
     "customer": "Nele Hendrikje Sandner",
     "year": 2022,
     "link": "https://nelehendrikjesandner.de/",
-    "linkText": "Nele Hendrikje Sandner",
+    "linkText": "nelehendrikjesandner.de",
+    "with": [
+    {"name": "Guida Ribeiro",
+    "website": "https://guidaribeiro.net/"}
+    ],
     "thumbnail": "Nele_Web_browser_4.jpg",
     "galleryFolder": "Nele",
     "gallery": [
-      {
+        {
         "src" : "Nele_Web_mobile_2.jpg",
-        "alt" : "alt"
-      },
+        "alt" : "A mockup shows the menu of artist Nele Hendrikje Sandner's website in mobile view."
+        },
         {
         "src" : "Nele_Web_browser_kl.mp4",
-        "alt" : "alt"
-      },
-      {
+        "alt" : "An animation shows the interaction for the presentation of different series of works by the artist Nele Hendrikje Sandner."
+        },
+        {
         "src" : "Nele_Web_mobile_3.jpg",
-        "alt" : "alt"
-      },
-      {
+        "alt" : "A work by the artist Nele Hendrikje Sandner is shown in the mobile view of the website."
+        },
+        {
         "src" : "Nele_Web_browser_2.jpg",
-        "alt" : "alt"
-      },
-      {
+        "alt" : "A mock-up shows a series of works by artist Nele Hendrikje Sandner on her website."
+        },
+        {
         "src" : "Nele_Web_browser_4.jpg",
-        "alt" : "alt"
-      },
-      {
+        "alt" : "A mock-up shows another series of works by the artist Nele Hendrikje Sandner."
+        },
+        {
         "src" : "Nele_Web_browser_test.mp4",
-        "alt" : "alt"
-      },
-  
-      {
+        "alt" : "An animation guides you through the interaction options on Nele Hendrikje Sandner's website."
+        },
+        {
         "src" : "Nele_Web_browser_5.jpg",
-        "alt" : "alt"
-      }
-    ],
+        "alt" : "A work is displayed in single view."
+        }
+        ],
     "description": "We were allowed to stage the work of the Leipzig artist Nele Hendrikje Sandner on a new website. Delicate and sharp shapes, pastel and strong colours come together in many overlapping layers and structures to form graphic collages.\n<more>We have transferred the emerging spatial depth in Nele's works into a website structure through overlapping layers, in which the works also interact with each other."
-  },
+    },
       
-      
-      {
+    {
     "title": "Spielend Stadt Gestalten",
     "categories": ["Campaign","Web"],
+    "sectors":  ["Public"],
     "customer": "SpielLandschaftStadt e.V.",
     "year": 2021,
     "link": "https://spielend-stadt-gestalten.de/",
-    "linkText": "Spielend Stadt Gestalten",
+    "linkText": "spielend-stadt-gestalten.de",
+    "with": [
+    {"name": "Fabian Brunke",
+    "website": "https://https://fabian-brunke.com/"}
+    ],
     "thumbnail": "SLS_Kampagne_55.jpg",
     "galleryFolder": "SLS",
     "gallery": [
-      {
+        {
         "src" : "SLS_Kampagne_1.gif",
-        "alt" : "alt"
-      },
-      {
+        "alt" : "An animation shows various black and white photos and colour illustrations of play equipment."
+        },
+        {
         "src" :  "SLS_Kampagne_2.jpg",
-        "alt" : "alt"
-      },
-      {
+        "alt" : "Three postcards to promote the Spielend Stadt Gestalten fund lie side by side."
+        },
+        {
         "src" :"SLS_Kampagne_3.jpg",
-        "alt" : "alt"
-      },
-      {
+        "alt" : "The homepage of the website for the Spielend Stadt Gestalten Fund."
+        },
+        {
         "src" :"SLS_Kampagne_5.jpg",
-        "alt" : "alt"
-      },
-      {
+        "alt" : "Various advertising media for the development fund are located next to each other."
+        },
+        {
         "src" :"SLS_Kampagne_7.jpg",
-        "alt" : "alt"
-      },
-      {
+        "alt" : "The folding poster for the development fund is half unfolded on a grey background."
+        },
+        {
         "src" :"SLS_Kampagne_6.jpg",
-        "alt" : "alt"
-      },
-      {
+        "alt" : "The poster is completely unfolded."
+        },
+        {
         "src" :"SLS_Kampagne_4.png",
-        "alt" : "alt"
-      },
-      {
+        "alt" : "Various colourful illustrations in a free arrangement."
+        },
+        {
         "src" :"SLS_Kampagne_8.jpg",
-        "alt" : "alt"
-      },
-      {
+        "alt" : "A mockup shows the mobile view of the website's contact page."
+        },
+        {
         "src" :"SLS_Kampagne_9.jpg",
-        "alt" : "alt"
-      }
-  
-    ],
+        "alt" : "Two tablets show different pages of the fund's website."
+        }
+        ],
     "description": "The SpielLandschaftStadt association is committed to creating and maintaining a child- and family-friendly city. With a fund for the development of recreational and play spaces, children and young people in Bremen are encouraged to contribute their needs and ideas.\n<more>In close cooperation with the association, we developed a target group-oriented campaign including child-friendly wording and sympathetic design for a range of advertising media such as flyers, posters and social media posts."
-  },
+    },
       
-      
-  {
-      "title": "TAD - Liber Memorialis",
-      "categories": ["Editorial"],
-      "customer": "University of Luxemburg",
-      "year": 2021,
-      "thumbnail": "BuA_TAD_LM_web_16.webp",
-      "galleryFolder": "TAD_LM",
-      "gallery": [
+    {
+    "title": "TAD - Liber Memorialis",
+    "categories": ["Editorial"],
+    "sectors":  ["Education"],
+    "customer": "University of Luxemburg",
+    "year": 2021,
+    "with": [
+    {"name": "Barbara Bernardy",
+    "website": "https://barbarabernardy.de/de"}
+    ],
+    "thumbnail": "BuA_TAD_LM_web_16.webp",
+    "galleryFolder": "TAD_LM",
+    "gallery": [
         {
-          "src" : "BuA_TAD_LM_web_01.webp",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_01.webp",
+        "alt" : "A closed book with the title Re-Imagening the Tower of Babel."
         },
         {
-          "src" : "BuA_TAD_LM_web_14.webp",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_14.webp",
+        "alt" : "An intermediate page moves in the half-open book."
         },
         {
-          "src" : "BuA_TAD_LM_web_26.webp",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_26.webp",
+        "alt" : "Details about the headline of an article."
         },
         {
-          "src" : "Nele_Web_browser_Leiste_1200px_1_3.mp4",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_32.webp",
+        "alt" : "A double page in spot colour shows black and white photos."
         },
         {
-          "src" : "BuA_TAD_LM_web_32.webp",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_24.webp",
+        "alt" : "The back of the book in a diagonally cut slipcase."
         },
         {
-          "src" : "BuA_TAD_LM_web_24.webp",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_03.webp",
+        "alt" : "Several books in their slipcases."
         },
         {
-          "src" : "BuA_TAD_LM_web_03.webp",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_10.webp",
+        "alt" : "The open book shows a double page with text and picture."
         },
         {
-          "src" : "BuA_TAD_LM_web_10.webp",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_20.webp",
+        "alt" : "A double page of the book with the beginning of an article."
         },
         {
-          "src" : "BuA_TAD_LM_web_20.webp",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_05.webp",
+        "alt" : "A detail of the cover shows the reflections in the relief lacquer."
         },
         {
-          "src" : "BuA_TAD_LM_web_13.webp",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_31.webp",
+        "alt" : "An open double page, seen from above."
         },
         {
-          "src" : "BuA_TAD_LM_web_05.webp",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_25.webp",
+        "alt" : "A brightly coloured single page with the portrait of an interviewee."
         },
         {
-          "src" : "BuA_TAD_LM_web_31.webp",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_34.webp",
+        "alt" : "The top view of a double page with text and portrait of the author."
         },
         {
-          "src" : "BuA_TAD_LM_web_25.webp",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_27.webp",
+        "alt" : "Typographic details photographed with a shallow depth of field."
         },
         {
-          "src" : "BuA_TAD_LM_web_34.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BuA_TAD_LM_web_27.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BuA_TAD_LM_web_19.webp",
-          "alt" : "alt"
+        "src" : "BuA_TAD_LM_web_19.webp",
+        "alt" : "The end paper is characterised by an illustration in spot colours."
         }
-      ],
-      "description": "Over 12 years, the »Transatlantic Dialogue« conference series has intensively explored cultural diplomacy, transcontinental dialogue and liberal education; it was time to look back at the history and scope of the conference. \n<more>For this retrospective, we have gone back to the creative starting point: Dialogue is reinterpreted in this book and develops analogously to the development of the conference's content into a complex, multi-voiced mesh of opinions and research perspectives."
-    },
-  
-  {
-      "title": "Was bleibt",
-      "categories": ["Campaign"],
-      "customer": "Städtische Galerie Bremen",
-      "year": 2021,
-      "thumbnail": "STGB_Was bleibt flyer-1000px_7.webp",
-      "galleryFolder": "WASB",
-      "gallery": [
-        {
-          "src" : "STGB_Wasbleibt_Kampagne_1000px-1.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "STGB_Was bleibt flyer_1000px_1x1-2.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "STGB_Was bleibt flyer-1000px_3.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "STGB_Wasbleibt_Kampagne_1000px-4.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "STGB_Wasbleibt_Kampagne_1000px-5.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "STGB_Was bleibt flyer-1000px_7.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "STGB_Wasbleibt_Kampagne_1000px-6.webp",
-          "alt" : "alt"
-        }
-      ],
-      "description": "With the exhibition »Was bleibt« , the Städtische Galerie Bremen (STGB) is showing insights into the art collection of the Hanseatic City of Bremen. In addition to a selection of works from the post-war period to the present day, Bremen's new acquisitions as part of the Corona emergency aid will be shown for the first time. \n<more>Through our purely typographic solution, we emphasise the temporal dimension of the exhibition in the advertising campaign, which is revealed to visitors in several ways. For the STGB, we designed the invitation card, posters, banners and advertising campaign."
-    },
-  
-       {
-      "title": "Contradiction Studies",
-      "categories": ["Branding", "Web"],
-      "customer": "Universität Bremen",
-      "year": 2022,
-      "link": "https://contradictionstudies.uni-bremen.de/",
-      "linkText": "Contradiction Studies",
-      "thumbnail": "GRK_CS_Web_browser_1200px_1.webp",
-      "galleryFolder": "GRK",
-      "gallery": [
-        {
-          "src" : "GRK_CS_Web_browser_1200px_1.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :   "GRK_CS_Web_tablet_1000px_2.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :   "GRK_CS_Web_browser_1200px_3.gif",
-          "alt" : "alt"
-        },
-        {
-          "src" :   "GRK_CS_Web_browser_1200px_4.webp",
-          "alt" : "alt"
-        },
-        {
-        "src" :   "GRK_CS_Logo_RGB.webp",
-        "alt" : "alt"
-        },
-        {
-          "src" :   "GRK_CS_Web_mobile_1500px_5.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :   "GRK_CS_Web_mobile_1500px_6.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :   "GRK_CS_Web_tablet_1500px_7.webp",
-          "alt" : "alt"
-        }
-      ],
-      "description": "Research on contradiction is the focus of the Research Training Group »Contradiction Studies«. Starting in 2022, graduate students in the humanities, social sciences and law in particular are invited to examine contradiction and practices of contradiction in close exchange with each other. \n<more>The supposedly simplest form of contradiction, the opposition, serves as the basis of the design. Facets of contradiction emerge in the dialogue. The shimmering colour scheme is countered by a tidy typeface and a user-friendly interaction level, making a complex topic approachable and appealing even to an audience outside the field."
-    },
-  
-      {
-      "title": "Natur und Mohr",
-      "categories": ["Branding", "Packaging"],
-      "customer": "Natur und Mohr",
-      "year": 2020,
-      "thumbnail": "NuM_CD_Packaging_96-3.webp",
-      "galleryFolder": "NUM",
-      "gallery": [
-        {
-          "src" : "NuM_CD_Packaging_96-9.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :"NuM_CD_Packaging_96-12.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :    "NuM_SIgnet_RGB_schwarz.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :     "NuM_CD_Packaging_96-18.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :    "NuM_CD_Packaging_96-5.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :    "NuM_CD_Packaging_96-13.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :    "NuM_CD_Packaging_96-22.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :    "NuM_CD_Packaging_96-20.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :    "NuM_CD_Packaging_96-21.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :    "NuM_CD_Packaging_96-23.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" :    "NuM_CD_Packaging_gif1.gif",
-          "alt" : "alt"
-        }
-      ],
-      "description": "Judith and Dennis Mohr rely on the qualities of traditional fruit growing. Their meadow orchards are not only home to various old tree varieties, but also to a variety of bird and insect species; together with the Mohrs, they ensure the preservation of the increasingly rare cultivated landscapes. \n<more>Delicious juices and fine spirits are made from the autumn harvest. Bas&Aer gives the growing range a tasty exterior. The clear design shows what is inside: pure fruit and a lot of passion."
-    },
-  
-      {
-      "title": "PAN",
-      "categories": [
-        "Branding"
-      ],
-      "customer": "pan productions",
-      "year": 2019,
-      "link": "https://pan-productions.net/",
-      "linkText": "pan productions",
-      "thumbnail": "PAN_CD_72_001.webp",
-      "galleryFolder": "PAN",
-      "gallery": [
-        {
-          "src" : "PAN_CD_72_001.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "PAN_CD_72_005.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "PAN_CD_72_003.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "PAN_CD_72_004.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "PAN_CD_72_006.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "PAN_CD_72_007.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "PAN_CD_72_002.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "PAN_CD_72_010.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "PAN_CD_72_011.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "PAN_CD_72_008.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "PAN_CD_72_012.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "PAN_CD_72_013.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "PAN_CD_72_014.webp",
-          "alt" : "alt"
-        }
-      ],
-      "description": "pan productions stands for atmospherically dense, poetic theatre pieces. They are developed in a cooperative process by artists from the fields of directing, acting, dance, choreography, video art, spatial art, light art, visual art and language. \n<more>The teasing flute god Pan and the classical opposites of drama and comedy were the inspiration for the design. In this double function, the word mark and its counterpart (as a ›synonym‹) span an empty theatre space that wants to be played with."
-    },
-  
-      {
-      "title": "Museum für Fotokopie",
-      "categories": [
-        "Branding", "Web"
-      ],
-      "customer": "Makroscope e.V.",
-      "year": 2020,
-      "link": "https://www.museum-fotokopie.de/",
-      "linkText": "Museum für Fotokopie",
-      "thumbnail": "MFF_Web_Browser_96_2.webp",
-      "galleryFolder": "MFF",
-      "gallery": [
-        {
-          "src" : "MFF_Web_Browser_96_8.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "MFF_Logo_Animation_q_grau.gif",
-          "alt" : "alt"
-        },
-        {
-          "src" : "MFF_Web_Browser_96_1.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "MFF_Web_Browser_96_2.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "MFF_Web_tablet_96_1.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "MFF_Web_Browser_96_3.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "MFF_Web_Browser_96_4.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "MFF_Web_Browser_96_5.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "MFF_CD_Formate_96_1.webp",
-          "alt" : "alt"
-        }
-      ],
-      "description": "The Museum für Fotokopie in Mülheim an der Ruhr has the world's largest collection of its kind with around 30,000 objects consisting of copy art, photocopiers and documentary material. Extensive digitisation now enables long-term archiving and accessibility of the objects. \n<more>In collaboration with Margarida Ribeiro, Bas&Aer developed the corporate design and a website that provides access to the extensive collection as an online archive. In the process, it celebrates the experience of copying in its use: just like on a photocopier, the archive documents and pages can be arranged, sorted and even copied as desired."
-    },
-  
-      {
-      "title": "Diakoniewerk Simeon",
-      "categories": [
-        "Space"
-      ],
-      "customer": "Diakoniewerk Simeon",
-      "year": 2018,
-      "thumbnail": "DWS_LS_72ppi_1.webp",
-      "galleryFolder": "Diakoniewerk",
-      "gallery": [
-        {
-          "src" : "DWS_LS_72ppi_1.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "DWS_LS_72ppi_2.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "DWS_LS_72ppi_3.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "DWS_LS_72ppi_4.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "DWS_LS_150ppi_5.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "DWS_LS_150ppi_6.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "DWS_LS_150ppi_7.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "DWS_LS_72ppi_8.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "DWS_LS_72ppi_9.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "DWS_LS_72ppi_10.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "DWS_LS_72ppi_11.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "DWS_LS_72ppi_13.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "DWS_LS_72ppi_14.webp",
-          "alt" : "alt"
-        }
-      ],
-      "description": "Diakoniewerk Simeon is a social, non-profit organisation with almost 90 locations in Berlin and Brandenburg. In cooperation with the designer and photographer Jakob Weber, we developed a modular signage system for the house in Sonnenallee in Berlin. \n<more>The signage impresses with a clever rail system that can be used individually depending on the usage scenario. For example, as an info board, as a coat rack, as a board for quick notes, as a light strip. The combination of lines and surfaces ensures quick orientation and harmonious integration into the existing building structure."
+        ],
+    "description": "Over 12 years, the »Transatlantic Dialogue« conference series has intensively explored cultural diplomacy, transcontinental dialogue and liberal education; it was time to look back at the history and scope of the conference. \n<more>For this retrospective, we have returned to the starting point of the conference: The dialogue is creatively reinterpreted in this book and develops into a complex, polyphonic web of opinions and research perspectives analogous to the development of the conference's content"
     },
   
     {
-      "title": "PostHeimat",
-      "categories": [
-        "Web"
-      ],
-      "customer": "PostHeimat",
-      "year": 2020,
-      "link": "https://www.postheimat.de",
-      "linkText": "PostHeimat",
-      "thumbnail": "20_BuA_PostHeimat_72_01.webp",
-      "galleryFolder": "PostHeimat",
-      "gallery": [
+    "title": "Was bleibt",
+    "categories": ["Campaign"],
+    "sectors":  ["Art & Culture"],
+    "customer": "Städtische Galerie Bremen",
+    "year": 2021,
+    "with": [
+    {"name": "Christine Rudi",
+    "website": "https://de.linkedin.com/in/christine-rudi-83b939175"}
+    ],
+    "thumbnail": "STGB_Was bleibt flyer-1000px_7.webp",
+    "galleryFolder": "WASB",
+    "gallery": [
         {
-          "src" : "20_BuA_PostHeimat_72_01.webp",
-          "alt" : "alt"
+        "src" : "STGB_Wasbleibt_Kampagne_1000px-1.webp",
+        "alt" : "A large billboard on Rembertiring displays an announcement for the exhibition Was Bleibt (What Remains) at the Städtische Galerie Bremen."
         },
         {
-          "src" : "20_BuA_PostHeimat_72_02.webp",
-          "alt" : "alt"
+        "src" : "STGB_Was bleibt flyer_1000px_1x1-2.webp",
+        "alt" : "A flyer folded several times shows the repetitive lettering Was Bleibt."
         },
         {
-          "src" : "20_BuA_PostHeimat_72_03.webp",
-          "alt" : "alt"
+        "src" : "STGB_Was bleibt flyer-1000px_3.webp",
+        "alt" : "Two flyers with zigzag folds lie next to each other, showing their front and back sides."
         },
         {
-          "src" : "20_BuA_PostHeimat_72_04.webp",
-          "alt" : "alt"
+        "src" : "STGB_Wasbleibt_Kampagne_1000px-4.webp",
+        "alt" : "An advertising pillar with a poster for the exhibition shows the repetitive lettering Was Bleibt. A bicycle rides past in front of the pillar."
         },
         {
-          "src" : "20_BuA_PostHeimat_72_05.webp",
-          "alt" : "alt"
+        "src" : "STGB_Wasbleibt_Kampagne_1000px-5.webp",
+        "alt" : "A banner with the poster motif is attached to the access path to the Städtische Galerie Bremen."
         },
         {
-          "src" : "20_BuA_PostHeimat_72_06.webp",
-          "alt" : "alt"
+        "src" : "STGB_Was bleibt flyer-1000px_7.webp",
+        "alt" : "The flyer announcing the exhibition is characterised by waterfall-like typography."
         },
         {
-          "src" : "20_BuA_PostHeimat_72_07.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "20_BuA_PostHeimat_72_08.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "20_BuA_PostHeimat_72_09.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "20_BuA_PostHeimat_72_10.webp",
-          "alt" : "alt"
+        "src" : "STGB_Wasbleibt_Kampagne_1000px-6.webp",
+        "alt" : "The poster for the exhibition Was Bleibt (What Remains) is mounted on a stand at the main entrance to the Städtische Galerie Bremen."
         }
-      ],
-      "description": "PostHeimat is an association of different theatre projects that deal with the issues of migration, flight, identity, multilingualism and power structures. Together they pursue the goal of questioning structural hierarchies in theatre and dismantling discrimination and racism. \n<more>Clarity, bold statements and no labels are the basis of our design. And in the midst of it all, it offers space for individuality, artistic expression and a growing network that hopefully makes our society a little better."
+        ],
+    "description": "With the exhibition »Was bleibt« , the Städtische Galerie Bremen (STGB) is showing insights into the art collection of the Hanseatic City of Bremen. In addition to a selection of works from the post-war period to the present day, Bremen's new acquisitions as part of the Corona emergency aid will be shown for the first time. \n<more>Through our purely typographic solution, we emphasise the temporal dimension of the exhibition in the advertising campaign, which is revealed to visitors in several ways. For the STGB, we designed the invitation card, posters, banners and advertising campaign."
     },
   
     {
-      "title": "Die historische deutsch-jüdische Presse als Schnittstelle",
-      "categories": [
-        "Editorial"
-      ],
-      "customer": "Universität Bremen, <br>Deutsche Presseforschung",
-      "year": 2019,
-      "thumbnail": "BA_Konferenz_HDJPresse_72ppi_01.webp",
-      "galleryFolder": "HDJPresse",
-      "gallery": [
+    "title": "Contradiction Studies",
+    "categories": ["Branding", "Web"],
+    "sectors":  ["Education"],
+    "customer": "University of Bremen",
+    "year": 2022,
+    "endYear": "now",
+    "link": "https://contradictionstudies.uni-bremen.de/en/",
+    "linkText": "contradictionstudies.uni-bremen.de",
+    "with": [
+    {"name": "Fabian Brunke",
+    "website": "https://https://fabian-brunke.com/"}
+    ],
+    "thumbnail": "GRK_CS_Web_browser_1200px_1.webp",
+    "galleryFolder": "GRK",
+    "gallery": [
         {
-          "src" : "BA_Konferenz_HDJPresse_72ppi_01.webp",
-          "alt" : "alt"
+        "src" : "GRK_CS_Mappe_01.webp",
+        "alt" : "Two  folders with the bold colours red, blue and pink are open and show the branding of the DFG Research Training Group Contradiction Studies."
         },
         {
-          "src" : "BA_Konferenz_HDJPresse_72ppi_02.webp",
-          "alt" : "alt"
+        "src" : "GRK_CS_Web_mobile_02.mp4",
+        "alt" : "On a smartphone, the two words Contra and Diction merge to form the word mark of the DFG Research Training Group Contradiction Studies."
         },
         {
-          "src" : "BA_Konferenz_HDJPresse_72ppi_03.webp",
-          "alt" : "alt"
+        "src" : "GRK_CS_Stift_06.webp",
+        "alt" : "A black pencil lies on two coloured papers. CONTRA is written on it in white."
         },
         {
-          "src" : "BA_Konferenz_HDJPresse_72ppi_04.webp",
-          "alt" : "alt"
+        "src" : "GRK_CS_Web_browser_03.jpg",
+        "alt" : "A screenshot of the website shows the homepage of the Research Training Group's website."
         },
         {
-          "src" : "BA_Konferenz_HDJPresse_72ppi_05.webp",
-          "alt" : "alt"
+        "src" : "GRK_CS_Web_browser_04.mp4",
+        "alt" : "An animation shows the interaction options on the Contradiction Studies website."
         },
         {
-          "src" : "BA_Konferenz_HDJPresse_72ppi_06.webp",
-          "alt" : "alt"
+        "src" : "GRK_CS_Web_tablet_07.webp",
+        "alt" : "A tablet shows a mobile view of the website and the profiles of the faculties of the DFG Research Training Group at the University of Bremen."
         },
         {
-          "src" : "BA_Konferenz_HDJPresse_72ppi_07.webp",
-          "alt" : "alt"
+        "src" : "GRK_CS_Web_mobile_05.jpg",
+        "alt" : "A screenshot of the mobile view of the landing page."
         },
         {
-          "src" : "BA_Konferenz_HDJPresse_72ppi_08.webp",
-          "alt" : "alt"
+        "src" : "GRK_CS_Web_browser_05.webp",
+        "alt" : "Coloured cards with quotes can be seen on the website."
         },
         {
-          "src" : "BA_Konferenz_HDJPresse_72ppi_09.webp",
-          "alt" : "alt"
+        "src" :   "GRK_CS_Mappe_07.webp",
+        "alt" : "A folder in the design of Contradiction Studies is open. Inside you can see the words CONTRA and DICTION in white lettering on a black background."
         }
-      ],
-      "description": "From 24–27 November 2019, 42 speakers met at the Haus der Wissenschaft in Bremen. The focus was on the diversity and contemporary significance of the German-Jewish press from the Enlightenment to National Socialism. \n<more>Three conference days on three DIN A4 sheets - We developed a programme flyer that captivates with selected papers in grey tones, a characteristic typeface and a clever folding. A blue information leaflet sets the decisive accent. We designed the brochure for the abstracts with the same degree of thoughtful simplicity."
-    },
-  
-      {
-      "title": "MoinSonne",
-      "categories": [
-        "Branding", "Campaign"
-      ],
-      "customer": "AOT Elektrotechnik",
-      "year": 2019,
-      "thumbnail": "BA_MoinSonne_branding_07.webp",
-      "galleryFolder": "MoinSonne",
-      "gallery": [
-        {
-          "src" : "BA_MoinSonne_branding_01.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_MoinSonne_branding_02.gif",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_MoinSonne_branding_03.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_MoinSonne_branding_04.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_MoinSonne_branding_05.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_MoinSonne_branding_06.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_MoinSonne_branding_07.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_MoinSonne_branding_08.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_MoinSonne_branding_09.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_MoinSonne_branding_10.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_MoinSonne_branding_11.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_MoinSonne_branding_12.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "BA_MoinSonne_branding_13.webp",
-          "alt" : "alt"
-        }
-      ],
-      "description": "MoinSonne – Mach Watt draus! From small balcony power plants to complete photovoltaic systems and smart energy management. Self-sufficient energy supply from regenerative energy is the vision and mission of AOT Elektrotechnik. \n<more>We transferred the passion and know-how of the electrical engineers into a colourful, friendly branding with striking patterns and down-to-earth wording that is sure to inspire the northern Germans to take action."
+        ],
+    "description": "Research on contradiction is the focus of the Research Training Group »Contradiction Studies«. Starting in 2022, graduate students in the humanities, social sciences and law in particular are invited to examine contradiction and practices of contradiction in close exchange with each other. \n<more>The supposedly simplest form of contradiction, the opposition, serves as the basis of the design. Facets of contradiction emerge in the dialogue. The shimmering colour scheme is countered by a tidy typeface and a user-friendly interaction level, making a complex topic approachable and appealing even to an audience outside the field."
     },
   
     {
-      "title": "TraMiS",
-      "categories": [
-        "Branding",
-        "Web"
-      ],
-      "customer": "Universität Bremen",
-      "year": 2018,
-      "link": "https://tramis.de",
-      "linkText": "Tramis",
-      "thumbnail": "BuA_TraMis_Thumb.webp",
-      "galleryFolder": "Tramis",
-      "gallery": [
+    "title": "Natur und Mohr",
+    "categories": ["Branding", "Web", "Packaging"],
+    "sectors":  ["Food"],
+    "customer": "Natur und Mohr",
+    "year": 2020,
+    "endYear": "now",
+    "link": "https://naturundmohr.de/",
+    "linkText": "naturundmohr.de",
+    "thumbnail": "NuM_CD_Packaging_96-3.webp",
+    "galleryFolder": "NUM",
+    "gallery": [
         {
-          "src" : "BuA_TraMis_01.gif",
-          "alt" : "alt"
+        "src" : "NuM_CD_Packaging_96-9.webp",
+        "alt" : "A bottle of Obstschäumle, a pear secco, has a green label. A pear is leaning against it."
         },
         {
-          "src" : "BuA_TraMis_02.png",
-          "alt" : "alt"
+        "src" :"NuM_CD_Packaging_96-12.webp",
+        "alt" : "The label on a cardboard box shows typographical details and the logo of the manufacturer Natur & Mohr."
         },
         {
-          "src" : "BuA_TraMis_03.png",
-          "alt" : "alt"
+        "src" : "NuM_SIgnet_RGB_schwarz.webp",
+        "alt" : "The logo of Natur und Mohr on a light blue background."
         },
         {
-          "src" : "BuA_TraMis_04.png",
-          "alt" : "alt"
+        "src" : "NuM_CD_Packaging_96-18.webp",
+        "alt" : "Various products from the orchards of Natur und Mohr are laid out on a table together with delicious apples. "
         },
         {
-          "src" : "BuA_TraMis_05.png",
-          "alt" : "alt"
+        "src" : "NuM_CD_Packaging_96-5.webp",
+        "alt" : "A detail of the label on a bottle of Secco shows a description of the product."
         },
         {
-          "src" : "BuA_TraMis_06.gif",
-          "alt" : "alt"
+        "src" : "NuM_CD_Packaging_96-13.webp",
+        "alt" : "Seven crispy apples from the orchards of Natur und Mohr."
         },
         {
-          "src" : "BuA_TraMis_07.png",
-          "alt" : "alt"
+        "src" : "NuM_CD_Packaging_96-22.webp",
+        "alt" : "A small bottle of apple Secco stands in the foreground in front of other products from Natur und Mohr."
+        },
+        {
+        "src" : "NuM_CD_Packaging_96-20.webp",
+        "alt" : "Two business cards show their front and back and the design of nature and Mohr."
+        },
+        {
+        "src" : "NuM_CD_Packaging_96-21.webp",
+        "alt" : "A composition with numerous products from Natur und Mohr is arranged together with apples and pears."
+        },
+        {
+        "src" : "NuM_CD_Packaging_96-23.webp",
+        "alt" : "Further details of the packaging design for the manufacturer of sparkling wines, juices and other natural products Natur und Mohr."
+        },
+        {
+        "src" : "NuM_CD_Packaging_gif1.gif",
+        "alt" : "A stop motion animation shows how Secco is poured into a glass. "
         }
-      ],
-      "description": "Newly immigrated pupils are admitted to school, others leave school again or spend part of their school years abroad. The TraMiS research project deals with the topic of »Transnational Mobility in Schools«. \n<more>How can such a complex topic be abstracted in terms of design? For the conception and design of the logo and website, we were concerned with lifelines, border crossing and the connection between academic work and non-straight biographies."
+        ],
+    "description": "Judith and Dennis Mohr rely on the qualities of traditional fruit growing. Their meadow orchards are not only home to various old tree varieties, but also to a variety of bird and insect species; together with the Mohrs, they ensure the preservation of the increasingly rare cultivated landscapes. \n<more>Delicious juices and fine spirits are made from the autumn harvest. Bas&Aer gives the growing range a tasty exterior. The clear design shows what is inside: pure fruit and a lot of passion."
     },
   
     {
-      "title": "Vorweg",
-      "categories": [
-        "Branding"
-      ],
-      "customer": "Vorweg",
-      "year": 2018,
-      "thumbnail": "BA_Vorweg_CD_72ppi_1.webp",
-      "galleryFolder": "Vorweg",
-      "gallery": [
+    "title": "PAN",
+    "categories": ["Branding", "Web"],
+    "sectors":  ["Art & Culture"],
+    "customer": "pan productions",
+    "year": 2019,
+    "link": "https://pan-productions.net/",
+    "linkText": "pan-productions.net",
+    "thumbnail": "PAN_CD_72_001.webp",
+    "galleryFolder": "PAN",
+    "gallery": [
         {
-          "src" : "BA_Vorweg_CD_72ppi_1.webp",
-          "alt" : "alt"
+        "src" : "PAN_CD_72_001.webp",
+        "alt" : "Several stacks of business cards show the design of Pan Productions. They lie on a bright red background."
         },
         {
-          "src" : "BA_Vorweg_CD_72ppi_2.webp",
-          "alt" : "alt"
+        "src" : "PAN_CD_72_005.webp",
+        "alt" : "A folded sheet of stationery designed by Pan Productions."
         },
         {
-          "src" : "BA_Vorweg_CD_72ppi_3.webp",
-          "alt" : "alt"
+        "src" : "PAN_CD_72_003.webp",
+        "alt" : "Next to a stack of business cards is another business card showing the contact details of Pan Productions."
         },
         {
-          "src" : "BA_Vorweg_CD_72ppi_4.webp",
-          "alt" : "alt"
+        "src" : "PAN_CD_72_004.webp",
+        "alt" : "The Pan Productions logo consists of the letters P, A and N. They are arranged like a pan flute."
+        },
+        {
+        "src" : "PAN_CD_72_006.webp",
+        "alt" : "A rolled paper emphasises the logo and shows the stationery in use."
+        },
+        {
+        "src" : "PAN_CD_72_007.webp",
+        "alt" : "An overview of the business equipment designed by Pan Productions."
+        },
+        {
+        "src" : "PAN_CD_72_002.webp",
+        "alt" : "Several sheets of stationery lie next to each other and show the different possible uses of this template."
+        },
+        {
+        "src" : "PAN_CD_72_010.webp",
+        "alt" : "In a marginal column at the bottom of the letterhead are contact details for the theatre label Pan Productions."
+        },
+        {
+        "src" : "PAN_CD_72_011.webp",
+        "alt" : "Business cards in combination with the stationery."
+        },
+        {
+        "src" : "PAN_CD_72_008.webp",
+        "alt" : "A poster for the theatre production The Little Prince by Pan Productions."
+        },
+        {
+        "src" : "PAN_CD_72_012.webp",
+        "alt" : "An invitation for the theatre production The Little Prince by Pan Productions."
+        },
+        {
+        "src" : "PAN_CD_72_013.webp",
+        "alt" : "The front of the programme flyer for the theatre production of The Little Prince is presented in closed and unfolded form side by side."
+        },
+        {
+        "src" : "PAN_CD_72_014.webp",
+        "alt" : "The inside of the programme flyer."
         }
-      ],
-      "description": "VORWEG supports and advises small and medium-sized enterprises on business management issues and also offers training on data protection. Two topics that, at first glance, seem dull and call for freshness and lightness. \n<more>For us, this was an exciting task, to which we responded with a crisp colour concept, clear typography and a set of graphic elements. Everything to build yourself, with a Word template for business documents and a style guide that explains and illustrates the basic design rules."
+        ],
+    "description": "pan productions stands for atmospherically dense, poetic theatre pieces. They are developed in a cooperative process by artists from the fields of directing, acting, dance, choreography, video art, spatial art, light art, visual art and language. \n<more>The teasing flute god Pan and the classical opposites of drama and comedy were the inspiration for the design. In this double function, the word mark and its counterpart (as a ›synonym‹) span an empty theatre space that wants to be played with."
     },
   
     {
-      "title": "Kirchenjubiläum „Zum Verklärten Christus“",
-      "categories": [
-        "Editorial", "Campaign"
-      ],
-      "customer": "Pfarrgemeinde Bad Driburg",
-      "year": 2018,
-      "thumbnail": "ZVC_fahne_72ppi_5.jpg",
-      "galleryFolder": "ZVC",
-      "gallery": [
+    "title": "Museum für Fotokopie",
+    "categories": ["Branding", "Web"],
+    "sectors":  ["Art & Culture"],
+    "customer": "Makroscope e.V.",
+    "year": 2020,
+    "link": "https://www.museum-fotokopie.de/",
+    "linkText": "museum-fotokopie.de",
+    "with": [
+    {"name": "Guida Ribeiro",
+    "website": "https://guidaribeiro.net/"}
+    ],
+    "thumbnail": "MFF_Web_Browser_96_2.webp",
+    "galleryFolder": "MFF",
+    "gallery": [
         {
-          "src" : "ZVC_pub_übersicht_72ppi_1.webp",
-          "alt" : "alt"
+        "src" : "MFF_Web_Browser_96_8.webp",
+        "alt" : "The homepage of the website of the Museum of Photocopying in Mühlheim."
         },
         {
-          "src" : "ZVC_pub_übersicht_72ppi_3.webp",
-          "alt" : "alt"
+        "src" : "MFF_Logo_Animation_q_grau.gif",
+        "alt" : "An animated version of the Museum of Photocopying logo."
         },
         {
-          "src" : "ZVC_fahne_72ppi_4.webp",
-          "alt" : "alt"
+        "src" : "MFF_Web_Browser_96_1.webp",
+        "alt" : "The basic structure of the website and its interaction elements are reminiscent of a photocopier."
         },
         {
-          "src" : "ZVC_fahne_300ppi_6.webp",
-          "alt" : "alt"
+        "src" : "MFF_Web_Browser_96_2.webp",
+        "alt" : "The archive of the Museum of Photocopying is shown as a table in a white container."
         },
         {
-          "src" : "ZVC_fahne_72ppi_5.webp",
-          "alt" : "alt"
+        "src" : "MFF_Web_tablet_96_1.webp",
+        "alt" : "The welcome message for website visitors can be seen on a tablet. It is written on a white card."
         },
         {
-          "src" : "ZVC_pub_übersicht_72ppi_2.webp",
-          "alt" : "alt"
+        "src" : "MFF_Web_Browser_96_3.webp",
+        "alt" : "Individual content elements on the website overlap like papers on a photocopier."
         },
         {
-          "src" : "ZVC_pub_72ppi-6.webp",
-          "alt" : "alt"
+        "src" : "MFF_Web_Browser_96_4.webp",
+        "alt" : "Open content elements on the website overlap like papers on a photocopier."
         },
         {
-          "src" : "ZVC_pub_72ppi-7.webp",
-          "alt" : "alt"
+        "src" : "MFF_Web_Browser_96_5.webp",
+        "alt" : "Images and Texts on white cards overlap."
         },
         {
-          "src" : "ZVC_pub_72ppi-crop-8.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "ZVC_pub_72ppi-crop-9.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "ZVC_pub_72ppi-crop-10.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "ZVC_pub_72ppi-crop-11.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "ZVC_pub_72ppi-crop-12.webp",
-          "alt" : "alt"
+        "src" : "MFF_CD_Formate_96_1.webp",
+        "alt" : "An illustration shows how the Museum of Photocopying logo works on different formats and in different proportions."
         }
-      ],
-      "description": "The church of a small town in East Westphalia celebrates its 50th anniversary. Bas&Aer joins in the celebrations. Together with the client, we developed a commemorative publication that tells the story of the church and ultimately also the development of the town settlement up to the present day. \n<more>For the design concept, we were allowed to look into the historical building plans of the church. Just as the ground plan represents the folds of a coat, our cover now completely wraps the book. As in the church, sections of the red and blue windows inside set the rhythm."
+        ],
+    "description": "The Museum für Fotokopie in Mülheim an der Ruhr has the world's largest collection of its kind with around 30,000 objects consisting of copy art, photocopiers and documentary material. Extensive digitisation now enables long-term archiving and accessibility of the objects. \n<more>In collaboration with Margarida Ribeiro, Bas&Aer developed the corporate design and a website that provides access to the extensive collection as an online archive. In the process, it celebrates the experience of copying in its use: just like on a photocopier, the archive documents and pages can be arranged, sorted and even copied as desired."
     },
   
     {
-      "title": "Heilig Rock Wallfahrt",
-      "categories": [
-        "Space"
-      ],
-      "customer": "Wettbewerbsbeitrag",
-      "year": 2011,
-      "thumbnail": "BA_HeiligRock_Orientierung_72ppi_1.webp",
-      "galleryFolder": "HeiligRock",
-      "gallery": [
+    "title": "Diakoniewerk Simeon",
+    "categories": ["Space"],
+    "sectors":  ["Health"],
+    "customer": "Diakoniewerk Simeon",
+    "year": 2018,
+    "with": [
+    {"name": "Jakob Weber",
+      "website": "http://jakobweber.de/"}
+    ],
+    "thumbnail": "DWS_LS_72ppi_1.webp",
+    "galleryFolder": "Diakoniewerk",
+    "gallery": [
         {
-          "src" : "BA_HeiligRock_Orientierung_72ppi_5.webp",
-          "alt" : "alt"
+        "src" : "DWS_LS_72ppi_1.webp",
+        "alt" : "A modular orientation system for the Diakoniewerk Simeonstift based on wooden bars and white signs of the same height, which are slid between the wooden bars."
         },
         {
-          "src" : "BA_HeiligRock_Orientierung_72ppi_6.webp",
-          "alt" : "alt"
+        "src" : "DWS_LS_72ppi_2.webp",
+        "alt" : "This orientation system can be used to create different configurations and combine different numbers of signs and information."
         },
         {
-          "src" : "BA_HeiligRock_Orientierung_72ppi_7.webp",
-          "alt" : "alt"
+        "src" : "DWS_LS_72ppi_3.webp",
+        "alt" : "A sketch shows flexible installation options for the signage."
         },
         {
-          "src" : "BA_HeiligRock_Orientierung_72ppi_1.webp",
-          "alt" : "alt"
+        "src" : "DWS_LS_72ppi_4.webp",
+        "alt" : "One chalkboard is fixed in the same wooden bars."
         },
         {
-          "src" : "BA_HeiligRock_Orientierung_72ppi_2.webp",
-          "alt" : "alt"
+        "src" : "DWS_LS_150ppi_5.webp",
+        "alt" : "A floor plan shows the flow of visitors in the Diakoniewerk Simeonstift building."
         },
         {
-          "src" : "BA_HeiligRock_Orientierung_72ppi_3.webp",
-          "alt" : "alt"
+        "src" : "DWS_LS_150ppi_6.webp",
+        "alt" : "Another floor plan shows the most important points and their orientation functions in the Diakoniewerk Simeonstift building."
         },
         {
-          "src" : "BA_HeiligRock_Orientierung_72ppi_4.webp",
-          "alt" : "alt"
+        "src" : "DWS_LS_150ppi_7.webp",
+        "alt" : "A visualisation of the signage at the main entrance to the Diakoniewerk Simeonstift building in Berlin."
         },
         {
-          "src" : "BA_HeiligRock_Orientierung_72ppi_8.webp",
-          "alt" : "alt"
+        "src" : "DWS_LS_72ppi_8.webp",
+        "alt" : "A sketch of the side view of signs on the exterior façade of the building facing the street. "
+        },
+        {
+        "src" : "DWS_LS_72ppi_9.webp",
+        "alt" : "In outdoor areas, signs and lighting elements are inserted into horizontal rails according to the same principle."
+        },
+        {
+        "src" : "DWS_LS_72ppi_10.webp",
+        "alt" : "An exemplary orientation sign shows the hierarchy and arrangement of the information elements."
+        },
+        {
+        "src" : "DWS_LS_72ppi_11.webp",
+        "alt" : "The icons used have been individually designed for the most important locations in the building."
+        },
+        {
+        "src" : "DWS_LS_72ppi_13.webp",
+        "alt" : "Up to six rails can be arranged on top of each other. They hold five rows of signs."
+        },
+        {
+        "src" : "DWS_LS_72ppi_14.webp",
+        "alt" : "A visualisation shows the size relationships between the orientation system and visitors to the building."
         }
-      ],
-      "description": "On the occasion of the Holy Tunic pilgrimage in 2012, the city of Trier expected about 500,000 visitors. In a competition, the city called for contributions for an orientation system that would withstand the demands of the crowds and not run the risk of being lost in the city signage. \n<more>The core idea of the contribution shown here was to take up the formal language of the logo and to focus on the motto »And bring together what is separate«. The result is a modular system of trapezoidal individual parts of the rock, which are displayed as large-format banners in the city."
+        ],
+    "description": "Diakoniewerk Simeon is a social, non-profit organisation with almost 90 locations in Berlin and Brandenburg. In cooperation with the designer and photographer Jakob Weber, we developed a modular signage system for the house in Sonnenallee in Berlin. \n<more>The signage impresses with a clever rail system that can be used individually depending on the usage scenario. For example, as an info board, as a coat rack, as a board for quick notes, as a light strip. The combination of lines and surfaces ensures quick orientation and harmonious integration into the existing building structure."
     },
   
     {
-      "title": "Komodo Coffee",
-      "categories": [
-        "Branding", "Packaging"
-      ],
-      "customer": "Komodo Coffee",
-      "year": 2015,
-      "thumbnail": "BA_Komodo_CD_144ppi_1.webp",
-      "galleryFolder": "Komodo Coffee",
-      "gallery": [
+    "title": "PostHeimat",
+    "categories": ["Web"],
+    "sectors":  ["Art & Culture"],
+    "customer": "PostHeimat",
+    "year": 2020,
+    "link": "https://www.postheimat.de",
+    "linkText": "postheimat.de",
+    "with": [
+    {"name": "Guida Ribeiro",
+    "website": "https://guidaribeiro.net/"}
+    ],
+    "thumbnail": "20_BuA_PostHeimat_72_01.webp",
+    "galleryFolder": "PostHeimat",
+    "gallery": [
         {
-          "src" : "BA_Komodo_CD_144ppi_1.webp",
-          "alt" : "alt"
+        "src" : "20_BuA_PostHeimat_72_01.webp",
+        "alt" : "On the PostHeimat theatre network's website, users are greeted by a bright red colour and a brief explanation of the network's concept."
         },
         {
-          "src" : "BA_Komodo_CD_144ppi_2.webp",
-          "alt" : "alt"
+        "src" : "20_BuA_PostHeimat_72_02.webp",
+        "alt" : "Two tablets show the participating theatre groups in the PostHeimat network."
         },
         {
-          "src" : "BA_Komodo_CD_144ppi_3.webp",
-          "alt" : "alt"
+        "src" : "20_BuA_PostHeimat_72_03.webp",
+        "alt" : "A screenshot of the homepage of the PostHeimat website with quotes and statements."
         },
         {
-          "src" : "BA_Komodo_CD_144ppi_4.webp",
-          "alt" : "alt"
+        "src" : "20_BuA_PostHeimat_72_04.webp",
+        "alt" : "Another screenshot of the homepage of the PostHeimat website with bright colours."
+        },
+        {
+        "src" : "20_BuA_PostHeimat_72_05.webp",
+        "alt" : "All players are listed and presented in a clearly structured table on an overview page."
+        },
+        {
+        "src" : "20_BuA_PostHeimat_72_06.webp",
+        "alt" : "A screenshot shows the page with activities of the network."
+        },
+        {
+        "src" : "20_BuA_PostHeimat_72_07.webp",
+        "alt" : "A photo gallery shows numerous impressions of the network meetings. "
+        },
+        {
+        "src" : "20_BuA_PostHeimat_72_08.webp",
+        "alt" : "Images can be enlarged to full screen size in a slideshow."
+        },
+        {
+        "src" : "20_BuA_PostHeimat_72_09.webp",
+        "alt" : "A mock-up of a smartphone shows the mobile view of the PostHeimat website."
+        },
+        {
+        "src" : "20_BuA_PostHeimat_72_10.webp",
+        "alt" : "The contact page on the website is kept simple and clear. The email address is set in a very large font and catches the user's eye."
         }
-      ],
-      "description": "Directly traded coffee from Indonesia, gently roasted and distributed in Bremen. Behind the names ›Dolok Marapi‹, ›Orang Gunong‹, ›Harangan Udan‹ and ›Tao Touran‹ you will find real character heads with their own history. \n<more>The interplay of the two colourful packaging labels points to the close cooperation with the coffee farmers. Because at Komodo Coffee, direct trade comes first - and right after that, of course, comes the enjoyment of first-class coffees and espressos!"
+        ],
+    "description": "PostHeimat is an association of different theatre projects that deal with the issues of migration, flight, identity, multilingualism and power structures. Together they pursue the goal of questioning structural hierarchies in theatre and dismantling discrimination and racism. \n<more>Clarity, bold statements and no labels are the basis of our design. And in the midst of it all, it offers space for individuality, artistic expression and a growing network that hopefully makes our society a little better."
     },
   
     {
-      "title": "Transatlantic Dialogue",
-      "categories": [
-        "Editorial"
-      ],
-      "customer": "Université du Luxembourg",
-      "year": 2017,
-      "thumbnail": "17_TAD_band-72-01.webp",
-      "galleryFolder": "TAD",
-      "gallery": [
+    "title": "Die historische deutsch-jüdische Presse als Schnittstelle",
+    "categories": ["Editorial"],
+    "sectors":  ["Education"],
+    "customer": "University of Bremen, <br>Deutsche Presseforschung",
+    "year": 2019,
+    "thumbnail": "BA_Konferenz_HDJPresse_72ppi_01.webp",
+    "galleryFolder": "HDJPresse",
+    "gallery": [
         {
-          "src" : "17_TAD_band-72-01.webp",
-          "alt" : "alt"
+        "src" : "BA_Konferenz_HDJPresse_72ppi_01.webp",
+        "alt" : "The programme flyers for the conference The Historical German-Jewish Press as an Interface can be folded together."
         },
         {
-          "src" : "17_TAD_band-72-02.webp",
-          "alt" : "alt"
+        "src" : "BA_Konferenz_HDJPresse_72ppi_02.webp",
+        "alt" : "Four coloured DIN A4 pieces of paper are placed next to each other. They provide information about the conference programme."
         },
         {
-          "src" : "17_TAD_band-72-03.webp",
-          "alt" : "alt"
+        "src" : "BA_Konferenz_HDJPresse_72ppi_03.webp",
+        "alt" : "The abstracts of the presentations are designed in a similar way and are summarised in a binder."
         },
         {
-          "src" : "17_TAD_band-72-04.webp",
-          "alt" : "alt"
+        "src" : "BA_Konferenz_HDJPresse_72ppi_04.webp",
+        "alt" : "The introductory text is printed on light blue paper."
         },
         {
-          "src" : "17_TAD_band-72-05.webp",
-          "alt" : "alt"
+        "src" : "BA_Konferenz_HDJPresse_72ppi_05.webp",
+        "alt" : "The day's programme shows the main topic on the front, the day's schedule on the inside and contact details, sponsors and organisers on the back."
         },
         {
-          "src" : "17_TAD_band-72-06.webp",
-          "alt" : "alt"
+        "src" : "BA_Konferenz_HDJPresse_72ppi_06.webp",
+        "alt" : "Typographic details in a close-up."
         },
         {
-          "src" : "17_TAD_band-72-07.webp",
-          "alt" : "alt"
+        "src" : "BA_Konferenz_HDJPresse_72ppi_07.webp",
+        "alt" : "The individual components of the flyer can be freely combined."
         },
         {
-          "src" : "17_TAD_band-72-08.webp",
-          "alt" : "alt"
+        "src" : "BA_Konferenz_HDJPresse_72ppi_08.webp",
+        "alt" : "The abstracts are printed on standard paper and set out clearly and concisely."
         },
         {
-          "src" : "17_TAD_band-72-09.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "17_TAD_band-72-10.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "17_TAD_band-72-11.webp",
-          "alt" : "alt"
+        "src" : "BA_Konferenz_HDJPresse_72ppi_09.webp",
+        "alt" : "All participating scientists are named on the inside cover of the abstracts."
         }
-      ],
-      "description": "In the conference proceedings »Transatlantic Dialogue«, cultural diplomacy is examined from different perspectives on more than 150 pages. We have developed a documentation that invites you to continue, think and discuss. \n<more>Behind the seemingly playful use of colour is an organising principle that structures the contributions to the conference thematically and chronologically. Two colours face each other in dialogue. In the pictures, these mix and thus give them an independent colouring."
+        ],
+    "description": "From 24–27 November 2019, 42 speakers met at the Haus der Wissenschaft in Bremen. The focus was on the diversity and contemporary significance of the German-Jewish press from the Enlightenment to National Socialism. \n<more>Three conference days on three DIN A4 sheets - We developed a programme flyer that captivates with selected papers in grey tones, a characteristic typeface and a clever folding. A blue information leaflet sets the decisive accent. We designed the brochure for the abstracts with the same degree of thoughtful simplicity."
     },
   
     {
-      "title": "Bremen und seine Presse im Ersten Weltkrieg",
-      "categories": [
-        "Space"
-      ],
-      "customer": "Universität Bremen",
-      "year": 2014,
-      "thumbnail": "BA_BremenPresse_Raum_144_01.webp",
-      "galleryFolder": "Bremer Presse",
-      "gallery": [
+    "title": "MoinSonne",
+    "categories": ["Branding", "Campaign"],
+    "sectors":  ["Economy"],
+    "customer": "AOT Elektrotechnik",
+    "year": 2019,
+    "thumbnail": "BA_MoinSonne_branding_07.webp",
+    "galleryFolder": "MoinSonne",
+    "gallery": [
         {
-          "src" : "BA_BremenPresse_Raum_144_01.webp",
-          "alt" : "alt"
+        "src" : "BA_MoinSonne_branding_01.webp",
+        "alt" : "Many postcards for the photovoltaic provider MoinSonne lie angled next to each other."
         },
         {
-          "src" : "BA_BremenPresse_Raum_144_02.webp",
-          "alt" : "alt"
+        "src" : "BA_MoinSonne_branding_02.gif",
+        "alt" : "In an animated version of the MoinSonne logo, the i-dot appears like a rising sun."
         },
         {
-          "src" : "BA_BremenPresse_Raum_144_03.webp",
-          "alt" : "alt"
+        "src" : "BA_MoinSonne_branding_03.webp",
+        "alt" : "The backs of the postcards are in black and white. The message reads ‘Mach Watt draus!"
         },
         {
-          "src" : "BA_BremenPresse_Raum_144_04.webp",
-          "alt" : "alt"
+        "src" : "BA_MoinSonne_branding_04.webp",
+        "alt" : "The flyer front and back pages complement each other between simple typography on the back pages and bold, colourful patterns on the front pages."
         },
         {
-          "src" : "BA_BremenPresse_Raum_144_05.webp",
-          "alt" : "alt"
+        "src" : "BA_MoinSonne_branding_05.webp",
+        "alt" : "The letterhead is available in three different versions, each with one of the company's three patterns: photovoltaic, roof and sun rays."
         },
         {
-          "src" : "BA_BremenPresse_Raum_144_06.webp",
-          "alt" : "alt"
+        "src" : "BA_MoinSonne_branding_06.webp",
+        "alt" : "The logo with the slogan ‘Solar energy for the home’."
+        },
+        {
+        "src" : "BA_MoinSonne_branding_07.webp",
+        "alt" : "The flyer has the headline ‘From the balcony to the socket’ and thus shows the high accessibility of MoinSonne's offers."
+        },
+        {
+        "src" : "BA_MoinSonne_branding_08.webp",
+        "alt" : "The various marketing applications appear coherent and consistent."
+        },
+        {
+        "src" : "BA_MoinSonne_branding_09.webp",
+        "alt" : "A delivery van displays the MoinSonne logo, slogan and URL."
+        },
+        {
+        "src" : "BA_MoinSonne_branding_10.webp",
+        "alt" : "The slogan is displayed on the side of the vehicle."
+        },
+        {
+        "src" : "BA_MoinSonne_branding_11.webp",
+        "alt" : "The defining elements of the branding are colour areas, strong patterns and striking typography."
+        },
+        {
+        "src" : "BA_MoinSonne_branding_13.webp",
+        "alt" : "An overview of MoinSonne's print products."
         }
-      ],
-      "description": "The exhibition in the Bremen Parliament shows the economic, social and political situation in Bremen during the First World War - and reflects on how it was reported. \n<more>Cross-reading is encouraged! - By means of visual and graphic references, different perspectives are connected with each other. A common thread guides the viewer through the 15 main topics and links content, images and texts in a creative and meaningful way."
+        ],
+    "description": "MoinSonne – Mach Watt draus! From small balcony power plants to complete photovoltaic systems and smart energy management. Self-sufficient energy supply from regenerative energy is the vision and mission of AOT Elektrotechnik. \n<more>We transferred the passion and know-how of the electrical engineers into a colourful, friendly branding with striking patterns and down-to-earth wording that is sure to inspire the northern Germans to take action."
     },
   
     {
-      "title": "Bas&Aer",
-      "categories": [
-        "Branding"
-      ],
-      "customer": "-",
-      "year": 2019,
-      "thumbnail": "19_BuA_06_CD_72_THUMBNAIL.webp",
-      "galleryFolder": "BuA",
-      "gallery": [
+    "title": "TraMiS",
+    "categories": ["Branding", "Web"],
+    "sectors":  ["Education"],
+    "customer": "University of Bremen",
+    "year": 2018,
+    "link": "https://tramis.de",
+    "linkText": "tramis.de",
+    "thumbnail": "BuA_TraMis_Thumb.webp",
+    "galleryFolder": "Tramis",
+    "gallery": [
         {
-          "src" : "19_BuA_01_CD_72.webp",
-          "alt" : "alt"
+        "src" : "BuA_TraMis_01.gif",
+        "alt" : "The interaction on the TraMIS website is shown on a screen."
         },
         {
-          "src" : "19_BuA_02_Visitenkarte.gif",
-          "alt" : "alt"
+        "src" : "BuA_TraMis_02.png",
+        "alt" : "A screenshot of the TraMIS homepage."
         },
         {
-          "src" : "19_BuA_03_Logo.png",
-          "alt" : "alt"
+        "src" : "BuA_TraMis_03.png",
+        "alt" : "The overview of partner schools of the TraMIS project at the University of Bremen can be seen on a screen."
         },
         {
-          "src" : "19_BuA_04_CD_72_thumbnail.webp",
-          "alt" : "alt"
+        "src" : "BuA_TraMis_04.png",
+        "alt" : "You can see the TraMIS logo. It consists of a loose arrangement of the letters of the name and three bright blue lines that border the letters in a square shape."
         },
         {
-          "src" : "19_BuA_05_CD_72.webp",
-          "alt" : "alt"
+        "src" : "BuA_TraMis_05.png",
+        "alt" : "A mobile phone shows the mobile view of the TraMIS website."
         },
         {
-          "src" : "19_BuA_06_CD_72_THUMBNAIL.webp",
-          "alt" : "alt"
+        "src" : "BuA_TraMis_06.gif",
+        "alt" : "An animated mockup shows how to scroll through the TraMIS blog."
         },
         {
-          "src" : "19_BuA_07_CD_72.webp",
-          "alt" : "alt"
-        },
-        {
-          "src" : "19_BuA_08_CD_72.webp",
-          "alt" : "alt"
+        "src" : "BuA_TraMis_07.png",
+        "alt" : "The logo exists in three variants."
         }
-      ],
-      "description": "We knew right away that it would not be easy. Developing our own visual identity was a real challenge. The demands were high, our own standards higher. Of course, all three of us wanted to find ourselves as designers. \n<more>Our common denominator is »open up, enter, open up and change spaces«. We translated the idea into a dynamic grid of lines that seems to be always in motion: In addition to structure and clarity, it also offers space for surprise and play, which was particularly fun during the development of our website."
+        ],
+    "description": "Newly immigrated pupils are admitted to school, others leave school again or spend part of their school years abroad. The TraMiS research project deals with the topic of »Transnational Mobility in Schools«. \n<more>How can such a complex topic be abstracted in terms of design? For the conception and design of the logo and website, we were concerned with lifelines, border crossing and the connection between academic work and non-straight biographies."
     },
   
     {
-      "title": "In Teilen vor Ort",
-      "categories": [
-        "Editorial"
-      ],
-      "customer": "Amina Brotz",
-      "year": 2018,
-      "galleryFolder": "In Teilen vor Ort",
-      "thumbnail": "18_brotz_katalog-72ppi-01.jpg",
-      "gallery": [
+    "title": "Vorweg",
+    "categories": ["Branding"],
+    "sectors":  ["Economy"],
+    "customer": "Vorweg",
+    "year": 2018,
+    "thumbnail": "BA_Vorweg_CD_72ppi_1.webp",
+    "galleryFolder": "Vorweg",
+    "gallery": [
         {
-          "src" : "18_brotz_katalog-72ppi-01.jpg",
-          "alt" : "alt"
+        "src" : "BA_Vorweg_CD_72ppi_1.webp",
+        "alt" : "The elements of the VORWEG consultancy's stationery are arranged dynamically."
         },
         {
-          "src" : "18_brotz_katalog-72ppi-02-animation.gif",
-          "alt" : "alt"
+        "src" : "BA_Vorweg_CD_72ppi_2.webp",
+        "alt" : "The managing director's business card shows the logo and other graphic elements of the corporate design on the front. The back is yellow and typographically simple."
         },
         {
-          "src" : "18_brotz_katalog-72ppi-03.jpg",
-          "alt" : "alt"
+        "src" : "BA_Vorweg_CD_72ppi_3.webp",
+        "alt" : "The letterhead can be customised with the graphic design elements."
         },
         {
-          "src" : "18_brotz_katalog-72ppi-04.jpg",
-          "alt" : "alt"
-        },
-        {
-          "src" : "18_brotz_katalog-72ppi-05.jpg",
-          "alt" : "alt"
-        },
-        {
-          "src" : "18_brotz_katalog-72ppi-06.jpg",
-          "alt" : "alt"
-        },
-        {
-          "src" : "18_brotz_katalog-72ppi-07.jpg",
-          "alt" : "alt"
-        },
-        {
-          "src" : "18_brotz_katalog-72ppi-08.jpg",
-          "alt" : "alt"
-        },
-        {
-          "src" : "18_brotz_katalog-72ppi-09.jpg",
-          "alt" : "alt"
+        "src" : "BA_Vorweg_CD_72ppi_4.webp",
+        "alt" : "Several business cards lie next to each other."
         }
-      ],
-      "description": "Artist Amina Brotz's work is primarily site-specific and processual. She always addresses her own living and working context by transferring furniture, personal objects and working materials into a new context. \n<more>We have transferred the processual work into the concept for her exhibition catalogue ›In Parts on Site‹: We show the naked book block. It is what it is, an object of use - no more and no less. And because Amina's projects always interlock, there is no cover for the catalogue - neither at the front nor at the back."
+        ],
+    "description": "VORWEG supports and advises small and medium-sized enterprises on business management issues and also offers training on data protection. Two topics that, at first glance, seem dull and call for freshness and lightness. \n<more>For us, this was an exciting task, to which we responded with a crisp colour concept, clear typography and a set of graphic elements. Everything to build yourself, with a Word template for business documents and a style guide that explains and illustrates the basic design rules."
+    },
+  
+    {
+    "title": "Kirchenjubiläum „Zum Verklärten Christus“",
+    "categories": ["Editorial", "Campaign"],
+    "sectors":  ["Public"],
+    "customer": "Pfarrgemeinde Bad Driburg",
+    "year": 2018,
+    "thumbnail": "ZVC_fahne_72ppi_5.jpg",
+    "galleryFolder": "ZVC",
+    "gallery": [
+        {
+        "src" : "ZVC_pub_übersicht_72ppi_1.webp",
+        "alt" : "Several open jubilee publications lie next to each other. The inside cover shows the facade of the church 'Zum Verkklärten Christus'."
+        },
+        {
+        "src" : "ZVC_pub_übersicht_72ppi_3.webp",
+        "alt" : "The outer cover of the commemorative publication is blue. The invitation cards are red."
+        },
+        {
+        "src" : "ZVC_fahne_72ppi_4.webp",
+        "alt" : "A flag flies over the roof of the Südstadtgemeinde Bad Driburg 'Zum Verklärten Christus'."
+        },
+        {
+        "src" : "ZVC_fahne_300ppi_6.webp",
+        "alt" : "A sketch shows the designs of the flags for the church anniversary. They include the name of the parish and details from the church windows."
+        },
+        {
+        "src" : "ZVC_fahne_72ppi_5.webp",
+        "alt" : "Another flag with a close-up of a church window blows in the wind."
+        },
+        {
+        "src" : "ZVC_pub_übersicht_72ppi_2.webp",
+        "alt" : "Numerous brochures on the 50th anniversary of the church are arranged side by side."
+        },
+        {
+        "src" : "ZVC_pub_72ppi-6.webp",
+        "alt" : "Two hands hold the brochure and show the fold in the cover."
+        },
+        {
+        "src" : "ZVC_pub_72ppi-7.webp",
+        "alt" : "Two hands hold the brochure. Details from one of the church windows are depicted on the right-hand side."
+        },
+        {
+        "src" : "ZVC_pub_72ppi-crop-8.webp",
+        "alt" : "A double-page spread shows how text and image pages work together."
+        },
+        {
+        "src" : "ZVC_pub_72ppi-crop-9.webp",
+        "alt" : "Pictures from the community's long history are loosely arranged on a double page. Captions recall many moments of active community life."
+        },
+        {
+        "src" : "ZVC_pub_72ppi-crop-10.webp",
+        "alt" : "This double-page spread shows the structure of the texts, with indented marginal columns, and a close-up of a blue church window."
+        },
+        {
+        "src" : "ZVC_pub_72ppi-crop-11.webp",
+        "alt" : "The brochure contains numerous texts and photos that convey an impressive picture of community life in Bad Driburg."
+        },
+        {
+        "src" : "ZVC_pub_72ppi-crop-12.webp",
+        "alt" : "On the back cover there is an architectural drawing of the church building, which refers to the history of the building."
+        }
+        ],
+    "description": "The church of a small town in East Westphalia celebrates its 50th anniversary. Bas&Aer joins in the celebrations. Together with the client, we developed a commemorative publication that tells the story of the church and ultimately also the development of the town settlement up to the present day. \n<more>For the design concept, we were allowed to look into the historical building plans of the church. Just as the ground plan represents the folds of a coat, our cover now completely wraps the book. As in the church, sections of the red and blue windows inside set the rhythm."
+    },
+  
+    {
+    "title": "Heilig Rock Wallfahrt",
+    "categories": ["Space"],
+    "sectors":  ["Public"],
+    "customer": "Wettbewerbsbeitrag",
+    "year": 2011,
+    "thumbnail": "BA_HeiligRock_Orientierung_72ppi_1.webp",
+    "galleryFolder": "HeiligRock",
+    "gallery": [
+        {
+        "src" : "BA_HeiligRock_Orientierung_72ppi_5.webp",
+        "alt" : "A trapezoidal banner forms the basis of the orientation system for the Heilig Rock pilgrimage in Trier."
+        },
+        {
+        "src" : "BA_HeiligRock_Orientierung_72ppi_6.webp",
+        "alt" : "The banners can be used flexibly. Here you can see the option of stretching them across streets."
+        },
+        {
+        "src" : "BA_HeiligRock_Orientierung_72ppi_7.webp",
+        "alt" : "A clear grid structures the main and secondary orientation points during the pilgrimage."
+        },
+        {
+        "src" : "BA_HeiligRock_Orientierung_72ppi_1.webp",
+        "alt" : "The banners can fulfil different requirements; here you can see the simulation of a portrait-format banner mounted directly on a facade."
+        },
+        {
+        "src" : "BA_HeiligRock_Orientierung_72ppi_2.webp",
+        "alt" : "The shape of the banners is derived from the geometric logo of the Heilig Rock pilgrimage."
+        },
+        {
+        "src" : "BA_HeiligRock_Orientierung_72ppi_3.webp",
+        "alt" : "Different colours between red and orange indicate the distance to the ‘Holy Rock’."
+        },
+        {
+        "src" : "BA_HeiligRock_Orientierung_72ppi_4.webp",
+        "alt" : "Numerous icons were customised for this orientation system."
+        },
+        {
+        "src" : "BA_HeiligRock_Orientierung_72ppi_8.webp",
+        "alt" : "The banners hang at an angle between building facades for optimum legibility."
+        }
+        ],
+    "description": "On the occasion of the Holy Tunic pilgrimage in 2012, the city of Trier expected about 500,000 visitors. In a competition, the city called for contributions for an orientation system that would withstand the demands of the crowds and not run the risk of being lost in the city signage. \n<more>The core idea of the contribution shown here was to take up the formal language of the logo and to focus on the motto »And bring together what is separate«. The result is a modular system of trapezoidal individual parts of the rock, which are displayed as large-format banners in the city."
+    },
+  
+    {
+    "title": "Komodo Coffee",
+    "categories": ["Branding", "Packaging"],
+    "sectors":  ["Food"],
+    "customer": "Komodo Coffee",
+    "year": 2015,
+    "thumbnail": "BA_Komodo_CD_144ppi_1.webp",
+    "galleryFolder": "Komodo Coffee",
+    "gallery": [
+        {
+        "src" : "BA_Komodo_CD_144ppi_1.webp",
+        "alt" : "Komodo Coffee offers different types of coffee in two pack sizes."
+        },
+        {
+        "src" : "BA_Komodo_CD_144ppi_2.webp",
+        "alt" : "A flyer provides information about the people behind Komodo Coffee and the characteristics of the different types of coffee."
+        },
+        {
+        "src" : "BA_Komodo_CD_144ppi_3.webp",
+        "alt" : "The two labels on the packaging go over the edge of the packaging and thus connect the front and back."
+        },
+        {
+        "src" : "BA_Komodo_CD_144ppi_4.webp",
+        "alt" : "The Komodo Coffee logo was slightly revised as part of the packaging design and optimised in terms of legibility and overall impression."
+        }
+        ],
+    "description": "Directly traded coffee from Indonesia, gently roasted and distributed in Bremen. Behind the names ›Dolok Marapi‹, ›Orang Gunong‹, ›Harangan Udan‹ and ›Tao Touran‹ you will find real character heads with their own history. \n<more>The interplay of the two colourful packaging labels points to the close cooperation with the coffee farmers. Because at Komodo Coffee, direct trade comes first - and right after that, of course, comes the enjoyment of first-class coffees and espressos!"
+    },
+  
+    {
+    "title": "Transatlantic Dialogue",
+    "categories": ["Editorial"],
+    "sectors":  ["Education"],
+    "customer": "Université du Luxembourg",
+    "year": 2017,
+    "thumbnail": "17_TAD_band-72-01.webp",
+    "galleryFolder": "TAD",
+    "gallery": [
+        {
+        "src" : "17_TAD_band-72-01.webp",
+        "alt" : "The conference volume ‘Transatlantic Dialogue’ documents the conference of the same name at the University of Lusemburg and sheds light on different perspectives on cultural diplomacy."
+        },
+        {
+        "src" : "17_TAD_band-72-02.webp",
+        "alt" : "Intermediate pages are very colourful and contrast with the otherwise very minimalist design."
+        },
+        {
+        "src" : "17_TAD_band-72-03.webp",
+        "alt" : "Basic information is clearly presented in inserted marginal columns."
+        },
+        {
+        "src" : "17_TAD_band-72-04.webp",
+        "alt" : "Double pages are designed as a dialogue: On the left-hand side is the title of a summary, on the right-hand side the text."
+        },
+        {
+        "src" : "17_TAD_band-72-05.webp",
+        "alt" : "Photographic impressions are inserted on shortened intermediate pages."
+        },
+        {
+        "src" : "17_TAD_band-72-06.webp",
+        "alt" : "The overlapping of pages of different lengths and the cover creates interesting references and combinations when opened."
+        },
+        {
+        "src" : "17_TAD_band-72-07.webp",
+        "alt" : "The index clearly shows the structure of the book and the colour coding (by type of event and conference day)."
+        },
+        {
+        "src" : "17_TAD_band-72-08.webp",
+        "alt" : "An open page with text, colour and picture pages in interaction."
+        },
+        {
+        "src" : "17_TAD_band-72-09.webp",
+        "alt" : "The interplay of the different colour surfaces becomes visible in a compilation of open brochures."
+        },
+        {
+        "src" : "17_TAD_band-72-10.webp",
+        "alt" : "An open brochure shows the overall effect of the print product."
+        },
+        {
+        "src" : "17_TAD_band-72-11.webp",
+        "alt" : "A stack of brochures shows further details of the workmanship, such as the ring binding and the title on the spine."
+        }
+        ],
+    "description": "In the conference proceedings »Transatlantic Dialogue«, cultural diplomacy is examined from different perspectives on more than 150 pages. We have developed a documentation that invites you to continue, think and discuss. \n<more>Behind the seemingly playful use of colour is an organising principle that structures the contributions to the conference thematically and chronologically. Two colours face each other in dialogue. In the pictures, these mix and thus give them an independent colouring."
+    },
+  
+    {
+    "title": "Bremen und seine Presse im Ersten Weltkrieg",
+    "categories": ["Space"],
+    "sectors":  ["Education"],
+    "customer": "Universität Bremen",
+    "year": 2014,
+    "thumbnail": "BA_BremenPresse_Raum_144_01.webp",
+    "galleryFolder": "Bremer Presse",
+    "gallery": [
+        {
+        "src" : "BA_BremenPresse_Raum_144_01.webp",
+        "alt" : "A view from the main hall of the Bremen Parliament shows stations of the exhibition ‘Bremen and its press in the First World War’."
+        },
+        {
+        "src" : "BA_BremenPresse_Raum_144_02.webp",
+        "alt" : "Each station of the scientific exhibition consists of a rectangular, red station board and other smaller boards showing the information."
+        },
+        {
+        "src" : "BA_BremenPresse_Raum_144_03.webp",
+        "alt" : "A total of 15 stations explain different aspects of the press landscape in Bremen at the time of the First World War."
+        },
+        {
+        "src" : "BA_BremenPresse_Raum_144_04.webp",
+        "alt" : "Red lines connect and accentuate content, even beyond the boundaries of individual information panels."
+        },
+        {
+        "src" : "BA_BremenPresse_Raum_144_05.webp",
+        "alt" : "Detailed labelling is attached to display cases."
+        },
+        {
+        "src" : "BA_BremenPresse_Raum_144_06.webp",
+        "alt" : "The panels at the individual exhibition stations alternate with showcases and other exhibits."
+        }
+        ],
+    "description": "The exhibition in the Bremen Parliament shows the economic, social and political situation in Bremen during the First World War - and reflects on how it was reported. \n<more>Cross-reading is encouraged! - By means of visual and graphic references, different perspectives are connected with each other. A common thread guides the viewer through the 15 main topics and links content, images and texts in a creative and meaningful way."
+    },
+  
+    {
+    "title": "Bas&Aer",
+    "categories": ["Branding"],
+    "sectors":  ["Economy"],
+    "customer": "Bas&Aer",
+    "year": 2019,
+    "thumbnail": "19_BuA_06_CD_72_THUMBNAIL.webp",
+    "galleryFolder": "BuA",
+    "gallery": [
+        {
+        "src" : "19_BuA_01_CD_72.webp",
+        "alt" : "An overview of the stationery of the design studio Bas&Aer in Bremen and Berlin."
+        },
+        {
+        "src" : "19_BuA_02_Visitenkarte.gif",
+        "alt" : "A stack of business cards in Bas&Aer's three corporate colours appears in a short stop motion animation."
+        },
+        {
+        "src" : "19_BuA_03_Logo.png",
+        "alt" : "The Bas&Aer logo is a simple yet impressive lettering."
+        },
+        {
+        "src" : "19_BuA_04_CD_72_thumbnail.webp",
+        "alt" : "Letterhead, business cards, folders and notepads are part of the design studio's business equipment."
+        },
+        {
+        "src" : "19_BuA_05_CD_72.webp",
+        "alt" : "The corporate design is based on a grid of fine black lines, visible here in the different versions of the stationery."
+        },
+        {
+        "src" : "19_BuA_06_CD_72_THUMBNAIL.webp",
+        "alt" : "Some drafts have to be revised again."
+        },
+        {
+        "src" : "19_BuA_07_CD_72.webp",
+        "alt" : "The business cards are printed in three spot colours and also feature the fine line grid that divides all surfaces into individual proportions."
+        }
+        ],
+    "description": "We knew right away that it would not be easy. Developing our own visual identity was a real challenge. The demands were high, our own standards higher. Of course, all three of us wanted to find ourselves as designers. \n<more>Our common denominator is »open up, enter, open up and change spaces«. We translated the idea into a dynamic grid of lines that seems to be always in motion: In addition to structure and clarity, it also offers space for surprise and play, which was particularly fun during the development of our website."
+    },
+  
+    {
+    "title": "In Teilen vor Ort",
+    "categories": ["Editorial"],
+    "sectors":  ["Art & Culture"],
+    "customer": "Amina Brotz",
+    "year": 2018,
+    "galleryFolder": "In Teilen vor Ort",
+    "thumbnail": "18_brotz_katalog-72ppi-01.jpg",
+    "gallery": [
+        {
+        "src" : "18_brotz_katalog-72ppi-01.jpg",
+        "alt" : "An arrangement of the artist's books for Amina Brotz creates an almost sculptural impression, as they do without covers and almost any labelling on the outside."
+        },
+        {
+        "src" : "18_brotz_katalog-72ppi-02-animation.gif",
+        "alt" : "A stop motion animation shows a stack of the publication from all sides."
+        },
+        {
+        "src" : "18_brotz_katalog-72ppi-03.jpg",
+        "alt" : "The first page of the pad with adhesive binding is only labelled with the artist's name and the piece ‘In Teilen vor Ort’."
+        },
+        {
+        "src" : "18_brotz_katalog-72ppi-04.jpg",
+        "alt" : "Photos are used to fill the format."
+        },
+        {
+        "src" : "18_brotz_katalog-72ppi-05.jpg",
+        "alt" : "Text is set over double pages. The binding is at the top, on the short side of the format."
+        },
+        {
+        "src" : "18_brotz_katalog-72ppi-06.jpg",
+        "alt" : "Some double pages show exclusively photographic documentation of the piece."
+        },
+        {
+        "src" : "18_brotz_katalog-72ppi-07.jpg",
+        "alt" : "On an open double-page spread you can usually see the description of the piece at the top and a corresponding photo at the bottom."
+        },
+        {
+        "src" : "18_brotz_katalog-72ppi-08.jpg",
+        "alt" : "The lines of text and paragraphs play with the white space of the format."
+        },
+        {
+        "src" : "18_brotz_katalog-72ppi-09.jpg",
+        "alt" : "A pile of books almost merges with the grey background."
+        }
+        ],
+    "description": "Artist Amina Brotz's work is primarily site-specific and processual. She always addresses her own living and working context by transferring furniture, personal objects and working materials into a new context. \n<more>We have transferred the processual work into the concept for her exhibition catalogue ›In Parts on Site‹: We show the naked book block. It is what it is, an object of use - no more and no less. And because Amina's projects always interlock, there is no cover for the catalogue - neither at the front nor at the back."
     }
     
   ]

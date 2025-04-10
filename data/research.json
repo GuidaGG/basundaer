@@ -13,33 +13,7 @@
         }
         ]
     },
-   
-        {
-        "title": "Building inclusive cultural landscapes in rural areas: Lessons from the Land in Sicht Project",
-        "subtitle": "Working paper in the publication STRING FIGURES, Transforming together",
-        "id": "Stringfigures",
-        "galleryFolder": "StringFigures",
-        "dynamic":
-            [
-            {
-           "type": "image",
-            "image": 
-                {
-                "src" : "LandinSicht-Scenario3.webp",
-                "alt" : "alt"
-                }
-            },
-            {
-            "type": "text",
-            "class" : "block",
-            "text": "Abstract\n\nIn rural Germany, limited cultural resources and uneven funding distribution presents challenges and prevents young artists and cultural creators from flourishing and connecting with the public and their peers. To address this, we started the art-residency project “Land in Sicht”, inviting diverse young artists to rural areas. The initiative is aiming to highlight the creative economy's transformative potential and foster rural-urban networking. Utilizing Design Fiction, we explored challenges and opportunities, revealing four insights: the necessity of a “cultural mediator” for integration in closed communities, the role of a “neutral auditor” to question established structures, the importance of “common values” for site-specific transformation, and the pivotal role of “incubator moments” as transformative catalysts. Through “Land in Sicht”, we strive to cultivate an inclusive and diverse cultural landscape benefiting both artists and local communities. This paper aims to illustrate the potential of fictive narratives and showcases lessons</a>"
-            }
-        
-                   
-        ]
-    },        
-                
-                
+    
     {
         "title": "Flatterweg",
         "subtitle": "Zwischennutzung auf der ehemaligen Galopprennbahn in Bremen",

@@ -5,15 +5,37 @@
   "subtitle_2": "Integrated design studio in Bremen and Berlin",
   "paragraph_1": "At Bas&Aer, we bring messages into an understandable form and identities to the point. We bring ideas to life and make them tangible. Two-dimensional, three-dimensional, analog, digital - we find the right formats and media for every project:",
   "paragraph_2" : "Transparent and direct communication, short decision-making processes and a common standard are the basis of a successful cooperation. We are proud of the trust placed in us, the intensive dialog with our customers and the great results.",
-  "references_title": "References",
-  "references_workshop_coaching_title": "Workshops/Coaching",
-  "references_workshop_coaching": {
-    "1": "Workshop on Future Competence 'Future Warm-Ups,' 2024 <br>with Christof Mühe",
-    "2": "Workshop on Barrier-Free and Diversity-Sensitive Communication, 2023–24 <br>with Antonia Sperling",
-    "3": "STARTHAUS Coaching Program, Individual Coaching Sessions, 2020–23",
-    "4": "Design Workshop with Students, Sebaldsbrück Secondary School 2022–23 <br>with Christof Mühe"
+  
+  
+  "references" : "References",
+  "references_workshop_coaching_title" : "Workshops/Coaching",
+  "references_workshop_coaching" : {
+    "1": "‘Future Warm-Ups’ Design Futuring <br>Workshop<br><span><br>Heinrich Böll-Stiftung Bremen<br>with Christof Mühe<br>2024</span>",
+    "2": "Low-barrier and diversity-sensitive communication<br>Workshop<br><span>POP Office Bremen<br>with Antonia Sperling<br>2023–24</span>",
+    "3": "STARTHAUS Coaching Program<br>Coaching<br><span>Bremer Aufbau-Bank<br>2020–23</span>",
+    "4": "DIY wayfinding systems<br>Workshop<br><span>Oberschule Sebaldsbrück<br>with Christof Mühe<br>2022–23</span>"
   },
-  "references_lehre_title": "Teaching",
+  "references_lehre_title" : "Teaching",
+  "references_lehre" : {
+    "1": "‘Identität and Storytelling’<br>Seminar<br><span>STARTHAUS Bremen<br>2020–23</span>",
+    "2": "‘Designthinking’<br>Master class<br><span>Hochschule Trier<br>with Anna Bulanda-Pantalacci<br>2021–22</span>"
+  },
+  "references_events_title" : "Events",
+  "references_events" : {
+    "1": "‘Zwischen Gegensätzen’<br>Fishbowl Panel<br><span>with Plan A+, Lobe Block Berlin<br>2024</span>",
+    "2": "‘Utopien in Stücken, Abriss Adé’<br>Soirée<br><span>with Plan A+ and Neue Allianzen<br>2024</span>"
+  },
+  "references_lectures_title" : "Lectures",
+  "references_lectures" : {
+    "1": "Communication strategy and realisation of media<br>Talk<br><span>cambio CarSharing<br>2024</span>",
+    "2": "‘Building Inclusive Cultural Landscapes in Rural Areas’<br>Paper Session<br><span>University of Bolzano<br>with Vanessa Graf-Müller<br> 2023</span>"
+  },
+  "references_publications_title" : "Publications",
+  "references_publications" : {
+    "1": "‘Building Inclusive Cultural Landscapes in Rural Areas’<br>Visual Essay<br><span>University of Bolzano<br>with Vanessa Graf-Müller<br>2023</span>"
+  },
+  
+  
   "services" : "Services" ,
   "services_description" : "Bas&Aer was founded in November 2017 by Katharina Brock, Astrid Hesse and Ben Jurca. Since then, we have been providing our clients* with comprehensive support in the areas of corporate identity and communication, innovation and creative problem solving.",
   "concept_design_title": "Concept & Design",
@@ -29,7 +51,7 @@
   },
   "workshops_coaching_title" : "Workshop & Coaching",
   "workshops_coaching" :  {
-      "1": "Different workshop formats for",
+      "1": "Workshop formats for",
       "1_list" : {
         "1" : "Identity and Profile",
         "2" : "Storytelling and USP",
@@ -52,119 +74,163 @@
       "4" : "Corporate Design and Storytelling"
     }
   },
-    
+
+  
   "co-working" : "Co-Working",
   "co_working_description": "Being part of a coworking space matches our idea of a flexible way of working. We share the space with many nice people from different disciplines. We experience new approaches, get inspired by each other and work in collaborations. If you are close by, we welcome you to step by for a drink.",
   "co_working_bremen": "Our Co-Working in Bremen: <a href='https://www.casinofutur.de/'>Casino Futur</a>",
   "co_working_berlin" : "Our Co-Working in Berlin: <a href='https://lobe.berlin/de/'>Lobestudio 1.2</a>",
+  
+  
   "clients" : "Clients",
   "clients_description" : "Our project partners come to us from a variety of industries with different projects and challenges. Fortunately, we are well-connected with many talented colleagues. This enables us to implement even large-scale and unusual projects without any problems. We look forward to your inquiry: <a href='mailto:info@basundaer.de'>info@basundaer.de</a>",
-   "gallery": {
+  "gallery": {
     "imagePath": "/static/img/Bas_Aer_Kundenlogos",
     "images": [ 
       {
       "src": "BA_Website_client_UHB20.png",
-      "alt" : "Universität Bremen"
+      "alt" : "University of Bremen",
+      "href" : "https://www.uni-bremen.de/"
       },
       {
       "src": "BA_Website_client_CMB.png",
-      "alt" : "cambio"
+      "alt" : "cambio",
+      "href" : "https://www.cambio-carsharing.de/"
+      },
+      {
+      "src": "BA_Website_client_FU.png",
+      "alt" : "FU Berlin",
+      "href" : "https://www.fu-berlin.de/en/index.html"
       },
       {
       "src": "BA_Website_client_PDS.png",
-      "alt" : "Paramount Dental Studio"
+      "alt" : "Paramount Dental Studio",
+      "href" : "https://paramountdentalstudio.com/"
       },
       {
       "src":  "BA_Website_client_BDM.png",
-      "alt" : "Duales Studium Informatik"
+      "alt" : "Duales Studium Informatik",
+      "href" : "https://dualermasterinformatik.de/"
       },
       {
       "src":  "BA_Website_client_KAE.png",
-      "alt" : "KAEFER"
+      "alt" : "KAEFER",
+      "href" : "https://kaefer.com/"
       },
       {
       "src":  "BA_Website_client_HFK.png",
-      "alt" : "HFK Bremen"
+      "alt" : "HFK Bremen",
+      "href" : "https://www.hfk-bremen.de/"
+      },
+      {
+      "src":  "BA_Website_client_HBS.png",
+      "alt" : "Bremer Solidarstrom",
+      "href" : "https://bremer-solidarstrom.de/"
       },
       {
       "src":  "BA_Website_client_POB.png",
-      "alt" : "POB Office Bremen"
+      "alt" : "POB Office Bremen",
+      "href" : "https://popofficebremen.de/en/"
       },
       {
       "src": "BA_Website_client_STGB.png",
-      "alt" : "Städtische Galerie Bremen"
+      "alt" : "Städtische Galerie Bremen",
+      "href" : "https://www.staedtischegalerie-bremen.de/"
       },
       {
       "src": "BA_Website_client_VLFT.png",
-      "alt" : "vielfältig. Bremen"
+      "alt" : "vielfältig. Bremen",
+      "href" : "https://vielfaeltig-bremen.de/"
+      },
+      {
+      "src": "BA_Website_client_HBS-HB.png",
+      "alt" : "Heinrich Böll stiftung Bremen",
+      "href" : "https://www.boell-bremen.de/de"
       },
       {
       "src": "BA_Website_client_TUD.png",
-      "alt" : "TU Dresden"
+      "alt" : "TU Dresden",
+      "href" : "https://tu-dresden.de/"
       },
       {
       "src": "BA_Website_client_SHB.png",
-      "alt" : "STARTHAUS BREMEN"
+      "alt" : "STARTHAUS BREMEN",
+      "href" : "https://www.starthaus-bremen.de/"
       },
       {
       "src": "BA_Website_client_COM.png",
-      "alt" : "Collective Ma'louba"
+      "alt" : "Collective Ma'louba",
+      "href" : "#"
       },
       {
       "src": "BA_Website_client_FHB-SK.png",
-      "alt" : "Der Senator für Kultur - Bremen"
+      "alt" : "Der Senator für Kultur - Bremen",
+      "href" : "https://www.kultur.bremen.de/"
       },
       {
       "src":  "BA_Website_client_NUM.png",
-      "alt" : "Natur & Mohr"
+      "alt" : "Natur & Mohr",
+      "href" : "https://naturundmohr.de/"
       },
       {
       "src":  "BA_Website_client_FII.png",
-      "alt" : "Futur Zwei"
+      "alt" : "Futur Zwei",
+      "href" : "https://www.futurzwei.de/"
       },
       {
       "src":  "BA_Website_client_K2.png",
-      "alt" : "K2 Dental Arts"
+      "alt" : "K2 Dental Arts",
+      "href" : "https://www.k2dentalarts.com/"
       },
       {
       "src": "BA_Website_client_STE.png",
-      "alt" : "Stefes Pro"
+      "alt" : "Stefes Pro",
+      "href" : "https://stefespro.de/"
       },
       {
       "src": "BA_Website_client_CU.png",
-      "alt" : "Constructor University"
+      "alt" : "Constructor University",
+      "href" : "https://constructor.university/"
       },
       {
       "src": "BA_Website_client_FKC.png",
-      "alt" : "Freiburger Kammerchor"
+      "alt" : "Freiburger Kammerchor",
+      "href" : "http://www.freiburgerkammerchor.de/"
       },
       {
       "src": "BA_Website_client_KLZ.png",
-      "alt" : "kauflokal.zone"
+      "alt" : "kauflokal.zone",
+      "href" : "https://kauflokal.zone/"
       },
       {
       "src": "BA_Website_client_ULU.png",
-      "alt" : "Universität Luxemburg"
+      "alt" : "Universität Luxemburg",
+      "href" : "https://www.uni.lu/en/"
       },
       {
       "src": "BA_Website_client_KOC.png",
-      "alt" : "Komodo Coffee"
+      "alt" : "Komodo Coffee",
+      "href" : "#"
       },
       {
       "src":  "BA_Website_client_ZPI.png",
-      "alt" : "ZPI Dortmund"
+      "alt" : "ZPI Dortmund",
+      "href" : "https://zpi-do.de/"
       },
       {
       "src": "BA_Website_client_MBB.png",
-      "alt" : "Metallbau Brock"
+      "alt" : "Metallbau Brock",
+      "href" : "https://www.metallbau-brock.de/"
       },
       {
       "src": "BA_Website_client_VRW.png",
-      "alt" : "Vorweg"
+      "alt" : "Vorweg",
+      "href" : "https://www.vorweg-hb.de/"
       },
       {
       "src":  "BA_Website_client_UVE.png",
-      "alt" : "Universität Vechta"
+      "alt" : "Universität Vechta",
+      "href" : "https://www.uni-vechta.de/"
       }
     ]
 
