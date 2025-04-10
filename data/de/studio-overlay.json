@@ -1,75 +1,38 @@
 {
-    "ben": "Ben Jurca",
-    "ben_description" : "Ben leitet unser Studio in Bremen. Als integrierter Designer ist ihm die Nähe zu unseren Kund:innen besonders wichtig: Der Designprozess bedeutet für ihn, Menschen auf dem Weg zu einer nachhaltigen Lösung zu begleiten. Das Ergebnis sorgt am Ende für ein hohes Maß an Zufriedenheit und Begeisterung. \nAls Workshopleiter oder Dozent sorgt Ben für Klarheit nach Brainstomings und kann Zusammenhänge schnell erkennen. Der Mix aus Pragmatismus, Kreativität und Einfühlungsvermögen macht ihn zu einem Meister des Human Centred Design.",
-    "astrid" : "Astrid Hesse",
-    "astrid_description" : "Das Berliner Studio wird von Astrid geführt. Ihr Fokus liegt auf Innovation und ganzheitlichen Gestaltungsansätzen: Als Designerin werden Problemstellungen zuerst dekonstruiert, um sie anschließend wieder neu zusammenzusetzen. Das führt zu individuellen Lösungen. In freien Projekten und Workshops entwickelt Astrid neue Formate und Methoden und erkennt schnell die Potentiale in Ideen, Produkten und disziplinübergreifenden Kollaborationen.",
- "partners_title" : "Unsere Partner:innen",
-    "partners_description": "Wir arbeiten in der Umsetzung unserer Projekte mit talentierten Menschen zusammen, die uns mit ihrer Expertise unterstützen.",
-    "partners": [
-        {
-            "name": "Barbara Bernardy",
-            "profession" : "Kommunikationsdesign",
-            "url": "https://barbarabernardy.de/de"
-        },
-        {
-            "name": "Christine Rudi",
-            "profession" : "Kommunikationsdesign",
-            "url": "https://www.linkedin.com/in/christine-rudi-83b939175/"
-        },
-        {
-            "name": "Christof Mühe",
-            "profession" : "Design und Beratung zu Nachhaltigkeit",
-            "url": "https://de.linkedin.com/in/christof-m%C3%BChe-046637112"
-        },
-        {
-            "name": "Fabian Brunke",
-            "profession" : "Digital Media (Design & Webentwicklung)",
-            "url": "https://www.fabian-brunke.com/"
-        },
-        {
-            "name": "Guida Ribeiro",
-            "profession" : "Webentwicklung",
-            "url": "https://guidaribeiro.net/"
-        },
-        {
-            "name": "Jakob Weber",
-            "profession" : "Fotografie",
-            "url": "http://jakobweber.de/"
-        },
-        {
-            "name": "Leefje Roy",
-            "profession" : "Illustration & Schnellzeichnung",
-            "url": "https://leefje.de/"
-        },
-        {
-            "name": "Malte Heitmüller",
-            "profession" : "Digital Media (Webentwicklung)",
-            "url": "https://malteheitmueller.de/"
-        },
-        {
-            "name": "Sara Förster",
-            "profession" : "Fotografie",
-            "url": "http://www.sarafoerster.de/"
-        },
-        {
-            "name": "Tom Lane",
-            "profession" : "3D- & Motion Design",
-            "url": "https://tomlane.site/"
-        },
-        {
-            "name": "Tonia Sperling",
-            "profession" : "Kommunikation und Beratung zu Barrierefreiheit",
-            "url": "https://speakerinnen.org/de/profiles/tonia-sperling"
-        },
-        {
-            "name": "Vanessa Graf-Müller",
-            "profession" : "Atelier Brieftaube: Visual Identity & Research",
-            "url": "https://atelierbrieftau.be/"
-        },
-        {
-            "name": "",
-            "profession" : "",
-            "url": ""
-        }
+    "title_overlay": "Unser Verständnis von Design",
+    "design_understand": [
+      {
+        "title": "Das Maß Mensch",
+        "description": "Die Messlatte und der Antrieb für unsere Arbeit ist der Mensch mit seinen Bedürfnissen.\nGerade das menschliche Miteinander und der kreative Funkensprung fördern Ungeplantes zu Tage und machen dabei so viel Spaß."
+      },
+      {
+        "title": "Design ist ein Prozess",
+        "description": "Wir setzen in unserer Gestaltung auf Dialog, Anpassungsfähigkeit und den Willen, sich immer wieder zu hinterfragen.\nDenn nur wenn Design flexibel ist und mitwachsen kann, wird es eine langlebige und belastbare Wirkung entfalten."
+      },
+      {
+        "title": "Kontext ist uns wichtig",
+        "description": "Um Sachverhalte wirklich zu verstehen, schauen wir auch rechts und links: Denn keine Aufgabe ist isoliert, sondern in Beziehungsgeflechte verwoben.\nWer sich dem stellt, übernimmt Verantwortung und bleibt in Kontakt mit gesellschaftlichen Entwicklungen."
+      },
+      {
+        "title": "Verstehen und Vermitteln",
+        "description": "Verständnis fördert Sensibilität und führt am Ende zu wirksameren Beziehungen.\nWir stellen (auch unbequeme) Fragen, um eure Werte und Inhalte anderen erklären zu können. So lernen wir mit jedem Projekt dazu - und nicht selten lernen Kund:innen sich selbst ganz neu kennen."
+      },
+      {
+        "title": "Design für Demokratie",
+        "description": "Mit Design können wir Schnittstellen schaffen, Begegnungen ermöglichen, Zugänge zu Informationen legen und Komplexitäten darstellen.\nKurz: Wir setzen Design für ein solidarisches Miteinander ein."
+      },
+      {
+        "title": "Was berührt, das interessiert",
+        "description": "Design soll die Welt ansprechender, verständlicher, schöner machen – das brauchen wir heute.\nIndem wir gestalten, geben wir Inhalten eine Form, ordnen sie und verknüpfen sie mit Emotionen. Daraus entstehen Geschichten, die Zusammenhänge greifbar machen."
+      },
+      {
+        "title": "Design braucht Veränderung – Veränderung braucht Design",
+        "description": "Ohne das Streben des Menschen, etwas zu bewegen, bräuchte es kein Design.\nAusgangspunkt unserer Arbeit ist immer der Wunsch nach Veränderung.\nEine Vision kann Handlungsmotivation sein – ungesteuert aber bremsen.\nWir gestalten, um Transformation (nachhaltig) zu steuern."
+      },
+      {
+        "title": "Gestaltung geht nur gemeinsam",
+        "description": "Wir sind es nicht nur gewohnt im Team zu arbeiten, wir brauchen auch den Austausch.\nDie Synergien von verschiedenen Köpfen und Kompetenzen machen kreative Prozesse interessanter, abwechslungsreicher, besser."
+      }
     ]
-}
+  }
+  
