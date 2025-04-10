@@ -1,75 +1,38 @@
 {
-    "ben": "Ben Jurca",
-    "ben_description" : "Ben runs our studio in Bremen. As an integrated designer, proximity to our customers is particularly important to him: for him, the design process means accompanying people on the way to a sustainable solution. In the end, the result ensures a high level of satisfaction and enthusiasm. As a workshop leader or lecturer, Ben ensures clarity after brainstorming sessions and can quickly recognise connections. His mix of pragmatism, creativity and empathy makes him a master of human-centred design.",
-    "astrid" : "Astrid Hesse",
-    "astrid_description" : "The Berlin studio is run by Astrid. Her focus is on innovation and holistic design approaches: As a designer, problems are first deconstructed and then reassembled. This leads to customised solutions. In independent projects and workshops, Astrid develops new formats and methods and quickly recognises the potential in ideas, products and cross-disciplinary collaborations.",
- "partners_title" : "Our partners",
-    "partners_description": "In the implementation of our projects, we work with talented people who support us with their expertise.",
-    "partners": [
-       {
-            "name": "Barbara Bernardy",
-            "profession" : "Communication Design",
-            "url": "https://barbarabernardy.de/en"
-        },
-        {
-            "name": "Christine Rudi",
-            "profession" : "Communication Design",
-            "url": "https://www.linkedin.com/in/christine-rudi-83b939175/"
-        },
-        {
-            "name": "Christof Mühe",
-            "profession" : "Design and sustainability consulting",
-            "url": "https://de.linkedin.com/in/christof-m%C3%BChe-046637112"
-        },
-        {
-            "name": "Fabian Brunke",
-            "profession" : "Digital Media (design & web development)",
-            "url": "https://www.fabian-brunke.com/"
-        },
-        {
-            "name": "Guida Ribeiro",
-            "profession" : "Web Development",
-            "url": "https://guidaribeiro.net/"
-        },
-        {
-            "name": "Jakob Weber",
-            "profession" : "Photography",
-            "url": "http://jakobweber.de/"
-        },
-        {
-            "name": "Leefje Roy",
-            "profession" : "Illustration & Sketch Artist",
-            "url": "https://leefje.de/home-2/"
-        },
-        {
-            "name": "Malte Heitmüller",
-            "profession" : "Digital Media (Web development)",
-            "url": "https://malteheitmueller.de/"
-        },
-        {
-            "name": "Sara Förster",
-            "profession" : "Photography",
-            "url": "http://www.sarafoerster.de/"
-        },
-        {
-            "name": "Tom Lane",
-            "profession" : "3D- & Motion Design",
-            "url": "https://tomlane.site/"
-        },
-        {
-            "name": "Tonia Sperling",
-            "profession" : "Communikations and accessibility consulting",
-            "url": "https://speakerinnen.org/en/profiles/tonia-sperling"
-        },
-        {
-            "name": "Vanessa Graf-Müller",
-            "profession" : "Atelier Brieftaube: Visual Identity & Research",
-            "url": "https://atelierbrieftau.be/"
-        },
-        {
-            "name": "",
-            "profession" : "",
-            "url": ""
-        }
+    "title_overlay": "Unser Verständnis von Design",
+    "design_understand": [
+      {
+        "title": "Das Maß Mensch",
+        "description": "Die Messlatte und der Antrieb für unsere Arbeit ist der Mensch mit seinen Bedürfnissen.\nGerade das menschliche Miteinander und der kreative Funkensprung fördern Ungeplantes zu Tage und machen dabei so viel Spaß."
+      },
+      {
+        "title": "Design ist ein Prozess",
+        "description": "Wir setzen in unserer Gestaltung auf Dialog, Anpassungsfähigkeit und den Willen, sich immer wieder zu hinterfragen.\nDenn nur wenn Design flexibel ist und mitwachsen kann, wird es eine langlebige und belastbare Wirkung entfalten."
+      },
+      {
+        "title": "Kontext ist uns wichtig",
+        "description": "Um Sachverhalte wirklich zu verstehen, schauen wir auch rechts und links: Denn keine Aufgabe ist isoliert, sondern in Beziehungsgeflechte verwoben.\nWer sich dem stellt, übernimmt Verantwortung und bleibt in Kontakt mit gesellschaftlichen Entwicklungen."
+      },
+      {
+        "title": "Verstehen und Vermitteln",
+        "description": "Verständnis fördert Sensibilität und führt am Ende zu wirksameren Beziehungen.\nWir stellen (auch unbequeme) Fragen, um eure Werte und Inhalte anderen erklären zu können. So lernen wir mit jedem Projekt dazu - und nicht selten lernen Kund:innen sich selbst ganz neu kennen."
+      },
+      {
+        "title": "Design für Demokratie",
+        "description": "Mit Design können wir Schnittstellen schaffen, Begegnungen ermöglichen, Zugänge zu Informationen legen und Komplexitäten darstellen.\nKurz: Wir setzen Design für ein solidarisches Miteinander ein."
+      },
+      {
+        "title": "Was berührt, das interessiert",
+        "description": "Design soll die Welt ansprechender, verständlicher, schöner machen – das brauchen wir heute.\nIndem wir gestalten, geben wir Inhalten eine Form, ordnen sie und verknüpfen sie mit Emotionen. Daraus entstehen Geschichten, die Zusammenhänge greifbar machen."
+      },
+      {
+        "title": "Design braucht Veränderung – Veränderung braucht Design",
+        "description": "Ohne das Streben des Menschen, etwas zu bewegen, bräuchte es kein Design.\nAusgangspunkt unserer Arbeit ist immer der Wunsch nach Veränderung.\nEine Vision kann Handlungsmotivation sein – ungesteuert aber bremsen.\nWir gestalten, um Transformation (nachhaltig) zu steuern."
+      },
+      {
+        "title": "Gestaltung geht nur gemeinsam",
+        "description": "Wir sind es nicht nur gewohnt im Team zu arbeiten, wir brauchen auch den Austausch.\nDie Synergien von verschiedenen Köpfen und Kompetenzen machen kreative Prozesse interessanter, abwechslungsreicher, besser."
+      }
     ]
-}
+  }
+  

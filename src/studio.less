@@ -203,17 +203,13 @@
           }
         }
     }
-
-    
-  
-    
   }
 
   .overlayPageContent {
     .studioOverlay {
       & > .content {
 
-        .people {
+      /*  .people {
           display: flex;
           @media @media-large {
             flex-direction: row;
@@ -291,7 +287,7 @@
             .email {
             }
           }
-          .partners-list{
+          /*.partners-list{
             ul {
               padding: 0 ;
               padding-bottom: @padding-small;
@@ -302,6 +298,67 @@
               }
             }
           }
+        }*/
+        .design-understandings{
+          //padding-bottom: @padding-large;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: @padding-large;
+          ul{
+            //float: left;
+            //width: 30%;
+            border-bottom: 1px solid black;
+            padding: 0;
+            padding-bottom: @padding-large;
+            //margin-right: @padding-large;
+          }
+
+          
+          li{
+             list-style: none; 
+            }
+
+          .heading {
+            margin-bottom: @padding-small;
+          }
+
+       
+          @media @media-large {
+            margin-top: 2 * @padding-large;
+          }
+
+          
+          @media @media-l-medium {
+            grid-template-columns: repeat(2, 1fr);
+            gap: @padding-medium;
+           /* ul {
+              float: left;
+              width: 100%;
+              border-bottom: 1px solid black;
+              padding: 0;
+              margin: 0;
+              margin-right: @padding-large;
+              &:last-child{
+                padding-bottom: @padding-large;
+                border-bottom: unset;
+              }
+            }*/
+          } 
+
+          @media @media-l-medium, @media-p-medium {
+            margin-top: 2 * @padding-medium;
+          }
+
+          @media @media-p-medium, @media-small {
+            grid-template-columns: repeat(1, 1fr);
+            gap: @padding-medium;
+          } 
+
+          @media @media-small {
+ 
+            margin-top: 2 * @padding-small;
+          }
+
         }
 
       }
