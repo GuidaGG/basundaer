@@ -234,5 +234,72 @@
       }
     ]
 
-  }
+  },
+  "partners_title" : "Team",
+  "partners_description": "In the implementation of our projects, we work with talented people who support us with their expertise.",
+  "partners_imagePath": "/static/img/studio",
+  "partners": [
+       {
+            "name": "Barbara Bernardy",
+            "profession" : "Communication Design",
+            "url": "https://barbarabernardy.de/en",
+            "img": "BuA_Portrait_Astrid2_2024.webp"
+        },
+        {
+            "name": "Christine Rudi",
+            "profession" : "Communication Design",
+            "url": "https://www.linkedin.com/in/christine-rudi-83b939175/"
+        },
+        {
+            "name": "Christof Mühe",
+            "profession" : "Design and sustainability consulting",
+            "url": "https://de.linkedin.com/in/christof-m%C3%BChe-046637112"
+        },
+        {
+            "name": "Fabian Brunke",
+            "profession" : "Digital Media (design & web development)",
+            "url": "https://www.fabian-brunke.com/"
+        },
+        {
+            "name": "Guida Ribeiro",
+            "profession" : "Web Development",
+            "url": "https://guidaribeiro.net/"
+        },
+        {
+            "name": "Jakob Weber",
+            "profession" : "Photography",
+            "url": "http://jakobweber.de/"
+        },
+        {
+            "name": "Leefje Roy",
+            "profession" : "Illustration & Sketch Artist",
+            "url": "https://leefje.de/home-2/"
+        },
+        {
+            "name": "Malte Heitmüller",
+            "profession" : "Digital Media (Web development)",
+            "url": "https://malteheitmueller.de/"
+        },
+        {
+            "name": "Sara Förster",
+            "profession" : "Photography",
+            "url": "http://www.sarafoerster.de/"
+        },
+        {
+            "name": "Tom Lane",
+            "profession" : "3D- & Motion Design",
+            "url": "https://tomlane.site/"
+        },
+        {
+            "name": "Tonia Sperling",
+            "profession" : "Communikations and accessibility consulting",
+            "url": "https://speakerinnen.org/en/profiles/tonia-sperling"
+        },
+        {
+            "name": "Vanessa Graf-Müller",
+            "profession" : "Atelier Brieftaube: Visual Identity & Research",
+            "url": "https://atelierbrieftau.be/"
+        }
+    ]
+  
 }

@@ -37,7 +37,7 @@ export default class TouchDragHandlerSimplified {
         this._dragNoneCB = dragNoneCallback
         this._transition = transition
         this._touchCount = 0
-
+                    console.log(this._touchTarget)
         this._touchTarget.addEventListener("touchstart", this.handleTouchStart.bind(this))
         this._touchTarget.addEventListener("touchmove", this.handleTouchMove.bind(this))
         this._touchTarget.addEventListener("touchend", this.handleTouchEnd.bind(this))
@@ -85,7 +85,7 @@ export default class TouchDragHandlerSimplified {
     handleTouchEnd(event) {
         event.preventDefault()
 
-    
+        console.log(this._currentDragDistance)
             if(!this._isDragging) {
                 if (this._dragNoneCB) {
                     this._dragNoneCB()
@@ -94,7 +94,7 @@ export default class TouchDragHandlerSimplified {
                 return
             }
 
-
+           
             this._minimalDragDistance = 40;
             if(this._currentDragDistance < 0) {
                 if(Math.abs(this._currentDragDistance) > this._minimalDragDistance) {
