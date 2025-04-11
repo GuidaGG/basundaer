@@ -815,6 +815,9 @@ body {
   overflow: hidden;
   background-color: #f8f8f8;
 }
+.underline {
+  text-decoration: underline;
+}
 .noscrollbar {
   -ms-overflow-style: none;
   /* IE and Edge */
