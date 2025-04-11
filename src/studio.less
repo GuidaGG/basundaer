@@ -150,7 +150,7 @@
           width: 100%;
           transition: left 200ms ease-in-out;
           left:0;
-          
+
           article{
             width: 30%;
             flex-shrink: 0;
@@ -321,9 +321,159 @@
 
     }
 
+    .partners{
+      overflow: hidden;
+      position: relative;
+      width: 100%;
 
-    .leistungen, .co-working {
-      margin-top: 60px;
+
+      .partners_container{
+        display: flex;
+        position: relative;
+        flex-wrap: nowrap;
+        gap: @padding-large;
+        position: relative;
+        width: 100%;
+        transition: left 200ms ease-in-out;
+        left:0;
+
+        article{
+          width: 30%;
+          flex-shrink: 0;
+
+          @media @media-l-medium, @media-p-medium {
+            width: 45%;
+          }
+          @media @media-small {
+            width: 80%;
+     
+          }
+
+          img, .team_noImage {
+            background-color: @blau;
+            width: 100%;
+            height: auto;
+            @media @media-large {
+              height: 60vh;
+              max-height: 600px;
+              width: 100%;
+            }
+            @media @media-l-medium, @media-p-medium {
+              height: 50vh;
+            }
+            @media @media-small {
+              height: 33vh; 
+       
+            }
+            object-fit: cover;   
+          }
+          figcaption{
+            padding: 0 @padding-large;
+          }
+          .team_noImage {
+            margin-bottom: @padding-small;
+          }
+
+       
+        }
+     
+      }
+      
+        .navigation {
+      
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0 ;
+          top: 0;
+          display: flex;
+          z-index: 5;
+          overflow: visible;
+          @media @media-small {
+            top: 60%;
+            bottom: 0%
+          }
+
+         
+
+          .prevImg {
+            width: 50%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: 20px;
+            background-size: 20px;
+
+            @media @media-large {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
+              }
+            }
+            @media @media-l-medium, @media-p-medium {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_links.png") 46 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 46 16, auto;
+              }
+            }
+            @media @media-small {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
+              }
+            }
+
+            
+          }
+
+          .nextImg {
+            width: 50%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: 20px;
+            background-size: 20px;
+            @media @media-large {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
+              }
+            }
+            @media @media-l-medium, @media-p-medium {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_rechts.png") 46 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 46 16, auto;
+              }
+            }
+            @media @media-small {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
+              }
+            }
+          }
+
+          
+        }
+    }
+
+
+    .leistungen, .co-working, .team {
+      @media @media-large {
+        margin-top: @padding-large * 3;
+      }
+      @media @media-l-medium, @media-p-medium {
+        margin-top: @padding-medium * 3;
+      }
+      @media @media-small {
+        margin-top: @padding-small * 3;
+      }
 
     }
 
