@@ -8,31 +8,27 @@ function renderPartners(partners, imagePath) {
     let result = ""
     let shuffledPartners = utils.shuffle(partners)
     shuffledPartners.forEach((partner) => {
-        if(partner.img){
+      
         result += `
            <article class="partner">
-            <figure>
-                <img src="${imagePath}/${encodeURIComponent(partner.img)}" alt="Photo of ${partner.name}" loading="lazy" />
-                <figcaption>
-                    <div>${partner.name}</div>
-                    <div class="underline">${partner.profession}</div>
+            <figure>`
+            if(partner.img){
+                 result += ` <img src="${imagePath}/${encodeURIComponent(partner.img)}" alt="Photo of ${partner.name}" loading="lazy" />`;
+            }else{
+                result += `<div class="team_noImage"></div>`;
+            }
+            
+             result += `<figcaption>`;
+            if(partner.url){
+                result += `<a href="${partner.url}" target="_blank" aria-label="Website ${partner.name}">${partner.name}</a>`;
+            }else{
+                result += `<div>${partner.name}</div>`;
+            }
+                   
+           result += `<div >${partner.profession}</div>
                 </figcaption>
             </figure>
-    
-           </article>`
-        }
-        else{
-            result += `<article class="partner">
-                     <figure>
-                        <div class="team_noImage"></div>
-                    <figcaption>
-                        <div>${partner.name}</div>
-                        <div class="underline">${partner.profession}</div>
-                    </figcaption>
-            </figure>
-            </article>`
-        }
-          /* <li><a href="${partner.url}" target="_blank">website</a></li>*/
+           </article>`;
     })
    
 

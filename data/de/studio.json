@@ -243,12 +243,13 @@
           "name": "Barbara Bernardy",
           "profession" : "Kommunikationsdesign",
           "url": "https://barbarabernardy.de/de",
-          "img": "BuA_Portrait_Astrid2_2024.webp"
+          "img": "BA_BBernardy.webp"
       },
       {
           "name": "Christine Rudi",
           "profession" : "Kommunikationsdesign",
-          "url": "https://www.linkedin.com/in/christine-rudi-83b939175/"
+          "url": "https://www.linkedin.com/in/christine-rudi-83b939175/",
+          "img": "BA_CRudi.webp"
       },
       {
           "name": "Christof Mühe",
@@ -263,17 +264,20 @@
       {
           "name": "Guida Ribeiro",
           "profession" : "Webentwicklung",
-          "url": "https://guidaribeiro.net/"
+          "url": "https://guidaribeiro.net/",
+           "img": "BA_TempGRibeiro.webp"
       },
       {
           "name": "Jakob Weber",
           "profession" : "Fotografie",
-          "url": "http://jakobweber.de/"
+          "url": "http://jakobweber.de/",
+          "img": "BA_JWeber.webp"
       },
       {
           "name": "Leefje Roy",
           "profession" : "Illustration & Schnellzeichnung",
-          "url": "https://leefje.de/"
+          "url": "https://leefje.de/",
+          "img": "BA_LRoy.webp"
       },
       {
           "name": "Malte Heitmüller",
@@ -283,12 +287,14 @@
       {
           "name": "Sara Förster",
           "profession" : "Fotografie",
-          "url": "http://www.sarafoerster.de/"
+          "url": "http://www.sarafoerster.de/",
+          "img": "BA_SFoerster.webp"
       },
       {
           "name": "Tom Lane",
           "profession" : "3D- & Motion Design",
-          "url": "https://tomlane.site/"
+          "url": "https://tomlane.site/",
+          "img": "BA_TLane.webp"
       },
       {
           "name": "Tonia Sperling",
@@ -298,7 +304,8 @@
       {
           "name": "Vanessa Graf-Müller",
           "profession" : "Atelier Brieftaube: Visual Identity & Research",
-          "url": "https://atelierbrieftau.be/"
+          "url": "https://atelierbrieftau.be/",
+          "img": "BA_VGrafMueller.webp"
       }
   ]
 }

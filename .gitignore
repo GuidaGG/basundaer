@@ -1,4 +1,6 @@
-node_modules
-static/img
-static/fonts
-static/css
+# Ignore all folders inside 'static' directory
+static/*/
+
+# Ignore node_modules
+node_modules/
+
