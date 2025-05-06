@@ -1,6 +1,6 @@
 {
   "section_title": "Studio",
-  "overlay_title" : "Haltung",
+  "overlay_title" : "Principles",
   "subtitle_1": "We are Bas&Aer.",
   "subtitle_2": "Integrated design studio in Bremen and Berlin",
   "paragraph_1": "At Bas&Aer, we bring messages into an understandable form and identities to the point. We bring ideas to life and make them tangible. Two-dimensional, three-dimensional, analog, digital - we find the right formats and media for every project:",
@@ -10,7 +10,7 @@
   "references" : "References",
   "references_workshop_coaching_title" : "Workshops/Coaching",
   "references_workshop_coaching" : {
-    "1": "‘Future Warm-Ups’ Design Futuring <br>Workshop<br><span><br>Heinrich Böll-Stiftung Bremen<br>with Christof Mühe<br>2024</span>",
+    "1": "‘Future Warm-Ups’ Design Futuring <br>Workshop<br><span>Heinrich Böll-Stiftung Bremen<br>with Christof Mühe<br>2024</span>",
     "2": "Low-barrier and diversity-sensitive communication<br>Workshop<br><span>POP Office Bremen<br>with Antonia Sperling<br>2023–24</span>",
     "3": "STARTHAUS Coaching Program<br>Coaching<br><span>Bremer Aufbau-Bank<br>2020–23</span>",
     "4": "DIY wayfinding systems<br>Workshop<br><span>Oberschule Sebaldsbrück<br>with Christof Mühe<br>2022–23</span>"
@@ -239,67 +239,69 @@
   "partners_description": "In the implementation of our projects, we work with talented people who support us with their expertise.",
   "partners_imagePath": "/static/img/studio",
   "partners": [
-       {
-            "name": "Barbara Bernardy",
-            "profession" : "Communication Design",
-            "url": "https://barbarabernardy.de/en",
-            "img": "BuA_Portrait_Astrid2_2024.webp"
-        },
-        {
-            "name": "Christine Rudi",
-            "profession" : "Communication Design",
-            "url": "https://www.linkedin.com/in/christine-rudi-83b939175/"
-        },
-        {
-            "name": "Christof Mühe",
-            "profession" : "Design and sustainability consulting",
-            "url": "https://de.linkedin.com/in/christof-m%C3%BChe-046637112"
-        },
-        {
-            "name": "Fabian Brunke",
-            "profession" : "Digital Media (design & web development)",
-            "url": "https://www.fabian-brunke.com/"
-        },
-        {
-            "name": "Guida Ribeiro",
-            "profession" : "Web Development",
-            "url": "https://guidaribeiro.net/"
-        },
-        {
-            "name": "Jakob Weber",
-            "profession" : "Photography",
-            "url": "http://jakobweber.de/"
-        },
-        {
-            "name": "Leefje Roy",
-            "profession" : "Illustration & Sketch Artist",
-            "url": "https://leefje.de/home-2/"
-        },
-        {
-            "name": "Malte Heitmüller",
-            "profession" : "Digital Media (Web development)",
-            "url": "https://malteheitmueller.de/"
-        },
-        {
-            "name": "Sara Förster",
-            "profession" : "Photography",
-            "url": "http://www.sarafoerster.de/"
-        },
-        {
-            "name": "Tom Lane",
-            "profession" : "3D- & Motion Design",
-            "url": "https://tomlane.site/"
-        },
-        {
-            "name": "Tonia Sperling",
-            "profession" : "Communikations and accessibility consulting",
-            "url": "https://speakerinnen.org/en/profiles/tonia-sperling"
-        },
-        {
-            "name": "Vanessa Graf-Müller",
-            "profession" : "Atelier Brieftaube: Visual Identity & Research",
-            "url": "https://atelierbrieftau.be/"
-        }
-    ]
-  
+      {
+          "name": "Barbara Bernardy",
+          "profession" : "Communication Design",
+          "url": "https://barbarabernardy.de/de",
+          "img": "BA_BBernardy.webp"
+      },
+      {
+          "name": "Christine Rudi",
+          "profession" : "Communication Design",
+          "url": "https://www.linkedin.com/in/christine-rudi-83b939175/",
+          "img": "BA_CRudi.webp"
+      },
+      {
+          "name": "Christof Mühe",
+          "profession" : "Design and sustainability consulting",
+          "url": "https://de.linkedin.com/in/christof-m%C3%BChe-046637112"
+      },
+      {
+          "name": "Fabian Brunke",
+          "profession" : "Digital Media (design & web development)",
+          "url": "https://www.fabian-brunke.com/",
+          "img": "BA_FBrunke.webp"
+      },
+      {
+          "name": "Guida Ribeiro",
+          "profession" : "Web Development",
+          "url": "https://guidaribeiro.net/",
+           "img": "BA_TempGRibeiro.webp"
+      },
+      {
+          "name": "Jakob Weber",
+          "profession" : "Photography",
+          "url": "http://jakobweber.de/",
+          "img": "BA_JWeber.webp"
+      },
+      {
+          "name": "Leefje Roy",
+          "profession" : "Illustration & Sketch Artist",
+          "url": "https://leefje.de/",
+          "img": "BA_LRoy.webp"
+      },
+      {
+          "name": "Sara Förster",
+          "profession" : "Photography",
+          "url": "http://www.sarafoerster.de/",
+          "img": "BA_SFoerster.webp"
+      },
+      {
+          "name": "Tom Lane",
+          "profession" : "3D- & Motion Design",
+          "url": "https://tomlane.site/",
+          "img": "BA_TLane.webp"
+      },
+      {
+          "name": "Tonia Sperling",
+          "profession" : "Communikations and accessibility consulting",
+          "url": "https://speakerinnen.org/de/profiles/tonia-sperling"
+      },
+      {
+          "name": "Vanessa Graf-Müller",
+          "profession" : "Atelier Brieftaube: Visual Identity & Research",
+          "url": "https://atelierbrieftau.be/",
+          "img": "BA_VGrafMueller.webp"
+      }
+  ]
 }

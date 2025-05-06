@@ -150,7 +150,7 @@
           width: 100%;
           transition: left 200ms ease-in-out;
           left:0;
-          
+
           article{
             width: 30%;
             flex-shrink: 0;
@@ -321,9 +321,170 @@
 
     }
 
+    .partners{
+      overflow: hidden;
+      position: relative;
+      width: 100%;
 
-    .leistungen, .co-working {
-      margin-top: 60px;
+
+      .partners_container{
+        display: flex;
+        position: relative;
+        flex-wrap: nowrap;
+        gap: @padding-large;
+        position: relative;
+        width: 100%;
+        transition: left 200ms ease-in-out;
+        left:0;
+
+        article{
+          width: 30%;
+          flex-shrink: 0;
+
+          @media @media-l-medium {
+            width: 45%;
+          }
+          @media @media-small, @media-p-medium  {
+            width: 80%;
+        
+     
+          }
+
+          img, .team_noImage {
+            background-color: @blau;
+            width: 100%;
+            height: auto;
+            @media @media-large {
+              height: 60vh;
+              max-height: 600px;
+              width: 100%;
+            }
+            @media @media-l-medium, @media-p-medium {
+              height: 50vh;
+            }
+            @media @media-small {
+              height: 33vh; 
+       
+            }
+            object-fit: cover;   
+          }
+          figcaption{
+            padding: 0 @padding-large;
+          }
+          .team_noImage {
+            margin-bottom: @padding-small;
+          }
+
+       
+        }
+     
+      }
+      
+        .navigation {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+
+          @media @media-large {
+            height: 60vh;
+            max-height: 600px;
+
+          }
+          @media @media-l-medium, @media-p-medium {
+            height: 50vh;
+          }
+          @media @media-small {
+            height: 33vh; 
+     
+          }
+          display: flex;
+          z-index: 5;
+          overflow: visible;
+          
+          @media @media-small {
+            top: 0%;
+            bottom: 22%
+          }
+
+          .prevImg {
+            width: 50%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: 20px;
+            background-size: 20px;
+
+            @media @media-large {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 50 16, auto;
+              }
+            }
+            @media @media-l-medium, @media-p-medium {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_links.png") 46 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_links.png") 46 16, auto;
+              }
+            }
+            @media @media-small {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_links.png") 40 16, auto;
+              }
+            }
+
+            
+          }
+
+          .nextImg {
+            width: 50%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: 20px;
+            background-size: 20px;
+            @media @media-large {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 50 16, auto;
+              }
+            }
+            @media @media-l-medium, @media-p-medium {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_22_rechts.png") 46 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_25_rechts.png") 46 16, auto;
+              }
+            }
+            @media @media-small {
+              cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
+
+              &:hover {
+                cursor: url("/static/img/icons_bua/BuA_Pfeil_150ppi_17_rechts.png") 40 16, auto;
+              }
+            }
+          }
+
+          
+        }
+    }
+
+
+    .leistungen, .co-working, .team {
+      @media @media-large {
+        margin-top: @padding-large * 3;
+      }
+      @media @media-l-medium, @media-p-medium {
+        margin-top: @padding-medium * 3;
+      }
+      @media @media-small {
+        margin-top: @padding-small * 3;
+      }
 
     }
 
@@ -347,142 +508,18 @@
   .overlayPageContent {
     .studioOverlay {
       & > .content {
-
-      /*  .people {
-          display: flex;
-          @media @media-large {
-            flex-direction: row;
-            margin: 0 -@padding-large;
+        h3 {
+          margin-top: @padding-medium;
+          @media @media-p-medium, @media-small {
+            margin-top: @padding-small;
           }
-          @media @media-l-medium {
-            flex-direction: row;
-            margin: 0 -@padding-medium;
-          }
-          @media @media-p-medium {
-            flex-direction: column;
-            margin: 0;
-          }
-          @media @media-small {
-            flex-direction: column;
-            margin: 0;
-          }
-
-          & > * {
-            display: flex;
-            flex-direction: column;
-
-            @media @media-l-medium, @media-large {
-              padding: 0 20px;
-              width: 33%;
-            }
-            @media @media-small {
-              padding-bottom: 30px;
-            }
-          }
-
-          .photo {
-            @media @media-small {
-              flex: 1 0 40%
-            }
-
-            img {
-              width: 100%;
-              height: auto;
-            }
-          }
-
-          .infoContainer {
-            @media @media-large {
-              margin-top: @padding-large;
-              margin-bottom: @padding-large * 4;
-            }
-            @media @media-l-medium, @media-p-medium {
-              margin-top: @padding-medium;
-              margin-bottom: @padding-medium * 4;
-            }
-            @media @media-small {
-              margin-top: @padding-small;
-              margin-bottom: @padding-small * 4;
-            }
-
-            .name {
-            }
-
-            .position {
-            }
-
-            .description {
-              @media @media-large {
-                margin-top: @padding-large;
-              }
-              @media @media-l-medium, @media-p-medium {
-                margin-top: @padding-medium;
-              }
-              @media @media-small {
-                margin-top: @padding-small;
-              }
-            }
-
-            .email {
-            }
-          }
-          /*.partners-list{
-            ul {
-              padding: 0 ;
-              padding-bottom: @padding-small;
-              list-style: none;
-              
-              li {
-                margin: 0;
-              }
-            }
-          }
-        }*/
+        }
         .design-understandings{
-          //padding-bottom: @padding-large;
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: @padding-large;
-          ul{
-            //float: left;
-            //width: 30%;
-            border-bottom: 1px solid black;
-            padding: 0;
-            padding-bottom: @padding-large;
-            //margin-right: @padding-large;
-          }
-
-          
-          li{
-             list-style: none; 
-            }
-
-          .heading {
-            margin-bottom: @padding-small;
-          }
-
-       
-          @media @media-large {
-            margin-top: 2 * @padding-large;
-          }
-
-          
-          @media @media-l-medium {
-            grid-template-columns: repeat(2, 1fr);
-            gap: @padding-medium;
-           /* ul {
-              float: left;
-              width: 100%;
-              border-bottom: 1px solid black;
-              padding: 0;
-              margin: 0;
-              margin-right: @padding-large;
-              &:last-child{
-                padding-bottom: @padding-large;
-                border-bottom: unset;
-              }
-            }*/
-          } 
+          gap: @padding-medium 2 * @padding-medium;
+          padding-bottom: 2 * @padding-large;
+          margin-top: 3 * @padding-large;
 
           @media @media-l-medium, @media-p-medium {
             margin-top: 2 * @padding-medium;
@@ -490,12 +527,38 @@
 
           @media @media-p-medium, @media-small {
             grid-template-columns: repeat(1, 1fr);
-            gap: @padding-medium;
+
           } 
 
           @media @media-small {
- 
             margin-top: 2 * @padding-small;
+            gap: @padding-medium;
+          }
+
+          ul{
+            border-bottom: 1px solid black;
+            padding: 0;
+            margin: 0;
+            @media @media-small {
+              padding-bottom: 5px;
+            }
+          }
+          ul:last-child,
+          ul:nth-child(7){
+            border-bottom: none;
+          }
+          ul:nth-child(7){
+            @media @media-p-medium, @media-small {
+              border-bottom: 1px solid black;
+            }
+          }
+          
+          li{
+             list-style: none; 
+          }
+
+          .heading {
+            margin-bottom: @padding-small;
           }
 
         }

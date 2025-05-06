@@ -1,38 +1,38 @@
 {
-    "title_overlay": "Unser Verständnis von Design",
+    "title_overlay": "Our understanding of design",
+    "subtitle_overlay" : " ",
     "design_understand": [
       {
-        "title": "Das Maß Mensch",
-        "description": "Die Messlatte und der Antrieb für unsere Arbeit ist der Mensch mit seinen Bedürfnissen.\nGerade das menschliche Miteinander und der kreative Funkensprung fördern Ungeplantes zu Tage und machen dabei so viel Spaß."
+        "title": "The human scale",
+        "description": "The benchmark and the driving force behind our work is people and their needs.\nIt is the human interaction and the creative spark that bring the unplanned to the surface and make it so much fun."
       },
       {
-        "title": "Design ist ein Prozess",
-        "description": "Wir setzen in unserer Gestaltung auf Dialog, Anpassungsfähigkeit und den Willen, sich immer wieder zu hinterfragen.\nDenn nur wenn Design flexibel ist und mitwachsen kann, wird es eine langlebige und belastbare Wirkung entfalten."
+        "title": "Design is a process",
+        "description": "In our design, we focus on dialogue, adaptability and the willingness to constantly question ourselves.\nBecause only if design is flexible and can grow with us will it have a long-lasting and resilient effect."
       },
       {
-        "title": "Kontext ist uns wichtig",
-        "description": "Um Sachverhalte wirklich zu verstehen, schauen wir auch rechts und links: Denn keine Aufgabe ist isoliert, sondern in Beziehungsgeflechte verwoben.\nWer sich dem stellt, übernimmt Verantwortung und bleibt in Kontakt mit gesellschaftlichen Entwicklungen."
+        "title": "Context is important to us",
+        "description": "In order to really understand issues, we also look to the right and left: Because no task is isolated, but interwoven into a network of relationships.\nThose who face up to this take responsibility and stay in touch with social developments."
       },
       {
-        "title": "Verstehen und Vermitteln",
-        "description": "Verständnis fördert Sensibilität und führt am Ende zu wirksameren Beziehungen.\nWir stellen (auch unbequeme) Fragen, um eure Werte und Inhalte anderen erklären zu können. So lernen wir mit jedem Projekt dazu - und nicht selten lernen Kund:innen sich selbst ganz neu kennen."
+        "title": "Understanding and communicating",
+        "description": "Understanding promotes sensitivity and ultimately leads to more effective relationships.\nWe ask questions (even uncomfortable ones) so that we can explain your values and content to others. In this way, we learn with every project - and it's not uncommon for customers to get to know themselves in a completely new way."
       },
       {
-        "title": "Design für Demokratie",
-        "description": "Mit Design können wir Schnittstellen schaffen, Begegnungen ermöglichen, Zugänge zu Informationen legen und Komplexitäten darstellen.\nKurz: Wir setzen Design für ein solidarisches Miteinander ein."
+        "title": "Design for democracy",
+        "description": "With design, we can create interfaces, facilitate encounters, provide access to information and visualise complexities.\nIn short, we use design to promote solidarity and togetherness."
       },
       {
-        "title": "Was berührt, das interessiert",
-        "description": "Design soll die Welt ansprechender, verständlicher, schöner machen – das brauchen wir heute.\nIndem wir gestalten, geben wir Inhalten eine Form, ordnen sie und verknüpfen sie mit Emotionen. Daraus entstehen Geschichten, die Zusammenhänge greifbar machen."
+        "title": "What touches, that interests",
+        "description": "Design should make the world more appealing, more understandable, more beautiful – that's what we need today.\nBy designing, we give content a form, organise it and link it to emotions. This results in stories that make connections tangible."
       },
       {
-        "title": "Design braucht Veränderung – Veränderung braucht Design",
-        "description": "Ohne das Streben des Menschen, etwas zu bewegen, bräuchte es kein Design.\nAusgangspunkt unserer Arbeit ist immer der Wunsch nach Veränderung.\nEine Vision kann Handlungsmotivation sein – ungesteuert aber bremsen.\nWir gestalten, um Transformation (nachhaltig) zu steuern."
+        "title": "Design needs change – Change needs design",
+        "description": "Without people's desire to make a difference, there would be no need for design. The starting point for our work is always the desire for change.\nA vision can be a motivation for action – but without control it can be a restraint. We design in order to steer transformation (sustainably)."
       },
       {
-        "title": "Gestaltung geht nur gemeinsam",
-        "description": "Wir sind es nicht nur gewohnt im Team zu arbeiten, wir brauchen auch den Austausch.\nDie Synergien von verschiedenen Köpfen und Kompetenzen machen kreative Prozesse interessanter, abwechslungsreicher, besser."
+        "title": "Design is only possible together",
+        "description": "We are not only used to working in a team, we also need the exchange.\nThe synergies of different minds and competences make creative processes more interesting, more varied and better."
       }
     ]
   }
-  

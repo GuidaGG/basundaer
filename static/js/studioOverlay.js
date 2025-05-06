@@ -10,7 +10,7 @@ function renderDesignUnderstandings(understandings) {
 
         result += `
             <ul class="understanding">
-                <li class="heading heading1">${String(index+1).padStart(2, '0')}</li>
+                <li class="heading1">${String(index+1).padStart(2, '0')}</li>
                 <li class="heading heading1">${understand.title}</li>
                 <li class="description paragraph">${paragraphs}</li>
             </ul>`;
