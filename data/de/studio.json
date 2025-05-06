@@ -1,6 +1,6 @@
 {
   "section_title": "Studio",
-  "overlay_title" : "Haltung",
+  "overlay_title" : "Grundsätze",
   "subtitle_1": "Wir sind Bas&Aer.",
   "subtitle_2": "Integriertes Designstudio aus Bremen und Berlin",
   "paragraph_1": "Bei Bas&Aer bringen wir Botschaften in eine verständliche Form und Identitäten auf den Punkt. Wir lassen Ideen lebendig und erfahrbar werden. Zweidimensional, dreidimensional, analog, digital – Wir finden die passenden Formate und Medien für jedes Vorhaben.",
@@ -259,7 +259,8 @@
       {
           "name": "Fabian Brunke",
           "profession" : "Digital Media (Design & Webentwicklung)",
-          "url": "https://www.fabian-brunke.com/"
+          "url": "https://www.fabian-brunke.com/",
+          "img": "BA_FBrunke.webp"
       },
       {
           "name": "Guida Ribeiro",
@@ -278,11 +279,6 @@
           "profession" : "Illustration & Schnellzeichnung",
           "url": "https://leefje.de/",
           "img": "BA_LRoy.webp"
-      },
-      {
-          "name": "Malte Heitmüller",
-          "profession" : "Digital Media (Webentwicklung)",
-          "url": "https://malteheitmueller.de/"
       },
       {
           "name": "Sara Förster",

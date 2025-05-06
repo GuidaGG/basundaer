@@ -1268,12 +1268,27 @@ figure {
 #studioContent .studio .partners .navigation {
   position: absolute;
   left: 0;
-  bottom: 90px;
-  right: 0 ;
   top: 0;
+  width: 100%;
   display: flex;
   z-index: 5;
   overflow: visible;
+}
+@media (min-width: 1201px) {
+  #studioContent .studio .partners .navigation {
+    height: 60vh;
+    max-height: 600px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 601px) and (orientation: landscape), (max-width: 1200px) and (min-width: 601px) and (orientation: portrait) {
+  #studioContent .studio .partners .navigation {
+    height: 50vh;
+  }
+}
+@media (max-width: 600px) {
+  #studioContent .studio .partners .navigation {
+    height: 33vh;
+  }
 }
 @media (max-width: 600px) {
   #studioContent .studio .partners .navigation {

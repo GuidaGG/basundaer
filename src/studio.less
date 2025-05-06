@@ -383,12 +383,25 @@
         .navigation {
           position: absolute;
           left: 0;
-          bottom: 90px;
-          right: 0 ;
           top: 0;
+          width: 100%;
+
+          @media @media-large {
+            height: 60vh;
+            max-height: 600px;
+
+          }
+          @media @media-l-medium, @media-p-medium {
+            height: 50vh;
+          }
+          @media @media-small {
+            height: 33vh; 
+     
+          }
           display: flex;
           z-index: 5;
           overflow: visible;
+          
           @media @media-small {
             top: 0%;
             bottom: 22%
